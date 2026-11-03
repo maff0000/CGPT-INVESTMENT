@@ -14,6 +14,8 @@ The latest recovered baseline is **Discovery v2**, not the earlier stricter QARP
 | Established rotation A | Healthcare | ALGN, GMED, ADMA |
 | Established rotation B | Consumer Defensive | MDLZ, PEP, OLLI |
 
+On **2026-11-03**, two owner-nominated research candidates were added: **Intuitive Surgical (ISRG, Healthcare)** and **GE Vernova (GEV, Industrials; gas turbines)**. Both are premium-valuation exceptions, **not strict QARP v2 screen passes**. See [comparative review](research/reviews/2026-11-03-two-sector-and-premium-candidates.md) and [11-name watchlist](research/watchlists/2026-11-03-premium-candidates.md).
+
 These sector roles and company theses are **PROVISIONAL**. The original nine are a starting shortlist, not nine confirmed screen passes. Near-misses and recovery candidates must be labelled. Aim for 3–5 research candidates per lane and roughly 10–15 weekly reviews, allowing fewer when quality is insufficient. The initial nine do not imply that the weekly target has been met. Do not force new names or purchases.
 
 ## Two decision queues — active from 2026-11-03
@@ -34,7 +36,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
-| **NOW/LATER current assessment** | [Decision desk](research/reviews/2026-11-03-investment-decision-desk.md) and [priority queue](research/watchlists/2026-11-03-investment-priority.md) |
+| **NOW/LATER current assessment** | [Initial decision desk](research/reviews/2026-11-03-investment-decision-desk.md), [new comparative review](research/reviews/2026-11-03-two-sector-and-premium-candidates.md) and [expanded watchlist](research/watchlists/2026-11-03-premium-candidates.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |

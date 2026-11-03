@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — Two owner-nominated premium-valuation businesses
+- Explicitly documented that **Healthcare and Consumer Defensive have been screened but not yet fully evaluated for purchase decisions**.
+- Added Intuitive Surgical (ISRG) to Healthcare and GE Vernova (GEV) to Industrials. Both fail v2 forward P/E <25 and are labelled exceptions, not screen hits.
+- Reviewed company Q3 releases and stock valuations. GEV's strong FCF is substantially influenced by customer advance payments; do not mistake headline FCF for sustainable owner earnings.
+- Preserved the original nine-name watchlist and established an eleven-name updated snapshot. See [sector and premium-candidate review](research/reviews/2026-11-03-two-sector-and-premium-candidates.md).
+
 ## 2026-11-03 — ACTION-001: Now vs Later, measured investment risk
 - User corrected excessive research-only drift: pursue **immediate purchases as well as future candidates**.
 - Adopted two decision queues (NOW/LATER) and explicit BUY STARTER / BUY FULL / WAIT / REJECT verdicts; retain seven-plus-two earnings gate and no auto-execution.
