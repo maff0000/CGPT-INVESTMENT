@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — ACTION-001: Now vs Later, measured investment risk
+- User corrected excessive research-only drift: pursue **immediate purchases as well as future candidates**.
+- Adopted two decision queues (NOW/LATER) and explicit BUY STARTER / BUY FULL / WAIT / REJECT verdicts; retain seven-plus-two earnings gate and no auto-execution.
+- Added [decision-to-invest](docs/decision-to-invest.md), [decision record](research/decisions/2026-11-03-investment-urgency.md), [investment template](templates/investment-decision.md), [ranked decision desk](research/reviews/2026-11-03-investment-decision-desk.md) and [queue](research/watchlists/2026-11-03-investment-priority.md).
+- First live near-term candidates: ALGN, EME and MDLZ; all decisions conditional on intraday quotes and unverified future events; no trades executed.
+
 ## 2026-11-03 — Event update 02: ADMA and FERG verification
 - Confirmed ADMA November 4 after-close Q3 release and Ferguson November 9 6:45 AM ET Q3 release against their corporate announcements.
 - Recorded both as PRE-EARNINGS BLOCK and updated the dated watchlist without altering the bootstrap baseline. See [event review](research/reviews/2026-11-03-events-02.md).

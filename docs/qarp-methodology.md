@@ -11,7 +11,7 @@ Baseline recovered on 2026-11-03. QARP means quality at a reasonable price, with
 7. Apply earnings and material-event gates.
 8. Decide advance research, wait, reject or revisit after a named event.
 
-Discovery, investment approval and capital deployment are distinct. This repository implements discovery and research only. No screening threshold establishes intrinsic value or predicts a price increase.
+Discovery, the **recommendation to consider a measured starter/full purchase**, and actual capital deployment are distinct. This repository now **requires action-oriented research decisions**, but contains no trading authority or actual account activity. Every review must evaluate at least the top NOW idea and give a BUY STARTER / BUY FULL / WAIT / REJECT judgment under [decision policy](decision-to-invest.md). No screening threshold predicts price gains; unknowns are quantified or explicitly blocked, not used to defer indefinitely.
 
 ## Business exposure and near-misses
 Record revenue/end-market exposure and common drivers across names. An industrial label does not diversify multiple companies exposed to AI/data-centre capital spending. Check acquisitions, financing, guidance, organic versus acquired growth, commodity pass-through and non-recurring benefits.
