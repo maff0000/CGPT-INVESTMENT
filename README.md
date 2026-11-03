@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**Rapid recovery:** [CURRENT-STATE.md](CURRENT-STATE.md) contains the latest verified NOW/LATER decisions, earnings triggers, risk gates, and next step. Read it after this README.
+
 ## Continuity: read this first
 Established 2026-11-03. The objective is to identify **investments worth acting on now AND future candidates**, with disciplined QARP, measured risk, dated decisions and prospective outcomes. Research must produce **actionable BUY STARTER / BUY FULL / WAIT / REJECT judgments**, not perpetual analysis. This public repository is research: it contains no actual purchases, private positions, account balances or automatic trading.
 
@@ -28,6 +30,12 @@ A first price-aware comparative decision across the two established sectors is n
 
 Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase-decision.md), [Consumer Defensive decision](research/decisions/2026-11-03-defensive-purchase-decision.md), [event-scheduling clarification](research/decisions/2026-11-03-earnings-scheduling-clarification.md) and [current queue](research/watchlists/2026-11-03-now-later-decisions.md). None of these historical prices should be treated as live in a future session.
 
+## Cycle 03 — complete bounded investment comparison (2026-11-03)
+- **Industrials:** EME becomes a second **conditional starter purchase assessment if fresh price <=$700**, risk/event gates met; GEV WAIT after detailed earnings and customer deposits valuation check. This is documented in [EME versus GEV](research/decisions/2026-11-03-industrials-eme-gev.md).
+- **Consumer Defensive:** UL and CCEP added to active watchlist **after** reviewing Q3 news. UL **WAIT until 4 Nov Investor Event**; CCEP **WAIT through post-3 Nov trading-update two-session cooldown**. CLX rejected for misleading earnings comparisons; PG not compelling at checked valuation. See [expanded defensive decision](research/decisions/2026-11-03-defensive-expanded.md).
+- Active universe **13** (original nine plus ISRG, GEV, UL, CCEP); no transactions. See [latest decision queue](research/watchlists/2026-11-03-now-later-cycle-03.md) and [completed cycle report](research/reviews/2026-11-03-cycle-03-final.md).
+- **Await the user's proposed final stage of the process**; do not assume it means execution, automation or portfolio allocation.
+
 ## Current state and evidence limits
 - Methodology and original research list were recovered from the founding discussion. Selected observations are retained as **REPORTED**, not independently verified market facts.
 - Historical Finviz counts, ratios, sector returns and earnings dates have not been rerun or independently confirmed in this initialisation.
@@ -41,7 +49,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
-| **NOW/LATER current assessment** | [Latest investment decisions](research/reviews/2026-11-03-invest-now-two-lanes.md) and [latest queue](research/watchlists/2026-11-03-now-later-decisions.md); earlier [initial desk](research/reviews/2026-11-03-investment-decision-desk.md) and [premium update](research/reviews/2026-11-03-two-sector-and-premium-candidates.md) |
+| **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
@@ -57,12 +65,12 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | Changes over time | [CHANGELOG](CHANGELOG.md) |
 
 ## Resume the work
-1. Read this README, AGENTS, the latest decisions and latest review.
+1. Read this README, AGENTS, **CURRENT-STATE**, and the latest decisions and latest review.
 2. Refresh sector and industry returns, relative strength and breadth at one common observation time.
 3. Verify each company's identity, exchange, latest filing, material events and next earnings announcement using public primary sources.
 4. Re-run A/B/C screens and record exact filters, timestamps, counts and near-miss exceptions. Do not assume the historical shortlist still qualifies.
 5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md), [subsequent earnings event verification](research/reviews/2026-11-03-events-02.md) and [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
-6. **Recheck and update the latest 2026-11-03 ALGN conditional BUY STARTER and Consumer Defensive WAIT verdicts** using current data; do not redo completed comparisons without material change. Next: compare more quality stocks within established sectors if the current candidates lack good price-to-downside.
+6. **Recheck and update latest conditional starter assessments: ALGN <=$155, EME <=$700**, using fresh quotes and current event/correlation conditions. The bounded comparison is complete. **Ask the user for their proposed final step** before extending the process.
 7. **Produce an immediate buy / wait / reject verdict** for the top NOW candidate using [investment-decision template](templates/investment-decision.md). Establish defensible abbreviated fair-value/downside scenarios and a meaningful condition for any WAIT, rather than waiting for exhaustive research.
 7. Publish a dated review, decision changes and corrections. Keep public hypothetical outcomes separate from any private investing activity.
 

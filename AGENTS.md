@@ -2,7 +2,7 @@
 
 Scope: maff0000/CGPT-INVESTMENT only. Do not access or modify FOUNDRY or ForgeV2 as part of this project.
 
-Read README.md, docs/data-provenance.md and the latest dated decisions and reviews before continuing. This public repository records **investment decision research** for immediate opportunities AND future candidates. It is not an account ledger or a trading execution authority.
+Read README.md, **CURRENT-STATE.md**, docs/data-provenance.md and the latest dated decisions and reviews before continuing. The dated state file is a convenience snapshot, not a substitute for checking a newer GitHub HEAD. This public repository records **investment decision research** for immediate opportunities AND future candidates. It is not an account ledger or a trading execution authority.
 
 Preserve QARP: quality at a reasonable price, supported by improving sector and stock momentum. Research one emerging sector and two established rotation sectors. Start with Industrials (ZWS, EME, FERG), Healthcare (ALGN, GMED, ADMA) and Consumer Defensive (MDLZ, PEP, OLLI). These are research candidates, not approved investments. Keep their history even if later rejected.
 

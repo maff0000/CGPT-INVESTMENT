@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — ACTION-003/004: complete bounded Industrial and Consumer Defensive comparison
+- Evaluated EME vs GEV using primary Q3 filings, FY2027 adjusted EPS forecasts, hypothetical bear/base/bull scenarios, and earnings/other-event gates.
+- **EME conditional BUY STARTER <=$700** with new quote/calendar/correlation checks; **GEV WAIT** after exceptional demand and customer advance/deposit cash effects, plus $9bn announced Trench deal.
+- Expanded established Consumer Defensive sector search with **UL and CCEP** as active monitored candidates; UL **Nov 4 Investor Event hold**, CCEP **Nov 3 results two-session cooling hold**. CLX rejected as misleading earnings rebound; PG evaluated but not advanced.
+- Added `CURRENT-STATE.md`, dated decision records, up-to-date 13-name watchlist and evidence references. No transactions and no private holdings.
+- Initial bounded decision work concluded. Await owner's **planned final process stage** before any additional architecture/implementation.
+
 ## 2026-11-03 — ACTION-002: price-aware NOW decisions in the two established sectors
 - Completed an initial comparative earnings/valuation/risk review for **ALGN vs ISRG** (Healthcare) and **MDLZ vs PEP vs OLLI** (Consumer Defensive), using cited dated public financial releases and quotes.
 - **ALGN conditional BUY STARTER at <=$155** with explicit downside and new earnings calendar check; **ISRG WAIT <=$375**. None of the three Defensive names passes near-term upside/downside: **MDLZ WAIT <=$58, PEP WAIT <=$125, OLLI WAIT <=$78 plus underlying comp-sales recovery**. Limits are analyst research hypotheses, not orders.
