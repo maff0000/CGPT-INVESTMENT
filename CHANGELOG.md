@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — STRATEGY-001: three complementary investment mandates
+- Adopted **strategic 5–10-year compounders**, **immediate measured-risk opportunities**, and **future candidates** as three complementary outcomes. Strategy horizon and **NOW/LATER entry status are separate**, so long-term ownership does not require positive short-term sector momentum nor permit price-independent purchases.
+- Made [investment strategy](docs/investment-strategy.md) canonical, with [adopted decision record](research/decisions/2026-11-03-three-mandate-strategy.md). Updated README, AGENTS, CURRENT-STATE and near-term action policy. Preserved the existing GOOGL conviction, prior dated records and independent research.
+- All-sector weekly minimum **7 evidenced investment ideas**, the 7+2 earnings policy, risk/valuation checks and no-execution boundaries unchanged.
+
 ## 2026-11-03 — STRATEGIC-001: Alphabet long-horizon preference
 - Owner expressed **long-term strategic ownership interest in Alphabet/GOOGL via professional wealth management**, separate from tactical sector rotation.
 - Documented [GOOGL thesis and diligence requirements](research/decisions/2026-11-03-alphabet-long-term.md): Q3 cash flow, $195–205bn 2026 capex guidance, rising expected 2027 capex, Search disruption and Cloud growth, valuation, concentration and staged-entry review.

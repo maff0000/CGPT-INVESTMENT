@@ -5,6 +5,9 @@ Identify **investable opportunities now**, while maintaining a dated pipeline of
 
 This is a public **decision-research framework**, not a brokerage interface or a disclosure of anyone's capital, orders, holdings or financial position. The author retains the final decision; no automatic trades occur.
 
+## Relationship to canonical three-mandate strategy
+The canonical [investment strategy](investment-strategy.md) defines **strategic 5–10-year compounders**, **immediate opportunities**, and **future candidates**. The NOW/LATER states below are **entry-timing queues** for companies in any investment-horizon class, not an assertion that all investing is short-term. A strategic compounder such as Alphabet may be a candidate for staged accumulation, but only after a price-aware long-horizon valuation and investor/adviser approval. The earnings blackout applies to initiating/additions, not thesis monitoring. Do not demote a long-horizon business simply because its sector has poor one-month momentum.
+
 ## Two queues
 | Queue | Admission | Output |
 |---|---|---|

@@ -2,7 +2,7 @@
 
 Scope: maff0000/CGPT-INVESTMENT only. Do not access or modify FOUNDRY or ForgeV2 as part of this project.
 
-Read README.md, **CURRENT-STATE.md**, docs/data-provenance.md and the latest dated decisions and reviews before continuing. The dated state file is a convenience snapshot, not a substitute for checking a newer GitHub HEAD. This public repository records **investment decision research** for immediate opportunities AND future candidates. It is not an account ledger or a trading execution authority.
+Read README.md, **CURRENT-STATE.md**, **docs/investment-strategy.md**, docs/data-provenance.md and the latest dated decisions and reviews before continuing. The dated state file is a convenience snapshot, not a substitute for checking a newer GitHub HEAD. This public repository records **investment decision research** for immediate opportunities AND future candidates. It is not an account ledger or a trading execution authority.
 
 Preserve QARP: quality at a reasonable price, supported by improving sector and stock momentum. Research one emerging sector and two established rotation sectors. Start with Industrials (ZWS, EME, FERG), Healthcare (ALGN, GMED, ADMA) and Consumer Defensive (MDLZ, PEP, OLLI). These are research candidates, not approved investments. Keep their history even if later rejected.
 
@@ -21,6 +21,9 @@ Publish only public research and concise methodology summaries. Exclude private 
 Use reusable templates. Assess actual business exposures, including overlapping AI/data-centre capital-spending exposure, rather than relying on sector labels. Screen results never establish fair value or authorise trades.
 
 Before committing: check relative links, all nine original symbols, evidence labels and public-content hygiene. After committing: read remote branch and files back and report the verified SHA. Never claim a failed or unverified write succeeded.
+
+## STRATEGY-001 — three complementary mandates
+Treat the project as **(1) strategic long-term compounding theses (typically 5–10 years); (2) NOW priced measured-risk opportunities; (3) LATER candidates with objective triggers**. Horizon and entry state are **separate dimensions**, so a strategic company can be NOW, WAIT or rejected at a given quote without losing its business classification. Do not apply short-term sector rotation as a veto on multi-year ownership; do apply valuation, capital intensity, earning power, concentration risk and thesis-invalidating evidence. Every weekly review should surface candidates across these categories **without forcing trades**. See [canonical policy](docs/investment-strategy.md) and [decision](research/decisions/2026-11-03-three-mandate-strategy.md). Retain >=7 genuinely qualified all-sector weekly ideas as a **research output**, never a purchase quota.
 
 ## Strategic long-horizon candidate distinction
 GOOGL is flagged in [STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md) as an owner-preferred long-horizon compounder **for professional adviser consideration**, distinct from tactical rotation opportunities. Read the actual decision record rather than interpreting the owner's interest as an executed order, approved target weight or validated risk-free valuation. Assess capex/AI monetisation and concentration objectively, refresh primary evidence and market prices, keep all personal finance information out of the public repo. Preserve the independent `claude-research/` materials already present.

@@ -22,6 +22,11 @@ On **2026-11-03**, two owner-nominated research candidates were added: **Intuiti
 
 These sector roles and company theses are **PROVISIONAL**. The original nine are a starting shortlist, not nine confirmed screen passes. Near-misses and recovery candidates must be labelled. Aim for 3–5 research candidates per lane and roughly 10–15 weekly reviews, allowing fewer when quality is insufficient. The initial nine do not imply that the weekly target has been met. Do not force new names or purchases.
 
+## Three complementary investment mandates — STRATEGY-001
+The adopted investment strategy has **three complementary outcomes**: **(1) strategic long-horizon compounders** (5–10-year business ownership thesis and staged wealth-management assessment); **(2) immediate measured-risk opportunities** (priced conditional buy/wait/reject decisions); and **(3) future candidates** (explicit price/event/fundamental triggers). **Long-term thesis classification and current entry readiness are separate**: a strategic compounder can be BUY/WAIT depending on valuation and risk. Neither technology-sector fear nor temporary weak momentum is by itself a veto on an exceptional long-term business.
+
+Read the canonical [investment strategy](docs/investment-strategy.md) and [adopted decision](research/decisions/2026-11-03-three-mandate-strategy.md). The two NOW/LATER queues below describe **timing**, not the whole investment horizon. This is public research only; no transactions or private portfolio instructions are implied.
+
 ## Strategic long-term equities — additional owner-interest track
 **GOOGL (Alphabet)** was elevated on 2026-11-03 as an **owner-preferred 5–10-year core compounder candidate for professional wealth-management review**, distinct from tactical rotation entries. **Owner conviction is not an independently approved investment, allocation or executed trade.** Record the 2026 capex/AI cash-flow risks and assess staged accumulation and concentration privately with the adviser. Read [STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md). GOOGL remains in the weekly all-sector pipeline and its original evidence snapshot is unchanged.
 
@@ -53,6 +58,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 |---|---|
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
+| **Canonical three-mandate strategy** | [Strategic compounders / NOW / future candidates](docs/investment-strategy.md) and [STRATEGY-001](research/decisions/2026-11-03-three-mandate-strategy.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
 | **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |

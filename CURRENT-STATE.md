@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## Adopted strategy — STRATEGY-001, 2026-11-03
+**Three complementary mandates:** (1) **Strategic 5–10-year compounders** for long-horizon ownership and possible staged accumulation via professional wealth management, with GOOGL first owner-nominated example; (2) **NOW measured-risk opportunities**, including historical conditional ALGN and EME starter cases; (3) **FUTURE candidates** with explicit prices, earnings/event triggers and invalidation. These are *not mutually exclusive*: **investment horizon** and **entry readiness** are separate fields. A strategic company can be NOW or WAIT. The seven-session pre-earnings/two-session post-earnings policy remains for new entry/addition, not for evaluating strategic quality. **No actual investment/approved allocation is implied.** Read [canonical strategy](docs/investment-strategy.md) and [STRATEGY-001 record](research/decisions/2026-11-03-three-mandate-strategy.md).
+
 ## Latest expansion: ALL-SECTOR-001 (2026-11-03)
 The investor additionally requires **>=7 evidence-qualified potential investments each week across all eight remaining sectors**, including Technology despite AI-sector weakness, agent tooling/security and AI adopters. This is **parallel** to, not a replacement of, the three priority lanes. Read [all-sector policy](docs/all-sector-opportunity-pipeline.md), [first pilot](research/reviews/2026-11-03-all-sector-pilot.md), [nine-name list](research/watchlists/2026-11-03-all-sector-09.md) and [dated decision](research/decisions/2026-11-03-all-sector-expansion.md).
 
@@ -39,7 +42,7 @@ Active names: original 9 + ISRG + GEV + UL + CCEP = **13**. All references are h
 - Never treat GAAP gains, adjusted estimates, one-time working capital advances or EUR-denominated EPS as interchangeable with USD owner earnings.
 
 ## Handoff / recovery
-Read in order: `README.md`, `AGENTS.md`, **this file**, `docs/decision-to-invest.md`, `docs/earnings-risk-gates.md`, latest `research/reviews/`, latest `research/watchlists/`, then specific company/decision dossiers. If a newer dated record exists, this snapshot is historical, not binding.
+Read in order: `README.md`, `AGENTS.md`, **this file**, `docs/investment-strategy.md`, `docs/decision-to-invest.md`, `docs/earnings-risk-gates.md`, latest `research/reviews/`, latest `research/watchlists/`, then specific company/decision dossiers. If a newer dated record exists, this snapshot is historical, not binding.
 
 ## Next stage
 The first three-sector decision cycle is documented, and **ALL-SECTOR-001 is now active** as an additional weekly seven-plus output. Continue named-company weekly qualification and current price/risk research without equating research ideas with purchased shares. The user's new scope takes precedence over earlier wording about awaiting another final step. Keep recording dated outcomes and actual decisions separately from hypothetical calls.
