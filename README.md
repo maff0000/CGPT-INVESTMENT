@@ -35,7 +35,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 | Evidence, timestamps and corrections | [Data provenance](docs/data-provenance.md) |
 | Results without hindsight | [Outcome tracking](docs/outcome-tracking.md) |
 | Founding decisions and unresolved issues | [2026-11-03 decisions](research/decisions/2026-11-03.md) and [earnings rule correction](research/decisions/2026-11-03-earnings-gate-adoption.md) |
-| First verified research increment | [2026-11-03 cycle 01](research/reviews/2026-11-03-cycle-01.md) |
+| First verified research increment | [2026-11-03 cycle 01](research/reviews/2026-11-03-cycle-01.md) and [event update 02](research/reviews/2026-11-03-events-02.md) |
 | Initial sector assessment | [2026-11-03 sectors](research/sectors/2026-11-03.md) |
 | Original nine and next checks | [2026-11-03 watchlist](research/watchlists/2026-11-03.md) |
 | Evidence register | [2026-11-03 sources](research/sources/2026-11-03.md) |
@@ -47,7 +47,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 2. Refresh sector and industry returns, relative strength and breadth at one common observation time.
 3. Verify each company's identity, exchange, latest filing, material events and next earnings announcement using public primary sources.
 4. Re-run A/B/C screens and record exact filters, timestamps, counts and near-miss exceptions. Do not assume the historical shortlist still qualifies.
-5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md) and the [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
+5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md), [subsequent earnings event verification](research/reviews/2026-11-03-events-02.md) and [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
 6. Establish fair-value scenarios, downside, invalidation evidence and a review trigger. Retain UNKNOWN fields until supported.
 7. Publish a dated review, decision changes and corrections. Keep public hypothetical outcomes separate from any private investing activity.
 
