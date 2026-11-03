@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — ALL-SECTOR-001: weekly seven-plus opportunity programme
+- Added a **parallel** search across all eight sectors beyond the three existing priority lanes; target **>=7 substantiated potential investments per week**, not seven purchases or manufactured ideas.
+- Established explicit **AI second-phase/AI adoption/agentic security** lens with a quality+price+event requirement and an independent non-AI control.
+- First pilot selected **nine distinct public companies in eight sectors**: NET, ZS, GOOGL, V, BKNG, NEE, LIN, EQIX, XOM. NET/BKNG are earnings blocked; other names have named valuation/event risks. Not strict QARP v2 screen passes by default.
+- Wrote [policy](docs/all-sector-opportunity-pipeline.md), [decision](research/decisions/2026-11-03-all-sector-expansion.md), [pilot](research/reviews/2026-11-03-all-sector-pilot.md), [watchlist](research/watchlists/2026-11-03-all-sector-09.md) and [sources](research/sources/2026-11-03-all-sector-evidence.md).
+
 ## 2026-11-03 — ACTION-003/004: complete bounded Industrial and Consumer Defensive comparison
 - Evaluated EME vs GEV using primary Q3 filings, FY2027 adjusted EPS forecasts, hypothetical bear/base/bull scenarios, and earnings/other-event gates.
 - **EME conditional BUY STARTER <=$700** with new quote/calendar/correlation checks; **GEV WAIT** after exceptional demand and customer advance/deposit cash effects, plus $9bn announced Trench deal.

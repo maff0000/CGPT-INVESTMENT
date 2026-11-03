@@ -3,6 +3,8 @@ Public, dated research journal for **quality at a reasonable price (QARP)** with
 
 **Rapid recovery:** [CURRENT-STATE.md](CURRENT-STATE.md) contains the latest verified NOW/LATER decisions, earnings triggers, risk gates, and next step. Read it after this README.
 
+**Current parallel mandate:** [ALL-SECTOR opportunity process](docs/all-sector-opportunity-pipeline.md) targets **at least seven substantiated potential investment ideas per week** from **the eight sectors outside Industrials, Healthcare and Consumer Defensive**. This is in addition to the original three-lane rotation engine, not its replacement. [First nine-name pilot](research/reviews/2026-11-03-all-sector-pilot.md) and [all-sector watchlist](research/watchlists/2026-11-03-all-sector-09.md).
+
 ## Continuity: read this first
 Established 2026-11-03. The objective is to identify **investments worth acting on now AND future candidates**, with disciplined QARP, measured risk, dated decisions and prospective outcomes. Research must produce **actionable BUY STARTER / BUY FULL / WAIT / REJECT judgments**, not perpetual analysis. This public repository is research: it contains no actual purchases, private positions, account balances or automatic trading.
 
@@ -51,6 +53,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
 | **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |
+| **Parallel eight-sector / AI second-phase search** | [All-Sector opportunity process](docs/all-sector-opportunity-pipeline.md), [pilot review](research/reviews/2026-11-03-all-sector-pilot.md), [9 company list](research/watchlists/2026-11-03-all-sector-09.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
 | Daily and weekly operating procedure | [Review workflow](docs/review-workflow.md) |
@@ -70,7 +73,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 3. Verify each company's identity, exchange, latest filing, material events and next earnings announcement using public primary sources.
 4. Re-run A/B/C screens and record exact filters, timestamps, counts and near-miss exceptions. Do not assume the historical shortlist still qualifies.
 5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md), [subsequent earnings event verification](research/reviews/2026-11-03-events-02.md) and [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
-6. **Recheck and update latest conditional starter assessments: ALGN <=$155, EME <=$700**, using fresh quotes and current event/correlation conditions. The bounded comparison is complete. **Ask the user for their proposed final step** before extending the process.
+6. **Maintain TWO simultaneous funnels**: (a) three priority sectors as documented and (b) a new all-other-sector weekly candidate report of >=7 real, evidenced, price-aware ideas. First nine are NET, ZS, GOOGL, V, BKNG, NEE, LIN, EQIX, XOM. Read [pilot](research/reviews/2026-11-03-all-sector-pilot.md). Keep historical ALGN <=$155 / EME <=$700 conditional starter assessments subject to fresh checks.
 7. **Produce an immediate buy / wait / reject verdict** for the top NOW candidate using [investment-decision template](templates/investment-decision.md). Establish defensible abbreviated fair-value/downside scenarios and a meaningful condition for any WAIT, rather than waiting for exhaustive research.
 7. Publish a dated review, decision changes and corrections. Keep public hypothetical outcomes separate from any private investing activity.
 

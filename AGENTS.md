@@ -6,6 +6,8 @@ Read README.md, **CURRENT-STATE.md**, docs/data-provenance.md and the latest dat
 
 Preserve QARP: quality at a reasonable price, supported by improving sector and stock momentum. Research one emerging sector and two established rotation sectors. Start with Industrials (ZWS, EME, FERG), Healthcare (ALGN, GMED, ADMA) and Consumer Defensive (MDLZ, PEP, OLLI). These are research candidates, not approved investments. Keep their history even if later rejected.
 
+**Parallel mandate ALL-SECTOR-001:** every weekly investment review also covers the eight sectors outside Industrials, Healthcare, Consumer Defensive and targets **>=7 newly evidenced or refreshed, distinct potential investment theses**. Read docs/all-sector-opportunity-pipeline.md and latest all-sector watchlist. Include Technology even in sector fear; scrutinise AI second-phase adoption, agent infrastructure and zero-trust security for earned revenue/FCF and valuation, not buzzwords. If fewer than seven qualify despite expanded research, disclose shortfall instead of padding. No auto-trades.
+
 Use the recovered Discovery v2 baseline documented in docs/finviz-filters.md. Preserve older settings as history. Never silently change screening thresholds, scoring weights or earnings gates; date changes in decisions and CHANGELOG.md.
 
 Separate VERIFIED sourced facts, REPORTED historical observations, PROVISIONAL hypotheses, UNKNOWN inputs and PROPOSED process rules. Recovered assistant claims are not independent verification. Missing earnings dates block entry review. Earnings dates require company-source confirmation and freshness checks.

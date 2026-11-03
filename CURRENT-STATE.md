@@ -1,6 +1,11 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## Latest expansion: ALL-SECTOR-001 (2026-11-03)
+The investor additionally requires **>=7 evidence-qualified potential investments each week across all eight remaining sectors**, including Technology despite AI-sector weakness, agent tooling/security and AI adopters. This is **parallel** to, not a replacement of, the three priority lanes. Read [all-sector policy](docs/all-sector-opportunity-pipeline.md), [first pilot](research/reviews/2026-11-03-all-sector-pilot.md), [nine-name list](research/watchlists/2026-11-03-all-sector-09.md) and [dated decision](research/decisions/2026-11-03-all-sector-expansion.md).
+
+**Pilot nine:** NET, ZS, GOOGL, V, BKNG, NEE, LIN, EQIX, XOM. The following remain *initial all-sector investment ideas*, not nine purchase approvals. **NET Nov5 Q3** and **BKNG Nov3 Q3** hard earnings holds. **GOOGL, XOM, LIN** are first quantitative near-term assessment priorities; all prices and ratios are as of Nov3 and subject to freshness. Cloudflare AI Search/MCP and Zscaler agent protection are real product theses, not automatically realised revenue or attractive shares.
+
 ## Mission
 We are identifying **immediate, measured-risk investments AND future candidates**, not operating an endless research machine. Method: **quality at a reasonable price (QARP) plus sector/stock rotation/momentum**. Three discovery lanes: 1 emerging (**Industrials**), 2 established (**Healthcare; Consumer Defensive**). These are subject to weekly revalidation.
 
@@ -32,4 +37,4 @@ Active names: original 9 + ISRG + GEV + UL + CCEP = **13**. All references are h
 Read in order: `README.md`, `AGENTS.md`, **this file**, `docs/decision-to-invest.md`, `docs/earnings-risk-gates.md`, latest `research/reviews/`, latest `research/watchlists/`, then specific company/decision dossiers. If a newer dated record exists, this snapshot is historical, not binding.
 
 ## Next stage
-The first decision cycle is **complete**: two near-term conditional starter candidates, actionable later triggers and bounded research rejections. Await the user's intended **final step of the process**, then incorporate that stage before expanding scope or implementing automation. Keep recording dated outcomes and actual decisions separately from hypothetical calls.
+The first three-sector decision cycle is documented, and **ALL-SECTOR-001 is now active** as an additional weekly seven-plus output. Continue named-company weekly qualification and current price/risk research without equating research ideas with purchased shares. The user's new scope takes precedence over earlier wording about awaiting another final step. Keep recording dated outcomes and actual decisions separately from hypothetical calls.
