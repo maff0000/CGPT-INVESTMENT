@@ -33,3 +33,15 @@ Company-source evidence for verified dates: [GMED IR release](https://investors.
 Assess EPS/revenue versus dated estimates (if reliable), organic sales, cash conversion, GAAP vs adjusted, margin trend, guidance, estimate revisions, volume, 1/3/5-session reaction, and relative strength vs industry/sector/S&P 500. No price return or estimate-surprise claim until its timestamps and source have been recorded.
 
 Pilot windows are **not backtest-validated**. Log the methodology version and any prospective amendments before measuring outcomes.
+
+## Version 1.2 addendum (2026-11-03) — unannounced next-quarter calendar
+See [EVENT-003](../research/decisions/2026-11-03-earnings-scheduling-clarification.md).
+
+**Clarification, not relaxation of the 7+2 window:** A company often does not publish its *next quarterly* date immediately after releasing results. Automatically classifying such a company as UNKNOWN/BLOCKED for the next two months would be an operational error. For a company that published quarterly earnings **within the last 30 calendar days**:
+- Verify the exact latest release and that **two full regular sessions** have elapsed.
+- On **the day of any proposed entry**, check the company's public IR releases and upcoming-events calendar, plus an independent earnings calendar for conflicting near-term evidence; log retrieval time and links.
+- If *no next event is announced or estimated within the upcoming seven exchange sessions*, there is **no evidence of a near-term blackout**. Mark **PROVISIONAL ELIGIBLE FOR ENTRY REVIEW (24-hour validity)**, not VERIFIED NEXT DATE. Recheck before execution and immediately block if a new notice appears.
+- If a named date is confirmed, impose the seven-session block and release-day block. If conflicting/estimated within seven sessions, mark UNKNOWN/BLOCKED. Material event risk may independently block. If latest results are >30 days old with no verifiable upcoming timing, retain UNKNOWN until investigated.
+- Document explicitly that absence from an IR calendar **is not proof that no announcement can occur**. This operational exception does not bypass the earnings policy or authorise trading.
+
+The research decision as of 2026-11-03 for ALGN uses this **conditional** path because the company reported Oct 28, and [company IR events](https://investor.aligntech.com/events) listed no upcoming event. The final entry check has not been performed for an actual order.

@@ -23,6 +23,11 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 - **LATER:** quality or recovering names with a specific entry price, earnings result, catalyst or confirmation event to watch. The weekly three-sector structure is a **discovery funnel**, not a ban on acting.
 - Initial ranked [NOW/LATER queue](research/watchlists/2026-11-03-investment-priority.md): **ALGN**, **EME**, **MDLZ** receive immediate decision attention. The remaining six names stay monitored; this is a *research* queue, not an executed order.
 
+## Latest executable decision research — 2026-11-03
+A first price-aware comparative decision across the two established sectors is now recorded in the [NOW/LATER investment decisions](research/reviews/2026-11-03-invest-now-two-lanes.md). **Healthcare: ALGN conditional BUY STARTER at or below $155**, with same-day event confirmation, investor-owned risk budget and no broker action by this journal. **ISRG WAIT** for a more attractive entry (initially $375 or below without thesis deterioration). **Consumer Defensive: MDLZ, PEP and OLLI currently WAIT**, each with specific price and/or operating triggers. These are dated **hypothetical research actions**, not trades or standing orders.
+
+Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase-decision.md), [Consumer Defensive decision](research/decisions/2026-11-03-defensive-purchase-decision.md), [event-scheduling clarification](research/decisions/2026-11-03-earnings-scheduling-clarification.md) and [current queue](research/watchlists/2026-11-03-now-later-decisions.md). None of these historical prices should be treated as live in a future session.
+
 ## Current state and evidence limits
 - Methodology and original research list were recovered from the founding discussion. Selected observations are retained as **REPORTED**, not independently verified market facts.
 - Historical Finviz counts, ratios, sector returns and earnings dates have not been rerun or independently confirmed in this initialisation.
@@ -36,7 +41,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
-| **NOW/LATER current assessment** | [Initial decision desk](research/reviews/2026-11-03-investment-decision-desk.md), [new comparative review](research/reviews/2026-11-03-two-sector-and-premium-candidates.md) and [expanded watchlist](research/watchlists/2026-11-03-premium-candidates.md) |
+| **NOW/LATER current assessment** | [Latest investment decisions](research/reviews/2026-11-03-invest-now-two-lanes.md) and [latest queue](research/watchlists/2026-11-03-now-later-decisions.md); earlier [initial desk](research/reviews/2026-11-03-investment-decision-desk.md) and [premium update](research/reviews/2026-11-03-two-sector-and-premium-candidates.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
@@ -57,7 +62,8 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 3. Verify each company's identity, exchange, latest filing, material events and next earnings announcement using public primary sources.
 4. Re-run A/B/C screens and record exact filters, timestamps, counts and near-miss exceptions. Do not assume the historical shortlist still qualifies.
 5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md), [subsequent earnings event verification](research/reviews/2026-11-03-events-02.md) and [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
-6. **Produce an immediate buy / wait / reject verdict** for the top NOW candidate using [investment-decision template](templates/investment-decision.md). Establish defensible abbreviated fair-value/downside scenarios and a meaningful condition for any WAIT, rather than waiting for exhaustive research.
+6. **Recheck and update the latest 2026-11-03 ALGN conditional BUY STARTER and Consumer Defensive WAIT verdicts** using current data; do not redo completed comparisons without material change. Next: compare more quality stocks within established sectors if the current candidates lack good price-to-downside.
+7. **Produce an immediate buy / wait / reject verdict** for the top NOW candidate using [investment-decision template](templates/investment-decision.md). Establish defensible abbreviated fair-value/downside scenarios and a meaningful condition for any WAIT, rather than waiting for exhaustive research.
 7. Publish a dated review, decision changes and corrections. Keep public hypothetical outcomes separate from any private investing activity.
 
 ## Reusable templates

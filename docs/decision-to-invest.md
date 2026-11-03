@@ -38,3 +38,8 @@ An immediate-review memo must include:
 Keep **one emerging sector + two established rotation sectors** as a *discovery* funnel. **Do not require every actual purchase to come from each lane.** Cross-sector opportunity, portfolio concentration and risk-adjusted valuation determine decisions. This change affects action prioritisation, not Finviz v2 screening or the seven-plus-two earnings rule.
 
 Sources and first implementation: [2026-11-03 decision](../research/decisions/2026-11-03-investment-urgency.md) and [first action review](../research/reviews/2026-11-03-investment-decision-desk.md).
+
+## Dated implementation
+See [ACTION-002 comparative study](../research/reviews/2026-11-03-invest-now-two-lanes.md) for a worked example of immediate and future decisions. It provides a provisional BUY STARTER for ALGN and dated WAIT prices for other companies; it is not execution authority. Screening must produce practical risk/reward opinions without inventing fair-value certainty.
+
+Hypothetical adjusted-EPS × assumed exit-P/E sensitivities are useful for **first-pass decision triage**, but do not establish intrinsic value, probability-weighted returns or capital-loss floors. Revise with new consensus figures, actual results and cash generation. Gross share-price scenarios exclude dividend, FX, taxes and trading costs unless separately stated.

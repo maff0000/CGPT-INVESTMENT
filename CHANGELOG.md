@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — ACTION-002: price-aware NOW decisions in the two established sectors
+- Completed an initial comparative earnings/valuation/risk review for **ALGN vs ISRG** (Healthcare) and **MDLZ vs PEP vs OLLI** (Consumer Defensive), using cited dated public financial releases and quotes.
+- **ALGN conditional BUY STARTER at <=$155** with explicit downside and new earnings calendar check; **ISRG WAIT <=$375**. None of the three Defensive names passes near-term upside/downside: **MDLZ WAIT <=$58, PEP WAIT <=$125, OLLI WAIT <=$78 plus underlying comp-sales recovery**. Limits are analyst research hypotheses, not orders.
+- Recorded transparent 12–18-month adjusted-EPS × hypothetical terminal-P/E bear/base/bull *sensitivity cases*, not discounted intrinsic values, and separate price/event limitations. No financial trade, broker instruction or portfolio data.
+- Added [event scheduling clarification](research/decisions/2026-11-03-earnings-scheduling-clarification.md) (v1.2): a newly reported company with no next calendar date can be reviewed conditionally on a same-day IR check rather than be frozen for months; 7+2 safety windows unchanged.
+- See [decision review](research/reviews/2026-11-03-invest-now-two-lanes.md) and [action queue](research/watchlists/2026-11-03-now-later-decisions.md).
+
 ## 2026-11-03 — Two owner-nominated premium-valuation businesses
 - Explicitly documented that **Healthcare and Consumer Defensive have been screened but not yet fully evaluated for purchase decisions**.
 - Added Intuitive Surgical (ISRG) to Healthcare and GE Vernova (GEV) to Industrials. Both fail v2 forward P/E <25 and are labelled exceptions, not screen hits.
