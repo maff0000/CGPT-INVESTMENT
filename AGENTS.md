@@ -21,3 +21,6 @@ Publish only public research and concise methodology summaries. Exclude private 
 Use reusable templates. Assess actual business exposures, including overlapping AI/data-centre capital-spending exposure, rather than relying on sector labels. Screen results never establish fair value or authorise trades.
 
 Before committing: check relative links, all nine original symbols, evidence labels and public-content hygiene. After committing: read remote branch and files back and report the verified SHA. Never claim a failed or unverified write succeeded.
+
+## Strategic long-horizon candidate distinction
+GOOGL is flagged in [STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md) as an owner-preferred long-horizon compounder **for professional adviser consideration**, distinct from tactical rotation opportunities. Read the actual decision record rather than interpreting the owner's interest as an executed order, approved target weight or validated risk-free valuation. Assess capex/AI monetisation and concentration objectively, refresh primary evidence and market prices, keep all personal finance information out of the public repo. Preserve the independent `claude-research/` materials already present.

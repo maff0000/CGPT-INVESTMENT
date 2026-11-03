@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — STRATEGIC-001: Alphabet long-horizon preference
+- Owner expressed **long-term strategic ownership interest in Alphabet/GOOGL via professional wealth management**, separate from tactical sector rotation.
+- Documented [GOOGL thesis and diligence requirements](research/decisions/2026-11-03-alphabet-long-term.md): Q3 cash flow, $195–205bn 2026 capex guidance, rising expected 2027 capex, Search disruption and Cloud growth, valuation, concentration and staged-entry review.
+- **No purchase, allocation, pricing instruction or portfolio disclosure**; original weekly all-sector nine-name list and unrelated Claude research untouched.
+
 ## 2026-11-03 — Weekly All-Sector research automation enabled
 - Created and confirmed a recurring **Monday morning Europe/London** ChatGPT task for at least seven verified investment research ideas per week, first run expected 2026-11-09.
 - The task attempts GitHub append only when appropriate connector access is present; **a schedule is not evidence of successful future research or commit**. No trading or broker actions are configured.

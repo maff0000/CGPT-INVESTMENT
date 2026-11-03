@@ -22,6 +22,9 @@ On **2026-11-03**, two owner-nominated research candidates were added: **Intuiti
 
 These sector roles and company theses are **PROVISIONAL**. The original nine are a starting shortlist, not nine confirmed screen passes. Near-misses and recovery candidates must be labelled. Aim for 3–5 research candidates per lane and roughly 10–15 weekly reviews, allowing fewer when quality is insufficient. The initial nine do not imply that the weekly target has been met. Do not force new names or purchases.
 
+## Strategic long-term equities — additional owner-interest track
+**GOOGL (Alphabet)** was elevated on 2026-11-03 as an **owner-preferred 5–10-year core compounder candidate for professional wealth-management review**, distinct from tactical rotation entries. **Owner conviction is not an independently approved investment, allocation or executed trade.** Record the 2026 capex/AI cash-flow risks and assess staged accumulation and concentration privately with the adviser. Read [STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md). GOOGL remains in the weekly all-sector pipeline and its original evidence snapshot is unchanged.
+
 ## Two decision queues — active from 2026-11-03
 - **NOW:** decision-ready priority review, with current price, earnings gate, valuation/risk scenarios, and a concise **buy / wait / reject** outcome. A small *starter* may be appropriate despite bounded uncertainty; that is different from gambling. See [decision-to-invest](docs/decision-to-invest.md).
 - **LATER:** quality or recovering names with a specific entry price, earnings result, catalyst or confirmation event to watch. The weekly three-sector structure is a **discovery funnel**, not a ban on acting.
@@ -54,6 +57,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |
 | **Parallel eight-sector / AI second-phase search** | [All-Sector opportunity process](docs/all-sector-opportunity-pipeline.md), [pilot review](research/reviews/2026-11-03-all-sector-pilot.md), [9 company list](research/watchlists/2026-11-03-all-sector-09.md) |
+| **Long-horizon strategic holding thesis** | [Alphabet / GOOGL — STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
 | Daily and weekly operating procedure | [Review workflow](docs/review-workflow.md) |

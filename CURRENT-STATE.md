@@ -8,6 +8,9 @@ The investor additionally requires **>=7 evidence-qualified potential investment
 
 **Weekly automation:** enabled **Monday mornings Europe/London** from 2026-11-09 for the >=7 candidate report. It may write dated GitHub research if the scheduled session has authorised connector access; otherwise it must report in-chat and disclose absence of a GitHub update. It is not a broker or trading automation. Verify each week's actual completion; do not assume that scheduling proves the research ran.
 
+## New strategic-equity preference — GOOGL
+**2026-11-03:** the investor expressed a strong long-term **BUY thesis** for **Alphabet (GOOGL)** through professional wealth management rather than as an opportunistic short-term rotation trade. Record the preference as **owner conviction; no actual purchase or externally approved allocation**. A 5–10-year compounder assessment should look at Search durability, Google Cloud/TPU profit conversion, 2026 capex $195–205bn and management's expectation of materially higher 2027 capex, negative Q3 FCF, share/FX concentration, and a staged-entry proposal **for adviser/investor decision**. At the quoted 2026-11-03 2:22PM EST snapshot GOOGL was ~$279.36 / 20.25x forward earnings. Read [STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md) and refresh prices before acting. It **remains** part of the weekly >=7 cross-sector discovery; its strategic status doesn't allow unverified weekly duplication or bypass earnings/event gates.
+
 ## Mission
 We are identifying **immediate, measured-risk investments AND future candidates**, not operating an endless research machine. Method: **quality at a reasonable price (QARP) plus sector/stock rotation/momentum**. Three discovery lanes: 1 emerging (**Industrials**), 2 established (**Healthcare; Consumer Defensive**). These are subject to weekly revalidation.
 
