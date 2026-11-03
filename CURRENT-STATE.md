@@ -6,6 +6,8 @@ The investor additionally requires **>=7 evidence-qualified potential investment
 
 **Pilot nine:** NET, ZS, GOOGL, V, BKNG, NEE, LIN, EQIX, XOM. The following remain *initial all-sector investment ideas*, not nine purchase approvals. **NET Nov5 Q3** and **BKNG Nov3 Q3** hard earnings holds. **GOOGL, XOM, LIN** are first quantitative near-term assessment priorities; all prices and ratios are as of Nov3 and subject to freshness. Cloudflare AI Search/MCP and Zscaler agent protection are real product theses, not automatically realised revenue or attractive shares.
 
+**Weekly automation:** enabled **Monday mornings Europe/London** from 2026-11-09 for the >=7 candidate report. It may write dated GitHub research if the scheduled session has authorised connector access; otherwise it must report in-chat and disclose absence of a GitHub update. It is not a broker or trading automation. Verify each week's actual completion; do not assume that scheduling proves the research ran.
+
 ## Mission
 We are identifying **immediate, measured-risk investments AND future candidates**, not operating an endless research machine. Method: **quality at a reasonable price (QARP) plus sector/stock rotation/momentum**. Three discovery lanes: 1 emerging (**Industrials**), 2 established (**Healthcare; Consumer Defensive**). These are subject to weekly revalidation.
 

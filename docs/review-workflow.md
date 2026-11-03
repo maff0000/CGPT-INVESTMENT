@@ -1,5 +1,5 @@
 # Daily and weekly reviews
-All journal dates use Europe/London. Preserve the market observation timezone and distinguish an intraday snapshot from a completed session. These procedures do not create scheduled automations.
+All journal dates use Europe/London. Preserve the market observation timezone and distinguish an intraday snapshot from a completed session. As of 2026-11-03, a **separate Monday-morning Europe/London ChatGPT automation** was enabled for the parallel ALL-SECTOR-001 seven-plus candidate report. That schedule does not guarantee a GitHub write, fresh market-data access or successful delivery. The manual daily/three-sector reviews are not scheduled by this file.
 
 ## Two actionable queues
 Keep an **NOW** decision queue and **LATER** opportunity pipeline per [decision policy](decision-to-invest.md). The aim is *measured investing now as well as future discovery*. An output containing only more research candidates, with no buy / wait / reject decision on the highest-priority idea, is incomplete.

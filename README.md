@@ -43,7 +43,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 - Historical Finviz counts, ratios, sector returns and earnings dates have not been rerun or independently confirmed in this initialisation.
 - No candidate has a final broker-ready entry decision; **ALGN is the first priority for a near-term starter-position assessment**, and EME/MDLZ have explicit WAIT verdicts at the observed snapshots. See [decision desk](research/reviews/2026-11-03-investment-decision-desk.md).
 - **Earnings gate adopted for the manual pilot:** no new entry during the **seven exchange trading sessions before earnings**, including announcement day; require **two complete subsequent regular sessions** and fresh analysis after release. See [earnings gates](docs/earnings-risk-gates.md) and the [dated correction](research/decisions/2026-11-03-earnings-gate-adoption.md).
-- No automated monitoring, scheduled jobs, market-data feeds or application have been deployed.
+- A ChatGPT **weekly ALL-SECTOR research review** automation is now **enabled for Monday mornings, Europe/London, beginning 2026-11-09**. The schedule is a request to produce a researched report, **not** a guaranteed GitHub commit or a live-price feed. No application, broker integration or execution automation deployed.
 
 ## Navigation
 | Purpose | File |

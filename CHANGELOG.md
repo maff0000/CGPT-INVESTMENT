@@ -1,6 +1,10 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — Weekly All-Sector research automation enabled
+- Created and confirmed a recurring **Monday morning Europe/London** ChatGPT task for at least seven verified investment research ideas per week, first run expected 2026-11-09.
+- The task attempts GitHub append only when appropriate connector access is present; **a schedule is not evidence of successful future research or commit**. No trading or broker actions are configured.
+
 ## 2026-11-03 — ALL-SECTOR-001: weekly seven-plus opportunity programme
 - Added a **parallel** search across all eight sectors beyond the three existing priority lanes; target **>=7 substantiated potential investments per week**, not seven purchases or manufactured ideas.
 - Established explicit **AI second-phase/AI adoption/agentic security** lens with a quality+price+event requirement and an independent non-AI control.
