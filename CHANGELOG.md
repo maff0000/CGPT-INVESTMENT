@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — STRATEGIC-002: staged accumulation methodology
+- Added a **public, generic staged-acquisition framework** for long-horizon strategic equities, with portfolio concentration and liquidity checks preceding any position increase.
+- Documented illustrative **35%/30%/35%** tranches, conditional rather than automatic purchases, post-earnings validation, downside stress and reasons to stop additional buys.
+- The strategy records **no personal holdings, cost basis, current losses, manager identity, approved amounts or trades**. See [framework](docs/strategic-staged-accumulation.md) and [dated record](research/decisions/2026-11-03-alphabet-staged-framework.md).
+
 ## 2026-11-03 — STRATEGY-001: three complementary investment mandates
 - Adopted **strategic 5–10-year compounders**, **immediate measured-risk opportunities**, and **future candidates** as three complementary outcomes. Strategy horizon and **NOW/LATER entry status are separate**, so long-term ownership does not require positive short-term sector momentum nor permit price-independent purchases.
 - Made [investment strategy](docs/investment-strategy.md) canonical, with [adopted decision record](research/decisions/2026-11-03-three-mandate-strategy.md). Updated README, AGENTS, CURRENT-STATE and near-term action policy. Preserved the existing GOOGL conviction, prior dated records and independent research.
