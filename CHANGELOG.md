@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — INDEPENDENT-001: challenge conviction, prohibit narrative-led endorsements
+- Owner explicitly requires the Architect to **challenge enthusiasm with evidence-based investment protocol rather than follow unsupported perceptions**.
+- Added mandatory six-stage independent challenge process, source grades, contradictory evidence requirement, after-capex valuation, risk permissions, and dissenting BUY/WAIT/REJECT verdicts.
+- [Alphabet claim-evidence challenge](research/reviews/2026-11-03-alphabet-claim-evidence-challenge.md): Google AI/Search/TPU strengths verified; necessary OpenAI/Anthropic search dependence, exclusive Cloudflare partnership and near-term quantum earnings **not verified**; Cloudflare/OpenAI pilot and regulatory remedies are contrary evidence.
+- Preserved prior dated conviction/entry records as history, while clarifying **strong strategic business thesis != current purchase endorsement**. No private holdings or instructions published.
+
 ## 2026-11-03 — STRATEGIC-004: Alphabet vs Microsoft/Amazon, early-entry thesis
 - Recorded the owner's greater business conviction in **GOOGL relative to MSFT and AMZN**, with 2026 Q3/2027 Q1 primary operating evidence, Nov 3 indicative forward multiples, downside scenarios and the distinction between **a 40% sector decline, a 40% share decline from an earlier peak and a fresh 40% share decline**.
 - Corrected six-month GOOGL historical price change to approximately **−27%** (May 1 reference to Nov 3), subject to the vendor's recorded close.

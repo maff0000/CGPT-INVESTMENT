@@ -1,5 +1,7 @@
 # Decision-oriented investment research — adopted 2026-11-03
 
+**Independent-judgement requirement:** apply [INDEPENDENT-001](independent-investment-challenge.md) to every proposed BUY, especially owner-favoured ideas. A strong narrative or user enthusiasm is not evidence of fair value. Find counterarguments and produce an objective, price-aware verdict with risk permission. Do not use a prior paper loss or speculation about unannounced partnerships to justify purchase.
+
 ## Objective
 Identify **investable opportunities now**, while maintaining a dated pipeline of **future opportunities**. Research throughput is not success. Each regular review should answer **BUY (starter/full conditional), WAIT, or REJECT** for the highest-priority names, with clear evidence and an explicit reason for waiting where applicable. A missed opportunity is a meaningful outcome, not a permanent excuse to investigate.
 

@@ -5,6 +5,8 @@ Public, dated research journal for **quality at a reasonable price (QARP)** with
 
 **Current parallel mandate:** [ALL-SECTOR opportunity process](docs/all-sector-opportunity-pipeline.md) targets **at least seven substantiated potential investment ideas per week** from **the eight sectors outside Industrials, Healthcare and Consumer Defensive**. This is in addition to the original three-lane rotation engine, not its replacement. [First nine-name pilot](research/reviews/2026-11-03-all-sector-pilot.md) and [all-sector watchlist](research/watchlists/2026-11-03-all-sector-09.md).
 
+**Independence doctrine:** research must **challenge owner enthusiasm instead of echoing it**. Distinguish verified facts, inference and speculation; actively seek counterevidence, challenge valuation and downside, and issue a dissenting WAIT/REJECT if the thesis is not yet investable. [Canonical independent judgement protocol](docs/independent-investment-challenge.md), [decision](research/decisions/2026-11-03-independent-judgement.md), [Alphabet reality check](research/reviews/2026-11-03-alphabet-claim-evidence-challenge.md).
+
 ## Continuity: read this first
 Established 2026-11-03. The objective is to identify **investments worth acting on now AND future candidates**, with disciplined QARP, measured risk, dated decisions and prospective outcomes. Research must produce **actionable BUY STARTER / BUY FULL / WAIT / REJECT judgments**, not perpetual analysis. This public repository is research: it contains no actual purchases, private positions, account balances or automatic trading.
 
@@ -69,6 +71,8 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Canonical three-mandate strategy** | [Strategic compounders / NOW / future candidates](docs/investment-strategy.md) and [STRATEGY-001](research/decisions/2026-11-03-three-mandate-strategy.md) |
+| **Mandatory independent judgement** | [Owner-conviction challenge protocol](docs/independent-investment-challenge.md) and [adopted decision](research/decisions/2026-11-03-independent-judgement.md) |
+| **GOOGL claim-evidence assessment** | [Full-stack AI thesis independent challenge](research/reviews/2026-11-03-alphabet-claim-evidence-challenge.md) |
 | **Opportunity reserve / crash deployment doctrine** | [Gilts and liquidity as future equity capacity](docs/opportunity-reserve-deployment.md) |
 | **Alphabet full-stack AI thesis** | [STRATEGIC-003](research/decisions/2026-11-03-alphabet-full-stack-thesis.md), [GOOGL vs MSFT/AMZN entry comparison](research/decisions/2026-11-03-alphabet-relative-conviction-entry.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |

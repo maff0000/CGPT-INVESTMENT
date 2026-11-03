@@ -1,6 +1,8 @@
 # Investment strategy — three complementary mandates
 **Version:** STRATEGY-001 | **Adopted:** 2026-11-03 (Europe/London) | **Scope:** public research and decision discipline only.
 
+**Mandatory decision authority:** any high-conviction or owner-nominated investment must pass [INDEPENDENT-001](independent-investment-challenge.md): independent fact checking, at least two counterarguments, after-capex valuation and downside, earnings/risk permissions, and a reasoned dissenting WAIT/REJECT when warranted. The owner supplies ideas; the research Architect owns the judgement. Business conviction never itself authorises a purchase.
+
 ## Objective
 Use disciplined research to identify **durable, multi-year compounding ownership opportunities**, **measured-risk purchases available now**, and **future candidates with clear catalysts or attractive entry conditions**. The goal is rational deployment of capital over time, **not a perpetual research machine, forced weekly trading or speculative bets**.
 
