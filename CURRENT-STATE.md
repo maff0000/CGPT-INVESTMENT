@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## PUBLIC collaboration standard — 2026-11-03
+The approved [Independent Research Relationship](docs/independent-research-relationship.md) captures a concise, non-identifying working agreement: hypotheses come from the research sponsor; the research function challenges them using independently verified evidence, competing explanations, valuation and downside; final authority stays with the investor/adviser. **Do not publish private portfolio application, actual transactions, personalised conviction or transcripts** as public case studies.
+
 ## INDEPENDENT-001 — Mandatory investment challenge, 2026-11-03
 The owner explicitly requires the research Architect **never to be led by enthusiasm or unsupported perceptions**. All company suggestions must be independently evaluated: verify facts, label inference/speculation, actively challenge the thesis with competing explanations, stress after-capex owner cash flow and valuation, respect risk/event/concentration, then issue a BUY/WAIT/REJECT with explicit dissent and trigger. Owner conviction **does not grant buy authority** and never substitutes for a price-aware case. Read [canonical challenge policy](docs/independent-investment-challenge.md) and [adoption record](research/decisions/2026-11-03-independent-judgement.md).
 

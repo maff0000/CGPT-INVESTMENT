@@ -14,6 +14,8 @@ Separate VERIFIED sourced facts, REPORTED historical observations, PROVISIONAL h
 
 Use YYYY-MM-DD journal dates in Europe/London. Record market timezone, observation time, source publication and retrieval times where relevant. Append corrections to dated records rather than rewriting history.
 
+Before any public write, apply the [public working agreement](docs/independent-research-relationship.md): describe investment collaboration generically; do not republish an identifiable individual's preferences, arguments, proposed orders, portfolio strategy, private decision thresholds or raw dialogue as a case study. Default to de-identified principles; when an account-specific example is needed, keep it outside this public repository. Review commit messages for disclosures too.
+
 Publish only public research and concise methodology summaries. Exclude private conversation transcripts or identifiers, personal data, account balances, positions, transactions, credentials, local paths and licensed bulk datasets without redistribution rights.
 
 **Do not let research delay an investment decision indefinitely.** Maintain distinct NOW and LATER queues; every cycle explicitly ranks near-term buy opportunities and produces a BUY STARTER / BUY FULL / WAIT / REJECT reasoned verdict for the highest priority. A justified starter is possible despite bounded uncertainty; hard event gates and credible downside sizing remain. Read docs/decision-to-invest.md and latest action review before proceeding.

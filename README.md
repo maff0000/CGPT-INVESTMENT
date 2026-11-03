@@ -5,6 +5,8 @@ Public, dated research journal for **quality at a reasonable price (QARP)** with
 
 **Current parallel mandate:** [ALL-SECTOR opportunity process](docs/all-sector-opportunity-pipeline.md) targets **at least seven substantiated potential investment ideas per week** from **the eight sectors outside Industrials, Healthcare and Consumer Defensive**. This is in addition to the original three-lane rotation engine, not its replacement. [First nine-name pilot](research/reviews/2026-11-03-all-sector-pilot.md) and [all-sector watchlist](research/watchlists/2026-11-03-all-sector-09.md).
 
+**Public collaboration standard:** [Independent Research Relationship](docs/independent-research-relationship.md) defines evidence-led challenge, decision responsibility and strict publication limits without describing individual investor circumstances.
+
 **Independence doctrine:** research must **challenge owner enthusiasm instead of echoing it**. Distinguish verified facts, inference and speculation; actively seek counterevidence, challenge valuation and downside, and issue a dissenting WAIT/REJECT if the thesis is not yet investable. [Canonical independent judgement protocol](docs/independent-investment-challenge.md), [decision](research/decisions/2026-11-03-independent-judgement.md), [Alphabet reality check](research/reviews/2026-11-03-alphabet-claim-evidence-challenge.md).
 
 ## Continuity: read this first

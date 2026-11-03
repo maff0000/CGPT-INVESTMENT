@@ -1,6 +1,10 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — PUBLIC-001: non-identifying investment collaboration agreement
+- Published a concise [working agreement](docs/independent-research-relationship.md) defining the independent-research relationship and constructive disagreement, using only a generic anonymised example.
+- Strengthened the public-write check to exclude investor-specific preferences, portfolio circumstances, private decision thresholds, proposed orders and personal conversation excerpts. Existing dated research is preserved; no history rewriting or public disclosure of personal facts was performed.
+
 ## 2026-11-03 — INDEPENDENT-001: challenge conviction, prohibit narrative-led endorsements
 - Owner explicitly requires the Architect to **challenge enthusiasm with evidence-based investment protocol rather than follow unsupported perceptions**.
 - Added mandatory six-stage independent challenge process, source grades, contradictory evidence requirement, after-capex valuation, risk permissions, and dissenting BUY/WAIT/REJECT verdicts.
