@@ -22,6 +22,11 @@ On **2026-11-03**, two owner-nominated research candidates were added: **Intuiti
 
 These sector roles and company theses are **PROVISIONAL**. The original nine are a starting shortlist, not nine confirmed screen passes. Near-misses and recovery candidates must be labelled. Aim for 3–5 research candidates per lane and roughly 10–15 weekly reviews, allowing fewer when quality is insufficient. The initial nine do not imply that the weekly target has been met. Do not force new names or purchases.
 
+## Strategic full-stack AI thesis and opportunity reserves — November 2026
+**Alphabet (GOOGL)** is supported by a high-conviction *owner thesis* about Google's web information/indexing advantage, mass-market distribution, Search/advertising monetisation, custom TPU chips, Gemini models and Cloud enterprise AI. The potential exists for **second-phase AI reinforcement of existing profit engines**, not merely a model-training race. Treat this as a testable economic thesis with significant capex/FCF, competition and antitrust risks; business conviction does not imply buying at any valuation. See [full-stack thesis](research/decisions/2026-11-03-alphabet-full-stack-thesis.md).
+
+High-quality gilts/liquid balances may serve as **deployable opportunity reserves**, not an immutable permanent bond allocation. The aim is to build equity exposure over time without **mechanically buying every fall into a prolonged crash**. Maintain separate strategic-accumulation and broad-dislocation programmes, shared capital limits and evidence gates. See [opportunity reserve policy](docs/opportunity-reserve-deployment.md) and [dated decision](research/decisions/2026-11-03-opportunity-reserve-clarification.md). No private allocation amounts recorded.
+
 ## Three complementary investment mandates — STRATEGY-001
 The adopted investment strategy has **three complementary outcomes**: **(1) strategic long-horizon compounders** (5–10-year business ownership thesis and staged wealth-management assessment); **(2) immediate measured-risk opportunities** (priced conditional buy/wait/reject decisions); and **(3) future candidates** (explicit price/event/fundamental triggers). **Long-term thesis classification and current entry readiness are separate**: a strategic compounder can be BUY/WAIT depending on valuation and risk. Neither technology-sector fear nor temporary weak momentum is by itself a veto on an exceptional long-term business.
 
@@ -61,6 +66,8 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | Agent continuity and public-data rules | [AGENTS.md](AGENTS.md) |
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Canonical three-mandate strategy** | [Strategic compounders / NOW / future candidates](docs/investment-strategy.md) and [STRATEGY-001](research/decisions/2026-11-03-three-mandate-strategy.md) |
+| **Opportunity reserve / crash deployment doctrine** | [Gilts and liquidity as future equity capacity](docs/opportunity-reserve-deployment.md) |
+| **Alphabet full-stack AI thesis** | [STRATEGIC-003](research/decisions/2026-11-03-alphabet-full-stack-thesis.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
 | **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |

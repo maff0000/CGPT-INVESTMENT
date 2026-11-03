@@ -6,6 +6,9 @@ Define how to move from **STRATEGIC COMPOUNDER / attractive ownership thesis** t
 
 The candidate business is evaluated independently of existing cost basis. Prior loss/gain is not a reason to buy, sell, or alter the business valuation. The investor/adviser privately decides capital available and portfolio suitability; **no holdings, personal wealth, transactions, target weights assigned to any individual, tax status or custodian details belong in this public repository.**
 
+## Relationship to the market-wide opportunity reserve
+This is a **company-specific illustrative staging tool**, not a mandate to spend long-dated reserve capital or to keep all gilts forever. An independent [opportunity reserve policy](opportunity-reserve-deployment.md) governs how eligible maturity/liquid capital can fund equity accumulation **over time or during broad market dislocations**. Both plans draw on a single authorised risk budget, so a tranche of a strategic name reduces capital left for a future correction. **No price-fall tranche is automatic**: prolonged bear markets can continue repricing businesses while their earnings estimates deteriorate. Existing 35/30/35 examples are optional, not mandatory or personal portfolio instructions.
+
 ## Step 1 — risk and concentration permission BEFORE staging
 - Review portfolio-equity allocation and **total look-through exposure** (direct shares + index funds + megacap/AI/highly correlated securities), alongside the wider liquidity and liability plan. The investor and professional adviser choose the final maximum.
 - As an illustrative discussion starting point only, a single-name limit **around 10–15% of a distinct managed equity sleeve** may be considered, with a separate total-portfolio cap. **This is not a universal or authorised allocation target** and may be too large for a risk-averse portfolio.

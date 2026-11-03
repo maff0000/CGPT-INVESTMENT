@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — STRATEGIC-003 / OPPORTUNITY-RESERVE-001: full-stack Alphabet and dry-powder doctrine
+- Recorded Alphabet's **full-stack AI business thesis** spanning index/discovery, distribution, Search monetisation, custom TPU chips, models and enterprise Cloud. Flagged capex/FCF, AI search ad-yield and regulatory failure cases; thesis is owner conviction, not a price-independent approved buy.
+- Clarified **gilt/liquidity reserves as potential funding for long-term equities and market dislocations**, not a permanently ring-fenced defensive allocation. Added anti-mechanical laddering policy: market regime + company fundamentals + refreshed valuation + liquidity/correlation budget must all permit each tranche.
+- New [GOOGL thesis](research/decisions/2026-11-03-alphabet-full-stack-thesis.md), [reserve policy](docs/opportunity-reserve-deployment.md) and [dated clarification](research/decisions/2026-11-03-opportunity-reserve-clarification.md). No account amounts or positions published.
+
 ## 2026-11-03 — STRATEGIC-002: staged accumulation methodology
 - Added a **public, generic staged-acquisition framework** for long-horizon strategic equities, with portfolio concentration and liquidity checks preceding any position increase.
 - Documented illustrative **35%/30%/35%** tranches, conditional rather than automatic purchases, post-earnings validation, downside stress and reasons to stop additional buys.

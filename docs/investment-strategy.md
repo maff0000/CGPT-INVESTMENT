@@ -12,6 +12,9 @@ The three mandates have distinct decision clocks, but are not mutually exclusive
 | **2. Immediate opportunities** | Available **today or soon** at a price where forecast reward justifies a quantified, tolerable risk; can be cyclical, growth, recovery or quality | Price-aware purchase decision with the **7-before/2-after** earnings gate; reassess frequently when price or catalyst changes | **CONDITIONAL BUY STARTER / BUY FULL / WAIT / REJECT**, price ceiling, bear/base/bull and size/risk rationale |
 | **3. Future candidates** | Valuable businesses whose current valuation, event risk, momentum or operating evidence is not yet attractive | Date/event/price-driven watchlist; review at defined triggers | Precise trigger for promotion, change in thesis, evidence gap, review date and invalidation conditions |
 
+## Liquidity and opportunity reserve architecture
+A proportion of high-quality gilts/maturing liquid assets may be held as **deployable opportunity capital**, not necessarily a permanent long-run bond weight. Evaluate two complementary, risk-budgeted equity deployment regimes: deliberate accumulation of strategic compounders at attractive valuations, and additional purchases during meaningful broad-market dislocations. **Do not automatically buy every percentage decline in a bear market**: require updated fundamental, valuation, market regime and liquidity/portfolio checks. A bond **maturity ladder** and an equity **falling-price ladder** are different things. See [opportunity reserve policy](opportunity-reserve-deployment.md).
+
 ## Strategic compounder lens (distinct from short-term rotation)
 - Test long-run earnings and owner-cash compounding, not just a low forward P/E, short-term price momentum or current sector leadership.
 - Evaluate market structure, competitive advantages, customers' switching costs, pricing power, management allocation, dilution, return on incremental invested capital and balance-sheet resilience.
