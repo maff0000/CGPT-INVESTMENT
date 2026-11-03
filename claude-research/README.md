@@ -39,5 +39,6 @@ Every `companies/<TICKER>.md` uses the same sections in the same order: At a gla
 | Study | As of | Scope | Stale after |
 |---|---|---|---|
 | [Nine-candidate deep dive](2026-11-03-nine-candidate-deep-dive/README.md) | 2026-11-03 | ZWS, EME, FERG · ALGN, GMED, ADMA · MDLZ, PEP, OLLI | ADMA 2026-11-04, GMED 2026-11-05, FERG 2026-11-09; others at their next results |
+| [Thirteen new candidates](2026-11-03-thirteen-new-candidates/README.md) | 2026-11-03 | Lanes: ISRG, GEV, UL, CCEP · All-sector: GOOGL, XOM, LIN, ZS, V, EQIX, BKNG, NET, NEE | UL 2026-11-04 (Investor Event), NET 2026-11-05, BKNG once its Q3 10-Q is filed; others at their next results |
 
 Research only, not personal investment advice.
