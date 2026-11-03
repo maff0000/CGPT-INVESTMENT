@@ -15,6 +15,9 @@ This is a **company-specific illustrative staging tool**, not a mandate to spend
 - Only budget new purchases **up to available headroom**. If present exposure already meets the limit, **do not add**, even if market price looks cheaper.
 - Financial adviser controls appropriate currency, fees, execution and liquidity arrangements; do not use essential-reserve or property-related capital without deliberate separate approval.
 
+## Owner conviction vs illustrative tranche percentages
+The **35/30/35** percentage split below is an example only. A pre-approved investor may choose a **larger initial conviction tranche** for a deeply researched strategic compounder at a sensible valuation, while leaving later tranches entirely optional. Any initial increase **must** be within the independently selected maximum stock weight, liquidity reserve and loss tolerance; bigger first tranches imply proportionately less room for later buying. The size of a prior paper loss must not be a reason to increase ownership. See [GOOGL-relative-conviction note](../research/decisions/2026-11-03-alphabet-relative-conviction-entry.md). This public repository records no private quantities or orders.
+
 ## Step 2 — use three conditional tranches, not an unconditional averaging-down ladder
 For *any adviser-approved incremental budget* (distinct from current holdings), illustrative split:
 

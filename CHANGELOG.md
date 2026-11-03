@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — STRATEGIC-004: Alphabet vs Microsoft/Amazon, early-entry thesis
+- Recorded the owner's greater business conviction in **GOOGL relative to MSFT and AMZN**, with 2026 Q3/2027 Q1 primary operating evidence, Nov 3 indicative forward multiples, downside scenarios and the distinction between **a 40% sector decline, a 40% share decline from an earlier peak and a fresh 40% share decline**.
+- Corrected six-month GOOGL historical price change to approximately **−27%** (May 1 reference to Nov 3), subject to the vendor's recorded close.
+- A limited initial strategic-entry research opinion is conditionally acceptable **without obliging later averaging down or exhausting opportunity reserves**; no amount or private portfolio information entered. See [decision record](research/decisions/2026-11-03-alphabet-relative-conviction-entry.md).
+
 ## 2026-11-03 — STRATEGIC-003 / OPPORTUNITY-RESERVE-001: full-stack Alphabet and dry-powder doctrine
 - Recorded Alphabet's **full-stack AI business thesis** spanning index/discovery, distribution, Search monetisation, custom TPU chips, models and enterprise Cloud. Flagged capex/FCF, AI search ad-yield and regulatory failure cases; thesis is owner conviction, not a price-independent approved buy.
 - Clarified **gilt/liquidity reserves as potential funding for long-term equities and market dislocations**, not a permanently ring-fenced defensive allocation. Added anti-mechanical laddering policy: market regime + company fundamentals + refreshed valuation + liquidity/correlation budget must all permit each tranche.

@@ -22,6 +22,9 @@ On **2026-11-03**, two owner-nominated research candidates were added: **Intuiti
 
 These sector roles and company theses are **PROVISIONAL**. The original nine are a starting shortlist, not nine confirmed screen passes. Near-misses and recovery candidates must be labelled. Aim for 3–5 research candidates per lane and roughly 10–15 weekly reviews, allowing fewer when quality is insufficient. The initial nine do not imply that the weekly target has been met. Do not force new names or purchases.
 
+## Alphabet early strategic entry versus market-crash reserve
+As of 2026-11-03, a [GOOGL vs MSFT/AMZN strategic comparison](research/decisions/2026-11-03-alphabet-relative-conviction-entry.md) records the owner's stronger Alphabet conviction and a **limited initial-purchase research case** without precommitting future tranches. GOOGL was roughly **27% below its 2026-05-01 close** near $280; a 40% decline from that six-month reference and a new 40% fall from today's level are **different stress cases**. This is public research **without private holdings or orders**. Valuation, broad-market dislocation reserves, earnings gates and concentration remain required.
+
 ## Strategic full-stack AI thesis and opportunity reserves — November 2026
 **Alphabet (GOOGL)** is supported by a high-conviction *owner thesis* about Google's web information/indexing advantage, mass-market distribution, Search/advertising monetisation, custom TPU chips, Gemini models and Cloud enterprise AI. The potential exists for **second-phase AI reinforcement of existing profit engines**, not merely a model-training race. Treat this as a testable economic thesis with significant capex/FCF, competition and antitrust risks; business conviction does not imply buying at any valuation. See [full-stack thesis](research/decisions/2026-11-03-alphabet-full-stack-thesis.md).
 
@@ -67,7 +70,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | Research method and scoring | [QARP methodology](docs/qarp-methodology.md) |
 | **Canonical three-mandate strategy** | [Strategic compounders / NOW / future candidates](docs/investment-strategy.md) and [STRATEGY-001](research/decisions/2026-11-03-three-mandate-strategy.md) |
 | **Opportunity reserve / crash deployment doctrine** | [Gilts and liquidity as future equity capacity](docs/opportunity-reserve-deployment.md) |
-| **Alphabet full-stack AI thesis** | [STRATEGIC-003](research/decisions/2026-11-03-alphabet-full-stack-thesis.md) |
+| **Alphabet full-stack AI thesis** | [STRATEGIC-003](research/decisions/2026-11-03-alphabet-full-stack-thesis.md), [GOOGL vs MSFT/AMZN entry comparison](research/decisions/2026-11-03-alphabet-relative-conviction-entry.md) |
 | **Immediate-investment decision policy** | [Decision to invest](docs/decision-to-invest.md) and [decision record](research/decisions/2026-11-03-investment-urgency.md) |
 | **NOW/LATER current assessment** | **[CURRENT-STATE](CURRENT-STATE.md)**, [cycle-03 investment decisions](research/reviews/2026-11-03-cycle-03-final.md), [13-name watchlist](research/watchlists/2026-11-03-now-later-cycle-03.md); earlier [two-lane desk](research/reviews/2026-11-03-invest-now-two-lanes.md) |
 | Sector/industry selection | [Sector rotation](docs/sector-rotation.md) |

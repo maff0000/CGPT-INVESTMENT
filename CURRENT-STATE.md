@@ -11,6 +11,9 @@ The investor additionally requires **>=7 evidence-qualified potential investment
 
 **Weekly automation:** enabled **Monday mornings Europe/London** from 2026-11-09 for the >=7 candidate report. It may write dated GitHub research if the scheduled session has authorised connector access; otherwise it must report in-chat and disclose absence of a GitHub update. It is not a broker or trading automation. Verify each week's actual completion; do not assume that scheduling proves the research ran.
 
+## Latest Alphabet entry assessment — 2026-11-03
+**STRATEGIC-004:** owner business preference GOOGL over MSFT/AMZN is recorded as a hypothesis to assess, **not evidence of superior returns or any trade**. GOOGL was approximately **−27% from the May 1 2026 closing reference** at ~$280. An illustrative 40% decline from the *May reference* means ~$231, versus **$168 for a new 40% decline from today's quote**. These are distinct scenarios; sector decline does not force one company's price. A **limited initial strategic entry** can be evaluated before a broad crash if cash reserve, valuation, look-through concentration, and seven-before/two-after earnings checks pass. Additional buys must be separately justified by new economics, not auto-triggered on drops. Read [dated comparison](research/decisions/2026-11-03-alphabet-relative-conviction-entry.md). No personal balances or orders.
+
 ## Latest owner investment doctrine — 2026-11-03
 **GOOGL:** owner high-conviction potential 5–10-year business ownership based on mutually reinforcing **index/search data acquisition, user distribution, commercial search/advertising, Gemini, TPUs and enterprise Cloud**. Record as a testable long-term thesis, **not proof of uniquely best company or an order**. The main risks are revenue and margin mix, search ad cannibalisation, heavy AI capex, return on incremental capital and regulation. Read [STRATEGIC-003](research/decisions/2026-11-03-alphabet-full-stack-thesis.md).
 
