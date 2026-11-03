@@ -1,30 +1,33 @@
 # Earnings and material-event gates
-## Confirmed research intent
-Avoid considering new purchases around earnings uncertainty. Recent results may improve the evidence base after the release and market response have been reviewed. A favourable release alone does not clear valuation, momentum or other event risks.
+Version: **EARNINGS-GATE-v1.1** — adopted pilot policy, **2026-11-03**. Supersedes the proposed five-session rule in the original bootstrap. See [dated amendment](../research/decisions/2026-11-03-earnings-gate-adoption.md). Previous five-session text was a recovery/documentation error, **not** the agreed user decision.
 
-## Proposed operational window — pending confirmation
-The supplied history does not specify a numerical exclusion window. The following is a PROPOSED conservative research gate, not a recovered agreement:
-- Block entry review during the five exchange trading sessions preceding the release and on the release day.
-- After a release, require two full regular trading sessions that start after publication to finish, plus a review of the release, guidance, filing and price response.
-- For an after-close release, counting starts with the next regular session. For a before-open release, that day's full session can count. For an intraday release, counting starts the next session.
-- Use the listing exchange holiday calendar and release timezone. Unknown release time remains blocked until timing is resolved.
+## Rule — for new purchase / addition *assessment*, not managing existing holdings
+- **Pre-announcement:** prohibit a new entry or addition on each of the **seven exchange trading sessions before the scheduled results release** and on the announcement date.
+- **Post-announcement:** require **two complete regular trading sessions after results are published**, and review the results, guidance, earnings call/material filings and price/volume reaction before reconsidering.
+- After-close releases: session 1 is the next exchange trading day. Before-open releases: the publication day's complete session can count as session 1. Intraday releases: start next session. Holidays and weekends do not count. If a release time is unconfirmed, take the conservative interpretation.
+- Volatile biotechnology companies or highly consequential announcements: **provisional heightened scrutiny of 10 pre / 5 post sessions**; record the case-specific rationale and decision. This extension remains an unvalidated research policy, not an automatic screen override.
+- No trading permission follows automatically when the waiting period expires. The latest next-earnings time, guidance, financing and other material events must still be checked, and risk/valuation/momentum review completed.
 
-Five sessions before a release means the five scheduled exchange sessions whose opening dates precede the release date; weekends/holidays do not count. These are entry-review rules, not a prescription for managing existing holdings.
-
-## Gate states
-| State | Meaning / action |
+## Gate states and precedence
+| State | Interpretation |
 |---|---|
-| UNKNOWN | Missing, estimated, conflicting or stale event information; entry review blocked |
-| PRE-EARNINGS BLOCK | Verified upcoming event falls inside the exclusion window |
-| POST-EARNINGS REVIEW | Release occurred; waiting sessions or substantive analysis incomplete |
-| OTHER-EVENT HOLD | Acquisition, financing, regulatory, litigation or other material issue unresolved |
-| CLEAR FOR ENTRY REVIEW | Verified timing, waiting period and analysis complete; still no investment approval |
+| UNKNOWN | Missing, estimated, conflicting or stale event data; **new entry review blocked** |
+| PRE-EARNINGS BLOCK | Confirmed event falls in seven-session pre-window or on report date |
+| POST-EARNINGS REVIEW | Release published but two qualifying sessions or substantive analysis unfinished |
+| OTHER-EVENT HOLD | Significant financing, acquisition, FDA/regulatory, legal or other unresolved event |
+| ELIGIBLE FOR ENTRY REVIEW | Date/time confirmed, wait expired, current results and material events reviewed; **not a buy approval** |
 
-Record next release date/time/timezone, confirmed versus estimated, exact company IR announcement URL, retrieval time, last results date, completed sessions and all unresolved events. Recheck on the day of any entry review; calendars can change. Secondary calendars are leads, not final confirmation. If next earnings cannot be verified, UNKNOWN takes precedence.
+For each observation record legal entity/ticker/exchange, release date and exact time/timezone, confirmed/estimated, company IR source, retrieval time, last completed earnings, session count, next future date and unresolved events. A name can remain on the **research** watchlist during any gate. Recheck company IR and filings immediately before any entry decision.
 
-A company may be researched while blocked. A high score, low multiple or recent earnings beat never overrides the gate.
+## Verified examples on 2026-11-03
+- **GMED:** company announced 2026-11-05 **after US market close**. Seven prior NYSE trading sessions are Oct 27, 28, 29, 30 and Nov 2, 3, 4; gate is **PRE-EARNINGS BLOCK** on Nov 3. Two full subsequent regular sessions would normally be Nov 6 and Nov 9, so earliest possible re-evaluation is Nov 10 (only if release and all reviews are complete; subject to any changed calendar).
+- **ZWS:** confirmed release 2026-10-27 after close. Two full post-event regular sessions were Oct 28–29; *minimum waiting period* elapsed. This does **not** clear the full gate because future event confirmation, current valuation, price reaction and material-event review remain open.
+- **MDLZ:** confirmed release 2026-10-29 at 4:05 PM EDT (after close). Two full sessions were Oct 30 and Nov 2; minimum waiting period elapsed, but remaining due diligence and next earnings status are open.
+- **ADMA and FERG:** 2026-11-04 and 2026-11-09 were historical conversation leads, not yet company-verified in this increment. Leave their gate UNKNOWN pending company IR evidence.
 
-## Historical leads requiring verification
-The discussion reported ADMA 2026-11-04, GMED 2026-11-05 and FERG 2026-11-09. These dates were not independently verified here and lack recovered primary URLs; all three remain UNKNOWN, with urgent calendar checks. Do not calculate clearance from these leads. All other initial candidates also remain UNKNOWN.
+Company-source evidence for verified dates: [GMED IR release](https://investors.globusmedical.com/news-events/press-releases); [ZWS date notice](https://investors.zurnelkay.com/news/news-details/2026/Zurn-Elkay-Water-Solutions-Schedules-Third-Quarter-2026-Earnings-Release-and-Investor-Conference-Call/default.aspx); [MDLZ release](https://ir.mondelezinternational.com/news-releases/news-release-details/mondelez-international-reports-q3-2026-results).
 
-Check results quality, organic versus acquired growth, guidance changes, cash conversion, working capital, dilution, subsequent borrowing and exceptional benefits before clearing post-earnings research.
+## Research after earnings
+Assess EPS/revenue versus dated estimates (if reliable), organic sales, cash conversion, GAAP vs adjusted, margin trend, guidance, estimate revisions, volume, 1/3/5-session reaction, and relative strength vs industry/sector/S&P 500. No price return or estimate-surprise claim until its timestamps and source have been recorded.
+
+Pilot windows are **not backtest-validated**. Log the methodology version and any prospective amendments before measuring outcomes.

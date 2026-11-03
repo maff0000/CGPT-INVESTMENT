@@ -20,7 +20,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 - Methodology and original research list were recovered from the founding discussion. Selected observations are retained as **REPORTED**, not independently verified market facts.
 - Historical Finviz counts, ratios, sector returns and earnings dates have not been rerun or independently confirmed in this initialisation.
 - No candidate has a completed fair-value range, approved entry price, verified event gate or approved investment status.
-- The exact earnings exclusion window was not supplied. The conservative draft in [earnings gates](docs/earnings-risk-gates.md) is **PROPOSED**, pending confirmation.
+- **Earnings gate adopted for the manual pilot:** no new entry during the **seven exchange trading sessions before earnings**, including announcement day; require **two complete subsequent regular sessions** and fresh analysis after release. See [earnings gates](docs/earnings-risk-gates.md) and the [dated correction](research/decisions/2026-11-03-earnings-gate-adoption.md).
 - No automated monitoring, scheduled jobs, market-data feeds or application have been deployed.
 
 ## Navigation
@@ -34,7 +34,8 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 | Daily and weekly operating procedure | [Review workflow](docs/review-workflow.md) |
 | Evidence, timestamps and corrections | [Data provenance](docs/data-provenance.md) |
 | Results without hindsight | [Outcome tracking](docs/outcome-tracking.md) |
-| Founding decisions and unresolved issues | [2026-11-03 decisions](research/decisions/2026-11-03.md) |
+| Founding decisions and unresolved issues | [2026-11-03 decisions](research/decisions/2026-11-03.md) and [earnings rule correction](research/decisions/2026-11-03-earnings-gate-adoption.md) |
+| First verified research increment | [2026-11-03 cycle 01](research/reviews/2026-11-03-cycle-01.md) |
 | Initial sector assessment | [2026-11-03 sectors](research/sectors/2026-11-03.md) |
 | Original nine and next checks | [2026-11-03 watchlist](research/watchlists/2026-11-03.md) |
 | Evidence register | [2026-11-03 sources](research/sources/2026-11-03.md) |
@@ -46,7 +47,7 @@ These sector roles and company theses are **PROVISIONAL**. The original nine are
 2. Refresh sector and industry returns, relative strength and breadth at one common observation time.
 3. Verify each company's identity, exchange, latest filing, material events and next earnings announcement using public primary sources.
 4. Re-run A/B/C screens and record exact filters, timestamps, counts and near-miss exceptions. Do not assume the historical shortlist still qualifies.
-5. Begin detailed company research with ZWS, GMED and MDLZ, one from each lane; an earnings block does not prevent desk research.
+5. Read the [first verified research cycle](research/reviews/2026-11-03-cycle-01.md) and the [initial company dossiers](research/companies/). Continue valuation, momentum and company event checks; an earnings block does not prevent desk research.
 6. Establish fair-value scenarios, downside, invalidation evidence and a review trigger. Retain UNKNOWN fields until supported.
 7. Publish a dated review, decision changes and corrections. Keep public hypothetical outcomes separate from any private investing activity.
 

@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-03 — Cycle 01: earnings gate adopted and primary-source company checks
+- Corrected previously mis-recovered five-session blackout to the **agreed seven exchange-trading-session pre-earnings block**; preserved the two-full-session post-release rule. The original founding record is retained unchanged; see [decision amendment](research/decisions/2026-11-03-earnings-gate-adoption.md).
+- Verified published earnings dates for ZWS, MDLZ and GMED, and selected company-release metrics; documented first [research cycle](research/reviews/2026-11-03-cycle-01.md).
+- Created initial ZWS, MDLZ and GMED dossiers with missing price/valuation evidence clearly labelled UNKNOWN; no entry approval or investment claim.
+
 ## 2026-11-03 — Initial framework
 - Established public QARP research journal and continuity instructions.
 - Recovered Discovery v2 as current baseline; retained original and refined v1 presets as history.
