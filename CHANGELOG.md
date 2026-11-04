@@ -1,6 +1,10 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-04 — Current 22-company inventory and sector classification
+- Verified historical 13-company three-sector discovery list and 9-name all-sector list = **22 unique active names**, across **11 actual sectors**.
+- **OLLI** remained historically filed in the Consumer Defensive discovery cohort but independent GICS-style business profiles classify it **Consumer Discretionary / Broadline Retail**, contrary to another vendor's Consumer Staples classification; recorded classification discrepancy and preserved original dated lists. See [classification note](docs/sector-rotation.md).
+
 ## 2026-11-03 — PUBLIC-001: non-identifying investment collaboration agreement
 - Published a concise [working agreement](docs/independent-research-relationship.md) defining the independent-research relationship and constructive disagreement, using only a generic anonymised example.
 - Strengthened the public-write check to exclude investor-specific preferences, portfolio circumstances, private decision thresholds, proposed orders and personal conversation excerpts. Existing dated research is preserved; no history rewriting or public disclosure of personal facts was performed.

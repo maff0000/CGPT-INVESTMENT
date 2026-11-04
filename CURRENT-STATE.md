@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## Inventory clarification — 2026-11-04
+The two current watchlists have **22 unique active companies across 11 GICS sectors**: 13 from the historical three-lane cohort and 9 from the parallel all-sector funnel. **OLLI** is retained as a historical original Consumer Defensive-lane candidate, but for the sector inventory it is **Consumer Discretionary / Broadline Retail**, as corroborated by YCharts and MarketBeat; Stock Analysis labels it Consumer Staples, so classification varies by provider. Treat cohort membership and current sector separately. See [sector classification note](docs/sector-rotation.md).
+
 ## PUBLIC collaboration standard — 2026-11-03
 The approved [Independent Research Relationship](docs/independent-research-relationship.md) captures a concise, non-identifying working agreement: hypotheses come from the research sponsor; the research function challenges them using independently verified evidence, competing explanations, valuation and downside; final authority stays with the investor/adviser. **Do not publish private portfolio application, actual transactions, personalised conviction or transcripts** as public case studies.
 
