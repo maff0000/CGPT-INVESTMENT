@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-05 — Five app teammates created; handoff not yet verified
+- Recorded parent-reported identifiers for E-Bot, S-Bot, R-Bot, M-Bot and NEO. T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and unchanged. This session did not create them or inspect the app.
+- Five acceptance probes have delivery acknowledgement only. Peer replies are pending, so no handoff pass is claimed. The ledger bridge is unverified. `native-probe-1` is not a production ledger contract.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — M3 milestone opened for app teammates and broad discovery
 - Verified public main `20094068e20c2de0a659e8243657207c8d4cfbaa`, the merge of PR #7. This change is a new pull request and does not rewrite that acceptance.
 - Recorded platform facts in [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md). T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and not modified. No other app identifier is claimed. A creation description is not a proven access-control list. No Python ledger bridge is verified. The parent provisions the app.

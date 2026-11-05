@@ -7,6 +7,7 @@
 - Creating an agent creates an individual messageable agent.
 - Sending work to an agent is an asynchronous priority handoff.
 - The current T-Bot identifier `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and is not modified by this record.
+- Parent-reported created identifiers, not inspected by this session: E-Bot `53f42f0b-4b9e-429f-9317-6e7edf2d8e26`, S-Bot `5cddba3b-38ff-49c8-8e9b-37b63efebe3c`, R-Bot `76efa575-82b5-44c0-a0df-5647c78b0083`, M-Bot `59ccea20-1754-437f-8fa9-424ff18e5221`, NEO `e1e372c8-20e9-45a6-856f-4eabdf018308`. Handoff verification is pending.
 - The text supplied when an agent is created shapes its instructions. That text is not proven to be a hard tool access-control list.
 - Agents on the same box share a filesystem.
 - No automatic attachment of the private Python package, and no production ledger write bridge, has been verified.

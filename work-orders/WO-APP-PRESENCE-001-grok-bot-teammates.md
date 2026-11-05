@@ -1,5 +1,5 @@
 # WO-APP-PRESENCE-001 — Grok Bot app teammates
-**Status:** RECORDED OWNER REQUIREMENT. Not started. Not part of the current ledger-correction round. No architecture approval is requested by this file.
+**Status:** FIVE TEAMMATES PARENT-REPORTED CREATED. T-BOT REUSED. HANDOFF VERIFICATION PENDING. LEDGER BRIDGE UNVERIFIED. No architecture approval is requested by this file.
 **Date:** 2026-11-05 (Europe/London)
 **Parent:** [ROADMAP-PAPER-001](../docs/equity-paper-delivery-roadmap.md) · [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md)
 
