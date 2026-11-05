@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — Platform docs: bot isolation is per user, not per role
+- Read the public Grok Bot pages for teams, messaging, bots and security. No probes were run. One user's bots share one computer, its files, logins and permitted connectors. Bot-to-bot messaging has no off switch. Distinct names, conversations and memory do not create a role security boundary.
+- Created identities and instructional refusals are not a hard access-control list or a read-only NEO. Authenticated bot-to-Python identity and installed ledger execution are unverified. A JSON producer identifier is a claim only. The parent has the creation tool. This executor did not use it.
+- A later adapter, not started, is offline typed JSON, frozen strategy and role-transition checks, one transactional writer, and a separate NEO hash snapshot. Strong NEO isolation needs its own principal, runtime and service. G0 stays OPEN. No orders, scheduler, or stop-management authority is added.
+- Sources: [teams](https://docs.x.ai/grok-bot/teams-and-enterprises), [messaging](https://docs.x.ai/grok-bot/chat-and-collaboration), [bots](https://docs.x.ai/grok-bot/bots), [security](https://cursor.com/docs/grok-bot/security). [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md).
+
 ## 2026-11-05 — Five app teammates created; handoff not yet verified
 - Recorded parent-reported identifiers for E-Bot, S-Bot, R-Bot, M-Bot and NEO. T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and unchanged. This session did not create them or inspect the app.
 - Five acceptance probes have delivery acknowledgement only. Peer replies are pending, so no handoff pass is claimed. The ledger bridge is unverified. `native-probe-1` is not a production ledger contract.

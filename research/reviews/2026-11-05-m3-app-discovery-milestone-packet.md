@@ -54,7 +54,7 @@ Not passed. The probes request the reports and the out-of-authority rejections. 
 [Checklist](../../docs/qarp-screening-requirements-review.md). Frozen QARP v1.0.0 is unchanged. Unknown metric mappings are not exact Finviz matches. Additional strategies are **NOT APPROVED**. Owner choices remain open. **PROPOSED.**
 
 ## 10. NEO
-Logically read-only. Hard capability enforcement is **not tested** and is not claimed from the persona. **PROPOSED** behaviour, **BLOCKED** as a proven control.
+Logically read-only. Official platform documentation says bots of one user share one computer, its files and its logins, so an interface-level read-only flag is not a security boundary. Hard capability enforcement is **not tested**. Strong isolation would need a separate security principal, runtime and service. That boundary is **not implemented**. A JSON producer identifier is a claim only. **PROPOSED** behaviour, **BLOCKED** as a proven control.
 
 ## 11. Tests and security
 No new test run belongs to this milestone. No vendor, broker, credential, account, or scheduler action. **BLOCKED** for app and ledger-bridge tests.
