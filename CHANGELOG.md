@@ -1,4 +1,10 @@
 # Changelog
+
+## 2026-11-05 — Architect accepts and merges private QARP/NEO evidence component
+- Independent exact-head review of paper-bots PR #2 at `810b6fd48b266031c1b299c39370bf3ececb449b`: 82 Python 3.12.14 tests passed offline, plus source/quality/reason replay mutation probes and no-broker inspection.
+- **ACCEPTED AND MERGED** by normal guarded merge, private main `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. [Architect report](research/reviews/2026-11-05-m2-810b6fd-independent-acceptance.md).
+- This completes the bounded fixture-driven QARP/NEO code acceptance only, not broad live-stock discovery, real platform app teammates, scheduling, data licensing or entry/stop/exit policy. G0 OPEN, FMP rights UNVERIFIED, stop-dependent M/T HOLD, no live orders.
+- Prior builder-ready and Architect-HOLD changelog entries below are historical and preserved.
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
 ## 2026-11-05 — Semantic-identity head recorded as builder-tested
