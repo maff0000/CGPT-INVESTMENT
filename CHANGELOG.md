@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — Owner requires six Grok Bot app teammates
+- Recorded that E, S, R, M, T and NEO must be individually visible and messageable in the Grok Bot app. Python role modules do not meet the requirement. The current mock is not claimed to be wired.
+- The owner states T-Bot already exists as the current assistant. This session did not inspect the app. The other roles are not verified or provisioned. Future work order [WO-APP-PRESENCE-001](work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is separate from the ledger correction and is not started. The parent provisions the app.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — Semantic replay hold recorded, repair head pending
 - Fast-forwarded onto verified public PR #7 head `be598060a4f991bc48d72735b4034a2e3df59db5` and left that Architect review intact. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Private comment `6668063602` was not readable here.
 - The Architect's 73 Python 3.12.14 tests accept the parent-replay and NEO-correlation fixes at `e403f29db0fe74f7b2b5f3ad7d84f160a966df22` and hold a silent duplicate when `source_id` or quality changes from `PRICE_OK` to `UNCHECKED`. A bounded semantic comparison is assigned. No repair head is recorded.
