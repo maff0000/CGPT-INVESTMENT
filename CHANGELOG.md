@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-CROSS-SECTOR-001 company, price and valuation trial
+- Documented [three-company diagnostic](research/validation/2026-11-05-cross-sector-company-dry-run.md): XOM, LIN, EQIX, issuer Q3 releases, Nov4 price evidence and macro transmission.
+- Found small conflicting close quotes and industry-incomparable PE/PEG/FCF rules; proposed [source and sector valuation governance](docs/g0-data-integrity-and-valuation-rules.md) and [decision](research/decisions/2026-11-05-cross-sector-company-dry-run.md).
+- No valid chart classification, Finviz A/B/C export, earnings-gate approval or fair-value buy conclusion; all three WAIT pending data. G0 not yet frozen, G1 not started, no agent/broker work.
+
+
 ## 2026-11-05 — G0-MACRO-001: first actual dated macro observation, not proof of selection rules
 - Completed [manual macro dry-run](research/validation/2026-11-05-macro-g0-dry-run.md) for Nov4 US close, reporting Treasury 2/10yr nominal yield, secondary 10yr TIPS, Fed, Sep CPI/PCE, credit as of Nov3, Nov4 Brent/WTI, elections, sector ETFs, next BLS releases.
 - Drew conditional causal tests for actual research-sector exposures rather than treating the market rally or oil decline as an automatic buy. Documented different data cutoffs, primary-vs-secondary evidence, unknown physical shortages and missing contemporaneous sector return periods.
