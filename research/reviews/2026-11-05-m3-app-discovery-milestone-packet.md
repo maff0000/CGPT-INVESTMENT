@@ -40,7 +40,7 @@ The parent sent five priority typed acceptance probes. The first record was deli
 
 **Chronology, recorded and not repaired.** The original fixture input `20:30:00 GMT` was 52 seconds ahead of E's actual `20:29:08 GMT`. S reused E's time and was not measured separately. R's actual stamp is `20:30:30 GMT`. M's `20:30:00` is an explicit minute-precision turn marker, not measured seconds. No latency or freshness claim is made. No time is corrected after the fact.
 
-**NEO.** Audit `APP-A-NEO-001` actually returned `INCOMPLETE_EVIDENCE` for the empty chain, the future time, and the missing explicit risk stage. The parent has since sent `APP-A-NEO-002` with the compiled files and an explicit gate state `NOT_INVOKED_NO_PROPOSAL`. The final NEO audit is **pending**.
+**NEO.** Audit `APP-A-NEO-001` returned `INCOMPLETE_EVIDENCE` for the empty chain, the future time, and the missing explicit risk stage. That result remains the valid historical record. Audit `APP-A-NEO-002` has now been received. Its verdict is **bounded native handoff evidence, partial; production ledger completeness unverified.** The gate state `NOT_INVOKED_NO_PROPOSAL` was never a pass. NEO reports no file, ledger, external, gate, proposal, order or fill action, and no production, trading or fill-readiness approval. JSON call identifiers are not service receipts. Immutable ledger parents, full unabbreviated payloads, production schema conformance, an enforced access-control list, a protected NEO runtime, and native Python ledger wiring are all **UNVERIFIED**.
 
 ## 6. Role-permission tests
 Identity and refusal replies were received. That is not a passed permission test. A profile is not a hard access-control list. NEO's read-only role is not a tested runtime boundary. An authenticated producer binding is not verified. **No pass is claimed.**
@@ -83,4 +83,4 @@ Public [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md) records pl
 | Exact-head acceptance of this packet | Architect, after parent details arrive | Not started |
 
 ## Acceptance gate
-The chat handoffs above are parent-observed and ready for a bounded Architect review of the native chat evidence. The 14-item milestone packet is **not complete**: the broad-discovery pull request is still pending, NEO's second audit is pending, and no runtime access-control list, authenticated producer binding, protected read-only NEO, or accepted production ledger is claimed.
+The native creation, behaviour and chat evidence is at its next meaningful acceptance gate and is **PARTIAL** against full integration. NEO's second audit is received and does not approve production completeness. No further teammate messages or native actions are requested. The 14-item milestone packet is **not complete** until the private broad-discovery head arrives. No runtime access-control list, authenticated producer binding, protected read-only NEO, or accepted production ledger is claimed.

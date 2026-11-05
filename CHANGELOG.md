@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — NEO second audit received; native milestone partial
+- `APP-A-NEO-002` verdict: bounded native handoff evidence, partial; production ledger completeness unverified. `APP-A-NEO-001` remains the historical `INCOMPLETE_EVIDENCE` record. The gate `NOT_INVOKED_NO_PROPOSAL` was never a pass.
+- Both fixture candidates stay UNCHECKED, qualification UNKNOWN, research HOLD, and entry NONE. No file, ledger, external, gate, proposal, order or fill action is reported. JSON call identifiers are not service receipts. Ledger parents, full payloads, schema conformance, an enforced access-control list, a protected NEO runtime, and Python ledger wiring stay unverified.
+- Chronology anomalies stay as recorded and are not a freshness claim. No further native actions are requested. The 14-item packet still waits for the private broad-discovery head. G0 stays OPEN. Stop-dependent M/T stays HOLD.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Native chat handoffs observed; not a ledger pass
 - Parent-observed peer transcripts record five identity and refusal replies and E to S to R to M attributed receipts. The parent received T's research-HOLD return for `APP-A-001-M-T`. No proposal, gate, ledger write, fill or order occurred. This is the chat pipeline only.
 - NEO `APP-A-NEO-001` returned `INCOMPLETE_EVIDENCE`. `APP-A-NEO-002` is sent and its final audit is pending. Fixture time `20:30:00 GMT` was 52 seconds ahead of E's actual `20:29:08 GMT`. The times are recorded and not repaired.
