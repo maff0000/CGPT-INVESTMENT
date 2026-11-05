@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-EBOT-001: manual prompt utility exception and GrokBot handoff
+- User green-lit **GrokBot implementing E_BOT v0.1** to run one-shot, allowlisted, read-only **Massive G0 data tests** at the user's explicit instruction; no autonomous equity selection or broker execution.
+- Added [complete GrokBot implementation prompt](docs/g0-ebot-manual-utility-brief.md) and [scope decision](research/decisions/2026-11-05-ebot-manual-data-tool.md), focused on isolated private workspace, reuse of existing Python Massive smoke test, fail-closed prompt parser, secrets isolation, offline tests and simple terminal usage.
+- Implementation, access key, API connectivity and G0 source acceptance remain NOT VERIFIED; no public vendor raw data, personal holdings or credentials. Previously paused daily research automation stays paused.
+
+
 ## 2026-11-05 — G0-PROVIDER-001: Massive Basic private onboarding prepared
 - Chose **Massive Stocks Basic** as first trial (NOT final provider) from current official feature docs: US EOD grouped/ticker OHLCV, 2-year history, 5/min, previous-session data after midnight ET next day.
 - Documented significant data-licence restriction: individual-use Massive subscription does **not** grant public chart/price-table or other redistribution rights; future commercial agent use needs separate entitlement review.
