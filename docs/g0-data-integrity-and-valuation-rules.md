@@ -1,6 +1,8 @@
 # G0-DATA-001 — Price reconciliation, point-in-time sources and industry-specific valuation
 **Draft for manual G0 approval, 2026-11-05. Not a frozen validation standard.**
 
+**IMPORTANT REVISION — G0-DATA-002:** the originally over-strict quote-discrepancy escalation is **superseded**. The adopted rule is **<=$1.00 PRICE_OK, >$1.00 PRICE_CHECK** after matching instrument/session/adjustments; **SIGNAL_AMBIGUOUS** remains a separate safeguard if two quotes straddle the breakout pivot even within tolerance. Read [accepted decision and trial plan](g0-price-tolerance-and-provider-trial.md). All previously noted XOM/LIN/EQIX small discrepancies PASS the new price-difference rule.
+
 ## Problem found
 In the first three-company trial, reputable market-data websites disagreed slightly about the 4 November closing prices. This matters near exact breakout levels. We also found that oil producers, industrial-gas compounders and REITs cannot be evaluated by the same unqualified PE, PEG or price/free-cash-flow cutoff.
 
@@ -8,7 +10,7 @@ In the first three-company trial, reputable market-data websites disagreed sligh
 | Evidence | Source preference | Failure mode |
 |---|---|---|
 | Regular-session OHLCV | Approved, licensed, reproducible exchange/consolidated daily-bar provider; record regular session vs after-hours, raw/adjusted close, timezone, split/dividend method | If unavailable, CHART PENDING, not a guessed breakout |
-| Independent close check | Second clearly identified source; record exact difference and market cutoff | If discrepancy could change breakout, support, entry ceiling or any verdict, HOLD until authoritative reconciliation, even if only cents |
+| Independent close check | Second clearly identified source; record exact difference and market cutoff | Routine source flag only when difference **>$1.00** after identity/time/adjustment reconciliation; smaller discrepancy that straddles a pivot triggers separate **SIGNAL_AMBIGUOUS**, not PRICE_CHECK |
 | Macro data | Treasury/Fed/BLS/BEA/EIA official release, observing original publication date and vintage; secondary dated quotes labelled as such | Old macro releases must not be presented as same-day observations |
 | Company fundamentals | Issuer IR or EDGAR by exact fiscal period and publication timestamp; vendor estimates explicitly separate from GAAP/non-GAAP actuals | Unknown inputs stay UNKNOWN |
 | Earnings calendar | Issuer-confirmed date and release time, exchange calendar for 7-before/2-after | Missing or inconsistent timing blocks entry review |
@@ -28,7 +30,7 @@ Each critical observation carries ticker and instrument identity, source, observ
 
 [Stock Analysis XOM](https://stockanalysis.com/stocks/xom/history/), [ChartExchange XOM](https://chartexchange.com/symbol/nyse-xom/historical), [Stock Analysis LIN](https://stockanalysis.com/stocks/lin/history/), [ChartExchange LIN](https://chartexchange.com/symbol/nasdaq-lin/historical/), [Stock Analysis EQIX](https://stockanalysis.com/stocks/eqix/history/), [MarketBeat EQIX](https://www.marketbeat.com/stocks/NASDAQ/EQIX/chart/).
 
-These are working provider comparisons, **not canonical exchange auction closes**. Select the legal and authoritative feed at G0 before assigning breakout labels. No cherry-picking of the quote closest to a desired pivot.
+All three source differences **PASS as PRICE_OK under G0-DATA-002**. These are working provider comparisons, **not canonical exchange auction closes**. Select the legal and authoritative feed at G0 before assigning breakout labels. No cherry-picking of the quote closest to a desired pivot.
 
 ## Industry financial logic
 - **XOM, integrated energy:** use cycle-normalised upstream/downstream prices and margins, production, sustaining capital, balance sheet, distributions and at least three *illustrative, clearly non-predictive* oil stress cases. Do not annualise a war-influenced quarter as guaranteed owner earnings. Latest Q3 company FCF $19.1bn: [company release](https://investor.exxonmobil.com/company-information/press-releases/detail/1213/exxonmobil-announces-third-quarter-2026-results).

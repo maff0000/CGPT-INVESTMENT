@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-DATA-002: $1 discrepancy tolerance and practical EOD provider acceptance route
+- Adopted precisely **abs(vendor close A − B) <=$1.00 accepted with no PRICE CHECK; >$1.00 flagged** for same USD instrument/session/adjustment. A straddled critical pivot independently triggers **SIGNAL_AMBIGUOUS**, not a routine quote flag. Missing date/split/currency integrity = DATA_MISMATCH.
+- Retested historical XOM/LIN/EQIX discrepancy examples **$0.03/$0.17/$0.16: all PRICE_OK**; superseded over-escalation in G0-DATA-001.
+- Sourced official **Massive grouped OHLCV/Basic next-day data availability**, **Tiingo raw+adjusted EOD/corrections** and **EODHD** plan alternatives; licensing, API account and actual bar integrity remain UNVERIFIED.
+- Added [G0-DATA-002 price/provider test policy](docs/g0-price-tolerance-and-provider-trial.md), [manual test worksheet](templates/g0-price-source-comparison.md) and [decision](research/decisions/2026-11-05-price-tolerance-provider-trial.md). No G0 freeze, no G1 or agent implementation.
+
+
 ## 2026-11-05 — G0-CROSS-SECTOR-001 company, price and valuation trial
 - Documented [three-company diagnostic](research/validation/2026-11-05-cross-sector-company-dry-run.md): XOM, LIN, EQIX, issuer Q3 releases, Nov4 price evidence and macro transmission.
 - Found small conflicting close quotes and industry-incomparable PE/PEG/FCF rules; proposed [source and sector valuation governance](docs/g0-data-integrity-and-valuation-rules.md) and [decision](research/decisions/2026-11-05-cross-sector-company-dry-run.md).

@@ -3,6 +3,8 @@
 
 **MACRO-PROSPECTIVE-001 amendment (2026-11-05):** this charter now prioritises **in-time, prospectively recorded macro-aware research**. Conventional mechanical retrospective strategy backtesting is **optional and deferred**, **not** a G0–G4 acceptance requirement. Historical financial performance/valuation data can inform context. G3 means **additional independent forward validation**, not a mandatory separate historical walk-forward study. Read [macro doctrine](macro-aware-equity-review.md) and [decision](../research/decisions/2026-11-05-macro-aware-forward-validation.md). Do not claim prospective process proof before observation.
 
+**G0-DATA-002 source-policy amendment:** **same USD instrument/session/adjustments, <=$1 vendor EOD close difference is PRICE_OK, >$1 is PRICE_CHECK**. An otherwise accepted source difference that straddles a specific pivot/price ceiling is separately **SIGNAL_AMBIGUOUS** until confirmed. G0 source trial provider is not yet selected; [source policy](g0-price-tolerance-and-provider-trial.md), [acceptance worksheet](../templates/g0-price-source-comparison.md), [dated decision](../research/decisions/2026-11-05-price-tolerance-provider-trial.md).
+
 ## Direction
 **Prove the process, then automate it.** The current Finviz QARP v2 screens, chart-stage model, WATCH/COILING/AT PIVOT research, earnings gate, independent thesis challenge and candidate scoring are a coherent **candidate methodology**, not a validated investment edge. Neither 22 historically selected stocks nor six external scanner leads constitute a representative test. The proposed agent operating system is **architectural reference only**, not an approved software build.
 

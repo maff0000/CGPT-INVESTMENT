@@ -19,6 +19,9 @@ For each *material* macro factor, document **verified observation / expectation 
 
 **Macro comparison:** at each decision point freeze both the actual macro-aware research verdict and a simpler **counterfactual macro-blind verdict** using the same company, prices, earnings info and chart/fundamental criteria, *before* forward outcomes are known. Record cases macro overlay prevents adverse exposure AND where it falsely blocks a winner; avoid subjective retrospective explanations.
 
+## EOD source tolerance (G0-DATA-002)
+Use **<= $1.00 accepted / >$1.00 PRICE CHECK** only when comparing identical USD instrument, session and adjustment convention. Preserve independent SIGNAL_AMBIGUOUS for cases where small source difference crosses the research pivot/limit. Retain both source observations and compute indicators only from a consistently chosen canonical series **after authorised trial**; no Cherry-picked close. [Rule and D1–D6 provider validation](g0-price-tolerance-and-provider-trial.md). **No feed has been selected or historical bars fetched as of this amendment.**
+
 ## Sample design and point-in-time discipline
 1. **Universe census:** daily record exchange session date, approved US listings, eligible count and number excluded by each filter. Retain symbols that delist or stop trading. Do not evaluate only the already-interesting 22 names or six external seeds; those are *convenience portfolios*, not unbiased discovery evidence.
 2. **Sources:** Finviz contemporary A/B/C reports must be saved with exact settings and provider data cutoff (and entitlement restrictions). For systematic history use lawful OHLCV plus point-in-time earnings and fundamentals; **Finviz does not provide historical screener snapshots**. If no acceptable source, mark test BLOCKED and use only prospective manual observation.
