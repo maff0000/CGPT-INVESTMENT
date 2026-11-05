@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — Private broad-discovery head recorded, not accepted
+- Parent GitHub connector read-back: paper-bots PR #4 is open, not merged, branch `cursor/broad-discovery-003-1e9e`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, head `a6aa7f32acc8531a06e3e36044a4b9003c888323`. This session could not read the repository.
+- Builder, not Architect: 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Named scope is an offline adapter, synthetic discovery, a NEO digest, a screening review, a rights matrix and ADR 0010. Universe counts are not published. The full private report is pending and may move the head.
+- Native probes stay closed. NEO `APP-A-NEO-002` is already recorded. No further peer actions. The 14-item packet is begun and not final.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — NEO second audit received; native milestone partial
 - `APP-A-NEO-002` verdict: bounded native handoff evidence, partial; production ledger completeness unverified. `APP-A-NEO-001` remains the historical `INCOMPLETE_EVIDENCE` record. The gate `NOT_INVOKED_NO_PROPOSAL` was never a pass.
 - Both fixture candidates stay UNCHECKED, qualification UNKNOWN, research HOLD, and entry NONE. No file, ledger, external, gate, proposal, order or fill action is reported. JSON call identifiers are not service receipts. Ledger parents, full payloads, schema conformance, an enforced access-control list, a protected NEO runtime, and Python ledger wiring stay unverified.

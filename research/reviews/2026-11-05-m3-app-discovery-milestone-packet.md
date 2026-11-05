@@ -46,41 +46,41 @@ The parent sent five priority typed acceptance probes. The first record was deli
 Identity and refusal replies were received. That is not a passed permission test. A profile is not a hard access-control list. NEO's read-only role is not a tested runtime boundary. An authenticated producer binding is not verified. **No pass is claimed.**
 
 ## 7. Broad coverage
-[WO-DISCOVERY-001](../../work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md): offline US fixtures, no QARP cap on the universe, no seven-name cap, stable identifiers, provenance, dedup, unknowns, UNCHECKED survivors, NEO trace, human and machine evidence. Private head **not supplied**. **PROPOSED.**
+[WO-DISCOVERY-001](../../work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md) now has a private head. [PR #4](https://github.com/maff0000/paper-bots/pull/4) is open and unmerged. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a6aa7f32acc8531a06e3e36044a4b9003c888323`. Branch `cursor/broad-discovery-003-1e9e`. **PARENT-VERIFIED** metadata from a GitHub connector read-back. This session could not read the repository. Builder reports 91 tests passed on each of Python 3.12.3 and 3.9.25, and that count includes the previously accepted 82. The named work is an offline adapter, synthetic discovery, a NEO digest, a screening review, a rights matrix, and ADR 0010. Those results are **BUILDER**, not an Architect audit. Universe counts and exact coverage are **not in this public record**. The parent has requested the full private evidence, a fresh-process run, files, counts, coverage and security. That report is pending and may move the head. No real market data is published here.
 
 ## 8. Rights matrix
 | Source | State |
 |---|---|
-| Offline fixtures | PROPOSED. No live pull |
+| Offline fixtures | BUILDER-REPORTED at private head `a6aa7f32acc8531a06e3e36044a4b9003c888323`, path `docs/evidence/SOURCE-RIGHTS-003/matrix.md`. Contents not read here. No live pull |
 | FMP | BLOCKED. Rights UNVERIFIED |
 | Massive / other vendors | No new call. No licence assumed |
 | Broker | BLOCKED. No writes, orders, or position reads |
 
 ## 9. Screening requirements
-[Checklist](../../docs/qarp-screening-requirements-review.md). Frozen QARP v1.0.0 is unchanged. Unknown metric mappings are not exact Finviz matches. Additional strategies are **NOT APPROVED**. Owner choices remain open. **PROPOSED.**
+Public [checklist](../../docs/qarp-screening-requirements-review.md) is unchanged and approves nothing new. The private review at `docs/reviews/2026-11-05-screening-requirements-review.md` on head `a6aa7f32acc8531a06e3e36044a4b9003c888323` was not read here. Frozen QARP v1.0.0 is unchanged. Unknown metric mappings are not exact Finviz matches. Additional strategies are **NOT APPROVED**.
 
 ## 10. NEO
 Logically read-only. Official platform documentation says bots of one user share one computer, its files and its logins, so an interface-level read-only flag is not a security boundary. Hard capability enforcement is **not tested**. Strong isolation would need a separate security principal, runtime and service. That boundary is **not implemented**. A JSON producer identifier is a claim only. **PROPOSED** behaviour, **BLOCKED** as a proven control.
 
 ## 11. Tests and security
-No new test run belongs to this milestone. No vendor, broker, credential, account, or scheduler action. **BLOCKED** for app and ledger-bridge tests.
+Builder, not Architect: 91 tests passed on each of Python 3.12.3 and 3.9.25 at the private head above, including the accepted 82. A fresh-process confirmation is part of the pending full private report and is not claimed here. No vendor, broker, credential, account or scheduler action is reported for this build. App and ledger-bridge tests remain **BLOCKED**. Native probes are finished. NEO `APP-A-NEO-002` is already provided. No further peer actions are requested.
 
 ## 12. ADRs
-Public [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md) records platform facts only. A private discovery ADR is **not supplied**. No new stop or risk value is adopted.
+Public [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md) records platform facts only. The builder cites private ADR 0010 at the discovery head. Its text was not read here. No new stop or risk value is adopted.
 
 ## 13. Pull-request heads and bases
 | Pull request | Base | Head | State |
 |---|---|---|---|
 | This public milestone PR | `20094068e20c2de0a659e8243657207c8d4cfbaa` | the remote read-back after push | OPEN. Not merged |
-| Private discovery implementation | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` named as the start | **NOT SUPPLIED** | Not invented. Not complete |
+| [paper-bots PR #4](https://github.com/maff0000/paper-bots/pull/4) | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` | `a6aa7f32acc8531a06e3e36044a4b9003c888323` | PARENT-VERIFIED open, not merged. Branch `cursor/broad-discovery-003-1e9e`. Not read here. Final private report may move the head |
 
 ## 14. Next work orders
 | Order | Owner of the action | State |
 |---|---|---|
 | [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) | Parent created five teammates and reused T-Bot. Peer replies and permission tests are still open | Created. Verification pending |
-| [WO-DISCOVERY-001](../../work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md) | Private paper-bots workstream | Authorised. Head pending |
+| [WO-DISCOVERY-001](../../work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md) | Private paper-bots workstream | Head `a6aa7f32acc8531a06e3e36044a4b9003c888323` recorded. BUILDER tests. Full report pending |
 | Screening requirements review | Later owner choices | Checklist only |
 | Exact-head acceptance of this packet | Architect, after parent details arrive | Not started |
 
 ## Acceptance gate
-The native creation, behaviour and chat evidence is at its next meaningful acceptance gate and is **PARTIAL** against full integration. NEO's second audit is received and does not approve production completeness. No further teammate messages or native actions are requested. The 14-item milestone packet is **not complete** until the private broad-discovery head arrives. No runtime access-control list, authenticated producer binding, protected read-only NEO, or accepted production ledger is claimed.
+The native creation, behaviour and chat evidence is **PARTIAL** against full integration. NEO `APP-A-NEO-002` is already received. No further native peer actions are requested. The 14 sections above now cite private PR #4. They are **begun, not final**: the full private evidence report is still pending and may update the head. Test counts and coverage claims in this file for that head are **BUILDER**, not Architect. No runtime access-control list, authenticated producer binding, protected read-only NEO, or accepted production ledger is claimed.
