@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-05 — Packet order: locked milestone first
+- The locked 14-item record is now the first section of [REVIEW-M3-001](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md) and is the authoritative current milestone. Earlier builder drafts, including the "nothing implemented" and "full report pending" claims, are in a historical appendix. Their facts are unchanged. No code, tests, or scope were added.
+- Parent-read public head of the previous packet: `1c5227a8afec0891079dbee49548940ebe12c925`. Private locked head remains `a40412f0876fd59526a6b663273f69b4df008ec4`.
+
 ## 2026-11-05 — Private discovery head locked; public packet pinned
 - Parent direct GitHub read-back: paper-bots PR #4 is open and not merged. Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a40412f0876fd59526a6b663273f69b4df008ec4`. 21 files changed. This session received HTTP 404 and did not copy the paths or any private code. The manifest link is the private diff.
 - Historical heads kept and labeled: `ad5e30ae5502d77d8beec3399845f64116ff8702`, `a6aa7f32acc8531a06e3e36044a4b9003c888323`, and parent-named prefix `36904a1`. They are not the locked head.
