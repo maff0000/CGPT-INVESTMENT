@@ -1,4 +1,7 @@
 # CURRENT STATE — CGPT-INVESTMENT
+
+## NEWEST — ARCHITECT INDEPENDENT REVIEW, 2026-11-05
+[Exact-head report](research/reviews/2026-11-05-paper-bots-m2-preservation-exact-head-audit.md). **Private `paper-bots` main:** `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, after Architect accepted/merged PR #3 strictly for preservation of historical July doctrine evidence. Four SHA-256 hashes independently matched; the full May source is unavailable and the proposed Equities Doctrine is NOT APPROVED. **PR #2 head `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` remains HOLD**, despite 72 independently passing offline Python 3.12.14 tests: an idempotent replay can silently retain the wrong discovery parent; NEO_COHORT changes its chain correlation ID. Grok has two bounded corrections at [PR #2](https://github.com/maff0000/paper-bots/pull/2#issuecomment-6667409366) and must recheck against new private main. Public governance [PR #7](https://github.com/maff0000/CGPT-INVESTMENT/pull/7) remains open/unmerged. E-Bot code/M1 mock foundation accepted previously. **G0, FMP rights, QARP entry/exit/stop/trailing/risk policy, stop-dependent M/T management, scheduling and real execution are all still blocked.** Later paragraphs are earlier snapshots and remain for audit history.
 **Last updated:** 2026-11-05 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
 ## PROPOSED CURRENT STATUS — PAPER-PROGRESS-001 (2026-11-05)
