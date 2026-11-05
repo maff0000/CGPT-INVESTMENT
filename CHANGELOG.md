@@ -1,6 +1,11 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — M2 replay-identity head submitted for review
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. PR #7 remote head before this packet was `2de57d153b1f1cc810c145300f59c2795a0efbc0`. Private paper-bots was not readable.
+- Builder reports PR #2 head `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`, base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, merge `2df940bff49023f7a8eb396f1b54c934816ddf65`, and 73 tests passed on each of Python 3.12.3 and 3.9.25. ADR 0007 is cited by path. The head is ready for Architect review and is not accepted. The prior 72-test audit stays on `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4`.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — M2 replay and correlation repair authorised, head pending
 - Fast-forwarded onto verified public PR #7 head `8677c421869f5f46fe4ede724e31058c391384ed` and left that Architect review intact. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Private comment `6667409366` was not readable here.
 - Recorded the Architect result already on that head: PR #3 merged for preservation only at `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, with no policy adoption. PR #2 `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` stays HOLD after 72 Python 3.12.14 tests because replay can keep a stale discovery parent and NEO correlation can leave the chain.

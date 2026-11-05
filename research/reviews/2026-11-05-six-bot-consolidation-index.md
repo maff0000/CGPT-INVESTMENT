@@ -2,7 +2,7 @@
 
 **ARCHITECT DISPOSITION UPDATE — 2026-11-05:** See [independent exact-head M2/preservation review](2026-11-05-paper-bots-m2-preservation-exact-head-audit.md). Private paper-bots PR #3 head `531967980bcec40576d929ce32f8bb9900e498f6` **accepted and merged for preservation only**, merge `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. PR #2 head `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` **HOLD** after 72 independent offline tests because idempotent replay can mask changed discovery parent and NEO emits a divergent correlation. Grok correction ordered in PR #2 comment `6667409366`. Public governance PR #7 remains OPEN/UNMERGED. All trading-policy and G0/FMP/scheduling/live-execution gates unchanged. The remainder of this consolidated builder packet is retained as historical evidence, not the latest acceptance status.
 
-**SUPERSESSION — correction round authorised, head not yet supplied (2026-11-05).** This session fast-forwarded onto verified public head `8677c421869f5f46fe4ede724e31058c391384ed` and did not rewrite it. Private comment `6667409366` returned not-found here, so its text is **not verified by this session**. The public audit file on that head is the Architect record. One bounded repair is assigned to the existing paper-bots workstream: reject a replay that hides a changed discovery parent, keep the NEO correlation on the validated chain, merge accepted private main `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` non-destructively, test on Python 3.9 and 3.12, and record an ADR. **No new head is recorded until that evidence arrives.** E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` and M1 `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` stay accepted and unchanged. PR #3's merge is historical evidence only and adopts no policy.
+**SUPERSESSION — correction round authorised, head not yet supplied (2026-11-05).** This session fast-forwarded onto verified public head `8677c421869f5f46fe4ede724e31058c391384ed` and did not rewrite it. Private comment `6667409366` returned not-found here, so its text is **not verified by this session**. The public audit file on that head is the Architect record. One bounded repair is assigned to the existing paper-bots workstream: reject a replay that hides a changed discovery parent, keep the NEO correlation on the validated chain, merge accepted private main `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` non-destructively, test on Python 3.9 and 3.12, and record an ADR. **No new head is recorded until that evidence arrives.** E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` and M1 `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` stay accepted and unchanged. PR #3's merge is historical evidence only and adopts no policy. The repair head supplied after this note is in the final 13-item packet. It is builder-reported and not accepted.
 **ID:** REVIEW-PAPER-INDEX-001
 **Date:** 2026-11-05 (Europe/London)
 **Status:** **HOLD** on this governance pull request, on paper-bots PR #2 lineage, and on PR #3 policy. E-Bot code and the paper-bots mock foundation are Architect-accepted. This session did not re-test them. Do not merge this pull request from this update.
@@ -328,7 +328,7 @@ Exact-head Architect review of `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` and `5
 The request above applied to `453cc99e…` and `53196798…`. The Architect has since held the first and merged the second for preservation only. This governance pull request stays unmerged.
 
 ## 13-item packet — awaiting the repair head
-Not filled with a new head. The starting point is verified or Architect-reported as follows. Items that need the repair result stay **NOT SUPPLIED**.
+Superseded by the filled packet at the end of this file. The table below is the pre-result reserve and is kept as history.
 
 | Item | Status |
 |---|---|
@@ -345,3 +345,51 @@ Not filled with a new head. The starting point is verified or Architect-reported
 | 11. Gaps | G0, FMP rights, full May source, entry/exit/initial/trailing/risk approval, stop-dependent M/T, scheduling and live execution remain blocked |
 | 12. Public PR #7 head | `8677c421869f5f46fe4ede724e31058c391384ed` before this note. The tip after this note is the remote read-back |
 | 13. Readiness | Repair **IN PROGRESS**. Not ready for acceptance until the head and tests arrive |
+
+## Final 13-item packet — builder submission, not accepted
+**Disposition:** **READY FOR ARCHITECT ACCEPTANCE** of [paper-bots PR #2](https://github.com/maff0000/paper-bots/pull/2) head `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`. This session does not accept it. The Architect's 72-test Python 3.12.14 result remains historical for `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` and is not an audit of the new head. Private paper-bots returned not-found here. The builder reports a remote read-back in which the local head, the origin branch and the pull-request head are all `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`, private main is unchanged, and the pull request is mergeable.
+
+### 1. Verified starts
+| Ref | SHA | Class |
+|---|---|---|
+| Public main | `a64c2f1d96a13f16963d8835713434c2be67c6f6` | VERIFIED this session |
+| Public PR #7 before this packet | `2de57d153b1f1cc810c145300f59c2795a0efbc0` | VERIFIED this session. Parent includes Architect head `8677c421869f5f46fe4ede724e31058c391384ed` |
+| Paper-bots accepted main at repair start | `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` | BUILDER-REPORTED read-back. Includes the preservation merge. Not refetched here |
+| Prior PR #2 head | `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` | ARCHITECT-INDEPENDENT hold, 72 tests on Python 3.12.14 |
+| E-Bot accepted main | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | ARCHITECT-REPORTED. Not refetched. Unchanged this round |
+
+### 2. Exact PR #2 head and base
+Branch `cursor/qarp-rotation-001-1e9e`. Head `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`. Base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. OPEN / UNMERGED.
+
+### 3. Reconciliation
+Ordinary merge `2df940bff49023f7a8eb396f1b54c934816ddf65`, parents `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` and `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. No rewrite, force-push or merge to main. The builder reports the diff against main is QARP and lineage only, and does not duplicate M1. Accepted M1 and the four preservation hashes are reported unchanged.
+
+### 4. Files and work order
+`src/paperbots/ledger.py`, `src/paperbots/strategies/screen.py`, `src/paperbots/schemautil.py`, `docs/schemas/v0.2/catalog.json`, `tests/test_lineage.py`, `docs/adr/0007-replay-identity-and-chain-correlation.md`, `docs/work-orders/WO-PAPER-002-correction-replay-identity.md`, and a dated supersession appended to the private README. Historical private records are reported preserved. ADR 0007 is cited by path only.
+
+### 5. Fixes
+Replay identity now includes output hash, parent IDs, input hashes, correlation, session, producer, event type, rule version, and payload strategy ID, version, digest, run, instrument and source mapping. An exact replay returns the identical event and adds zero rows. A changed but valid parent conflicts inside the atomic batch and rolls back. It does not return the old mismatched provenance. The same key with a changed parent is rejected. A truly new decision requires a different run, instrument or index. The cohort envelope carries `correlation_id` and `chain_correlation_id` from the validated screens and upstream discovery. A conflicting run correlation is rejected before insert. A zero-candidate cohort uses the explicit zero-screen correlation.
+
+### 6. Regressions
+Builder reports the full unittest suite: 73 passed on Python 3.12.3 and 73 passed on Python 3.9.25. Covered cases reported with that run: exact same-parent screen and cohort replay; second valid parent, missing parent, and foreign correlation or session rejected; two-candidate chain continuity; missing, extra and duplicate cohort parents; conflicting cohort run correlation; zero-candidate continuity; rejections leave row count and tip unchanged; replay adds zero rows; outage writes zero rows; prior numeric, provenance, paper and role-isolation cases stay green. This session did not run the suite or open the test file.
+
+### 7. Results
+Screen append remains S-Bot only. Cohort append remains NEO only. `entry_authority` remains NONE. Thresholds and the stop registry are unchanged. No broker, vendor, credential or scheduler path is reported added.
+
+### 8. Integrity
+The four preservation hashes from the merged evidence are reported unchanged. Replay and rejection paths are reported to leave the hash tip unchanged except for an accepted new event. No partial write is reported for a conflicting parent or an outage.
+
+### 9. Security
+No vendor call, order, account query, credential use or new May-access route is reported. No private original is copied here. This is not a new independent security audit.
+
+### 10. ADR
+`docs/adr/0007-replay-identity-and-chain-correlation.md`, builder-reported. Not read here.
+
+### 11. Gaps
+G0 stays OPEN. FMP rights stay UNVERIFIED. The full May source is unrecovered. The doctrine is unapproved. Entry, exit, initial stop, trailing stop and risk approval are absent. Stop-dependent M/T, scheduling and live execution stay blocked. The Architect has not reviewed `e403f29d…`.
+
+### 12. Public PR #7 head
+OPEN. Base `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Head before this packet `2de57d153b1f1cc810c145300f59c2795a0efbc0`, verified on the remote. The tip after this packet is the remote read-back.
+
+### 13. Readiness
+**READY FOR ARCHITECT ACCEPTANCE. Not accepted.** The next work order is an exact-head independent review on Python 3.12.14 before any merge. It is not started.
