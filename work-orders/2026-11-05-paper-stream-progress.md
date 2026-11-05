@@ -82,5 +82,8 @@ The Architect's public audit holds that head after 72 Python 3.12.14 tests. Repl
 PR #2 `e403f29db0fe74f7b2b5f3ad7d84f160a966df22` on `cursor/qarp-rotation-001-1e9e`, base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, merge `2df940bff49023f7a8eb396f1b54c934816ddf65`. Builder reports 73 tests passed on each of Python 3.12.3 and 3.9.25 and a remote read-back of that head. ADR 0007 is cited by path. Private repository not visible here. The Architect's 72-test audit stays on `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4`.
 **Disposition:** **READY FOR ARCHITECT ACCEPTANCE. Not accepted.**
 
+## Semantic replay hold — repair head pending
+Architect, not this session: 73 tests OK on Python 3.12.14 at `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`. Parent-replay rejection and NEO correlation are accepted for the reproduced cases. A same-key `source_id` change, or quality `PRICE_OK` to `UNCHECKED`, still returns a silent duplicate. Private comment `6668063602` was not readable here. One repair is assigned: full decision-semantic comparison for single and batch appends, excluding generated retry timestamps and operational metadata, plus an ADR, Python 3.9 and 3.12 regressions, and a fresh process check. **No head is recorded. Not claimed fixed.**
+
 ## Next
-Exact-head independent review on Python 3.12.14 before any merge. Not started. G0, FMP rights, the May source, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.
+The 12-item packet is filled when the repair head and tests arrive. It will record verified starts, exact head and base, reconciliation, files, the semantic fix, regressions, results, integrity, security, ADR, gaps, the public PR #7 head, and readiness. G0, FMP rights, the May source, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.
