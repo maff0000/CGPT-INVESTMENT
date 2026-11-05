@@ -1,4 +1,6 @@
 # Six-bot consolidation index — sanitised review packet
+
+**ARCHITECT DISPOSITION UPDATE — 2026-11-05:** See [independent exact-head M2/preservation review](2026-11-05-paper-bots-m2-preservation-exact-head-audit.md). Private paper-bots PR #3 head `531967980bcec40576d929ce32f8bb9900e498f6` **accepted and merged for preservation only**, merge `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. PR #2 head `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` **HOLD** after 72 independent offline tests because idempotent replay can mask changed discovery parent and NEO emits a divergent correlation. Grok correction ordered in PR #2 comment `6667409366`. Public governance PR #7 remains OPEN/UNMERGED. All trading-policy and G0/FMP/scheduling/live-execution gates unchanged. The remainder of this consolidated builder packet is retained as historical evidence, not the latest acceptance status.
 **ID:** REVIEW-PAPER-INDEX-001
 **Date:** 2026-11-05 (Europe/London)
 **Status:** **HOLD** on this governance pull request, on paper-bots PR #2 lineage, and on PR #3 policy. E-Bot code and the paper-bots mock foundation are Architect-accepted. This session did not re-test them. Do not merge this pull request from this update.
