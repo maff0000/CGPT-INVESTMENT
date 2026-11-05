@@ -25,6 +25,9 @@ Under the exact user-requested threshold, **a $1.00 discrepancy is accepted, $1.
 | $100.00 | $100.20 | None, but one bar from another session | DATA_MISMATCH |
 | $25 raw | $12.50 split-adjusted | None | DATA_MISMATCH; not a legitimate $12.50 source disagreement |
 
+## Provider trial staged — G0-PROVIDER-001
+Massive Stocks Basic is now the **first actual candidate for manual signup and data validation**, but the account and API access remain unverified; this is **not canonical acceptance**. [Private onboarding](g0-massive-onboarding.md), [manual local read-only probe](../research/validation/g0_massive_readonly_probe.py), [provider-selection decision](../research/decisions/2026-11-05-massive-onboarding-selection.md). Do not publish raw Massive daily prices/market-wide feeds without written redistribution rights, and do not assume a free individual plan covers a future business/agent platform.
+
 ## Verified provider shortlist (documentation only; no account/API keys accessed)
 | Data provider | Verified service ability | Timeliness and licence questions | G0 priority |
 |---|---|---|---|

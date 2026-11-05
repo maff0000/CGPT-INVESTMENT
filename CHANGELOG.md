@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-PROVIDER-001: Massive Basic private onboarding prepared
+- Chose **Massive Stocks Basic** as first trial (NOT final provider) from current official feature docs: US EOD grouped/ticker OHLCV, 2-year history, 5/min, previous-session data after midnight ET next day.
+- Documented significant data-licence restriction: individual-use Massive subscription does **not** grant public chart/price-table or other redistribution rights; future commercial agent use needs separate entitlement review.
+- Added [onboarding and acceptance steps](docs/g0-massive-onboarding.md) and [manual one-shot read-only Python smoke probe](research/validation/g0_massive_readonly_probe.py) with hidden-key prompt, five calls, no provider data/key storage, summary-only status/coverage output.
+- [Selection decision](research/decisions/2026-11-05-massive-onboarding-selection.md) explicitly states **NO API account, key or 260-bar live test has occurred**. Await account-holder setup; G0 open, G1 blocked, no agent/broker work.
+
+
 ## 2026-11-05 — G0-DATA-002: $1 discrepancy tolerance and practical EOD provider acceptance route
 - Adopted precisely **abs(vendor close A − B) <=$1.00 accepted with no PRICE CHECK; >$1.00 flagged** for same USD instrument/session/adjustment. A straddled critical pivot independently triggers **SIGNAL_AMBIGUOUS**, not a routine quote flag. Missing date/split/currency integrity = DATA_MISMATCH.
 - Retested historical XOM/LIN/EQIX discrepancy examples **$0.03/$0.17/$0.16: all PRICE_OK**; superseded over-escalation in G0-DATA-001.
