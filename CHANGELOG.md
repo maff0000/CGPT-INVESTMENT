@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — SCOUT-001: find tightening bases before momentum
+- Added a separate, non-mandatory pre-breakout scouting route: QARP **A** plus explicit exceptions, before momentum screens B/C, with **WATCH / BASE FORMING, COILING, AT PIVOT** substages.
+- Differentiated Finviz **Volatility / Relative Volume / chart Pattern** snapshots from actual **historical contraction and volume dry-up**. Proposed prospective 10-versus-prior-40-session features, support/resistance, stock/sector RS, misleading-signal checks and outcome logging.
+- Confirmed Finviz's **Screener Charts view, Elite advanced filters and Find Similar Charts** as useful scout aids subject to availability. No live scan, OHLCV ingestion or stock reclassification is claimed.
+- Documented [method](docs/pre-breakout-accumulation-scout.md) and [dated decision](research/decisions/2026-11-05-pre-breakout-scout.md). All v2 A/B/C and previous chart/investment gates preserved.
+
 ## 2026-11-05 — CHART-001: Breaking Out, In Trend and Watch
 - Preserved QARP Discovery v2 A/B/C filters and added **independent chart stages**, with BREAKING OUT first priority for buy/WAIT review, not automatic purchase.
 - Made actual sector/industry, relative sector strength, SMA slopes, volume, documented resistance and separate economic/earnings decision mandatory for a classification.

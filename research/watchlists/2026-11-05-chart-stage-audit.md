@@ -34,3 +34,6 @@ A dated close and price source; SMA20/50/200 and slopes; base/resistance/highs; 
 Review possible breakouts from B/C and A recoveries first, trend-following entries next, Watch promotions afterwards. Do not assign a chart group from stale prices or from a company's strategic attractiveness. OLLI was historically filed in the Consumer Defensive research lane but is inventoried as Consumer Discretionary (see [sector note](../../docs/sector-rotation.md)).
 
 Canonical rules: [CHART-001](../../docs/chart-stage-classification.md).
+
+## Pre-breakout Watch substages — 2026-11-05 methodology update
+When fresh chart data becomes available, any verified WATCH company should additionally receive **BASE FORMING, COILING or AT PIVOT** plus measured recent/prior range and volume ratios, pivot proximity and sector/stock relative strength. **Do not assign these substages to the 22 CHART PENDING companies yet.** See [SCOUT-001](../../docs/pre-breakout-accumulation-scout.md).

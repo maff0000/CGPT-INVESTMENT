@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## SCOUT-001 — pre-breakout accumulation-proxy search (2026-11-05)
+Use **A + disclosed exceptions** to find quieter bases that may precede the B/C momentum transition. Within WATCH label **BASE FORMING / COILING / AT PIVOT** only with dated OHLCV evidence; then BREAKING OUT after confirmed resistance close. Pilot recent-vs-prior **10/40 session range/volume** contraction ratios, resistance proximity and stock/sector relative strength. Finviz Pattern, Volatility, High/Low and relative-volume are imperfect scouting proxies; never present low single-day RVOL or a flat range as proof of institutional accumulation. No automated screen or new classifications yet. [Canonical scout](docs/pre-breakout-accumulation-scout.md), [adopted decision](research/decisions/2026-11-05-pre-breakout-scout.md). **Existing A/B/C and investment-risk gates unchanged.**
+
 ## CHART-001 — chart-stage classification (2026-11-05)
 **A/B/C Finviz unchanged.** Add independent price-behaviour groups **BREAKING OUT** (highest buy-review priority), **IN TREND** and **WATCH**. Every ticker must show actual sector/industry, sector relative strength, volume/resistance and dated 50/200 SMA evidence plus a *separate* BUY/WAIT/REJECT valuation/event judgement. **All 22 current companies are CHART PENDING**, not automatically WATCH, because no fresh chart review was done while documenting the rules. Read [method](docs/chart-stage-classification.md), [audit queue](research/watchlists/2026-11-05-chart-stage-audit.md) and [decision](research/decisions/2026-11-05-chart-stage-pipeline.md).
 

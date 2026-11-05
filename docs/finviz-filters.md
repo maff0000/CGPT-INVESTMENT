@@ -32,6 +32,9 @@ Use the [Finviz screener](https://finviz.com/screener.ashx) and [official filter
 
 At a common timestamp and universe, C should be a subset of B, which should be a subset of A. Do not add counts as unique names. A recovery watchlist can contain A names with weak charts and separately documented near-misses.
 
+## SCOUT-001 — discover a tightening base before a breakout
+Preserve the exact A/B/C presets above. A separate **exploratory scan** starts with A plus documented premium/near-miss exceptions and checks Finviz **Volatility, Pattern, distance to 20-day High, Relative Volume, and Screener Charts**. These are **snapshots**: Finviz volatility is an average daily high/low percentage range and RVOL is the intraday-adjusted current volume versus a 3-month mean, **not a 10-day versus prior-40-day contraction or volume dry-up measure**. Use completed bars to confirm the latter, and label WATCH / BASE FORMING, COILING, AT PIVOT before BREAKING OUT. Elite technical filters and Find Similar Charts may accelerate search; no custom indicator configuration or account preset was saved. See [SCOUT-001](pre-breakout-accumulation-scout.md).
+
 ## CHART-001 — separate breakout/trend/watch grouping (2026-11-05)
 All A/B/C fundamental and SMA50/SMA200 screens remain unchanged. **After** screening, classify current charts as **BREAKING OUT / IN TREND / WATCH**, with actual sector and industry and date-aligned sector relative strength. A B or C screen pass does not prove a breakout. Finviz Pattern, distance from 52-week high, relative volume and Charts view are *optional exploratory overlays*, not new mandatory screen settings. See [CHART-001 rules](chart-stage-classification.md) and [22-name review queue](../research/watchlists/2026-11-05-chart-stage-audit.md). No live screen or chart classifications are claimed.
 

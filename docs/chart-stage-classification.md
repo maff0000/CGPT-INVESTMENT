@@ -1,6 +1,9 @@
 # CHART-001 — Chart stage, sector and Finviz research priority
 **Adopted:** 2026-11-05, Europe/London. **Status:** operational pilot to refine with evidence.
 
+## SCOUT-001 — WATCH phases before the momentum move
+Within the existing **WATCH** chart group, record one of **BASE FORMING → COILING → AT PIVOT** after verifying real charts. This captures a legitimate accumulation-*proxy* base before technical confirmation. Only label **BREAKING OUT** after a verified closing break of meaningful resistance. A low-volatility flat chart does not prove institutional accumulation. See [SCOUT-001 pre-breakout method](pre-breakout-accumulation-scout.md) and [dated decision](../research/decisions/2026-11-05-pre-breakout-scout.md). A/B/C and the three top-level chart groups are unchanged.
+
 ## Three separate fields
 1. **Finviz eligibility:** retain QARP Discovery v2 **A / B / C** scans exactly as previously specified. A = fundamentals only; B = A plus Month Up and price above 50-day SMA; C = B plus price above 200-day SMA. Screen membership overlaps; it is not a chart label.
 2. **Chart stage:** classify only from a **fresh, dated daily/weekly chart and volume evidence** into BREAKING OUT / IN TREND / WATCH. Unknown charts remain CHART PENDING. Failed or invalid theses can be archived.

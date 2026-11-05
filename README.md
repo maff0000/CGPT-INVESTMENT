@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**NEW — pre-breakout scouting (SCOUT-001, 2026-11-05):** find **WATCH / BASE FORMING → WATCH / COILING → WATCH / AT PIVOT** before the momentum breakout. Preserve QARP v2 A/B/C unchanged; Finviz supports exploratory base/near-high pattern scouting, but multiweek volatility and volume contraction need actual chart/history review. No stocks were reclassified. [Scout methodology](docs/pre-breakout-accumulation-scout.md), [adoption decision](research/decisions/2026-11-05-pre-breakout-scout.md).
+
 **Chart-stage classification (CHART-001, 2026-11-05):** retain A/B/C Finviz screens but **separately classify** verified chart behaviour as BREAKING OUT (first review), IN TREND or WATCH, always with the actual sector/industry. These are not automatic purchase decisions. [Chart methodology](docs/chart-stage-classification.md); [22-name chart review queue](research/watchlists/2026-11-05-chart-stage-audit.md) — all currently **CHART PENDING** until a current chart audit is completed.
 
 **Rapid recovery:** [CURRENT-STATE.md](CURRENT-STATE.md) contains the latest verified NOW/LATER decisions, earnings triggers, risk gates, and next step. Read it after this README.
@@ -86,6 +88,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | **Long-horizon strategic holding thesis** | [Alphabet / GOOGL — STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md); [staged accumulation research](docs/strategic-staged-accumulation.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
 | **Breaking Out / In Trend / Watch** | [CHART-001 chart-stage rules](docs/chart-stage-classification.md) and [22-name audit queue](research/watchlists/2026-11-05-chart-stage-audit.md) |
+| **Find quieter bases before momentum** | [SCOUT-001 pre-breakout scouting method](docs/pre-breakout-accumulation-scout.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
 | Daily and weekly operating procedure | [Review workflow](docs/review-workflow.md) |
 | Evidence, timestamps and corrections | [Data provenance](docs/data-provenance.md) |
