@@ -1,6 +1,14 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — PAPER-PROGRESS-001: sanitised six-bot progress, no milestone acceptance
+- Recorded continued paper-only delivery under merged PR #6 at `a64c2f1d96a13f16963d8835713434c2be67c6f6` as a **proposed** status pull request. No bot implementation, private evidence or live authority is added.
+- Private E-Bot PR #2 remains open. Current builder-reported head `3aa95daffe1497725aba8dbd80d4005d5afde16c` supersedes reported `adb605fd676d06cf27830f35bf39c06d92d6a119`. Builder reports 112 tests, 111 passed, 1 pre-existing skip, zero live calls. This session could not read the private repository, so the head is **HOLD**, not accepted. The independent HOLD at `9b843dee03892e73f29da31997e5d07bfed564a7` stays the last public re-test.
+- Recorded the reported paper-bots bootstrap `3a1144bc544b3bc063808a42c723cbeabffb6ec9`, running WO-PAPER-001 and QARP-ROTATION-001 v1.0.0 implementation, with no acceptance packet and no invented pull-request URL.
+- Recorded the Stream C read-only attempt as complete. July brief v0.3 and July architecture v2 were reported recovered in full at private argus `46b4d8c8f17490357c6d1536c5027e45341b7f11`, with a reported hash match, and are not approved. The full May Trade doctrine was not recovered (access gap). The draft leaves QARP entry, exit, initial, trailing and risk values unresolved. Missing May source and conflicting legacy profiles are **NEED OWNER DECISION/ACCESS**. Stop-dependent M/T stays HOLD. No further access.
+- Corrected the FMP reading: three operator-reported Stable API calls, HTTP 402 on `batch-quote`, entitlement and rights UNVERIFIED. No further calls and no subscription upgrade.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md) · [decision](research/decisions/2026-11-05-paper-progress-sanitised.md) · [progress log](work-orders/2026-11-05-paper-stream-progress.md).
+
 ## 2026-11-05 — SBOT-STRATEGY-001: choose first versioned S-Bot screening strategy
 - Matt approved starting S-Bot with the existing exact **Finviz QARP Discovery v2** predicates: **QARP-ROTATION-001 v1.0.0**, A/B/C nested screens and full near-miss/unknown transparency.
 - Strategy registry establishes immutable rule IDs and version, evidence-per-predicate, screen versus chart versus trade separation, NEO prospective pass/non-pass/near-miss cohort analysis and explicit no-entry/no-order authority.

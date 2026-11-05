@@ -27,3 +27,6 @@ No Massive/FMP/IBKR live provider calls, real broker accounts or orders, real pa
 
 ## Delivery autonomy
 Within these bounds, Grok may alter its implementation strategy, tools, local storage and deployment arrangement and document the decision in an ADR. Do not request routine per-step approvals. If blocked on one dependency, isolate with tests and continue another safe component. End with a single PR review packet.
+
+## Progress addendum — 2026-11-05 (PROPOSED)
+See [stream progress](2026-11-05-paper-stream-progress.md). A private bootstrap was reported at `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. No implementation head, test packet or milestone acceptance is recorded in this public repository. This addendum does not change the original scope or acceptance criteria. Disposition of this work order remains **HOLD**.

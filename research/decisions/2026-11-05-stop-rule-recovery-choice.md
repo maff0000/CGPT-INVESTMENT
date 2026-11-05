@@ -1,5 +1,6 @@
 # STOP-RULE-RECOVERY-002 — recover legacy doctrines without adopting either
 **Date:** 2026-11-05, Europe/London | **Owner:** Matt | **Architect decision:** bounded read-only recovery approved
+**Later result (proposed in [PAPER-PROGRESS-001](2026-11-05-paper-progress-sanitised.md)):** the read-only attempt is reported complete. July brief v0.3 and July architecture v2 were recovered in full from private argus `46b4d8c8f17490357c6d1536c5027e45341b7f11` and are not approved. The full May doctrine was not recovered. That access gap and the conflicting legacy profiles are **NEED OWNER DECISION/ACCESS**. Stop-dependent M/T remains HOLD. The text below is the original authorisation, not the result.
 **Source of initial discrepancy:** GrokBot Stream C operator report; original Redis text and July document have not yet been independently inspected in this decision record.
 **Tracking:** [GitHub issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5)
 **Current authority:** PAPER/SHADOW development only; all stop-dependent manager/execution decisions remain HOLD.

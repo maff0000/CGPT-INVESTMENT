@@ -3,6 +3,15 @@
 **Parent:** [PID-EQUITY-PAPER-001](pid-equity-paper-system.md) | **Autonomy:** [GrokBot delivery charter](grokbot-paper-delivery-charter.md) | **Launch WO:** [WO-PAPER-001](../work-orders/WO-PAPER-001-integrated-vertical-slice.md).
 **Status:** BUILD AUTHORIZED UNDER BOUNDED PAPER-ONLY WOs; no milestone accepted yet.
 
+## Progress snapshot — PROPOSED 2026-11-05
+No milestone below is accepted. Details and dispositions: [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
+- **M0 E-Bot:** private PR #2 remains open at builder-reported head `3aa95daffe1497725aba8dbd80d4005d5afde16c`, base `50c0b66247498672b84e9fcae7e417a538a0e5c1`. That head supersedes reported `adb605fd676d06cf27830f35bf39c06d92d6a119`. The last independent review is still `9b843dee03892e73f29da31997e5d07bfed564a7`. This public snapshot did not read the private head. Disposition **HOLD**.
+- **M0 stops:** the authorised read-only recovery attempt is complete. July brief v0.3 and July architecture v2 were reported recovered in full at private argus `46b4d8c8f17490357c6d1536c5027e45341b7f11` and are not approved. The full May Trade doctrine was not recovered. Conflicting legacy profiles and that access gap are **NEED OWNER DECISION/ACCESS**. Stop-dependent M/T management stays HOLD. No further access.
+- **M0 FMP:** three operator-reported read-only calls. Entitlement and rights UNVERIFIED. No further calls.
+- **M1:** private paper-bots bootstrap reported at `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. WO-PAPER-001 is reported running. No acceptance packet and no implementation pull-request URL.
+- **QARP-ROTATION-001 v1.0.0:** the screening specification is on main. Implementation is reported running and is **HOLD**.
+
 ## Guiding principle
 **Deliver one thin working vertical slice across all six bots early**, then deepen E/S/R/M/T/NEO in parallel where shared contracts are stable. Do not wait months for prospective alpha proof before writing paper software, but do not confuse passing tests or simulated P&L with validated investability. No live orders. Grok chooses the most effective implementation details and documents its reasoning, including challenges to this roadmap.
 

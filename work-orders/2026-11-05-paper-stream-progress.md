@@ -1,0 +1,66 @@
+# Paper stream progress — 2026-11-05
+**Status:** PROPOSED public record. No software milestone is accepted in this file.
+**Parent authority on main:** [PAPER-LAUNCH-001](../research/decisions/2026-11-05-paper-build-launch.md) at public `a64c2f1d96a13f16963d8835713434c2be67c6f6`
+**Index:** [REVIEW-PAPER-INDEX-001](../research/reviews/2026-11-05-six-bot-consolidation-index.md)
+**Public base for this documentation increment:** `a64c2f1d96a13f16963d8835713434c2be67c6f6`
+
+## WO-GOV-001 — this public sanitised increment
+**Scope:** record owner authorisation to continue autonomous paper-only six-bot delivery under merged PR #6; publish one consolidation index; correct the FMP entitlement reading; point living handoff files at the current reported E-Bot head.
+**Exclusions:** implementation code, private evidence, personal data, secrets, infrastructure detail, raw vendor payloads, live calls, subscription changes, merges, invented pull-request URLs or heads.
+**Tests:** document and link review only. The private E-Bot suite was not runnable from this session.
+**Acceptance:** an open documentation pull request whose head states the dispositions in the index. Architect acceptance is separate and has not happened.
+**Rollback:** close the unmerged documentation pull request. Merged PR #6 stays the public authority.
+**Disposition:** **HOLD** until this pull request is accepted.
+
+## WO-PAPER-001 — integrated mock vertical slice
+**Spec:** [WO-PAPER-001](WO-PAPER-001-integrated-vertical-slice.md). Original scope is unchanged.
+**Reported state:** a private paper-bots repository bootstrap exists at `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. The repository URL and any later implementation head were not supplied. This session could not read a repository named `maff0000/paper-bots`.
+**Tests:** none supplied.
+**Disposition:** **HOLD**. Running is not acceptance. No milestone pull-request URL is recorded.
+
+## QARP-ROTATION-001 v1.0.0 — implementation in progress
+**Spec already accepted on main:** [registry](../docs/sbot-strategy-registry.md) version 1.0.0, [SBOT-STRATEGY-001](../research/decisions/2026-11-05-sbot-first-strategy.md).
+**Reported state:** implementation work is running. No public work-order id, private head, test count or pull-request URL was supplied. This file does not create those identifiers after the fact.
+**Boundary:** screening and qualification only. The work does not authorise paper entries, stops or orders. Stop-dependent paths stay on the stream below.
+**Disposition of the specification:** **ACCEPT** (already on main). **Disposition of the implementation:** **HOLD**.
+
+## Stream A — E-Bot PR #2 correction
+**Repository PR:** https://github.com/maff0000/ebot/pull/2
+**State:** OPEN / UNMERGED. Awaiting Architect acceptance. Not accepted.
+**Base reported:** `50c0b66247498672b84e9fcae7e417a538a0e5c1`
+**Current reported head:** `3aa95daffe1497725aba8dbd80d4005d5afde16c`
+**Superseded reported head:** `adb605fd676d06cf27830f35bf39c06d92d6a119` (grouped-row silent-skip gap was the builder report at that head; not independently reviewed)
+**Last head independently reviewed in this public journal:** `9b843dee03892e73f29da31997e5d07bfed564a7`
+
+### Builder-reported at the current head
+- Tests: 112 collected, 111 passed, 1 pre-existing skip. Python 3.9.25 and 3.12.3. Zero live calls.
+- Files changed this round: `ebot/massive.py`, `ebot/reconcile.py`, `tests/test_reconcile.py`, `docs/redacted-g0-d3-acceptance.md`.
+- Non-object grouped rows: provider diagnostic `malformed_row` leads to `INVALID_DATA` for a symbol with no attributed row. No ticker is inferred. Valid object peers remain `PRICE_OK`. Empty results remain `UNCHECKED`.
+- Three regression tests run through `urllib_send`.
+- Automated trading remains false.
+- Remaining reported gaps: no holiday calendar; occupied ID 43 returns `AUTHORISATION_FAILURE`; no substitute id is used.
+
+### Independent evidence
+This session could not read `maff0000/ebot`. The four named files were not reviewed and the 112 tests were not re-run. No live call was made. Disposition of the code is therefore not an independent acceptance.
+
+**Disposition:** **HOLD**. Needs independent exact-head review.
+
+## Stream C — stop-rule recovery attempt complete
+**Authority:** [STOP-RULE-RECOVERY-002](../research/decisions/2026-11-05-stop-rule-recovery-choice.md), [issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5) (open).
+**Reported result:** the authorised read-only attempt is complete. This public session did not repeat it. The report includes no writes, restarts, broker calls, vendor calls or credential use.
+**Recovered:** July brief v0.3 and July architecture v2, full source, private argus commit `46b4d8c8f17490357c6d1536c5027e45341b7f11`. Reported hash match to the compared copies. **Not approved.**
+**Not recovered:** the full May Trade doctrine. Access gap. Only the previously cited one-line excerpt is available, and its vol-band parameters are missing. This does not prove that no historical rule ever existed.
+**Draft:** a private comparison and parameterised schema were handed to the paper-bots workstream for reviewed private GitHub preservation. No preservation SHA was supplied. QARP entry, exit, initial stop, trailing stop and risk values in that draft are explicitly UNRESOLVED. The draft is not an accepted doctrine.
+**Dependency:** owner or operator provides the complete May source through an authorised authenticated exact-record export, or supplies it from backup. No bypass. No further access.
+**Hold:** stop-dependent M-Bot and T-Bot paper position management. Other authorised paper work continues.
+**Disposition:** recovered July texts **HOLD** (not approved). Missing May source and conflicting legacy profiles **NEED OWNER DECISION/ACCESS**. Stop-dependent M/T **HOLD**.
+
+## FMP entitlement trial — closed pending new authority
+**Reported calls:** exactly three, read-only Stable API, key not stored here, raw values not retained.
+**Reported outcomes:** `profile` SPY HTTP 200 list length 1; `historical-price-eod/light` SPY for 2026-11-03 through 2026-11-04 HTTP 200 list length 2; `batch-quote` SPY,XOM HTTP 402 non-JSON body, not parsed.
+**Rights:** UNVERIFIED. HTTP 402 supports an access or payment restriction on that call. It does not establish plan terms, licence, universe coverage, quotas or redistribution permission. Earlier repository FMP notes are not proof of this key's rights.
+**Stop:** no further calls; no subscription upgrade.
+**Disposition:** **HOLD**.
+
+## Next
+Independent exact-head review of E-Bot `3aa95daffe1497725aba8dbd80d4005d5afde16c` when a credential can read that repository, with no live calls. Continue the running private WO-PAPER-001 and QARP implementation without treating them as accepted. Do not resume Stream C access. The May-source dependency above is **NEED OWNER DECISION/ACCESS**.
