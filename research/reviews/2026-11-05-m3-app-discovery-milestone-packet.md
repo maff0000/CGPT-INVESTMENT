@@ -7,6 +7,8 @@
 
 Labels used below: **VERIFIED**, **PARENT-VERIFIED**, **IMPLEMENTED**, **PROPOSED**, **BLOCKED**. Nothing in the app or discovery workstream is **IMPLEMENTED** yet.
 
+**Locked private head.** Parent direct GitHub read-back: [paper-bots PR #4](https://github.com/maff0000/paper-bots/pull/4) is open and not merged. Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a40412f0876fd59526a6b663273f69b4df008ec4`. Current private citations use that full head. The earlier sections keep `a6aa7f32acc8531a06e3e36044a4b9003c888323`, `ad5e30ae5502d77d8beec3399845f64116ff8702`, and the parent-named historical prefix `36904a1`. Those are history, not the locked head. The locked 14-item record is the last section of this file. This session still receives HTTP 404 for the private repository. That 404 is this credential only.
+
 ## 1. Starting heads
 | Ref | SHA | Class |
 |---|---|---|
@@ -85,6 +87,9 @@ Public [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md) records pl
 ## Acceptance gate
 The sections above that name head `a6aa7f32acc8531a06e3e36044a4b9003c888323` record the head before the final private report. The final builder head is below. Native probes are finished. NEO `APP-A-NEO-002` is already received. No further native peer actions are requested.
 
+## Historical builder packet — head `ad5e30ae5502d77d8beec3399845f64116ff8702`
+This section keeps the builder report for that historical head. It is not the locked head. The locked record is the last section of this file.
+
 ## Final 14-item milestone packet — builder report, not an Architect audit
 **Disposition:** **READY FOR ARCHITECT REVIEW of the bounded fixture only. Overall integration PARTIAL. Operational HOLD. Not accepted.** This session could not read private paper-bots (HTTP 404 on this credential only). The parent separately read accepted E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` on GitHub this turn. That is not a global access block. Builder reports local head, origin branch and pull-request head match, and that private main is unchanged.
 
@@ -135,3 +140,77 @@ This packet is on PR #8. Base `20094068e20c2de0a659e8243657207c8d4cfbaa`. The he
 
 ### 14. Readiness and next work
 **READY FOR ARCHITECT REVIEW of the bounded synthetic fixture only.** Overall integration remains **PARTIAL**. Operational state remains **HOLD**: G0 open, FMP rights unverified, May source unrecovered, doctrine unapproved, entry and stop policy unapproved, stop-dependent M/T on hold, no scheduler and no live execution. The public [screening review](../../docs/qarp-screening-requirements-review.md) now shows the frozen A/B/C predicates from the public registry. The private documentation-only transcription of the accepted manifest is requested and its head is **not claimed**. The 91 core tests are unchanged. One acceptance gate follows that documentation. App presence remains [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) and is not a completed security boundary.
+
+## Locked 14-item packet — private head `a40412f0876fd59526a6b663273f69b4df008ec4`
+**Disposition:** **READY FOR ARCHITECT REVIEW** of the bounded offline fixture and the chat milestone. Overall native, Python and security integration remains **PARTIAL**. Operational state remains **HOLD**. **No independent acceptance is claimed.** No merge. No new code, vendor call, network call, peer action, scheduler or activation.
+
+Parent direct GitHub read-back, not a read by this credential: [PR #4](https://github.com/maff0000/paper-bots/pull/4) is open, `merged` false, 21 files changed. This credential still receives HTTP 404. That is not a global access block.
+
+### 1. Starting head triple, private lock, and public branch
+| Ref | Full value | Class |
+|---|---|---|
+| Public PR #8 baseline before this lock note | `86bdf3190476a0b414dff8e4b211caf5a97f2731` | VERIFIED on `cursor/m3-discovery-app-presence-6067` |
+| Public base and `main` | `20094068e20c2de0a659e8243657207c8d4cfbaa` | VERIFIED. Merge of PR #7 |
+| Private paper-bots base | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` | PARENT-VERIFIED. Accepted QARP/NEO main. Not read here |
+| Locked private head | `a40412f0876fd59526a6b663273f69b4df008ec4` | PARENT-DIRECT GITHUB READ-BACK. Open. Not merged |
+| E-Bot accepted interface main | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | PARENT-VERIFIED. Not re-read here. Code and interface design only. G0 OPEN |
+| Historical private head | `ad5e30ae5502d77d8beec3399845f64116ff8702` | Historical. Kept above. Not the locked head |
+| Historical private head | `a6aa7f32acc8531a06e3e36044a4b9003c888323` | Historical. Kept above. Not the locked head |
+| Historical private prefix | `36904a1` | Parent-named history only. Full SHA was not supplied and is not invented |
+
+The public head produced by this note is the remote read-back of `cursor/m3-discovery-app-presence-6067` after the push. It is recorded on PR #8. It is not claimed inside this sentence before that read-back.
+
+### 2. Native identities, probe and NEO
+Unchanged from the sections above. Five created teammates. T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` reused. E to S to R to M have acknowledgements and downstream receipts. T received M-Bot's return for `APP-A-001-M-T`. `APP-A-NEO-001` remains historical `INCOMPLETE_EVIDENCE`. `APP-A-NEO-002` is bounded handoff evidence, partial, and production ledger completeness is unverified. No further native peer actions. Chat is not a ledger bridge. Bounded native chat is verified. Full integration is partial.
+
+### 3. Private head and base
+[PR #4](https://github.com/maff0000/paper-bots/pull/4). Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a40412f0876fd59526a6b663273f69b4df008ec4`. OPEN. Not merged. Parent direct read-back. Not read by this credential. Private main is reported unchanged. Documentation only moved this head. No new private code.
+
+### 4. Private file manifest — 21 files
+Parent read-back: **21 files changed** against the base. This credential cannot list those paths, so they are not copied here and no twenty-first name is invented. The exact manifest is the private diff, which is not private source code:
+
+- Pull request: [paper-bots PR #4](https://github.com/maff0000/paper-bots/pull/4)
+- Diff pinned to the full SHAs: [base `76dd4f98` to head `a40412f0`](https://github.com/maff0000/paper-bots/compare/76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d...a40412f0876fd59526a6b663273f69b4df008ec4)
+- Private work order already cited by path: `docs/work-orders/WO-PAPER-003-broad-discovery.md`
+
+Path names printed in the historical `ad5e30ae5502d77d8beec3399845f64116ff8702` section stay there. They are not re-certified as the locked set of 21.
+
+### 5. Implemented synthetic coverage — BUILDER, carried forward
+The parent states that the prior full build facts still apply at the locked head. 17 rows, 16 instruments, all 11 GICS sectors. Not the listed US universe. 10 ADMITTED, 1 EXCLUDED (OTC), 1 UNKNOWN for missing freshness, 1 INVALID non-finite, 1 UNCHECKED survivor, 1 DATA_MISMATCH, 1 SOURCE_UNAVAILABLE. Dedup of one member preserves both sources. `seven_name_cap` is false. QARP is not applied to discovery. Documented exclusion classes are NON_US_PRIMARY, OTC, WARRANT, PREFERRED, ETN and BLANK_CHECK. Not every class is claimed to have been exercised.
+
+### 6. Screening — frozen table now in the private doc
+The final private documentation table contains all frozen A/B/C operators and units. Manifest hash unchanged: `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62`. Ruleset digest: `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac`. Both are parent-reported from that head. This session did not re-read the private table. The public human-readable copy remains [the screening review](../../docs/qarp-screening-requirements-review.md), taken from the public registry and Finviz filter note. It is not a new strategy approval. Builder screen examples remain 11, with unsupported Finviz mapping left UNKNOWN. Screening an UNCHECKED survivor as UNKNOWN is still an unapproved choice.
+
+### 7. NEO digest — BUILDER, carried forward
+Synthetic clock `2026-11-10T14:30Z`. Run `acceptance-demo`. 41 events. Chain reported OK. Tip `f2a8986fa1726cf947797f0ba2108a13b29b3eb39aa71712988d2377a19e73db`. `DISCOVERY_BATCH` `5c1e3588-304b-56bb-8e10-ca6bc10a285c`. `NEO_COHORT` `afdec7f3-6ba8-51b6-bdc4-b1f79b37c022`. Digest `8a609995-05fb-514e-995a-f0ff2e3efeaa`. Batch of 16 member identifiers and hashes. 11 screen identifiers and hashes, plus the cohort. The in-process Python NEO still appends the digest. That is not hard isolation and not a native NEO write. **Material deviation, still reported as such.**
+
+### 8. Tests — BUILDER, not Architect
+Fresh detached worktree at exact `a40412f0876fd59526a6b663273f69b4df008ec4`: 91 passed on Python 3.12.3 and 91 passed on Python 3.9.25, including the accepted 82. Not an Architect Python 3.12.14 audit. The parent states the core 91-test code is unchanged by the documentation commit. Native offline envelopes remain `SYN-APA01` and `SYN-APA02`. They are not the `APP-A` fixture identifiers. No bridge is claimed.
+
+### 9. Rights and the FMP record
+No provider entitlement is asserted. The private documentation corrected one typo, `call402`, to the exact three historical calls. No fourth call was made. No licence tier and no quota are inferred.
+
+| Call | Request | Result |
+|---|---|---|
+| 1 | Profile, SPY | HTTP 200, one record |
+| 2 | Historical price, SPY | HTTP 200, two records |
+| 3 | Batch quote, SPY and XOM | HTTP 402, non-JSON |
+
+Rights stay UNVERIFIED. The accepted E-Bot README capability matrix is incorporated in the private documentation and in the public screening review. No other private access was required. The interface is read-only Massive grouped and daily OHLCV, plus IBKR contract details and regular-hours trades, for XOM, LIN, EQIX and SPY only. It is not a broad universe. Fundamentals, Finviz mapping, SMA and chart stage are unimplemented. That design is not a current live permission.
+
+### 10. Owner choices still open — NOT APPROVED
+Lawful actual-universe source. Whether UNCHECKED survivors are screened as UNKNOWN or held out. Whether sector-relative strength, earnings and chart stage become predicates. Seven research labels are not approved as strategies. FAIR-VALUE-COMPOUNDER-002 is not approved. Chart state is CHART_PENDING. Entry is NONE. Frozen QARP criteria are shown and not edited. New strategies stay blocked.
+
+### 11. Security limit
+Unchanged. The builder check is a limited import scan and a socket patch around the older scenarios. It is not a host audit and not a full network test of the new discovery path. There is no credential host scan and no app access-control proof. The diff reports no broker write, account query, vendor call, scheduler, new risk parameter or new credential. One user's bots still share one computer.
+
+### 12. ADRs
+Private ADR 0009 and ADR 0010 remain cited by path at the locked head. They were not read here. Public ADR-APP-001 remains the platform-facts record. No new stop or risk value is adopted.
+
+### 13. Public pull request
+This lock note is on [PR #8](https://github.com/maff0000/CGPT-INVESTMENT/pull/8). Branch `cursor/m3-discovery-app-presence-6067`. Base `20094068e20c2de0a659e8243657207c8d4cfbaa`. Baseline before this note: `86bdf3190476a0b414dff8e4b211caf5a97f2731`. OPEN. Not merged. The public head is the remote read-back after this push.
+
+### 14. Readiness and next work orders
+**READY FOR ARCHITECT REVIEW** of the bounded offline fixture and the chat milestone. Overall native, Python and security integration **PARTIAL**. Operational **HOLD**. No independent acceptance.
+
+Next work orders, not started and not activated: a real US universe, licences, source-to-metric mapping, an approved screening framework, a native protected adapter, and integration. No scheduler and no activation until that approval. G0 stays OPEN. The May source stays unrecovered. Entry, stop and risk stay unapproved. Stop-dependent M/T stays HOLD. [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is not a completed security boundary. No further scope is opened by this note.

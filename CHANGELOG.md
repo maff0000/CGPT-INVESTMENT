@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-05 — Private discovery head locked; public packet pinned
+- Parent direct GitHub read-back: paper-bots PR #4 is open and not merged. Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a40412f0876fd59526a6b663273f69b4df008ec4`. 21 files changed. This session received HTTP 404 and did not copy the paths or any private code. The manifest link is the private diff.
+- Historical heads kept and labeled: `ad5e30ae5502d77d8beec3399845f64116ff8702`, `a6aa7f32acc8531a06e3e36044a4b9003c888323`, and parent-named prefix `36904a1`. They are not the locked head.
+- Builder, not Architect: fresh detached run at the locked head, 91 passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Prior synthetic coverage, NEO digest and security limits are carried forward. Manifest hash unchanged. Ruleset digest `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac`. The FMP record is exactly three historical calls. No fourth call and no licence or quota inference.
+- Disposition: ready for Architect review of the bounded offline fixture and chat milestone. Overall integration partial. Operational hold. No independent acceptance. Next work orders are named and not started. No scheduler and no activation.
+- Public baseline before this note: `86bdf3190476a0b414dff8e4b211caf5a97f2731`. Public base: `20094068e20c2de0a659e8243657207c8d4cfbaa`. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Public frozen QARP predicates shown; private doc head still pending
 - The public screening review now copies the frozen A/B/C values, operators and units from the already public registry and Finviz filter note. It is not a new strategy approval. The accepted private manifest hash remains the builder-reported `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62`, with no change.
 - A documentation-only private correction is requested to transcribe those predicates from the manifest and to separate implemented, deferred and owner choices. That private head has not moved. The 91 core tests are unchanged. One acceptance gate follows the documentation.
