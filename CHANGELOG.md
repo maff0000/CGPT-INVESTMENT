@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — MACRO-PROSPECTIVE-001: macro-aware in-time research, defer mandatory backtesting
+- Adopted **contemporaneous, prospective** equity-selection requirements rather than mandatory retrospective backtesting; historical cases remain business context, not claimed performance validation.
+- Created [macro-aware review doctrine](docs/macro-aware-equity-review.md) and [dated G0–G4 validation amendment](research/decisions/2026-11-05-macro-aware-forward-validation.md), including rates/real yields, commodities, macro calendars, credit/FX, geopolitics/policy and supply bottlenecks.
+- Each relevant macro factor now requires source/timestamp, company-specific causal channel, exposure/time horizon, contrary case, and assessment of what may already be priced in.
+- Updated [manual test protocol](docs/research-validation-protocol.md), [requirements](docs/research-process-validation-charter.md), and [worksheet](templates/manual-equity-validation-review.md): G3 **independent forward replication**, G2 prospective macro-adjusted vs predeclared macro-blind baseline; no historic backtest gate. Agents remain unapproved; daily scout remains paused.
+
+
 ## 2026-11-05 — VALIDATION-FIRST-001: prove requirements before agents
 - Declared the Finviz v2 A/B/C, pre-breakout accumulation proxy, chart classifications and research verdict processes **unvalidated hypotheses**, not a known statistical edge; blocked AGENT-SYSTEM-001 build work.
 - Published the [manual validation charter](docs/research-process-validation-charter.md), [prospective test protocol](docs/research-validation-protocol.md), [daily review worksheet](templates/manual-equity-validation-review.md) and [formal freeze](research/decisions/2026-11-05-validation-first-freeze.md). Established G0 specification freeze → G1 reproducibility → G2 comparative prospective outcomes → G3 independent replication → G4 explicit research-only automation go/no-go.

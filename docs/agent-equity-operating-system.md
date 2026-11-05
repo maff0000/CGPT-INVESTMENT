@@ -1,4 +1,6 @@
 # AGENT-SYSTEM-001 — Evidence-led equity research and controlled execution architecture
+**MACRO-PROSPECTIVE-001 (2026-11-05):** backtesting is **deferred/optional** during requirement validation. Future research would require a dated macro/sector/company transmission packet, but implementation remains BLOCKED until **independent forward evidence** meets revised G0–G4. See [macro doctrine](macro-aware-equity-review.md) and [decision](../research/decisions/2026-11-05-macro-aware-forward-validation.md).
+
 **SUPERSEDED IMPLEMENTATION PRIORITY:** VALIDATION-FIRST-001 (2026-11-05) blocks all agent construction until an explicit G0–G3 proof review and G4 research-build permission. See [validation charter](research-process-validation-charter.md) and [decision](../research/decisions/2026-11-05-validation-first-freeze.md).
 
 **Draft architecture adopted for design:** 2026-11-05, Europe/London. **Implementation state:** design only; no agent trading authority, broker connection or live execution has been created.

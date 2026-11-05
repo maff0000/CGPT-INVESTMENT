@@ -10,6 +10,25 @@
 - Corporate actions, missing data and price-source discrepancy: TBD
 - **Source integrity:** PASS / HOLD / FAIL and why
 
+## 1A. Contemporaneous macro/regime record — REQUIRED before company decision
+**Complete at the actual review cutoff; never retrospectively insert knowledge.** Use [macro requirements](../docs/macro-aware-equity-review.md). UNKNOWN/NO MATERIAL CHANGE are valid only if source/time checked.
+
+| Pillar | Observed value / event and direction | Last published / retrieved (UTC, source) | Expectation / surprise vs actual | Relevant sector/company and economic mechanism | Priced-in/alternative explanation | State |
+|---|---|---|---|---|---|---|
+| US nominal 2yr / 10yr yields, real 10yr, curve | UNKNOWN | | | | | UNASSESSED |
+| Inflation, Fed, labour and next release calendar | UNKNOWN | | | | | UNASSESSED |
+| Brent/WTI, relevant commodity/supply | UNKNOWN | | | | | UNASSESSED |
+| Credit spreads, liquidity, FX, volatility | UNKNOWN | | | | | UNASSESSED |
+| Verified geopolitical conflict, sanctions, trade, election/policy | UNKNOWN | | | | | UNASSESSED |
+| Relevant infrastructure, industrial and supply shortages | UNKNOWN | | | | | UNASSESSED |
+| Market breadth; sector vs SPY 1w/1m/3m | UNKNOWN | | | | | UNASSESSED |
+
+- **Material macro drivers (max 3):** verified fact → mechanism → exposure/horizon → alternative/priced-in view → company scenario change.
+- **Known upcoming shocks/releases:** issuer/Fed/BLS/EIA/event dates, local time, source, whether confirmed or forecast.
+- **Risk posture:** tailwind/headwind/mixed/immaterial/unknown; why; scenario if wrong. **No unverified election, war or policy claims.**
+- **Macro-blind counterfactual committee verdict** at the *same snapshot* (to assess incremental value): TBD.
+- **Macro-included committee verdict** (to measure changed decision without hindsight): TBD.
+
 ## 2. Screen census — include non-candidates
 | Population | Count | Source / timestamp | Notes |
 |---|---:|---|---|
@@ -37,6 +56,8 @@
 | Earnings issuer confirmation, exact time, blackout state | UNKNOWN — blocks entry |
 | News: cited, dated and material | TBD |
 | Fundamental quality and owner cash flow / debt / dilution / PEG limitations | TBD |
+| Company-specific macro exposure and scenario, with source/time | TBD — source-backed economics required |
+| What the market already expects / contrary macro explanation | TBD / UNKNOWN |
 | Bear/base/bull, value estimate and net downside | TBD |
 | Two substantive contradictory risks or alternative explanations | TBD |
 | Investment research verdict: BUY STARTER / BUY FULL / WAIT / REJECT | UNASSESSED |
@@ -54,6 +75,7 @@
 - **Number of candidates reviewed, rejects and chart disagreement cases**: TBD
 - **No-signal day** clearly stated when applicable.
 - **Open issues, falsified assumptions, what changes before next session**: TBD
+- **What would we have decided without macro adjustments?** TBD (freeze before results)
 
 ## 5. Prospective outcome ledger (not filled until future dates)
 | Signal timestamp | Symbol | Chart-stage version | Frozen hypothetical entry method | D+5 return / adverse | D+20 | D+60 | Benchmark/sector excess | Invalidated? |

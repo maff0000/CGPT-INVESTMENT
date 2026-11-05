@@ -4,6 +4,9 @@ The goal is to measure whether the process produces useful research, not to retr
 ## Process measures
 Track candidates discovered, reviewed, advanced, waiting and rejected; source completeness; gate failures; near-miss reasons; sector changes; and time to resolve key questions. Retain rejected and inactive names to reduce survivorship bias.
 
+## Macro-aware prospective evidence — 2026-11-05
+Under [MACRO-PROSPECTIVE-001](macro-aware-equity-review.md), every prospective decision record must include the **same-time macro regime and actual source vintage**, a source-backed company/sector transmission case, explicit competing explanations, whether risks appear anticipated/priced in, plus a **frozen macro-blind comparator verdict**. Assess later outcomes including correct risk avoidance *and false vetoes*; never retrofit geopolitical/political narratives to explain returns. Conventional retrospective backtests are optional and currently deferred; this does **not** establish investment alpha. See [test protocol](research-validation-protocol.md).
+
 ## Proposed prospective research measurement
 Before collecting returns, declare start timestamp, observable reference price, benchmark, horizon, dividend/split treatment, currencies and methodology version. Suggested research horizons are 1, 4 and 12 weeks, pending adoption. A signal observed after the close cannot receive an earlier same-day executable price.
 
