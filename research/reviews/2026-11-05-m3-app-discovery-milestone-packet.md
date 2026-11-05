@@ -23,12 +23,12 @@ Recorded in [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md). Crea
 
 | Role | Name | Identifier | State |
 |---|---|---|---|
-| E-Bot | Explorer | `53f42f0b-4b9e-429f-9317-6e7edf2d8e26` | Created. Handoff verification pending |
-| S-Bot | Strategist | `5cddba3b-38ff-49c8-8e9b-37b63efebe3c` | Created. Handoff verification pending |
-| R-Bot | Risk Skeptic | `76efa575-82b5-44c0-a0df-5647c78b0083` | Created. Handoff verification pending |
-| M-Bot | Manager | `59ccea20-1754-437f-8fa9-424ff18e5221` | Created. Handoff verification pending |
-| T-Bot | Trading | `81d8cf38-188e-4592-b08d-b59d6e461e83` | Existing. Reused unchanged |
-| NEO | Independent Observer | `e1e372c8-20e9-45a6-856f-4eabdf018308` | Created. Handoff verification pending |
+| E-Bot | Explorer | `53f42f0b-4b9e-429f-9317-6e7edf2d8e26` | Created. Bounded chat verified. Full integration partial |
+| S-Bot | Strategist | `5cddba3b-38ff-49c8-8e9b-37b63efebe3c` | Created. Bounded chat verified. Full integration partial |
+| R-Bot | Risk Skeptic | `76efa575-82b5-44c0-a0df-5647c78b0083` | Created. Bounded chat verified. Full integration partial |
+| M-Bot | Manager | `59ccea20-1754-437f-8fa9-424ff18e5221` | Created. Bounded chat verified. Full integration partial |
+| T-Bot | Trading | `81d8cf38-188e-4592-b08d-b59d6e461e83` | Existing. Reused unchanged. Received M-Bot's return |
+| NEO | Independent Observer | `e1e372c8-20e9-45a6-856f-4eabdf018308` | Created. Second audit received. Full integration partial |
 
 ## 4. Created and integrated
 Five app teammates are **PARENT-REPORTED created**. T-Bot already existed. Integration with the private Python package and the production ledger is **not verified**. Native profile text is not a hard access-control list. **Ledger bridge: UNVERIFIED.**
@@ -36,7 +36,7 @@ Five app teammates are **PARENT-REPORTED created**. T-Bot already existed. Integ
 ## 5. Demonstration message
 The parent sent five priority typed acceptance probes. The first record was delivery acknowledgement only. Peer transcripts have since been read by a read-only executor, and the parent read the probe JSON and Markdown. Those files are not on this cloud session. Tool-call identifiers from the transcripts are not service receipt identifiers and are not republished here. No event hash is invented. Long peer payloads in the official transcript are abbreviated and are not a byte-exact archive.
 
-**Parent-observed chat result, not a production pass.** Five distinct identity and refusal responses were actually received for E, S, R, M and NEO. E to S, S to R, and R to M each have a tool acknowledgement and an attributed downstream receipt in the peer transcripts. M to T has a tool acknowledgement, and the parent received T's actual full JSON return for task `APP-A-001-M-T`. The current T-Bot accepts a research HOLD only. Candidate identifiers `fixture:APP-A-001:001` and `fixture:APP-A-001:002` are unchanged. Symbols are `FIXTURE_ALPHA` and `FIXTURE_BETA`. Quality is UNCHECKED. Qualification is UNKNOWN. Entry is NONE. There was no proposal, risk-gate invocation, ledger write, fill or order. This shows the chat pipeline only. It is not production ledger, schema or broker integration. Correlation `APP-A-001` and envelope `native-probe-1` remain a provisional chat. **`native-probe-1` is not an accepted production ledger contract.**
+**Parent-observed chat result, not a production pass.** Five distinct identity and refusal responses were actually received for E, S, R, M and NEO. E to S, S to R, and R to M each have a tool acknowledgement and an attributed downstream receipt in the peer transcripts. M to T has a tool acknowledgement. T, the current assistant, received M-Bot's full JSON return for task `APP-A-001-M-T`. The producer is M-Bot and the recipient is T-Bot. It is not T's own return. That return is a research HOLD only. Candidate identifiers `fixture:APP-A-001:001` and `fixture:APP-A-001:002` are unchanged. Symbols are `FIXTURE_ALPHA` and `FIXTURE_BETA`. Quality is UNCHECKED. Qualification is UNKNOWN. Entry is NONE. There was no proposal, risk-gate invocation, ledger write, fill or order. This shows the chat pipeline only. It is not production ledger, schema or broker integration. Correlation `APP-A-001` and envelope `native-probe-1` remain a provisional chat. **`native-probe-1` is not an accepted production ledger contract.**
 
 **Chronology, recorded and not repaired.** The original fixture input `20:30:00 GMT` was 52 seconds ahead of E's actual `20:29:08 GMT`. S reused E's time and was not measured separately. R's actual stamp is `20:30:30 GMT`. M's `20:30:00` is an explicit minute-precision turn marker, not measured seconds. No latency or freshness claim is made. No time is corrected after the fact.
 
