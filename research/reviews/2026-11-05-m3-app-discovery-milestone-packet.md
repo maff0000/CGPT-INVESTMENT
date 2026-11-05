@@ -1,4 +1,6 @@
 # M3 milestone packet — app teammates and broad discovery
+
+> **Architect supersession added 5 November 2026:** This packet was submitted as `READY FOR ARCHITECT REVIEW` at public head `e2306a1f57b670382d31b22e5d002556b7b88858`. The independent review is now **HOLD** for private PR #4 `a40412f0876fd59526a6b663273f69b4df008ec4` despite 91 tests passing, because four synthetic source/listing/freshness/type integrity defects were independently reproduced. Do not mistake the original 'authoritative current milestone' heading below for acceptance. [Superseding independent audit](2026-11-05-m3-a40412f-independent-hold.md). App-native/security/ledger integration remains PARTIAL/UNVERIFIED. No merges or operational permissions.
 **ID:** REVIEW-M3-001
 **Date:** 2026-11-05 (Europe/London)
 **Public base verified this session:** `20094068e20c2de0a659e8243657207c8d4cfbaa` (`origin/main`, merge of [PR #7](https://github.com/maff0000/CGPT-INVESTMENT/pull/7))
