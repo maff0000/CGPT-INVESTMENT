@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**Chart-stage classification (CHART-001, 2026-11-05):** retain A/B/C Finviz screens but **separately classify** verified chart behaviour as BREAKING OUT (first review), IN TREND or WATCH, always with the actual sector/industry. These are not automatic purchase decisions. [Chart methodology](docs/chart-stage-classification.md); [22-name chart review queue](research/watchlists/2026-11-05-chart-stage-audit.md) — all currently **CHART PENDING** until a current chart audit is completed.
+
 **Rapid recovery:** [CURRENT-STATE.md](CURRENT-STATE.md) contains the latest verified NOW/LATER decisions, earnings triggers, risk gates, and next step. Read it after this README.
 
 **Current parallel mandate:** [ALL-SECTOR opportunity process](docs/all-sector-opportunity-pipeline.md) targets **at least seven substantiated potential investment ideas per week** from **the eight sectors outside Industrials, Healthcare and Consumer Defensive**. This is in addition to the original three-lane rotation engine, not its replacement. [First nine-name pilot](research/reviews/2026-11-03-all-sector-pilot.md) and [all-sector watchlist](research/watchlists/2026-11-03-all-sector-09.md).
@@ -83,6 +85,7 @@ Read the [Healthcare decision](research/decisions/2026-11-03-healthcare-purchase
 | **Parallel eight-sector / AI second-phase search** | [All-Sector opportunity process](docs/all-sector-opportunity-pipeline.md), [pilot review](research/reviews/2026-11-03-all-sector-pilot.md), [9 company list](research/watchlists/2026-11-03-all-sector-09.md) |
 | **Long-horizon strategic holding thesis** | [Alphabet / GOOGL — STRATEGIC-001](research/decisions/2026-11-03-alphabet-long-term.md); [staged accumulation research](docs/strategic-staged-accumulation.md) |
 | Exact current and historical presets | [Finviz filters](docs/finviz-filters.md) |
+| **Breaking Out / In Trend / Watch** | [CHART-001 chart-stage rules](docs/chart-stage-classification.md) and [22-name audit queue](research/watchlists/2026-11-05-chart-stage-audit.md) |
 | Earnings and material events | [Earnings risk gates](docs/earnings-risk-gates.md) |
 | Daily and weekly operating procedure | [Review workflow](docs/review-workflow.md) |
 | Evidence, timestamps and corrections | [Data provenance](docs/data-provenance.md) |

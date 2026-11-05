@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-03 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## CHART-001 — chart-stage classification (2026-11-05)
+**A/B/C Finviz unchanged.** Add independent price-behaviour groups **BREAKING OUT** (highest buy-review priority), **IN TREND** and **WATCH**. Every ticker must show actual sector/industry, sector relative strength, volume/resistance and dated 50/200 SMA evidence plus a *separate* BUY/WAIT/REJECT valuation/event judgement. **All 22 current companies are CHART PENDING**, not automatically WATCH, because no fresh chart review was done while documenting the rules. Read [method](docs/chart-stage-classification.md), [audit queue](research/watchlists/2026-11-05-chart-stage-audit.md) and [decision](research/decisions/2026-11-05-chart-stage-pipeline.md).
+
 ## Inventory clarification — 2026-11-04
 The two current watchlists have **22 unique active companies across 11 GICS sectors**: 13 from the historical three-lane cohort and 9 from the parallel all-sector funnel. **OLLI** is retained as a historical original Consumer Defensive-lane candidate, but for the sector inventory it is **Consumer Discretionary / Broadline Retail**, as corroborated by YCharts and MarketBeat; Stock Analysis labels it Consumer Staples, so classification varies by provider. Treat cohort membership and current sector separately. See [sector classification note](docs/sector-rotation.md).
 

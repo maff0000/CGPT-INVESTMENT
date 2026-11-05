@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — CHART-001: Breaking Out, In Trend and Watch
+- Preserved QARP Discovery v2 A/B/C filters and added **independent chart stages**, with BREAKING OUT first priority for buy/WAIT review, not automatic purchase.
+- Made actual sector/industry, relative sector strength, SMA slopes, volume, documented resistance and separate economic/earnings decision mandatory for a classification.
+- Recorded exploratory Finviz Pattern/near-high/relative-volume overlays and an initial [22-company audit queue](research/watchlists/2026-11-05-chart-stage-audit.md). **All chart stages currently pending verification**; no live chart audit or broker trades.
+- Canonical [methodology](docs/chart-stage-classification.md) and [decision](research/decisions/2026-11-05-chart-stage-pipeline.md).
+
+
 ## 2026-11-04 — Current 22-company inventory and sector classification
 - Verified historical 13-company three-sector discovery list and 9-name all-sector list = **22 unique active names**, across **11 actual sectors**.
 - **OLLI** remained historically filed in the Consumer Defensive discovery cohort but independent GICS-style business profiles classify it **Consumer Discretionary / Broadline Retail**, contrary to another vendor's Consumer Staples classification; recorded classification discrepancy and preserved original dated lists. See [classification note](docs/sector-rotation.md).
