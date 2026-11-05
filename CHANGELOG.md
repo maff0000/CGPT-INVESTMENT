@@ -1,6 +1,18 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — SBOT-STRATEGY-001: choose first versioned S-Bot screening strategy
+- Matt approved starting S-Bot with the existing exact **Finviz QARP Discovery v2** predicates: **QARP-ROTATION-001 v1.0.0**, A/B/C nested screens and full near-miss/unknown transparency.
+- Strategy registry establishes immutable rule IDs and version, evidence-per-predicate, screen versus chart versus trade separation, NEO prospective pass/non-pass/near-miss cohort analysis and explicit no-entry/no-order authority.
+- Fair-value-led strategy remains a separate **PROPOSED** follow-on requiring valuation inputs and horizon. Grok authorised to implement paper-only under current charter; source/gate/stop rules must not be weakened.
+- [Decision](research/decisions/2026-11-05-sbot-first-strategy.md) · [S-Bot registry](docs/sbot-strategy-registry.md).
+
+## 2026-11-05 — STOP-RULE-RECOVERY-002: choose evidence recovery, not legacy doctrine adoption
+- GrokBot Stream C identified two conflicting incomplete summaries: Trade doctrine v2.0 (May 22; full source reportedly in Trinity Redis) and July Sniper-OS. This is an **operator report**, not authenticated original evidence.
+- Architect approved **bounded read-only recovery** of both originals, private preservation after sensitive-data review, structured comparison by strategy/horizon and proposed Equities Trading Doctrine v1.0 for later explicit owner acceptance. Neither summary becomes canonical by default.
+- **Stop-dependent M-/T-Bot paper management remains HOLD** pending exact rules; all independent paper build, E-Bot fix, NEO and discovery streams continue.
+- [Decision](research/decisions/2026-11-05-stop-rule-recovery-choice.md) · [issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5).
+
 ## 2026-11-05 — PAPER-LAUNCH-001: sponsor approves rapid six-bot integrated paper build and GrokBot autonomy
 - Matt now confirms dedicated **M-Bot** and all six E/S/R/M/T/NEO roles, with GrokBot given bounded technical autonomy and encouragement to challenge our design on its own infrastructure; paper/shadow only.
 - Recorded explicit PID, accelerated milestone roadmap, full GrokBot delegated implementation charter and first testable integrated vertical-slice WO.
