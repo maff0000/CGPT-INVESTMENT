@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — PAPER-LAUNCH-001: sponsor approves rapid six-bot integrated paper build and GrokBot autonomy
+- Matt now confirms dedicated **M-Bot** and all six E/S/R/M/T/NEO roles, with GrokBot given bounded technical autonomy and encouragement to challenge our design on its own infrastructure; paper/shadow only.
+- Recorded explicit PID, accelerated milestone roadmap, full GrokBot delegated implementation charter and first testable integrated vertical-slice WO.
+- Grok may record and execute roadmapped WOs on GitHub feature branches, document better alternatives and bundle ordinary changes for milestone PR review; no silent canonical merge, no weakened risk/data/licence/stop controls or live trading.
+- E-Bot G0-D3 PR #2 remains unmerged on Architect HOLD; fix in parallel with mocks. Stop policy recovery and FMP entitlement are explicit bounded dependencies. Future decisions, progress, tests and handoff must be tracked in GitHub, not chat alone.
+- [Decision](research/decisions/2026-11-05-paper-build-launch.md) · [PID](docs/pid-equity-paper-system.md) · [roadmap](docs/equity-paper-delivery-roadmap.md) · [Grok charter](docs/grokbot-paper-delivery-charter.md) · [WO-PAPER-001](work-orders/WO-PAPER-001-integrated-vertical-slice.md).
+
 ## 2026-11-05 — NEO-LEARNING-001: independent observer and shared event ledger
 - Added equities-only **NEO**, a separate read-only audit/learning observer for all E/S/R/proposed M/risk/T paper decisions. Approved one shared, append-only structured event ledger with per-bot typed emitters and short local diagnostics, canonical UTC/causal lineage/versions, and private data; NEO creates explanatory reports and **proposals only**, not self-modifying rules or orders.
 - Reports distinguish decision-time process quality, ex-post forward outcomes, rejected/missed/zero-signal candidates, provider failures, entries/exits/trailing-stop fidelity, costs and human-shadow differences. Sanitised public GitHub reports are reviewable PRs.
