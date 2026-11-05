@@ -1,6 +1,6 @@
 # PAPER-PROGRESS-001 — sanitised progress under merged PR #6
 **Date:** 2026-11-05 (Europe/London)
-**Status:** **PROPOSED.** This documentation pull request is pending Architect acceptance. It is not accepted `main`, and it accepts no software milestone.
+**Status:** **PROPOSED.** [Pull request #7](https://github.com/maff0000/CGPT-INVESTMENT/pull/7) is pending Architect acceptance. It is not accepted `main`, and it accepts no software milestone.
 **Authority already on main:** [PR #6](https://github.com/maff0000/CGPT-INVESTMENT/pull/6) merge `a64c2f1d96a13f16963d8835713434c2be67c6f6` (PR head `b7c81d730a9a61d53776c8729eb4556e091f0cf1`; first parent `fa87e83834643316ff1f1a87a8438b11a336ca1f`, merge of PR #4).
 **Canonical index:** [six-bot consolidation review](../reviews/2026-11-05-six-bot-consolidation-index.md)
 **Progress log:** [2026-11-05 paper stream progress](../../work-orders/2026-11-05-paper-stream-progress.md)

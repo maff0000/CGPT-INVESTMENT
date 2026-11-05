@@ -4,6 +4,7 @@
 **Status:** **PROPOSED** pending acceptance of this documentation pull request. Do not merge it as software acceptance.
 **Public base verified by this session:** `a64c2f1d96a13f16963d8835713434c2be67c6f6` (`origin/main`, merge of [PR #6](https://github.com/maff0000/CGPT-INVESTMENT/pull/6))
 **Documentation branch:** `cursor/paper-governance-progress-6067`
+**Public pull request:** https://github.com/maff0000/CGPT-INVESTMENT/pull/7 (proposed; merging it accepts this status record only)
 **Decision:** [PAPER-PROGRESS-001](../decisions/2026-11-05-paper-progress-sanitised.md)
 **Progress log:** [WO progress](../../work-orders/2026-11-05-paper-stream-progress.md)
 
