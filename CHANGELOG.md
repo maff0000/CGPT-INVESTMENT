@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — NEO-LEARNING-001: independent observer and shared event ledger
+- Added equities-only **NEO**, a separate read-only audit/learning observer for all E/S/R/proposed M/risk/T paper decisions. Approved one shared, append-only structured event ledger with per-bot typed emitters and short local diagnostics, canonical UTC/causal lineage/versions, and private data; NEO creates explanatory reports and **proposals only**, not self-modifying rules or orders.
+- Reports distinguish decision-time process quality, ex-post forward outcomes, rejected/missed/zero-signal candidates, provider failures, entries/exits/trailing-stop fidelity, costs and human-shadow differences. Sanitised public GitHub reports are reviewable PRs.
+- Independently reconstructed private E-Bot PR #2 at 9b843dee03892e73f29da31997e5d07bfed564a7: 105 successful Python 3.12.14 tests and three offline malformed-response classification reproductions. **HOLD**, no merge, corrective comment posted, no live calls. Formal GitHub REQUEST_CHANGES was unavailable to the PR author identity.
+- [NEO decision](research/decisions/2026-11-05-neo-audit-learning-observer.md) · [event contract](docs/neo-decision-event-ledger.md) · [E-Bot review](research/reviews/2026-11-05-g0-d3-pr2-architect-hold.md).
+
 ## 2026-11-05 — PAPER-SYSTEM-001: GitHub continuity and five-role paper/shadow direction
 - Sponsor made **GitHub current-state persistence mandatory for every substantive agreed change**, including rationale, blockers, decisions, work orders and acceptance, with exact-HEAD read/verification and fail reporting.
 - Sponsor requested **all cooperating bots built and integrated early in paper-only/shadow mode**; candidate volume should reflect all credible market opportunities, not a seven-stock cap. Architect recommends distinct M-Bot for simulated entry/exit/trailing-stop and portfolio decisions, with T-Bot limited to execution/reconciliation; M-Bot split awaits owner confirmation.
