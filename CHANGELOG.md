@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-MACRO-001: first actual dated macro observation, not proof of selection rules
+- Completed [manual macro dry-run](research/validation/2026-11-05-macro-g0-dry-run.md) for Nov4 US close, reporting Treasury 2/10yr nominal yield, secondary 10yr TIPS, Fed, Sep CPI/PCE, credit as of Nov3, Nov4 Brent/WTI, elections, sector ETFs, next BLS releases.
+- Drew conditional causal tests for actual research-sector exposures rather than treating the market rally or oil decline as an automatic buy. Documented different data cutoffs, primary-vs-secondary evidence, unknown physical shortages and missing contemporaneous sector return periods.
+- [G0 trial decision](research/decisions/2026-11-05-macro-g0-dry-run.md): regime MIXED/EVENT-DRIVEN/SELECTIVE, **G0 still open, no G1/agent approvals or trades**, and missing macro data/issuer economics before a proper investment review.
+
+
 ## 2026-11-05 — MACRO-PROSPECTIVE-001: macro-aware in-time research, defer mandatory backtesting
 - Adopted **contemporaneous, prospective** equity-selection requirements rather than mandatory retrospective backtesting; historical cases remain business context, not claimed performance validation.
 - Created [macro-aware review doctrine](docs/macro-aware-equity-review.md) and [dated G0–G4 validation amendment](research/decisions/2026-11-05-macro-aware-forward-validation.md), including rates/real yields, commodities, macro calendars, credit/FX, geopolitics/policy and supply bottlenecks.
