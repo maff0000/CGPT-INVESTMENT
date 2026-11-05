@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — VALIDATION-FIRST-001: prove requirements before agents
+- Declared the Finviz v2 A/B/C, pre-breakout accumulation proxy, chart classifications and research verdict processes **unvalidated hypotheses**, not a known statistical edge; blocked AGENT-SYSTEM-001 build work.
+- Published the [manual validation charter](docs/research-process-validation-charter.md), [prospective test protocol](docs/research-validation-protocol.md), [daily review worksheet](templates/manual-equity-validation-review.md) and [formal freeze](research/decisions/2026-11-05-validation-first-freeze.md). Established G0 specification freeze → G1 reproducibility → G2 comparative prospective outcomes → G3 independent replication → G4 explicit research-only automation go/no-go.
+- Verified Finviz's official note that **historical screener results are unavailable**; require contemporaneous archives or licensed point-in-time sources for credible outcomes. Prevent survivorship/look-ahead, cherry-picking and post-hoc tuning.
+- **Paused** previously enabled US Close Equity Scout recurring research automation while defining and proving the manual requirements. Monday all-sector idea research remains separate. No broker order, implementation WO, private investment data or agent build authority.
+
+
 ## 2026-11-05 — AGENT-SYSTEM-001: end-to-end research architecture, governance and evidence contracts
 - Documented staged **post-close data validation → deterministic discovery → sector/fundamental/event/challenge research → human committee → distinct risk/order authorisation → broker execution (future) → reconciliation and outcome learning**.
 - Added [architecture and phased delivery](docs/agent-equity-operating-system.md), [public candidate evidence contract](docs/candidate-evidence-contract.md), [execution/governance boundary](docs/execution-authorisation-boundary.md), and [architecture decision](research/decisions/2026-11-05-agent-investment-system-architecture.md).

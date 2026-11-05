@@ -1,10 +1,10 @@
 # DAILY-SCOUT-001 — After-US-close equity scouting runbook
-**Adopted:** 2026-11-05 (Europe/London) | **Status:** scheduled recurring research task is enabled; individual executions and commits require separate verification.
+**Adopted:** 2026-11-05 (Europe/London) | **Current status:** previously scheduled recurring scout is **PAUSED** under [VALIDATION-FIRST-001](research-process-validation-charter.md). This runbook is a future execution reference, not permission to run an unvalidated automated pipeline.
 
 ## Purpose
 Operate a **repeatable research and decision desk** for early-stage bases, coiling/at-pivot stocks, completed breakouts and still-investable trend continuations. Keep discovery independent of investment endorsement. A high-quality chart is not a great business at any price.
 
-**Scheduling:** a weekday after-US-close ChatGPT research task has been created. It is distinct from the established Monday weekly all-sector idea process; neither replaces the other. A scheduled task **is not proof** that future results, OHLCV data access or GitHub writes will be available. Never claim a nightly report exists without checking the actual dated output and GitHub HEAD.
+**Scheduling:** a weekday after-US-close ChatGPT research task was created but is **currently paused** while manual criteria and outcomes are validated. It is distinct from the established Monday weekly all-sector idea process; neither replaces the other. A scheduled task **is not proof** that future results, OHLCV data access or GitHub writes will be available. Never claim a nightly report exists without checking the actual dated output and GitHub HEAD.
 
 ## Authoritative read order for new sessions
 1. [README](../README.md), [agent rules](../AGENTS.md) and [current state](../CURRENT-STATE.md).
