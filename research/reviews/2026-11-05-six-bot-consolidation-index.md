@@ -256,15 +256,69 @@ Builder-reported, and not independently checked:
 - The full May doctrine is still an access gap. That is **NEED OWNER DECISION/ACCESS**, not a proof that no historical rule existed.
 
 ## Rollback
-Public PR #7 stays unmerged. Paper-bots PRs #1, #2 and #3 stay unmerged until a later exact-head acceptance. The Architect's E-Bot code merge is already reported on the private repository and is not reverted here. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`.
+Public PR #7 stays unmerged. Paper-bots PR #1 is Architect-reported as merged to private main. PR #2 and PR #3 stay unmerged. The Architect's E-Bot code merge is already reported and is not reverted here. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`.
 
 ## Next work order
-Assigned, with no result head yet. One bounded paper-bots correction for the two remaining PR #2 defects: reject a swapped discovery parent, reject an incomplete NEO cohort, validate candidate, event type, producer, run, session, chronology and strategy context, and refuse a partial ledger write. Tests on Python 3.9 and 3.12. Reconcile that branch non-destructively onto `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06`. Reconcile PR #3 without changing the four preserved hashes. Do not record a final head until the evidence arrives.
+The bounded lineage correction now has builder-reported heads. The next work order is an exact-head Architect review of those heads. It is not started. Integration and source-rights work wait until that acceptance. No performance claim is made.
 
 Unchanged blocks: G0 OPEN; FMP entitlement and licence UNVERIFIED; full May source **NEED OWNER DECISION/ACCESS**; entry, exit, initial stop, trailing stop and risk policy unapproved; stop-dependent M/T HOLD; no scheduling; no live execution.
 
-## Final packet — awaiting the correction handoff
-Not filled. When the correction evidence arrives, this section will record repository, branch, full base and head, changed files, work orders, tests, the Architect audit, wrong-parent and incomplete-cohort rejects, ledger behaviour, hash references, limitations, the next work order and readiness. Those fields are absent now, so no final head is claimed.
+## Final 12-item acceptance packet — 2026-11-05
+**Disposition requested:** **READY FOR ARCHITECT ACCEPTANCE** of the PR #2 correction and of PR #3 preservation only. Stop and risk policy stay **HOLD**. This session does not accept either pull request.
+
+**Evidence classes.** Public `origin/main` and the pre-commit PR #7 head are **VERIFIED** by this session. Private SHAs, tests, rejects, ledger behaviour and the four hashes are **BUILDER-REPORTED**. The builder reports a remote read-back of private main `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06`. This session received HTTP 404 for that repository, so it did not verify the private heads. The Architect's 52-test and 66-test Python 3.12.14 results remain **historical** for `823203059466a30a11fe5a0e677f54c5482dc6fb` and `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`. They are not an audit of the heads below.
+
+### 1. Repositories, branches, bases and heads
+| Repository | Branch | Base | Head | State |
+|---|---|---|---|---|
+| Public `maff0000/CGPT-INVESTMENT` | `main` | — | `a64c2f1d96a13f16963d8835713434c2be67c6f6` | VERIFIED this session |
+| Public PR #7 | `cursor/paper-governance-progress-6067` | `a64c2f1d96a13f16963d8835713434c2be67c6f6` | `817a029139677641c55dd51d899aa7b7f89922b6` before this packet | VERIFIED, OPEN. Supersedes the stale reference `18badb7118d6acff4fec2c6533889f82161d8340` |
+| Private `maff0000/ebot` | accepted main, name not re-read | — | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | ARCHITECT-REPORTED. Not refetched. E-Bot not modified in this round |
+| Private `maff0000/paper-bots` | accepted main, name not re-read | — | `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` | BUILDER reports remote verification. Not visible here |
+| [paper-bots PR #2](https://github.com/maff0000/paper-bots/pull/2) | `cursor/qarp-rotation-001-1e9e` | `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` | `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` | BUILDER-REPORTED. OPEN / UNMERGED. Normal merge `00423b5b5bd35d36b7a00c776785adc688da094b`. No force-push, rebase or main merge |
+| [paper-bots PR #3](https://github.com/maff0000/paper-bots/pull/3) | **NOT SUPPLIED.** This session could not read the private pull request, so no branch name is invented | `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` | `531967980bcec40576d929ce32f8bb9900e498f6` | BUILDER-REPORTED. OPEN / UNMERGED |
+
+### 2. Changed files and work orders
+PR #2, builder-reported paths: `src/paperbots/strategies/lineage.py`, `strategies/screen.py`, `ledger.py`, `access.py`, `docs/schemas/v0.2/catalog.json`, `tests/test_lineage.py`, `docs/adr/0006-screen-lineage-identity.md`, `docs/work-orders/WO-PAPER-002-correction-evidence-integrity.md`. Work order named: WO-PAPER-002 correction for evidence integrity. ADR 0006 is cited by path only. PR #3 conflict is reported in README only. The four original evidence files are reported unchanged.
+
+### 3. Summary
+Discovery parents are checked for candidate identity, event type `CANDIDATE`, producer `EBOT`, correlation, session and chronology. A swapped order is rejected and is not silently repaired. A cohort must be the exact screen set: no missing, extra or duplicate identifiers, and the same run, session, strategy `1.0.0` and digest. Checks run before validation, and the ledger write is an atomic batch.
+
+### 4. Tests on Python 3.9 and 3.12
+Builder reports 72 tests passed on Python 3.12.3 and 72 passed on Python 3.9.25 for the PR #2 branch. Builder reports 52 tests passed on each of those interpreters for the PR #3 branch. This session did not run them. The Architect's earlier 52 and 66 Python 3.12.14 results stay attached to the previous heads.
+
+### 5. Audits and security, kept distinct
+No new independent audit was performed for `453cc99e…` or `53196798…`. No vendor, broker or account call is reported. No secret or private original is copied here. The named rejection cases are builder-reported coverage of the 72-test run, not a separate security audit.
+
+### 6. REJECT evidence
+Builder reports that these cases are rejected and leave the ledger row count and hash tip unchanged: swapped parents, missing parent, wrong candidate, cross-correlation, cross-session, wrong event type, future discovery, incomplete cohort, duplicate identifier, and wrong strategy version or digest. A valid two-candidate chain is reported to verify. This session did not inspect the assertions inside the test file.
+
+### 7. Ledger and idempotency
+Builder reports: replay adds zero rows; a zero-row case and same-name duplicate observations are recorded; numeric and proxy cases stay green; an injected ledger outage writes zero rows for the batch. Pre-validation plus an atomic batch is the reported control. No partial ledger write is claimed as independently proven.
+
+### 8. Four preservation hashes
+Recomputed after the reported PR #3 merge, builder-reported, originals unchanged:
+
+| Item | SHA-256 |
+|---|---|
+| July brief | `a3ffdb12f68a31bbf944f23e0a34646109d891f10f0f5bb6c9ccafb851b587f3` |
+| July architecture | `d2e7331d544d6c938d5049475c201a01aeee8b5b1f4dc932f918aad0e62fa876` |
+| Matrix | `86b3de6684648b1b53ab5104862f81fafdad0903db6c7ca059a4209c8bac4485` |
+| Draft | `3658f7731af92bd479581fbb98f12993740dccb65f8e83e9256e811015206a59` |
+
+May text is not recovered. No path is invented for it. Legacy material is not approved. The draft stays a draft.
+
+### 9. Public PR #7 state
+OPEN. Not merged. Base `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Head before this packet `817a029139677641c55dd51d899aa7b7f89922b6`, verified on the remote. The SHA of this packet is the branch tip after the push and is recorded by read-back, not guessed in advance.
+
+### 10. Limitations
+G0 remains open. FMP entitlement and licence are UNVERIFIED. The full May source is unavailable. Entry, exit, initial stop, trailing stop and risk policy are unapproved. Stop-dependent M/T stays HOLD. No scheduling and no live execution. NEO 5/20/60 horizons and investment performance are not established. No external ledger-tip notarisation is claimed. PR #3's branch name was not supplied and could not be read.
+
+### 11. Next work order
+Exact-head Architect review of `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` and `531967980bcec40576d929ce32f8bb9900e498f6`. Not started. Further integration and source-rights work only after that acceptance.
+
+### 12. Readiness
+**READY FOR ARCHITECT ACCEPTANCE** of the PR #2 screen-lineage correction and of PR #3 preservation only. Not accepted by this packet. Stop and risk policy remain **HOLD**.
 
 ## Requested Architect action
-Hold this governance pull request. It records the Architect's M1 merge and the remaining M2 HOLD. It does not merge PR #7, accept PR #2 or PR #3, or approve doctrine parameters.
+Review the two new private heads. This governance pull request records the builder packet and stays unmerged. Acceptance of this public text would not by itself accept PR #2, PR #3, a stop policy, or live authority.

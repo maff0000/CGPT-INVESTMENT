@@ -71,5 +71,9 @@ PR #1 candidate `823203059466a30a11fe5a0e677f54c5482dc6fb`: 52 tests passed on e
 ## M1 acceptance and remaining M2 hold
 Architect, not this session: PR #1 `823203059466a30a11fe5a0e677f54c5482dc6fb` is accepted and merged as private main `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` after 52 Python 3.12.14 tests. Mock foundation only. PR #2 `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` stays **HOLD** after 66 tests: swapped discovery parents and an incomplete NEO cohort are still accepted. PR #3 stays policy HOLD. Private SHAs were not re-fetched here.
 
+## Final builder heads — not accepted here
+PR #2 `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` on `cursor/qarp-rotation-001-1e9e`, base `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06`, merge `00423b5b5bd35d36b7a00c776785adc688da094b`. Builder reports 72 tests passed on each of Python 3.12.3 and 3.9.25. PR #3 `531967980bcec40576d929ce32f8bb9900e498f6`, same base. Branch name not supplied. Builder reports 52 tests passed on each interpreter and four unchanged evidence hashes. Private repository not visible to this session.
+**Disposition:** **READY FOR ARCHITECT ACCEPTANCE** of the PR #2 correction and PR #3 preservation only. Stop and risk policy **HOLD**.
+
 ## Next
-One bounded correction is assigned and has no head yet. It must reject a swapped discovery parent and an incomplete cohort, validate candidate, event type, producer, run, session, chronology and strategy context, and reject without a partial ledger write. Tests on Python 3.9 and 3.12. Reconcile non-destructively onto `1d4e62de…`. Do not claim a final head before the evidence arrives. G0, FMP rights, the May access gap, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.
+Exact-head Architect review. Not started. No further implementation in this public update. G0, FMP rights, the May access gap, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.

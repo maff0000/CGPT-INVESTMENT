@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — Final paper-bots correction packet, ready for review
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. PR #7 remote head before this packet was `817a029139677641c55dd51d899aa7b7f89922b6`. Private paper-bots was not readable, so the new heads are builder-reported. The builder reports a remote read-back of private main `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06`.
+- PR #2 candidate `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` on `cursor/qarp-rotation-001-1e9e`, with normal merge `00423b5b5bd35d36b7a00c776785adc688da094b`. Builder reports 72 tests passed on each of Python 3.12.3 and 3.9.25. PR #3 candidate `531967980bcec40576d929ce32f8bb9900e498f6`; its branch name was not supplied. Four preservation hashes are recorded. Legacy text is not approved.
+- Disposition is ready for Architect acceptance of the PR #2 correction and PR #3 preservation only. Stop and risk policy stay HOLD. No independent audit of these heads is claimed.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — M1 accepted; M2 lineage still HOLD
 - Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. PR #7 head before this revision was `18badb7118d6acff4fec2c6533889f82161d8340`, with no drift from the last reviewed head. Private repositories were not readable, so the private mains are Architect-reported from the public review comment.
 - Paper-bots PR #1 `823203059466a30a11fe5a0e677f54c5482dc6fb` is recorded as accepted and merged to `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` after 52 independent Python 3.12.14 tests. That is the mock foundation only.
