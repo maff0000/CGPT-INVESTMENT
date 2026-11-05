@@ -18,7 +18,7 @@ A non-LLM **deterministic risk gate** sits before T-Bot. Matt/CGPT shadow, inspe
 
 ## Non-negotiable boundaries
 - **PAPER ONLY** for every order and position. No production broker write credentials, live account orders, personal portfolio account integration, leveraged or short trading, or inference of a future live mandate.
-- Existing E-Bot market-data access stays read-only and must not disrupt shared IBKR Gateway clients. Its G0-D3 PR #2 is OPEN/HOLD pending malformed-response corrections and independent acceptance.
+- Existing E-Bot market-data access stays read-only and must not disrupt shared IBKR Gateway clients. The Architect accepted PR #2 code at `3aa95daffe1497725aba8dbd80d4005d5afde16c`. G0 stays OPEN, and that acceptance is not trading authority. See the [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md).
 - The owner recalls exact entry/exit/stop/trailing rules previously documented; recover provenance and version before using them for active paper position management. If absent, block only the dependent trade-management path, not mock contract work.
 - Respect 7-session pre-earnings + announcement day block and 2 fully completed sessions post-event, as well as unknown-source and source-disagreement holds. Surviving valid single-source data remains research-visible as UNCHECKED; it never clears a trading permission.
 - Licensed data and secrets remain outside public GitHub. Public journal includes sanitised methodology/status; private GitHub and restricted private data hold code, audit events and synthetic positions.

@@ -1,6 +1,7 @@
 # Coordinated equity bots — paper/shadow architecture and build roadmap
-**Reference:** PAPER-SYSTEM-001, 2026-11-05 | **Status:** Proposed contracts / paper-only direction. Exact stop rules and M-Bot split await verification.
+**Reference:** PAPER-SYSTEM-001, 2026-11-05 | **Status:** Proposed contracts / paper-only direction. Exact stop rules remain unresolved.
 **Canonical decision:** [PAPER-SYSTEM-001](../research/decisions/2026-11-05-paper-five-bot-governance.md).
+**Later status (PROPOSED 2026-11-05):** [PAPER-LAUNCH-001](../research/decisions/2026-11-05-paper-build-launch.md) on main approves a distinct M-Bot. Sentences below that still say the M-Bot split awaits sign-off are historical. Stop-dependent management stays HOLD under [STOP-RULE-RECOVERY-002](../research/decisions/2026-11-05-stop-rule-recovery-choice.md). Current reported heads and the FMP rights correction are in the [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md).
 
 ## Why five roles
 Discovery should maximise the number of *credible* opportunities, not market noise. The strategy engine applies explicit rules; the skeptic is independently adversarial; the paper manager evaluates entry/exit and position state; the trader is a narrow adapter. We can shadow the whole chain immediately in simulation without granting real execution rights or claiming investment alpha.
@@ -46,7 +47,7 @@ Discovery should maximise the number of *credible* opportunities, not market noi
 2. Confirm whether M-Bot should remain a separate orchestrating manager (Architect recommends YES) versus putting any decision logic in T-Bot (recommend NO).
 3. Freeze each strategy's objective gates before allowing a strategy label to generate simulated entries.
 4. Decide whether and when to use verified IBKR *paper* account routing after a fully offline simulator has passed; always verify account mode and no live routing.
-5. Verify FMP free-tier limit per endpoint; its free tier is not a proven comprehensive market/intraday feed.
+5. Verify FMP free-tier limit per endpoint; its free tier is not a proven comprehensive market/intraday feed. **Correction, 2026-11-05:** a later three-call operator report did not verify a free tier, a paid tier, or any other plan right. HTTP 402 on one call leaves entitlement and redistribution rights UNVERIFIED. No further FMP calls are authorised by [PAPER-PROGRESS-001](../research/decisions/2026-11-05-paper-progress-sanitised.md).
 6. Keep G0/G1–G3 validation independent of software test passing: prospective research outcomes must be judged against controls before any future live mandate.
 
 ## Recovery instructions

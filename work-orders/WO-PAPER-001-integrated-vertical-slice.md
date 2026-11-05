@@ -27,3 +27,6 @@ No Massive/FMP/IBKR live provider calls, real broker accounts or orders, real pa
 
 ## Delivery autonomy
 Within these bounds, Grok may alter its implementation strategy, tools, local storage and deployment arrangement and document the decision in an ADR. Do not request routine per-step approvals. If blocked on one dependency, isolate with tests and continue another safe component. End with a single PR review packet.
+
+## Progress addendum — 2026-11-05 (PROPOSED)
+See [stream progress](2026-11-05-paper-stream-progress.md). Builder reports completion at paper-bots PR #1 head `cdfcbb27c4e440fd1597217abc4e9cb34251c65f`, with 48 tests passed on each of Python 3.9.25 and 3.12.3. That evidence is not an independent audit. This addendum does not change the original scope or acceptance criteria. Disposition of this work order remains **HOLD**.
