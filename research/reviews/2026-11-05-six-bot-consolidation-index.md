@@ -1,6 +1,8 @@
 # Six-bot consolidation index — sanitised review packet
 
 **ARCHITECT DISPOSITION UPDATE — 2026-11-05:** See [independent exact-head M2/preservation review](2026-11-05-paper-bots-m2-preservation-exact-head-audit.md). Private paper-bots PR #3 head `531967980bcec40576d929ce32f8bb9900e498f6` **accepted and merged for preservation only**, merge `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. PR #2 head `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` **HOLD** after 72 independent offline tests because idempotent replay can mask changed discovery parent and NEO emits a divergent correlation. Grok correction ordered in PR #2 comment `6667409366`. Public governance PR #7 remains OPEN/UNMERGED. All trading-policy and G0/FMP/scheduling/live-execution gates unchanged. The remainder of this consolidated builder packet is retained as historical evidence, not the latest acceptance status.
+
+**SUPERSESSION — correction round authorised, head not yet supplied (2026-11-05).** This session fast-forwarded onto verified public head `8677c421869f5f46fe4ede724e31058c391384ed` and did not rewrite it. Private comment `6667409366` returned not-found here, so its text is **not verified by this session**. The public audit file on that head is the Architect record. One bounded repair is assigned to the existing paper-bots workstream: reject a replay that hides a changed discovery parent, keep the NEO correlation on the validated chain, merge accepted private main `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` non-destructively, test on Python 3.9 and 3.12, and record an ADR. **No new head is recorded until that evidence arrives.** E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` and M1 `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` stay accepted and unchanged. PR #3's merge is historical evidence only and adopts no policy.
 **ID:** REVIEW-PAPER-INDEX-001
 **Date:** 2026-11-05 (Europe/London)
 **Status:** **HOLD** on this governance pull request, on paper-bots PR #2 lineage, and on PR #3 policy. E-Bot code and the paper-bots mock foundation are Architect-accepted. This session did not re-test them. Do not merge this pull request from this update.
@@ -260,8 +262,8 @@ Builder-reported, and not independently checked:
 ## Rollback
 Public PR #7 stays unmerged. Paper-bots PR #1 is Architect-reported as merged to private main. PR #2 and PR #3 stay unmerged. The Architect's E-Bot code merge is already reported and is not reverted here. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`.
 
-## Next work order
-The bounded lineage correction now has builder-reported heads. The next work order is an exact-head Architect review of those heads. It is not started. Integration and source-rights work wait until that acceptance. No performance claim is made.
+## Next work order — superseded for the current head
+The 12-item packet below was the builder submission later reviewed by the Architect. That review is at the top of this file. The active next step is the bounded replay and correlation repair. Its head is not supplied.
 
 Unchanged blocks: G0 OPEN; FMP entitlement and licence UNVERIFIED; full May source **NEED OWNER DECISION/ACCESS**; entry, exit, initial stop, trailing stop and risk policy unapproved; stop-dependent M/T HOLD; no scheduling; no live execution.
 
@@ -323,4 +325,23 @@ Exact-head Architect review of `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` and `5
 **READY FOR ARCHITECT ACCEPTANCE** of the PR #2 screen-lineage correction and of PR #3 preservation only. Not accepted by this packet. Stop and risk policy remain **HOLD**.
 
 ## Requested Architect action
-Review the two new private heads. This governance pull request records the builder packet and stays unmerged. Acceptance of this public text would not by itself accept PR #2, PR #3, a stop policy, or live authority.
+The request above applied to `453cc99e…` and `53196798…`. The Architect has since held the first and merged the second for preservation only. This governance pull request stays unmerged.
+
+## 13-item packet — awaiting the repair head
+Not filled with a new head. The starting point is verified or Architect-reported as follows. Items that need the repair result stay **NOT SUPPLIED**.
+
+| Item | Status |
+|---|---|
+| 1. Verified starts | Public main `a64c2f1d96a13f16963d8835713434c2be67c6f6` and PR #7 `8677c421869f5f46fe4ede724e31058c391384ed` were read back before this note. Private comment `6667409366` was not readable here |
+| 2. Exact PR #2 head and base | Held head `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4`. Repair head **NOT SUPPLIED**. Reconcile onto `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` |
+| 3. Reconciliation | Required to be a non-destructive merge of current private main. Result **NOT SUPPLIED** |
+| 4. Files | **NOT SUPPLIED** |
+| 5. Fixes | Required: replay must not hide a changed discovery parent; NEO correlation must stay with the validated chain |
+| 6. Regressions | Required on Python 3.9 and 3.12. Results **NOT SUPPLIED** |
+| 7. Results | **NOT SUPPLIED** |
+| 8. Integrity | Prior four preservation hashes stand for the merged evidence. Repair integrity **NOT SUPPLIED** |
+| 9. Security | No new vendor, broker, credential or May-access action is authorised |
+| 10. ADR | Required with the repair. Identifier **NOT SUPPLIED** |
+| 11. Gaps | G0, FMP rights, full May source, entry/exit/initial/trailing/risk approval, stop-dependent M/T, scheduling and live execution remain blocked |
+| 12. Public PR #7 head | `8677c421869f5f46fe4ede724e31058c391384ed` before this note. The tip after this note is the remote read-back |
+| 13. Readiness | Repair **IN PROGRESS**. Not ready for acceptance until the head and tests arrive |

@@ -75,5 +75,8 @@ Architect, not this session: PR #1 `823203059466a30a11fe5a0e677f54c5482dc6fb` is
 PR #2 `453cc99ebc5c6926fa30037bde9e4bbfb4a18bc4` on `cursor/qarp-rotation-001-1e9e`, base `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06`, merge `00423b5b5bd35d36b7a00c776785adc688da094b`. Builder reports 72 tests passed on each of Python 3.12.3 and 3.9.25. PR #3 `531967980bcec40576d929ce32f8bb9900e498f6`, same base. Branch name not supplied. Builder reports 52 tests passed on each interpreter and four unchanged evidence hashes. Private repository not visible to this session.
 **Disposition:** **READY FOR ARCHITECT ACCEPTANCE** of the PR #2 correction and PR #3 preservation only. Stop and risk policy **HOLD**.
 
+## M2 hold after Architect review of `453cc99e…`
+The Architect's public audit holds that head after 72 Python 3.12.14 tests. Replay can retain a stale discovery parent. NEO correlation can diverge from the E/S chain. PR #3 is merged for preservation only at `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. No policy is adopted. Private comment `6667409366` was not readable in this session.
+
 ## Next
-Exact-head Architect review. Not started. No further implementation in this public update. G0, FMP rights, the May access gap, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.
+One bounded repair is in progress on the existing paper-bots workstream. It merges current private main non-destructively, adds tests on Python 3.9 and 3.12, and records an ADR. **No head is recorded until the evidence arrives.** Then the 13-item packet is filled: verified starting SHAs, exact PR #2 head and base, reconciliation, files, fixes, regressions, results, integrity, security, ADR, gaps, public PR #7 head, and readiness. G0, FMP rights, the May source, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.
