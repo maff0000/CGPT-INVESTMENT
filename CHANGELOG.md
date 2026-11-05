@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — Native chat handoffs observed; not a ledger pass
+- Parent-observed peer transcripts record five identity and refusal replies and E to S to R to M attributed receipts. The parent received T's research-HOLD return for `APP-A-001-M-T`. No proposal, gate, ledger write, fill or order occurred. This is the chat pipeline only.
+- NEO `APP-A-NEO-001` returned `INCOMPLETE_EVIDENCE`. `APP-A-NEO-002` is sent and its final audit is pending. Fixture time `20:30:00 GMT` was 52 seconds ahead of E's actual `20:29:08 GMT`. The times are recorded and not repaired.
+- Tool-call identifiers stay in the parent's private transcript. They are not service receipt identifiers and are not republished. The 14-item milestone packet remains incomplete because the broad-discovery head is still absent.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Platform docs: bot isolation is per user, not per role
 - Read the public Grok Bot pages for teams, messaging, bots and security. No probes were run. One user's bots share one computer, its files, logins and permitted connectors. Bot-to-bot messaging has no off switch. Distinct names, conversations and memory do not create a role security boundary.
 - Created identities and instructional refusals are not a hard access-control list or a read-only NEO. Authenticated bot-to-Python identity and installed ledger execution are unverified. A JSON producer identifier is a claim only. The parent has the creation tool. This executor did not use it.
