@@ -1,7 +1,7 @@
 # STOP-RULE-RECOVERY-002 — recover legacy doctrines without adopting either
 **Date:** 2026-11-05, Europe/London | **Owner:** Matt | **Architect decision:** bounded read-only recovery approved
 **Source of initial discrepancy:** GrokBot Stream C operator report; original Redis text and July document have not yet been independently inspected in this decision record.
-**Tracking:** [GitHub issue #5](../../issues/5)
+**Tracking:** [GitHub issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5)
 **Current authority:** PAPER/SHADOW development only; all stop-dependent manager/execution decisions remain HOLD.
 
 ## Reported conflicting legacy material
