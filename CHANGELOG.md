@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — AGENT-SYSTEM-001: end-to-end research architecture, governance and evidence contracts
+- Documented staged **post-close data validation → deterministic discovery → sector/fundamental/event/challenge research → human committee → distinct risk/order authorisation → broker execution (future) → reconciliation and outcome learning**.
+- Added [architecture and phased delivery](docs/agent-equity-operating-system.md), [public candidate evidence contract](docs/candidate-evidence-contract.md), [execution/governance boundary](docs/execution-authorisation-boundary.md), and [architecture decision](research/decisions/2026-11-05-agent-investment-system-architecture.md).
+- **No live execution approval, broker API setup, investment orders or portfolio details**. Existing Finviz A/B/C, WATCH/COILING/BREAKING OUT/IN TREND, 7+2 earnings, independent owner-conviction checks and daily scouting remain unchanged. Research shadow/paper/reconciler acceptance precedes any supervised live consideration.
+
+
 ## 2026-11-05 — DAILY-SCOUT-001: weekday research task and durable handoff
 - Confirmed a **weekday after-US-close equity scouting research task** is enabled, **separate** from the Monday >=7 all-sector report. Scheduled task creation does not establish future completed reports, actual market-data coverage or GitHub writes.
 - Added [operating and continuation runbook](docs/daily-equity-scout-runbook.md) and [decision](research/decisions/2026-11-05-daily-scout-operating-plan.md), with the exact recovery read order and SCOUT-002 pilot lessons.

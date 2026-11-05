@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**AGENT-SYSTEM-001 (2026-11-05):** planned evidence-led investment pipeline for automated discovery, independently challenged candidate packs, human investment review, separately authorised risk-controlled execution, reconciliation and performance feedback. **Design only: no broker connectivity or autonomous trading authority granted.** Read the [agent operating system architecture](docs/agent-equity-operating-system.md), [candidate contract](docs/candidate-evidence-contract.md), [order authority boundary](docs/execution-authorisation-boundary.md), [design decision](research/decisions/2026-11-05-agent-investment-system-architecture.md).
+
 **DAILY-SCOUT-001 (2026-11-05):** a weekday after-US-close scouting research task has been **enabled**, complementing the Monday all-sector idea report. Read the [daily scouting runbook and new-chat continuation guide](docs/daily-equity-scout-runbook.md), [adoption record](research/decisions/2026-11-05-daily-scout-operating-plan.md), and latest dated report. **Scheduling does not prove any future scan or GitHub commit succeeded.**
 
 **SCOUT-002 practical pilot (2026-11-05):** [first six-name external VCP lead review and current price/event checks](research/reviews/2026-11-05-first-pre-breakout-pilot.md). SJM near pivot; CPAY/VOYA beyond older pivots but earnings/extension checks required; ABNB intraday-only pivot and Q3 blackout; DE and BDX also on event/extension watch. **No purchase approved and no Finviz or whole 22-name chart scan claimed.** [Pilot decision](research/decisions/2026-11-05-first-pre-breakout-pilot.md).
