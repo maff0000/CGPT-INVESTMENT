@@ -68,5 +68,8 @@ This session could not read `maff0000/ebot`. The four named files were not revie
 PR #1 candidate `823203059466a30a11fe5a0e677f54c5482dc6fb`: 52 tests passed on each of Python 3.12.3 and 3.9.25. PR #2 candidate `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`, base `823203059466a30a11fe5a0e677f54c5482dc6fb`, import merge `6b72d03b886502c3d50eb150a918eb676c3fae3a`: 66 tests passed on each interpreter. PR #3 unchanged. No main merge, rebase, force-push, vendor call or broker call. E-Bot not modified. These tests are builder evidence. The Architect's 3.12.14 audit applies to `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` and `b6b7877884df6edc624691b50bb474b2b518ded8` only.
 **Disposition:** **HOLD** pending exact-head re-review.
 
+## M1 acceptance and remaining M2 hold
+Architect, not this session: PR #1 `823203059466a30a11fe5a0e677f54c5482dc6fb` is accepted and merged as private main `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` after 52 Python 3.12.14 tests. Mock foundation only. PR #2 `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` stays **HOLD** after 66 tests: swapped discovery parents and an incomplete NEO cohort are still accepted. PR #3 stays policy HOLD. Private SHAs were not re-fetched here.
+
 ## Next
-Stop. The next action is an Architect re-review of the two new heads. E-Bot code acceptance does not close G0, FMP rights, the May access gap, or stop-dependent M/T. No scheduling and no live execution. Rollback of unaccepted pull requests is non-merge.
+One bounded correction is assigned and has no head yet. It must reject a swapped discovery parent and an incomplete cohort, validate candidate, event type, producer, run, session, chronology and strategy context, and reject without a partial ledger write. Tests on Python 3.9 and 3.12. Reconcile non-destructively onto `1d4e62de…`. Do not claim a final head before the evidence arrives. G0, FMP rights, the May access gap, doctrine parameters, stop-dependent M/T, scheduling and live execution stay blocked.

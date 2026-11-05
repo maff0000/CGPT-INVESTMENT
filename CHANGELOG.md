@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — M1 accepted; M2 lineage still HOLD
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. PR #7 head before this revision was `18badb7118d6acff4fec2c6533889f82161d8340`, with no drift from the last reviewed head. Private repositories were not readable, so the private mains are Architect-reported from the public review comment.
+- Paper-bots PR #1 `823203059466a30a11fe5a0e677f54c5482dc6fb` is recorded as accepted and merged to `1d4e62de7bd32bbb39b471536d0ba1a71eeffa06` after 52 independent Python 3.12.14 tests. That is the mock foundation only.
+- Paper-bots PR #2 `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` stays HOLD. 66 tests were OK and the earlier numeric, proxy and basic-lineage fixes are confirmed. Swapped discovery parents and an incomplete NEO cohort are still accepted. The next correction head is not yet supplied.
+- PR #3 stays policy HOLD. E-Bot code acceptance and G0, FMP, May, doctrine, stop, scheduling and live-execution blocks are unchanged.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — Paper-bots correction heads recorded, still unaccepted
 - Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 remains open. The new results are builder-reported. The Architect's Python 3.12.14 audit still applies only to the prior heads.
 - Paper-bots PR #1 candidate is now `823203059466a30a11fe5a0e677f54c5482dc6fb`, with 52 tests passed on each of Python 3.12.3 and 3.9.25. PR #2 candidate is `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`, base `823203059466a30a11fe5a0e677f54c5482dc6fb`, import merge `6b72d03b886502c3d50eb150a918eb676c3fae3a`, with 66 tests passed on each interpreter. PR #3 is unchanged and remains policy HOLD.
