@@ -1,4 +1,5 @@
 # G0-EBOT-001 — GrokBot build brief: manually invoked E-Bot v0.1
+**Later status (G0-EBOT-002, 2026-11-05):** The separately hosted private manual utility passed independent offline review and was accepted/merged; this file preserves the original pre-build brief and constraints. [Dated acceptance](../research/decisions/2026-11-05-ebot-private-acceptance.md). G0 is still OPEN, and the public reference script remains a separate uncorrected historical artefact.
 **Authorised scope:** 2026-11-05 (Europe/London) | **Delivery status:** brief only, NOT yet built or connected. **Project priority:** manual G0 data validation before research automation.
 
 **Naming/status update — 2026-11-05:** The correct project name is **E-Bot** (not E_Bot/E_BOT). The user reports **GrokBot's build is IN PROGRESS**, with a report expected when complete. The build, its tests and any Massive connection have **not yet been independently verified**. Historical file paths and the proposed `e_bot` CLI command remain unchanged until the implementer confirms the actual interface.

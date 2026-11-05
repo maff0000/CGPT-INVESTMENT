@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-EBOT-002: independently accept private E-Bot v0.1
+- Independently reviewed and merged the narrow **private, manually invoked, read-only** E-Bot program after 75 offline unit tests and separate non-finite OHLCV/pivot-boundary negative checks. The previous public source-copy PR was **closed unmerged**; no executable agent, key or provider raw bars were added to this public journal.
+- Recorded a prior **operator-reported** five-call Massive sample with 318 daily bars each for XOM/LIN/EQIX/SPY, 11 confirmed market-closure weekday gaps and no independently repeated credentialed call. No second source, authorised commercial use, Finviz/current charts or G0 acceptance is claimed.
+- Retained the human-enforced one-minute wait between separate invocations as a strict **manual-only** v0.1 limitation. [Acceptance record](research/decisions/2026-11-05-ebot-private-acceptance.md); **G0 OPEN, G1 NOT STARTED, agent/trading automation BLOCKED**.
+
+
 ## 2026-11-05 — G0-PROBE-AUDIT-001: fail-closed reference probe acceptance review
 - Conducted an independent no-network mocked review of the public Massive sample probe. Missing grouped data plus timestamp-only bars yielded an observed **exit status 0** despite HOLD messaging and missing actual OHLCV.
 - Recorded [dated audit and bounded E-Bot offline acceptance counterexamples](research/reviews/2026-11-05-g0-probe-readiness-audit.md); no reference code, screening methodology, strategy gates or user credentials were changed.

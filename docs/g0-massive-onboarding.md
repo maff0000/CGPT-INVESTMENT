@@ -1,4 +1,5 @@
 # G0-PROVIDER-001 — Massive onboarding and manual credential-free validation
+**Later status — G0-EBOT-002 (2026-11-05):** A separate private E-Bot v0.1 implementation was independently accepted and an initial five-call market-data sample was **operator-reported successful**. This document preserves original onboarding/setup instructions, not current access status. [Dated acceptance](../research/decisions/2026-11-05-ebot-private-acceptance.md). D1 licence, D3 second-source and full G0 approval remain OPEN.
 **Decision:** 2026-11-05 Europe/London | **Provider candidate:** Massive Stocks Basic for a **private manual G0 trial only** | **Connection status:** USER ACCOUNT/AUTH NOT VERIFIED, no live API test completed.
 
 ## What is and is not approved
