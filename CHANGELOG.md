@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — PAPER-SYSTEM-001: GitHub continuity and five-role paper/shadow direction
+- Sponsor made **GitHub current-state persistence mandatory for every substantive agreed change**, including rationale, blockers, decisions, work orders and acceptance, with exact-HEAD read/verification and fail reporting.
+- Sponsor requested **all cooperating bots built and integrated early in paper-only/shadow mode**; candidate volume should reflect all credible market opportunities, not a seven-stock cap. Architect recommends distinct M-Bot for simulated entry/exit/trailing-stop and portfolio decisions, with T-Bot limited to execution/reconciliation; M-Bot split awaits owner confirmation.
+- Recorded an explicit narrow exception to VALIDATION-FIRST-001 for bounded PAPER-only agent development, preserving G0 source proof, G1–G3 forward research evaluation and a permanent NO-LIVE-TRADE boundary absent future independent authority.
+- Marked exact moving-stop/entry/exit rule as **canonical-source recovery needed** (not verified in public investment main) and private E-Bot PR #2 as pending acceptance, rather than claiming either is complete.
+- [Dated decision](research/decisions/2026-11-05-paper-five-bot-governance.md) · [Operating architecture and roadmap](docs/paper-five-bot-architecture.md).
+
 ## 2026-11-05 — G0-EBOT-002: independently accept private E-Bot v0.1
 - Independently reviewed and merged the narrow **private, manually invoked, read-only** E-Bot program after 75 offline unit tests and separate non-finite OHLCV/pivot-boundary negative checks. The previous public source-copy PR was **closed unmerged**; no executable agent, key or provider raw bars were added to this public journal.
 - Recorded a prior **operator-reported** five-call Massive sample with 318 daily bars each for XOM/LIN/EQIX/SPY, 11 confirmed market-closure weekday gaps and no independently repeated credentialed call. No second source, authorised commercial use, Finviz/current charts or G0 acceptance is claimed.
