@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — Public frozen QARP predicates shown; private doc head still pending
+- The public screening review now copies the frozen A/B/C values, operators and units from the already public registry and Finviz filter note. It is not a new strategy approval. The accepted private manifest hash remains the builder-reported `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62`, with no change.
+- A documentation-only private correction is requested to transcribe those predicates from the manifest and to separate implemented, deferred and owner choices. That private head has not moved. The 91 core tests are unchanged. One acceptance gate follows the documentation.
+- The parent's fourth direct read of accepted E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` is recorded as an interface: read-only Massive grouped and daily OHLCV, and IBKR contract details and regular-hours trades, for XOM, LIN, EQIX and SPY only. Fundamentals, Finviz mapping, SMA and chart stage are unimplemented. Rights are unverified. This session did not re-read that file. The earlier 404 is this credential only.
+- [Review](docs/qarp-screening-requirements-review.md).
+
 ## 2026-11-05 — Final broad-discovery builder packet, not accepted
 - Private PR #4 final head `ad5e30ae5502d77d8beec3399845f64116ff8702`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, branch `cursor/broad-discovery-003-1e9e`. This session could not read the repository. The earlier recorded head `a6aa7f32acc8531a06e3e36044a4b9003c888323` is superseded.
 - Builder, not Architect: fresh detached run, 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Synthetic 17 rows and 16 instruments across 11 GICS sectors, not the listed US universe. Frozen manifest hash unchanged. The in-process NEO digest append is a material deviation and is not a native NEO write.
