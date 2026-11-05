@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — SCOUT-002: first practical pre-breakout scan and live event gate checks
+- Piloted the new [scouting workflow](research/reviews/2026-11-05-first-pre-breakout-pilot.md) against six named public VCP-screen leads from Nov2 scanner prices, updated to Nov4 completed US session closes, with sector, primary earnings and preliminary business checks.
+- SJM was near an old resistance, CPAY and VOYA beyond old pivots, ABNB did not close above its pivot; BDX extended into results and DE faces Nov25 earnings. **None rated an executable BUY**.
+- Existing EME/ALGN thresholds tested against new prices and adverse/positive price moves; neither historical price condition is a standing order. No personal finance disclosed or broker action.
+- [SCOUT-002 decision](research/decisions/2026-11-05-first-pre-breakout-pilot.md); strict caveat: **no Finviz or full 22-company scan, no independently calculated 10/40 contraction ratios**. New names are leads only, preserving current active universe.
+
+
 ## 2026-11-05 — SCOUT-001: find tightening bases before momentum
 - Added a separate, non-mandatory pre-breakout scouting route: QARP **A** plus explicit exceptions, before momentum screens B/C, with **WATCH / BASE FORMING, COILING, AT PIVOT** substages.
 - Differentiated Finviz **Volatility / Relative Volume / chart Pattern** snapshots from actual **historical contraction and volume dry-up**. Proposed prospective 10-versus-prior-40-session features, support/resistance, stock/sector RS, misleading-signal checks and outcome logging.
