@@ -3,19 +3,25 @@
 from __future__ import annotations
 
 import os
+import shutil
+import stat
+import subprocess
 import sys
+import tempfile
+import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import guard  # noqa: E402,F401
-import stat
-import tempfile
-import unittest
-from pathlib import Path
 
 from ebot.errors import SecretSetupError
-from ebot.secrets import credential_on_command_line, load_key_file, resolve_api_key
+from ebot.secrets import (
+    _PACKAGE_ROOT,
+    credential_on_command_line,
+    load_key_file,
+    resolve_api_key,
+)
 
 KEY = "unit-test-massive-key"
 
@@ -37,11 +43,106 @@ class SecretTests(unittest.TestCase):
         finally:
             path.unlink(missing_ok=True)
 
-    def test_key_inside_the_repo_or_package_is_refused(self):
+    def test_key_inside_the_package_is_refused_even_when_absent(self):
+        target = _PACKAGE_ROOT / "massive.key"
+        self.assertFalse(target.exists())
         with self.assertRaises(SecretSetupError) as caught:
-            load_key_file("/workspace/tools/ebot/massive.key")
-        self.assertNotIn("massive.key contents", str(caught.exception))
-        self.assertIn("git", str(caught.exception).lower())
+            load_key_file(str(target))
+        message = str(caught.exception).lower()
+        self.assertIn("package", message)
+        self.assertNotIn("missing", message)
+        self.assertNotIn(KEY, message)
+
+    def test_existing_key_inside_the_package_is_not_read(self):
+        target = _PACKAGE_ROOT / "massive.key"
+        target.write_text(KEY + "\n", encoding="utf-8")
+        os.chmod(target, 0o600)
+        try:
+            with self.assertRaises(SecretSetupError) as caught:
+                load_key_file(str(target))
+            message = str(caught.exception)
+            self.assertIn("package", message.lower())
+            self.assertNotIn("missing", message.lower())
+            self.assertNotIn(KEY, message)
+        finally:
+            target.unlink(missing_ok=True)
+
+    def test_key_inside_a_git_work_tree_is_refused_when_one_exists(self):
+        git_root = None
+        for parent in [Path.cwd().resolve(), *Path.cwd().resolve().parents]:
+            if (parent / ".git").exists():
+                git_root = parent
+                break
+        if git_root is None:
+            self.skipTest("this process is not running inside a git work tree")
+        target = git_root / "ebot-operator-key-test.key"
+        if _PACKAGE_ROOT == git_root or _PACKAGE_ROOT in target.parents:
+            self.skipTest("git root and package directory are the same")
+        self.assertFalse(target.exists())
+        with self.assertRaises(SecretSetupError) as caught:
+            load_key_file(str(target))
+        message = str(caught.exception).lower()
+        self.assertIn("git", message)
+        self.assertNotIn("missing", message)
+
+    def test_standalone_copy_without_git_refuses_a_key_inside_the_package(self):
+        source = Path(__file__).resolve().parents[1]
+        script = r"""
+import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, os.environ["EBOT_ROOT"])
+from ebot.errors import SecretSetupError
+from ebot.secrets import load_key_file
+
+def check(path, expected):
+    try:
+        load_key_file(path)
+    except SecretSetupError as exc:
+        text = str(exc).lower()
+        if expected not in text:
+            raise SystemExit("wanted %s in %s" % (expected, text))
+        if expected != "missing" and "missing" in text:
+            raise SystemExit("misreported as missing: " + text)
+        return
+    raise SystemExit("accepted " + path)
+
+check(os.environ["INSIDE_PRESENT"], "package")
+check(os.environ["INSIDE_ABSENT"], "package")
+check(os.environ["OUTSIDE_ABSENT"], "missing")
+"""
+        with tempfile.TemporaryDirectory(prefix="ebot-standalone-") as temporary:
+            dest = Path(temporary) / "ebot"
+            shutil.copytree(
+                source,
+                dest,
+                ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".git", "*.key"),
+            )
+            self.assertFalse((dest / ".git").exists())
+            present = dest / "massive.key"
+            present.write_text(KEY + "\n", encoding="utf-8")
+            os.chmod(present, 0o600)
+            absent = dest / "does-not-exist.key"
+            outside = Path(temporary) / "outside-missing.key"
+            env = os.environ.copy()
+            env["EBOT_ROOT"] = str(dest)
+            env["INSIDE_PRESENT"] = str(present)
+            env["INSIDE_ABSENT"] = str(absent)
+            env["OUTSIDE_ABSENT"] = str(outside)
+            completed = subprocess.run(
+                [sys.executable, "-c", script],
+                cwd=str(dest),
+                env=env,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(
+                completed.returncode,
+                0,
+                completed.stdout + completed.stderr,
+            )
+            self.assertNotIn(KEY, completed.stdout + completed.stderr)
 
     def test_missing_outside_file_does_not_invent_a_key(self):
         missing = Path(tempfile.gettempdir()) / "ebot-missing-key-file"

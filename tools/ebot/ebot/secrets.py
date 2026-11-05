@@ -1,7 +1,7 @@
 """Load a Massive API key without printing it.
 
-The key comes from a hidden terminal prompt or a mode-0600 file outside any
-git repository. There is no command-line key flag.
+The key comes from a hidden terminal prompt or a mode-0600 file outside the
+E-Bot directory and outside any git repository. There is no command-line key flag.
 """
 
 from __future__ import annotations
@@ -36,26 +36,52 @@ def _git_root(start: Path) -> Optional[Path]:
     return None
 
 
-def key_file_is_outside_repos(path: Path) -> bool:
-    """Refuse keys stored in the package tree or any git work tree."""
-    resolved = path.resolve()
-    if resolved == _PACKAGE_ROOT or _PACKAGE_ROOT in resolved.parents:
-        return False
-    if _git_root(resolved) is not None:
-        return False
-    cwd_root = _git_root(Path.cwd())
-    if cwd_root is not None and (resolved == cwd_root or cwd_root in resolved.parents):
+def _absolute(path: Path) -> Path:
+    """Absolute path with ``..`` collapsed, without following the final symlink."""
+    return Path(os.path.abspath(os.fspath(path)))
+
+
+def _is_inside(root: Path, candidate: Path) -> bool:
+    try:
+        candidate.relative_to(root)
+    except ValueError:
         return False
     return True
+
+
+def key_file_rejection(path: Path) -> Optional[str]:
+    """Return a safe refusal reason, or None when the location is allowed.
+
+    The E-Bot directory is refused even when the copy has no ``.git`` and even
+    when the file is not there yet. A missing file elsewhere is not this case.
+    """
+    lexical = _absolute(path)
+    resolved = path.resolve()
+    for candidate in (lexical, resolved):
+        if _is_inside(_PACKAGE_ROOT, candidate):
+            return "Key file must be outside the E-Bot package directory."
+    for candidate in (lexical, resolved):
+        if _git_root(candidate) is not None:
+            return "Key file must be outside any git repository."
+    cwd_root = _git_root(Path.cwd())
+    if cwd_root is not None and (
+        _is_inside(cwd_root, lexical) or _is_inside(cwd_root, resolved)
+    ):
+        return "Key file must be outside any git repository."
+    return None
+
+
+def key_file_is_outside_repos(path: Path) -> bool:
+    """False when the key file is inside the E-Bot directory or a git work tree."""
+    return key_file_rejection(path) is None
 
 
 def load_key_file(path: str) -> str:
     """Read one key line from a private 0600 file. Never print the contents."""
     candidate = Path(path)
-    if not key_file_is_outside_repos(candidate):
-        raise SecretSetupError(
-            "Key file must be outside any git repository and outside the E-Bot package directory."
-        )
+    rejection = key_file_rejection(candidate)
+    if rejection is not None:
+        raise SecretSetupError(rejection)
     try:
         info = candidate.stat()
     except OSError:
