@@ -1,5 +1,7 @@
 # Repository instructions
 
+**READ FIRST — latest accepted paper-state 5 NOV 2026:** [Independent M2 acceptance](research/reviews/2026-11-05-m2-810b6fd-independent-acceptance.md) supersedes all older PR2 HOLD references. Paper-bots PR #2 code head `810b6fd48b266031c1b299c39370bf3ececb449b` accepted/merged private main `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`; E-Bot and M1 code also accepted, July legacy evidence preservation-only. Broad discovery/source entitlements, six platform-visible Grok Bot teammates ([WO-APP-PRESENCE-001](work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md)), canonical stop/entry/exit/risk policy and scheduling remain incomplete or blocked. G0 OPEN, FMP rights UNVERIFIED, no live execution. All later dated HOLD paragraphs are historical evidence for earlier heads. Verify newest remote HEAD before further changes.
+
 Scope: maff0000/CGPT-INVESTMENT only. Do not access or modify FOUNDRY or ForgeV2 as part of this project.
 
 Read README.md, **CURRENT-STATE.md**, **docs/research-process-validation-charter.md**, **docs/research-validation-protocol.md**, **docs/independent-investment-challenge.md**, **docs/investment-strategy.md**, docs/data-provenance.md and the latest dated decisions and reviews before continuing. The dated state file is a convenience snapshot, not a substitute for checking a newer GitHub HEAD. This public repository records **investment decision research** for immediate opportunities AND future candidates. It is not an account ledger or a trading execution authority.
