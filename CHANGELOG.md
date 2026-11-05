@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-EBOT-001: E-Bot v0.1 offline build
+- Added a self-contained [E-Bot v0.1](tools/ebot/README.md) manual read-only Massive check. Prose name is E-Bot; the command is `ebot`. Copy the directory to a private workstation before installing a key.
+- Offline tests cover help, allowlisted and rejected prompts, missing credentials, HTTP 401/403/429, malformed payloads, the $1.00 / $1.01 price rule, pivot straddle, and secret redaction. No live Massive call was made.
+- [Build record](research/decisions/2026-11-05-ebot-v0.1-offline-build.md) and [test note](research/validation/2026-11-05-ebot-v0.1-offline-tests.md). G0 stays open. The earlier brief's private-workspace rule is not withdrawn; this tree is the review copy.
+
+
 ## 2026-11-05 — G0-EBOT-001: manual prompt utility exception and GrokBot handoff
 - User green-lit **GrokBot implementing E_BOT v0.1** to run one-shot, allowlisted, read-only **Massive G0 data tests** at the user's explicit instruction; no autonomous equity selection or broker execution.
 - Added [complete GrokBot implementation prompt](docs/g0-ebot-manual-utility-brief.md) and [scope decision](research/decisions/2026-11-05-ebot-manual-data-tool.md), focused on isolated private workspace, reuse of existing Python Massive smoke test, fail-closed prompt parser, secrets isolation, offline tests and simple terminal usage.

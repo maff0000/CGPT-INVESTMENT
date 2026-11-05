@@ -70,3 +70,12 @@ The project still blocks automated equity research, stock recommendations, auton
 
 ## State
 **GrokBot dispatch pending.** No E_BOT workspace, tested implementation, account configuration or authenticated Massive response verified by this public document. The operator will separately provide local API access. Recovery: read this brief, [Massive onboarding](g0-massive-onboarding.md), [G0 source tolerance](g0-price-tolerance-and-provider-trial.md) and [CURRENT-STATE](../CURRENT-STATE.md).
+
+## Naming and delivery note — 2026-11-05
+
+This note does not change the task list above.
+
+- The owner corrected the prose name to **E-Bot**. The package and command identifier used for the offline build are `ebot`. Earlier lines in this brief say E_BOT and `e_bot`.
+- The offline source for review is [tools/ebot](../tools/ebot/README.md). The brief above says not to store the program in this public repository. That conflict is recorded in the [offline build decision](../research/decisions/2026-11-05-ebot-v0.1-offline-build.md). Copy the directory to a private workstation before any API key or live call. Do not commit keys or vendor bars here.
+- The undated sentence "Check Massive connectivity and historical data availability for XOM, LIN, EQIX and SPY." is rejected as ambiguous. The dated allowlisted sentence in the task interface is the one that maps to `massive-smoke`.
+- No authenticated Massive request was made as part of the offline build.
