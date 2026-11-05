@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-05 — M3 correction packet pending re-audit
+- Governance only. Private correction head `cdd70b02a2c53ce25db9b857d03590491f247771` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `fa80147b3114cc0995cd92d7d093ec5236d61c8b` was verified and preserved, including the Architect HOLD. The HOLD file is not edited.
+- Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both OK. The count 96 is builder-reported, prior 91 plus five new test methods with subtests, and is not acceptance. Frozen manifest hash unchanged. Nine correction files are distinct from the 23-path pull-request manifest.
+- Disposition requested: Architect accept or hold after an independent re-audit of the exact correction head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Packet order: locked milestone first
 - The locked 14-item record is now the first section of [REVIEW-M3-001](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md) and is the authoritative current milestone. Earlier builder drafts, including the "nothing implemented" and "full report pending" claims, are in a historical appendix. Their facts are unchanged. No code, tests, or scope were added.
 - Parent-read public head of the previous packet: `1c5227a8afec0891079dbee49548940ebe12c925`. Private locked head remains `a40412f0876fd59526a6b663273f69b4df008ec4`.

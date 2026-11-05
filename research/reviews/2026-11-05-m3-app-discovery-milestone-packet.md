@@ -1,12 +1,101 @@
 # M3 milestone packet — app teammates and broad discovery
 
 > **Architect supersession added 5 November 2026:** This packet was submitted as `READY FOR ARCHITECT REVIEW` at public head `e2306a1f57b670382d31b22e5d002556b7b88858`. The independent review is now **HOLD** for private PR #4 `a40412f0876fd59526a6b663273f69b4df008ec4` despite 91 tests passing, because four synthetic source/listing/freshness/type integrity defects were independently reproduced. Do not mistake the original 'authoritative current milestone' heading below for acceptance. [Superseding independent audit](2026-11-05-m3-a40412f-independent-hold.md). App-native/security/ledger integration remains PARTIAL/UNVERIFIED. No merges or operational permissions.
+
+## AUTHORITATIVE CURRENT CORRECTION PACKET — pending Architect re-audit of `cdd70b02a2c53ce25db9b857d03590491f247771`
+**ID:** REVIEW-M3-CORR-001
+**Date:** 2026-11-05 (Europe/London)
+**Disposition requested:** Architect **ACCEPT or HOLD** after an independent re-audit of exact private head `cdd70b02a2c53ce25db9b857d03590491f247771`. **This packet does not accept the correction.** Builder counts are not an Architect acceptance. The independent HOLD of `a40412f0876fd59526a6b663273f69b4df008ec4` stays valid for that exact head and is not edited.
+
+This session fast-forwarded public PR #8 to `fa80147b3114cc0995cd92d7d093ec5236d61c8b` and verified public `main` `20094068e20c2de0a659e8243657207c8d4cfbaa`. The private repository still returns HTTP 404 to this credential. Private heads, the 23-path manifest, and the test transcript are parent-supplied. No private code, raw vendor payload, or credential is copied here.
+
+### 1. Starting heads and bases
+| Ref | Full value | Class |
+|---|---|---|
+| Private start, Architect HOLD | `a40412f0876fd59526a6b663273f69b4df008ec4` | PARENT-VERIFIED. Open, unmerged. Not the latest implementation |
+| Private base, accepted main | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` | PARENT-VERIFIED. Unchanged |
+| Public start, this correction | `fa80147b3114cc0995cd92d7d093ec5236d61c8b` | VERIFIED this session on `cursor/m3-discovery-app-presence-6067`. Includes the Architect HOLD commits after `e2306a1f57b670382d31b22e5d002556b7b88858` |
+| Public base and `main` | `20094068e20c2de0a659e8243657207c8d4cfbaa` | VERIFIED this session |
+| Parent direct read-back | Both pull requests open and unmerged at the heads above. Public changed-file count at the public start was 11 | PARENT-VERIFIED JSON. Not this credential's private fetch |
+
+The Architect reviewed public head `e2306a1f57b670382d31b22e5d002556b7b88858` and recorded the HOLD in [REVIEW-M3-INDEP-001](2026-11-05-m3-a40412f-independent-hold.md). That file is unchanged.
+
+### 2. New exact heads
+| Ref | Full value | Class |
+|---|---|---|
+| Private correction head | `cdd70b02a2c53ce25db9b857d03590491f247771` | PARENT-VERIFIED open and unmerged on [PR #4](https://github.com/maff0000/paper-bots/pull/4). Builder reports local HEAD, origin branch, and pull-request head match. Private main unchanged |
+| Public head of this note | The remote read-back of `cursor/m3-discovery-app-presence-6067` after this push | Not written into this commit. Recorded in the PR #8 body and the handoff report |
+
+### 3. Changed-file manifests
+**Nine private files changed from `a40412f0876fd59526a6b663273f69b4df008ec4` to `cdd70b02a2c53ce25db9b857d03590491f247771`.** Builder transcript `git diff --name-only`. Contents are not published.
+
+- `README.md`
+- `docs/adr/0011-fixture-evidence-integrity.md`
+- `docs/reviews/2026-11-05-screening-requirements-review.md`
+- `docs/schemas/v0.2/catalog.json`
+- `docs/work-orders/WO-PAPER-003-broad-discovery.md`
+- `fixtures/discovery/us_equity_fixture_v0.json`
+- `src/paperbots/discovery/prepare.py`
+- `src/paperbots/discovery/run.py`
+- `tests/test_discovery_integrity.py`
+
+**Twenty-three private paths versus accepted main `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`.** Parent-supplied pull-request manifest. This is the whole PR, not the nine-file correction. The earlier public note of 21 files was the count at `a40412f0876fd59526a6b663273f69b4df008ec4`.
+
+`README.md`, `RUNBOOK.md`, `docs/adr/0009-offline-broad-discovery.md`, `docs/adr/0010-native-role-contract.md`, `docs/adr/0011-fixture-evidence-integrity.md`, `docs/evidence/SOURCE-RIGHTS-003/matrix.md`, `docs/reviews/2026-11-05-screening-requirements-review.md`, `docs/schemas/v0.2/README.md`, `docs/schemas/v0.2/catalog.json`, `docs/status/2026-11-05-broad-discovery-sanitised.md`, `docs/work-orders/WO-PAPER-003-broad-discovery.md`, `fixtures/discovery/source_rights_v0.json`, `fixtures/discovery/us_equity_fixture_v0.json`, `fixtures/discovery/us_equity_fixture_zero.json`, `src/paperbots/access.py`, `src/paperbots/constants.py`, `src/paperbots/discovery/__init__.py`, `src/paperbots/discovery/prepare.py`, `src/paperbots/discovery/run.py`, `src/paperbots/native_contract.py`, `src/paperbots/schemautil.py`, `tests/test_discovery.py`, `tests/test_discovery_integrity.py`.
+
+**Public files changed from `fa80147b3114cc0995cd92d7d093ec5236d61c8b` by this note:**
+
+- `research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md`
+- `README.md`
+- `CURRENT-STATE.md`
+- `AGENTS.md`
+- `CHANGELOG.md`
+- `work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md`
+
+### 4. Fixes A–D and regression mapping
+Builder Python 3.12.3 at `a40412f0876fd59526a6b663273f69b4df008ec4`, before the fix: a same-source contradiction was `ADMITTED` in one row order and `UNCHECKED` in the other; `listing` OTC with a null exclusion was `ADMITTED`; sources dated 2020 were `ADMITTED`; a string inside `sources` raised `AttributeError`. Those four observations are builder-reported reproductions of the Architect HOLD. They are not a new Architect run.
+
+| Fix | Adopted rule, builder-reported | Mapped coverage in `tests/test_discovery_integrity.py` |
+|---|---|---|
+| A | One source id cannot corroborate itself. A conflicting status or timestamp is `DATA_MISMATCH` in both orders. Each distinct observation is kept. A repeated same provider cannot self-corroborate. Complementary distinct providers can still be admitted and merge. | Both conflict orders, and complementary rows versus repeated same-provider rows. Method names are not in the public transcript and are not invented |
+| B | `US_COMMON` can pass. `NON_US_PRIMARY`, `OTC`, `WARRANT`, `PREFERRED`, `ETN`, and `BLANK_CHECK` are excluded even when the annotation is null. Inconsistent, missing, or unsupported listings are not admitted. The fixture OTC row now says listing OTC | Every documented listing class |
+| C | A present source is fresh only when its timestamp equals the fixture `as_of_utc`. An earlier canonical timestamp is `STALE`. A missing present timestamp is not fresh. A date-only value, an offset, or a later instant is `INVALID`. This is not a production freshness guarantee | Stale and bad timestamps |
+| D | A malformed source container or entry raises `ValidationError` inside `prepare`, before the first append, on an empty ledger and on a ledger that already has rows. Existing row count and hash tip stay unchanged | Malformed sources, and an unchanged row count and hash tip |
+
+The new tests run with socket construction patched. That is not a host access-control audit.
+
+### 5. ADR 0011
+Private path, not read here: `docs/adr/0011-fixture-evidence-integrity.md` at `cdd70b02a2c53ce25db9b857d03590491f247771`. This credential cannot open it. The builder report is the public source for the adopted choice.
+
+Reasoning: contradictory observations from one source id must not collapse to a single admitted row, an excluded listing must fail closed without a matching annotation, only a timestamp equal to the fixture as-of is fresh, and a malformed source must be a typed preflight error rather than `AttributeError`. A valid single aligned source stays `UNCHECKED`. Alternatives inside the ADR are not copied, because the ADR text was not read. Impact reported by the builder: frozen QARP-ROTATION-001 v1.0.0 manifest SHA-256 `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` is unchanged. The transcript `sha256sum` printed that same digest. Broad synthetic coverage of 11 sectors, no seven-name cap, near-misses, `UNKNOWN`, valid single-source `UNCHECKED`, E to S to NEO correlation, replay, idempotency, and roles are reported preserved. Deviation that remains: the in-process Python NEO still appends its digest. That is not hard isolation. The freshness rule is fixture alignment only.
+
+### 6. Tests
+Fresh detached worktree `/tmp/pb-m3-fix` at `cdd70b02a2c53ce25db9b857d03590491f247771`. Extracted transcript command, exit 0:
+
+```bash
+cd /tmp/pb-m3-fix && echo WORKTREE $(git rev-parse HEAD) && sha256sum src/paperbots/strategies/qarp_rotation_001.json && PYTHONPATH=src python3 -m unittest discover -s tests -q && echo PY312_OK && PYTHONPATH=src /home/ubuntu/.local/bin/python3.9 -m unittest discover -s tests -q && echo PY39_OK && python3 --version && /home/ubuntu/.local/bin/python3.9 --version
+```
+
+Transcript output: worktree SHA matches; manifest digest matches; `PY312_OK`; `PY39_OK`; `Python 3.12.3`; `Python 3.9.25`. The integer 96 is **builder-reported**, not printed by that quiet discover command. Builder: 96 OK on Python 3.12.3 and 96 OK on Python 3.9.25, prior 91 plus 5 new test methods with subtests. No failure is reported. The Python 3.9 command in the transcript is `/home/ubuntu/.local/bin/python3.9`, not merely the name `python3.9`. The Architect's 91/91 on Python 3.12.14 remains the HOLD at `a40412f0876fd59526a6b663273f69b4df008ec4` and was not repeated on the new head. This session did not run the suite.
+
+### 7. Security and data rights
+Bounded to what was actually checked. The new tests patch socket construction. There is no host audit, credential scan, or app access-control proof. This public note makes no vendor, broker, account, or scheduler call. G0 stays OPEN. FMP and other provider rights stay UNVERIFIED. The FMP record is exactly three historical calls: profile SPY, HTTP 200, one record; historical SPY, HTTP 200, two records; batch quote SPY and XOM, HTTP 402, non-JSON. It is not a label `call402`. No fourth call. No licence tier or quota is inferred. No licensed raw data is published.
+
+### 8. Limitations
+The private correction was not re-read or re-executed here. Quiet unittest output does not show the count 96. Test method names are not public. ADR 0011 alternatives were not read. The 23 paths are a filename manifest, not a code review. Synthetic 17 rows and 16 instruments across 11 sectors remain a fixture, not the listed US universe. Native offline envelopes `SYN-APA01` and `SYN-APA02` are still not the `APP-A` chat identifiers. Chronology defects in the native chat are not repaired.
+
+### 9. Restrictions
+No merge. No live order, account read, vendor call, scheduler activation, licence, new strategy, native integration, or production-universe work. Entry, exit, initial stop, trailing stop, sizing, and risk stay unresolved. Stop-dependent M/T stays HOLD. The May source stays unrecovered. FAIR-VALUE-COMPOUNDER-002 stays not approved. No new work order is opened by this note.
+
+### 10. Proposed disposition
+**Pending independent re-audit. Not accepted.** Request an Architect ACCEPT or HOLD of exact `cdd70b02a2c53ce25db9b857d03590491f247771`. Builder 96 tests are not that audit. Bounded native chat evidence already recorded for the E to S to R to M handoff, and T's receipt of M-Bot's research-HOLD return, remains verified chat evidence. The builder's statement that native chat is unverified does not erase that record. Full native integration, a protected NEO principal, an access-control list, and native-to-Python ledger execution remain **PARTIAL / UNVERIFIED**. Overall operational state remains **HOLD**.
+
 **ID:** REVIEW-M3-001
 **Date:** 2026-11-05 (Europe/London)
 **Public base verified this session:** `20094068e20c2de0a659e8243657207c8d4cfbaa` (`origin/main`, merge of [PR #7](https://github.com/maff0000/CGPT-INVESTMENT/pull/7))
-**Status:** **AUTHORITATIVE CURRENT MILESTONE.** The locked 14-item record in the next section is the current packet. Earlier builder drafts are in the appendix. They are superseded and are not current status.
+**Status of the next section:** Prior packet for held private head `a40412f0876fd59526a6b663273f69b4df008ec4`. The Architect HOLD of that exact head stands. The correction packet above is the current governance record and is not an acceptance. Earlier builder drafts remain in the appendix.
 
-## AUTHORITATIVE CURRENT MILESTONE — locked private head `a40412f0876fd59526a6b663273f69b4df008ec4`
+## Prior packet for held head `a40412f0876fd59526a6b663273f69b4df008ec4` — formerly titled authoritative current milestone
 **Disposition:** **READY FOR ARCHITECT REVIEW** of the bounded offline fixture and the chat milestone. Overall native, Python and security integration remains **PARTIAL**. Operational state remains **HOLD**. **No independent acceptance is claimed.** No merge. No new code, vendor call, network call, peer action, scheduler or activation.
 
 Parent direct GitHub read-back, not a read by this credential: [PR #4](https://github.com/maff0000/paper-bots/pull/4) is open, `merged` false, 21 files changed. This credential still receives HTTP 404. That is not a global access block.
