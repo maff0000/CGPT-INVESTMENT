@@ -36,9 +36,9 @@ July brief v0.3 and July architecture v2 were recovered in full from private arg
 
 The full May Trade doctrine was not recovered. That is an access gap: only the previously cited one-line excerpt is available, and it lacks vol-band parameters. The gap is not a finding that no historical rule ever existed. The recovered July texts and that May excerpt are conflicting legacy profiles.
 
-A private comparison and a draft parameterised schema were handed to the paper-bots workstream for reviewed private GitHub preservation. No preservation SHA was supplied. In the draft, QARP entry, exit, initial stop, trailing stop and risk values are explicitly UNRESOLVED, so the draft is not a complete accepted doctrine.
+Private preservation is builder-reported as [paper-bots PR #3](https://github.com/maff0000/paper-bots/pull/3) at `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a`, docs only and unmerged. In the draft, QARP entry, exit, initial stop, trailing stop and risk values are explicitly UNRESOLVED, so the draft is not a complete accepted doctrine.
 
 **NEED OWNER DECISION/ACCESS:** the owner or operator provides the complete May source by an authorised authenticated exact-record export, or supplies it from backup. No bypass. No further access is attempted. Stop-dependent M-Bot and T-Bot management stays HOLD. [Issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5).
 
 ## Boundaries preserved
-Paper and shadow research only. G0 remains open. G1–G3 prospective investment proof remains required before any performance claim. QARP-ROTATION-001 v1.0.0 remains the frozen screening specification already on main. Its implementation is running and is not accepted. Independent paper work other than stop-dependent M/T management continues.
+Paper and shadow research only. G0 remains open. G1–G3 prospective investment proof remains required before any performance claim. QARP-ROTATION-001 v1.0.0 remains the frozen screening specification already on main. Its builder-reported implementation is [paper-bots PR #2](https://github.com/maff0000/paper-bots/pull/2) and is not accepted. The mock chain is builder-reported as [paper-bots PR #1](https://github.com/maff0000/paper-bots/pull/1) and is not accepted. No independent audit of those heads is claimed. Stop-dependent M/T management stays HOLD.

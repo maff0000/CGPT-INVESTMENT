@@ -14,15 +14,16 @@
 
 ## WO-PAPER-001 — integrated mock vertical slice
 **Spec:** [WO-PAPER-001](WO-PAPER-001-integrated-vertical-slice.md). Original scope is unchanged.
-**Reported state:** a private paper-bots repository bootstrap exists at `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. The repository URL and any later implementation head were not supplied. This session could not read a repository named `maff0000/paper-bots`.
-**Tests:** none supplied.
-**Disposition:** **HOLD**. Running is not acceptance. No milestone pull-request URL is recorded.
+**Builder-reported completion:** [paper-bots PR #1](https://github.com/maff0000/paper-bots/pull/1), head `cdfcbb27c4e440fd1597217abc4e9cb34251c65f`, base `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. OPEN / UNMERGED. Six-role standard-library chain, deterministic risk gate, SQLite WAL append-only triggers and hash ledger. 48 tests passed on each of Python 3.9.25 and 3.12.3. No provider or broker network, no hosted CI, no independent audit. ADRs 0001–0004. Synthetic fill is an interface demonstration only. `stop_authorised` false.
+**Disposition:** **HOLD**. Builder completion is not acceptance.
 
-## QARP-ROTATION-001 v1.0.0 — implementation in progress
+## QARP-ROTATION-001 v1.0.0 — builder-reported implementation
 **Spec already accepted on main:** [registry](../docs/sbot-strategy-registry.md) version 1.0.0, [SBOT-STRATEGY-001](../research/decisions/2026-11-05-sbot-first-strategy.md).
-**Reported state:** implementation work is running. No public work-order id, private head, test count or pull-request URL was supplied. This file does not create those identifiers after the fact.
-**Boundary:** screening and qualification only. The work does not authorise paper entries, stops or orders. Stop-dependent paths stay on the stream below.
-**Disposition of the specification:** **ACCEPT** (already on main). **Disposition of the implementation:** **HOLD**.
+**Builder-reported completion:** [paper-bots PR #2](https://github.com/maff0000/paper-bots/pull/2), head `b6b7877884df6edc624691b50bb474b2b518ded8`, base `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` (unaccepted). WO-PAPER-002 and ADR 0005. 59 tests passed on each of Python 3.9.25 and 3.12.3, including the prior 48. `entry_authority` NONE. Stop paths HOLD. No live calls. Horizons 5/20/60 incomplete. No investment performance.
+**Disposition of the specification:** **ACCEPT** (already on main). **Disposition of the implementation:** **HOLD**. Builder evidence only.
+
+## Private evidence PR — docs only
+[paper-bots PR #3](https://github.com/maff0000/paper-bots/pull/3), head `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a`, base `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. OPEN / UNMERGED. July full evidence reported hashed and private-scanned. May full text not recovered. No tests claimed. No policy approved. **HOLD**.
 
 ## Stream A — E-Bot PR #2 correction
 **Repository PR:** https://github.com/maff0000/ebot/pull/2
@@ -50,7 +51,7 @@ This session could not read `maff0000/ebot`. The four named files were not revie
 **Reported result:** the authorised read-only attempt is complete. This public session did not repeat it. The report includes no writes, restarts, broker calls, vendor calls or credential use.
 **Recovered:** July brief v0.3 and July architecture v2, full source, private argus commit `46b4d8c8f17490357c6d1536c5027e45341b7f11`. Reported hash match to the compared copies. **Not approved.**
 **Not recovered:** the full May Trade doctrine. Access gap. Only the previously cited one-line excerpt is available, and its vol-band parameters are missing. This does not prove that no historical rule ever existed.
-**Draft:** a private comparison and parameterised schema were handed to the paper-bots workstream for reviewed private GitHub preservation. No preservation SHA was supplied. QARP entry, exit, initial stop, trailing stop and risk values in that draft are explicitly UNRESOLVED. The draft is not an accepted doctrine.
+**Draft:** private preservation is builder-reported as paper-bots PR #3. QARP entry, exit, initial stop, trailing stop and risk values in that draft are explicitly UNRESOLVED. The draft is not an accepted doctrine.
 **Dependency:** owner or operator provides the complete May source through an authorised authenticated exact-record export, or supplies it from backup. No bypass. No further access.
 **Hold:** stop-dependent M-Bot and T-Bot paper position management. Other authorised paper work continues.
 **Disposition:** recovered July texts **HOLD** (not approved). Missing May source and conflicting legacy profiles **NEED OWNER DECISION/ACCESS**. Stop-dependent M/T **HOLD**.
@@ -63,4 +64,4 @@ This session could not read `maff0000/ebot`. The four named files were not revie
 **Disposition:** **HOLD**.
 
 ## Next
-Independent exact-head review of E-Bot `3aa95daffe1497725aba8dbd80d4005d5afde16c` when a credential can read that repository, with no live calls. Continue the running private WO-PAPER-001 and QARP implementation without treating them as accepted. Do not resume Stream C access. The May-source dependency above is **NEED OWNER DECISION/ACCESS**.
+Not started. Exact-head independent audit and corrections of the reported E-Bot and paper-bots heads, plus source and rights mappings that stay on mocks until rights are established. The May-source dependency above is **NEED OWNER DECISION/ACCESS**. Do not merge the open pull requests. Rollback is non-merge.
