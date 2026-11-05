@@ -1,5 +1,7 @@
 # Six-bot consolidation index — sanitised review packet
 
+**CURRENT — semantic-identity head submitted, builder-tested, not accepted (2026-11-05).** Public PR #7 was verified at `ac14cbc6a44b727a5f8fe0119c5163316144d0a9` before this note. Private paper-bots was not readable here. Builder reports [PR #2](https://github.com/maff0000/paper-bots/pull/2) head `810b6fd48b266031c1b299c39370bf3ececb449b` on `cursor/qarp-rotation-001-1e9e`, base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, with local head, origin branch and pull-request head equal, main unchanged, and the pull request mergeable. **PENDING / BUILDER-TESTED. READY FOR ARCHITECT ACCEPTANCE. Not accepted.** The Architect's 73-test Python 3.12.14 audit remains on `e403f29db0fe74f7b2b5f3ad7d84f160a966df22` and is not an audit of this head. The full 12-item packet is at the end of this file. [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) remains not started.
+
 **LATEST ARCHITECT UPDATE — 2026-11-05:** Independent exact-head review of private paper-bots PR #2 `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`: **73 tests OK on Python 3.12.14**, prior parent-replay and NEO correlation defects fixed, but new source-/quality-state replay identity gap independently reproduced. **HOLD**; [dated independent record](2026-11-05-m2-e403f29-independent-hold.md), [corrective PR comment](https://github.com/maff0000/paper-bots/pull/2#issuecomment-6668063602). PR #3 preservation remains accepted/merged into private main `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, strictly not policy. Public PR #7 remains open; no trading or scheduling authority. All builder summaries and earlier Architect statuses below retained for historical traceability.
 
 **SUPERSESSION — semantic-replay repair authorised, head pending (2026-11-05).** This session fast-forwarded onto verified public head `be598060a4f991bc48d72735b4034a2e3df59db5` and did not rewrite it. Private comment `6668063602` was not readable here. The public audit file is the Architect record: parent-replay rejection and NEO correlation are accepted for the cases reproduced; a same-key change of `source_id` or `quality_state` from `PRICE_OK` to `UNCHECKED` is still returned as a duplicate with `conflict=False`. One bounded repair is assigned to the existing paper-bots workstream. It must compare the full immutable decision semantics for single and batch appends, excluding legitimate generated retry timestamps and operational metadata, with an ADR, regressions on Python 3.9 and 3.12, and a fresh process check. **No repair head is recorded. The defect is not claimed fixed.** Builder 73-test results on 3.9.25 and 3.12.3 stay builder-reported and are not this Architect acceptance. E-Bot, M1 and the preservation merge stay as previously accepted. G0, FMP rights, the May source, doctrine approval, entry and stop policy, stop-dependent M/T, scheduling and live execution stay blocked. The 12-item packet waits for the repair evidence. **Owner delivery requirement, recorded and not started:** E, S, R, M, T and NEO must be individually visible and messageable Grok Bot app teammates. The current mock does not satisfy that. The owner states T-Bot already exists as the current assistant; this session did not inspect the app, and the other roles are not verified or provisioned. Future work order [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is separate from the ledger correction. The parent provisions the app. This cloud session does not. No architecture approval is requested.
@@ -397,3 +399,49 @@ OPEN. Base `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Head before this packet `
 
 ### 13. Readiness
 **READY FOR ARCHITECT ACCEPTANCE. Not accepted.** The next work order is an exact-head independent review on Python 3.12.14 before any merge. It is not started.
+
+That readiness applied to `e403f29d…` and was later held. The packet below is the later builder submission.
+
+## Final 12-item packet — semantic identity, builder-tested, not accepted
+**Disposition:** **PENDING / BUILDER-TESTED. READY FOR ARCHITECT ACCEPTANCE. Not accepted.**
+
+### 1. Verified starts
+| Ref | SHA | Class |
+|---|---|---|
+| Public main | `a64c2f1d96a13f16963d8835713434c2be67c6f6` | VERIFIED this session |
+| Public PR #7 before this packet | `ac14cbc6a44b727a5f8fe0119c5163316144d0a9` | VERIFIED this session. Includes Architect head `be598060a4f991bc48d72735b4034a2e3df59db5` |
+| Paper-bots main | `928b6967b31ad4bf3b3404cf04b1978c25aaff6d` | BUILDER-REPORTED read-back. Unchanged. Not refetched here |
+| Prior PR #2 head | `e403f29db0fe74f7b2b5f3ad7d84f160a966df22` | ARCHITECT-INDEPENDENT: 73 tests OK on Python 3.12.14. Parent conflict, batch atomicity and NEO correlation, including zero-candidate, accepted for the reproduced cases. Source and quality replay still a silent duplicate |
+
+### 2. Private head and base
+[PR #2](https://github.com/maff0000/paper-bots/pull/2), branch `cursor/qarp-rotation-001-1e9e`. Head `810b6fd48b266031c1b299c39370bf3ececb449b`. Base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`. OPEN / UNMERGED. Builder reports no force-push and a mergeable pull request. This session could not read the private repository.
+
+### 3. Changed files
+`src/paperbots/ledger.py`, `tests/test_decision_identity.py`, `docs/adr/0008-decision-semantic-identity.md`, `docs/work-orders/WO-PAPER-002-correction-semantic-identity.md`, and a dated supersession appended to the private README. Earlier audits are reported preserved.
+
+### 4. Identity model
+Canonical comparison is the whole event. Operational fields excluded from the comparison: `seq`, `prev_hash`, `event_hash` and `produced_at`. Evidence timestamps `observation`, `source_asof` and `fetched` are compared unless both sides left the field equal to that side's own write clock, which is the default. `expires_at` is compared as a TTL offset from the write clock: the same TTL is a retry, and a different TTL is a conflict. Every other field is evidence: source, quality, parents, input hashes, correlation, session, producer, type, rule, strategy, candidate, action, reasons, checks, uncertainty, entitlement, explanation and payload. Single and batch appends use the same comparison. A single conflict returns `conflict=True`, writes zero rows, and `commit_or_conflict` raises. Any conflict in a batch rolls the batch back.
+
+### 5. Tests, builder only
+82 passed on Python 3.12.3 and 82 passed on Python 3.9.25, in the implementation tree and again in a fresh detached worktree at exact `810b6fd48b266031c1b299c39370bf3ececb449b`, in a separate process. This session is not the independent auditor and did not run them. The Architect's 73-test Python 3.12.14 result is historical for `e403f29d…` only.
+
+### 6. Ledger unchanged on rejects
+Builder reports, from that fresh process: a `produced_at`-only retry is `duplicate=True` and `conflict=False`. A changed source, `PRICE_OK` to `UNCHECKED`, the reverse quality change, and a changed reason are `conflict=True` and raise, and the old value stays. Every rejection leaves the row count and hash tip unchanged. A mixed batch of a new scan plus a source conflict rolls back the new scan.
+
+### 7. Earlier fixes
+Builder reports the existing parent reject, cohort correlation, zero-candidate continuity, no-network behaviour and role isolation remain green. Those are builder regressions, not a new Architect audit.
+
+### 8. Security and network
+No vendor call, broker call, credential use, scheduler path, threshold change or stop-risk change is reported. No private original is copied here.
+
+### 9. ADR and visible deviation
+ADR 0008, path `docs/adr/0008-decision-semantic-identity.md`, builder-reported and not read here. The explicit comparison deviation is above: `produced_at` is operational and excluded; evidence timestamps are compared unless both sides left them as their own write clock; `expires_at` is a TTL offset, so the same TTL retries and a different TTL conflicts.
+
+### 10. Public head
+This packet is committed on PR #7. The head before the commit was `ac14cbc6a44b727a5f8fe0119c5163316144d0a9`. The head after the push is the remote read-back. Base remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. The pull request stays OPEN.
+
+### 11. Remaining limitations
+G0 stays OPEN. FMP rights stay UNVERIFIED. The full May source is unrecovered. The doctrine is unapproved. Entry, exit, initial stop, trailing stop and risk are unapproved. Stop-dependent M/T stays HOLD. Scheduling and live execution stay blocked. E-Bot was not refetched. The four preservation hashes are reported unchanged. E, S, R, M and NEO are not provisioned in the Grok Bot app. Code alone does not satisfy that requirement. T-Bot is owner-stated as the current assistant and was not inspected here. [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is not started.
+
+### 12. Readiness
+**READY FOR ARCHITECT ACCEPTANCE. Not accepted.** The next action is an exact-head independent review of `810b6fd48b266031c1b299c39370bf3ececb449b` before any merge. It is not started. No new work order is opened by this packet.

@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — Semantic-identity head recorded as builder-tested
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. PR #7 remote head before this packet was `ac14cbc6a44b727a5f8fe0119c5163316144d0a9`. Private paper-bots was not readable.
+- Builder reports PR #2 head `810b6fd48b266031c1b299c39370bf3ececb449b`, base `928b6967b31ad4bf3b3404cf04b1978c25aaff6d`, and 82 tests passed on each of Python 3.12.3 and 3.9.25, including a fresh-process run at that exact head. **PENDING / BUILDER-TESTED. Not accepted.** The Architect's 73-test hold stays on `e403f29db0fe74f7b2b5f3ad7d84f160a966df22`.
+- [WO-APP-PRESENCE-001](work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) remains not started. The current code is not treated as Grok Bot app integration.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — Owner requires six Grok Bot app teammates
 - Recorded that E, S, R, M, T and NEO must be individually visible and messageable in the Grok Bot app. Python role modules do not meet the requirement. The current mock is not claimed to be wired.
 - The owner states T-Bot already exists as the current assistant. This session did not inspect the app. The other roles are not verified or provisioned. Future work order [WO-APP-PRESENCE-001](work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is separate from the ledger correction and is not started. The parent provisions the app.
