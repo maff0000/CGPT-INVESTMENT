@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — DAILY-SCOUT-001: weekday research task and durable handoff
+- Confirmed a **weekday after-US-close equity scouting research task** is enabled, **separate** from the Monday >=7 all-sector report. Scheduled task creation does not establish future completed reports, actual market-data coverage or GitHub writes.
+- Added [operating and continuation runbook](docs/daily-equity-scout-runbook.md) and [decision](research/decisions/2026-11-05-daily-scout-operating-plan.md), with the exact recovery read order and SCOUT-002 pilot lessons.
+- Each future report must validate the completed US session, highlight confirmed and unconfirmed chart conditions, sector and business risk, 7+2 earnings gate and independent decision. Record dated findings in GitHub only with verified permissions and readback; otherwise disclose absent commit.
+- No new trades, personal portfolio information, scan claims or unverified backtested returns added.
+
+
 ## 2026-11-05 — SCOUT-002: first practical pre-breakout scan and live event gate checks
 - Piloted the new [scouting workflow](research/reviews/2026-11-05-first-pre-breakout-pilot.md) against six named public VCP-screen leads from Nov2 scanner prices, updated to Nov4 completed US session closes, with sector, primary earnings and preliminary business checks.
 - SJM was near an old resistance, CPAY and VOYA beyond old pivots, ABNB did not close above its pivot; BDX extended into results and DE faces Nov25 earnings. **None rated an executable BUY**.

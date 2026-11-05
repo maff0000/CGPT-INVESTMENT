@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**DAILY-SCOUT-001 (2026-11-05):** a weekday after-US-close scouting research task has been **enabled**, complementing the Monday all-sector idea report. Read the [daily scouting runbook and new-chat continuation guide](docs/daily-equity-scout-runbook.md), [adoption record](research/decisions/2026-11-05-daily-scout-operating-plan.md), and latest dated report. **Scheduling does not prove any future scan or GitHub commit succeeded.**
+
 **SCOUT-002 practical pilot (2026-11-05):** [first six-name external VCP lead review and current price/event checks](research/reviews/2026-11-05-first-pre-breakout-pilot.md). SJM near pivot; CPAY/VOYA beyond older pivots but earnings/extension checks required; ABNB intraday-only pivot and Q3 blackout; DE and BDX also on event/extension watch. **No purchase approved and no Finviz or whole 22-name chart scan claimed.** [Pilot decision](research/decisions/2026-11-05-first-pre-breakout-pilot.md).
 
 **NEW — pre-breakout scouting (SCOUT-001, 2026-11-05):** find **WATCH / BASE FORMING → WATCH / COILING → WATCH / AT PIVOT** before the momentum breakout. Preserve QARP v2 A/B/C unchanged; Finviz supports exploratory base/near-high pattern scouting, but multiweek volatility and volume contraction need actual chart/history review. No stocks were reclassified. [Scout methodology](docs/pre-breakout-accumulation-scout.md), [adoption decision](research/decisions/2026-11-05-pre-breakout-scout.md).
