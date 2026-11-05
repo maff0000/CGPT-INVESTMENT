@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — G0-PROBE-AUDIT-001: fail-closed reference probe acceptance review
+- Conducted an independent no-network mocked review of the public Massive sample probe. Missing grouped data plus timestamp-only bars yielded an observed **exit status 0** despite HOLD messaging and missing actual OHLCV.
+- Recorded [dated audit and bounded E-Bot offline acceptance counterexamples](research/reviews/2026-11-05-g0-probe-readiness-audit.md); no reference code, screening methodology, strategy gates or user credentials were changed.
+- GrokBot E-Bot implementation remains unverified; G0 OPEN, G1 NOT STARTED, data licence and real API test outstanding.
+
+
 ## 2026-11-05 — E-Bot spelling and implementation handoff
 - Corrected human-facing project name from E_BOT to **E-Bot** across recovery notes and build brief. Existing repository file paths and proposed CLI spelling are unchanged pending build acceptance.
 - User reports GrokBot implementation **underway**; completion, offline tests and actual Massive API connection **not verified**. No expansion of the G0-EBOT-001 manual/read-only scope.

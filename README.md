@@ -1,6 +1,8 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
+**G0-PROBE-AUDIT-001 (2026-11-05):** An [independent offline reference-probe review](research/reviews/2026-11-05-g0-probe-readiness-audit.md) found that missing grouped results and timestamp-only ticker records can still lead the existing sample script to exit successfully. This is a **reference-script acceptance issue**, not a verdict on GrokBot's separate, unfinished E-Bot. Require fail-closed offline tests before E-Bot acceptance or real API credentials; G0 remains OPEN.
+
 **E-Bot naming clarification (2026-11-05):** Canonical name **E-Bot**; GrokBot implementation **in progress per user**, report pending. No verified code/test/API access yet. Existing command spelling `e_bot` remains provisional. 
 
 **G0-EBOT-001 (2026-11-05):** User approved **GrokBot building a tiny private manually invoked E-Bot v0.1** solely to run bounded, read-only G0 Massive data-probe tasks. Offline tests first; human supplies API key locally later. This **does not** authorise automated equity research/agents, schedules, execution or G0 sign-off. [GrokBot build brief](docs/g0-ebot-manual-utility-brief.md), [scope decision](research/decisions/2026-11-05-ebot-manual-data-tool.md). **Not yet built or connected.**

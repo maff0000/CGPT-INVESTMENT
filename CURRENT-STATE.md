@@ -1,6 +1,9 @@
 # CURRENT STATE — CGPT-INVESTMENT
 **Last updated:** 2026-11-05 (Europe/London). **Research only, no live execution.** Source snapshots are dated; recheck anything price-sensitive or event-sensitive before action.
 
+## G0-PROBE-AUDIT-001 — independent reference-probe review (2026-11-05)
+An **offline, no-network mock test** of the existing public Massive reference script demonstrated a false-success acceptance path: empty grouped results and 260 timestamp-only records per ticker produced a HOLD diagnostic yet process exit code **0** and per-symbol `bars>=260=True`. This affects the **reference probe**, not unreviewed GrokBot E-Bot code. Before E-Bot v0.1 acceptance, demand fail-closed missing/invalid OHLCV, timestamp/order, completed-session/entitlement, five-calls-per-minute, safe partial-error and prompt/security tests. See [dated audit](research/reviews/2026-11-05-g0-probe-readiness-audit.md). No public code was fixed or live vendor data accessed; G0 remains OPEN, E-Bot build/test verification pending.
+
 ## E-Bot naming and implementation handoff — 2026-11-05
 Canonical name: **E-Bot**. GrokBot is reportedly building the bounded manual v0.1 data-test tool. **Implementation IN PROGRESS (user report); neither code, offline tests nor Massive access are verified.** Await builder report and independently assess acceptance. Do not refer to it as E_BOT; preserve existing `e_bot` CLI placeholder until confirmed.
 
