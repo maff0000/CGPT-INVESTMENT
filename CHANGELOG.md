@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — M3 milestone opened for app teammates and broad discovery
+- Verified public main `20094068e20c2de0a659e8243657207c8d4cfbaa`, the merge of PR #7. This change is a new pull request and does not rewrite that acceptance.
+- Recorded platform facts in [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md). T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and not modified. No other app identifier is claimed. A creation description is not a proven access-control list. No Python ledger bridge is verified. The parent provisions the app.
+- Authorised [WO-DISCOVERY-001](work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md) for offline US fixtures. No private head is supplied. [Screening checklist](docs/qarp-screening-requirements-review.md) approves no new strategy. FMP rights stay UNVERIFIED.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Architect accepts and merges private QARP/NEO evidence component
 - Independent exact-head review of paper-bots PR #2 at `810b6fd48b266031c1b299c39370bf3ececb449b`: 82 Python 3.12.14 tests passed offline, plus source/quality/reason replay mutation probes and no-broker inspection.
 - **ACCEPTED AND MERGED** by normal guarded merge, private main `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. [Architect report](research/reviews/2026-11-05-m2-810b6fd-independent-acceptance.md).

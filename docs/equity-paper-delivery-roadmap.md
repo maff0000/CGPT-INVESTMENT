@@ -5,6 +5,9 @@
 **Parent:** [PID-EQUITY-PAPER-001](pid-equity-paper-system.md) | **Autonomy:** [GrokBot delivery charter](grokbot-paper-delivery-charter.md) | **Launch WO:** [WO-PAPER-001](../work-orders/WO-PAPER-001-integrated-vertical-slice.md).
 **Status:** BUILD AUTHORIZED UNDER BOUNDED PAPER-ONLY WOs; no milestone accepted yet.
 
+## M3 snapshot — 2026-11-05, proposed
+Public main is the merged PR #7 commit `20094068e20c2de0a659e8243657207c8d4cfbaa`. [M3 packet](../research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md). App provisioning is a future parent action under [WO-APP-PRESENCE-001](../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md). Broad offline discovery is [WO-DISCOVERY-001](../work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md), head not supplied. Neither is accepted. The snapshot below is the pre-M3 record.
+
 ## Progress snapshot — PROPOSED 2026-11-05
 No milestone below is accepted. Details and dispositions: [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md).
 
