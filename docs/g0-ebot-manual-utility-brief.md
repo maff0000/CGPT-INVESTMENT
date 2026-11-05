@@ -1,12 +1,14 @@
-# G0-EBOT-001 — GrokBot build brief: manually invoked E_BOT v0.1
+# G0-EBOT-001 — GrokBot build brief: manually invoked E-Bot v0.1
 **Authorised scope:** 2026-11-05 (Europe/London) | **Delivery status:** brief only, NOT yet built or connected. **Project priority:** manual G0 data validation before research automation.
+
+**Naming/status update — 2026-11-05:** The correct project name is **E-Bot** (not E_Bot/E_BOT). The user reports **GrokBot's build is IN PROGRESS**, with a report expected when complete. The build, its tests and any Massive connection have **not yet been independently verified**. Historical file paths and the proposed `e_bot` CLI command remain unchanged until the implementer confirms the actual interface.
 
 ## Task for GrokBot — paste this as the build instruction
 
-You are GrokBot, the bounded **implementer** of a small private tool named **E_BOT**.
+You are GrokBot, the bounded **implementer** of a small private tool named **E-Bot**.
 
 ### Objective
-Build a minimal **human-invoked, read-only market-data task runner** so a human operator can give E_BOT narrowly scoped prompts and have it execute predefined Massive market-data validation checks. This is **G0 test tooling**, NOT the autonomous equity discovery or investing platform. **No autonomous running, trading, stock picks or scheduled jobs.**
+Build a minimal **human-invoked, read-only market-data task runner** so a human operator can give E-Bot narrowly scoped prompts and have it execute predefined Massive market-data validation checks. This is **G0 test tooling**, NOT the autonomous equity discovery or investing platform. **No autonomous running, trading, stock picks or scheduled jobs.**
 
 ### Read-only authoritative research reference
 First review the latest GitHub main of **maff0000/CGPT-INVESTMENT**, starting with:
@@ -17,10 +19,10 @@ First review the latest GitHub main of **maff0000/CGPT-INVESTMENT**, starting wi
 - docs/g0-data-integrity-and-valuation-rules.md
 - This brief at docs/g0-ebot-manual-utility-brief.md.
 
-Treat the public repository as **read-only documentation/source reference**, never as a place to store the E_BOT program, market-data extracts, API tokens or future private investment records. You may reuse the existing, bounded Python probe **after reviewing its behaviour and tests**, rather than duplicating it. Check current HEAD before using any quoted rules.
+Treat the public repository as **read-only documentation/source reference**, never as a place to store the E-Bot program, market-data extracts, API tokens or future private investment records. You may reuse the existing, bounded Python probe **after reviewing its behaviour and tests**, rather than duplicating it. Check current HEAD before using any quoted rules.
 
 ### Build location and resource restrictions
-Inspect the currently approved development workspace for any pre-existing E_BOT project. If found, report what exists and preserve it. If absent, create a dedicated **private/local, nonproduction E_BOT workspace** that the operator can inspect; do not assume authority to SSH to production, create new remote GitHub repositories or deploy services. Keep code and config isolated from FOUNDRY, ForgeV2, trading execution hosts and the public CGPT-INVESTMENT repo. Use minimal standard-library Python and a simple CLI. No Docker, UI, message bus, database, orchestration framework, new cloud service or generic AI-agent platform in v0.1.
+Inspect the currently approved development workspace for any pre-existing E-Bot project. If found, report what exists and preserve it. If absent, create a dedicated **private/local, nonproduction E-Bot workspace** that the operator can inspect; do not assume authority to SSH to production, create new remote GitHub repositories or deploy services. Keep code and config isolated from FOUNDRY, ForgeV2, trading execution hosts and the public CGPT-INVESTMENT repo. Use minimal standard-library Python and a simple CLI. No Docker, UI, message bus, database, orchestration framework, new cloud service or generic AI-agent platform in v0.1.
 
 ### v0.1 task interface
 Provide an explicit, human-invoked command/task interface:
@@ -57,7 +59,7 @@ You may adjust CLI spelling for implementation simplicity, but supply equivalent
 Stop after code exists and **offline tests pass**. **Do not activate a real API key or make Massive requests until the human operator explicitly installs the key and asks for the test.**
 
 Report:
-- Actual E_BOT workspace and repository/branch/commit if created, paths changed, tests run and precise PASS/FAIL results.
+- Actual E-Bot workspace and repository/branch/commit if created, paths changed, tests run and precise PASS/FAIL results.
 - Manual `e_bot` commands and how the user safely supplies the key.
 - Confirm no scheduler, daemon, broker integration, unreviewed external libraries, API calls, secrets, public-repo changes, other-host modifications or autonomous investment logic.
 - Open risks: provider commercial licence, chart data quality, rate limits and what still blocks G0.
@@ -69,4 +71,4 @@ Report:
 The project still blocks automated equity research, stock recommendations, autonomous trade execution and broker code until G0–G3. This brief explicitly permits **only creation and offline testing of the narrow manual G0 provider-data tool**, with a later separate human invocation for a credentialed live data test. It does not permit new data rights or final canonical source selection.
 
 ## State
-**GrokBot dispatch pending.** No E_BOT workspace, tested implementation, account configuration or authenticated Massive response verified by this public document. The operator will separately provide local API access. Recovery: read this brief, [Massive onboarding](g0-massive-onboarding.md), [G0 source tolerance](g0-price-tolerance-and-provider-trial.md) and [CURRENT-STATE](../CURRENT-STATE.md).
+**GrokBot dispatch pending.** No E-Bot workspace, tested implementation, account configuration or authenticated Massive response verified by this public document. The operator will separately provide local API access. Recovery: read this brief, [Massive onboarding](g0-massive-onboarding.md), [G0 source tolerance](g0-price-tolerance-and-provider-trial.md) and [CURRENT-STATE](../CURRENT-STATE.md).

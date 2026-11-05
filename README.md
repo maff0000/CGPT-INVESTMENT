@@ -1,7 +1,9 @@
 # CGPT-INVESTMENT
 Public, dated research journal for **quality at a reasonable price (QARP)** with improving sector and stock momentum.
 
-**G0-EBOT-001 (2026-11-05):** User approved **GrokBot building a tiny private manually invoked E_BOT v0.1** solely to run bounded, read-only G0 Massive data-probe tasks. Offline tests first; human supplies API key locally later. This **does not** authorise automated equity research/agents, schedules, execution or G0 sign-off. [GrokBot build brief](docs/g0-ebot-manual-utility-brief.md), [scope decision](research/decisions/2026-11-05-ebot-manual-data-tool.md). **Not yet built or connected.**
+**E-Bot naming clarification (2026-11-05):** Canonical name **E-Bot**; GrokBot implementation **in progress per user**, report pending. No verified code/test/API access yet. Existing command spelling `e_bot` remains provisional. 
+
+**G0-EBOT-001 (2026-11-05):** User approved **GrokBot building a tiny private manually invoked E-Bot v0.1** solely to run bounded, read-only G0 Massive data-probe tasks. Offline tests first; human supplies API key locally later. This **does not** authorise automated equity research/agents, schedules, execution or G0 sign-off. [GrokBot build brief](docs/g0-ebot-manual-utility-brief.md), [scope decision](research/decisions/2026-11-05-ebot-manual-data-tool.md). **Not yet built or connected.**
 
 **G0-PROVIDER-001 (2026-11-05):** **Massive Stocks Basic selected for private MANUAL market-data access trial**, not yet a live-connected or licensed canonical provider. Official data has free 2-year US EOD access after midnight Eastern next day and 5 req/min. [Account/onboarding and D1–D6 licence checklist](docs/g0-massive-onboarding.md), [read-only local smoke probe](research/validation/g0_massive_readonly_probe.py), [selection decision](research/decisions/2026-11-05-massive-onboarding-selection.md). **Account-holder signup/auth still required; no real data API call has yet passed**. Public GitHub must not contain keys or licensed raw bars. Agents and trading remain blocked.
 
