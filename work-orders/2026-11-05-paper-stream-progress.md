@@ -64,5 +64,9 @@ This session could not read `maff0000/ebot`. The four named files were not revie
 **Stop:** no further calls; no subscription upgrade.
 **Disposition:** **HOLD**.
 
+## Correction round — builder-reported complete, not accepted
+PR #1 candidate `823203059466a30a11fe5a0e677f54c5482dc6fb`: 52 tests passed on each of Python 3.12.3 and 3.9.25. PR #2 candidate `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`, base `823203059466a30a11fe5a0e677f54c5482dc6fb`, import merge `6b72d03b886502c3d50eb150a918eb676c3fae3a`: 66 tests passed on each interpreter. PR #3 unchanged. No main merge, rebase, force-push, vendor call or broker call. E-Bot not modified. These tests are builder evidence. The Architect's 3.12.14 audit applies to `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` and `b6b7877884df6edc624691b50bb474b2b518ded8` only.
+**Disposition:** **HOLD** pending exact-head re-review.
+
 ## Next
-One paper-bots correction round is assigned and not finished. New exact heads and regression results are pending. Do not mark PR #1 or PR #2 corrected until that evidence arrives. E-Bot code acceptance does not close G0, FMP rights, the May access gap, or stop-dependent M/T. No scheduling and no live execution. Rollback of unaccepted pull requests is non-merge.
+Stop. The next action is an Architect re-review of the two new heads. E-Bot code acceptance does not close G0, FMP rights, the May access gap, or stop-dependent M/T. No scheduling and no live execution. Rollback of unaccepted pull requests is non-merge.

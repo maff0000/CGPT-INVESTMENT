@@ -1,6 +1,12 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — Paper-bots correction heads recorded, still unaccepted
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 remains open. The new results are builder-reported. The Architect's Python 3.12.14 audit still applies only to the prior heads.
+- Paper-bots PR #1 candidate is now `823203059466a30a11fe5a0e677f54c5482dc6fb`, with 52 tests passed on each of Python 3.12.3 and 3.9.25. PR #2 candidate is `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`, base `823203059466a30a11fe5a0e677f54c5482dc6fb`, import merge `6b72d03b886502c3d50eb150a918eb676c3fae3a`, with 66 tests passed on each interpreter. PR #3 is unchanged and remains policy HOLD.
+- E-Bot was not modified. Architect-reported main `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` was not re-read. May, doctrine parameters, FMP rights, stop-dependent M/T, scheduling and live execution are unchanged. Stop for exact-head re-review.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — Architect review recorded on the open governance PR
 - Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 remains open. Private review threads were not readable from this session. The Architect's consolidated comment on PR #7 was read.
 - E-Bot PR #2 at `3aa95daffe1497725aba8dbd80d4005d5afde16c` is recorded as Architect code acceptance, merge `79b7ac90fe4cf7c6e974e476baca7c63cc24603f`, with 112 tests OK on Python 3.12.14. That SHA was not re-fetched here and is not public main. G0 stays OPEN. Automated trading is not authorised.

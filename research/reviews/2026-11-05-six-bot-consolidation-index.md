@@ -8,7 +8,7 @@
 **Decision:** [PAPER-PROGRESS-001](../decisions/2026-11-05-paper-progress-sanitised.md)
 **Progress log:** [WO progress](../../work-orders/2026-11-05-paper-stream-progress.md)
 
-Public `origin/main` verified this session remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 is OPEN at the prior documentation head `dfd13b0e361f834f3d83ba4741019c21a58b4c99` before this revision. Private `maff0000/ebot` and `maff0000/paper-bots` were not readable here, so their review threads were not fetched directly. The Architect's consolidated findings were read from the public comment on PR #7.
+Public `origin/main` verified this session remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 remains OPEN. The governance head before this correction packet was `099c5b4478cd8fc4a2a52cdf10a099fb06fe7139`. Private `maff0000/ebot` and `maff0000/paper-bots` were not readable here. The Architect's consolidated findings were read from the public comment on PR #7. The correction heads below are builder-reported and were not re-tested here.
 
 Earlier sections that say E-Bot PR #2 is OPEN or HOLD are the builder-reported record before this Architect result. They are left in place.
 
@@ -23,7 +23,38 @@ Earlier sections that say E-Bot PR #2 is OPEN or HOLD are the builder-reported r
 | paper-bots PR #2 head `b6b7877884df6edc624691b50bb474b2b518ded8` | 59 tests OK on Python 3.12.14, plus further screen and ledger tests | **HOLD.** Infinity can become a verified screen match. A proxy can be labelled as an exact Finviz match. Cohort lineage keeps the final screen reference and omits upstream discovery references for a multi-candidate set. NaN market-cap can raise. Stacked on PR #1, which is also HOLD |
 | paper-bots PR #3 head `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | Four private file hashes match the manifest. Preliminary privacy scan clear. Upstream source location not independently verified by the Architect | **POLICY HOLD.** Preservation integrity passed. Neither legacy profile is approved |
 
-**Correction round:** one round is assigned to the existing paper-bots workstream. Finite numeric checks, QARP source labels, and full NEO causal references are in scope, with regression tests. New exact heads are **pending**. Do not describe those heads as corrected or accepted until builder evidence arrives. Frozen QARP predicates stay unchanged. Paper and shadow only.
+**Correction round:** the assigned round is builder-reported complete. The Architect's Python 3.12.14 findings apply to the prior heads in the table above, not to the new heads. Those new heads await an exact-head Architect re-review and are not accepted. Frozen QARP predicates stay unchanged. Paper and shadow only. No main merge, rebase, force-push, vendor call or broker call is reported for the round. E-Bot was not modified. The builder reports it did not re-read private E-Bot main because the API returned 404. The Architect-reported E-Bot main remains `79b7ac90fe4cf7c6e974e476baca7c63cc24603f`.
+
+## Builder correction heads — not re-audited
+**Evidence class:** BUILDER-REPORTED. This session did not clone the private repository or re-run the tests.
+
+### PR #1 numeric safety
+https://github.com/maff0000/paper-bots/pull/1  
+Base remains `3a1144bc544b3bc063808a42c723cbeabffb6ec9`. Architect-audited head `cdfcbb27c4e440fd1597217abc4e9cb34251c65f`. **New head `823203059466a30a11fe5a0e677f54c5482dc6fb`.**
+
+| Builder report | Value |
+|---|---|
+| Tests | 52 passed on Python 3.12.3 and 52 passed on Python 3.9.25 |
+| Reproduction at the old head | NaN raised; Infinity and bool were accepted as PASS |
+| New helper | Rejects non-finite values and bools, without a crash. Valid finite types are preserved. No trading permission is added. No new risk cap is added |
+| Files named | `numbers.py`, `riskcore.py`, `schemautil.py`, `reconcile.py`, `tests/test_numeric_safety.py`, `docs/work-orders/WO-PAPER-001-correction-numeric.md` |
+
+### PR #2 screen lineage
+https://github.com/maff0000/paper-bots/pull/2  
+Git base is now the new PR #1 head `823203059466a30a11fe5a0e677f54c5482dc6fb`. Architect-audited head `b6b7877884df6edc624691b50bb474b2b518ded8`. Reported non-destructive merge `6b72d03b886502c3d50eb150a918eb676c3fae3a` imports the PR #1 correction. **New head `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`.**
+
+| Builder report | Value |
+|---|---|
+| Tests | 66 passed on Python 3.12.3 and 66 passed on Python 3.9.25 |
+| Non-finite market cap | `UNKNOWN` / `NON_FINITE_INPUT`, not a verified match |
+| Source label | Each observation keeps `source_mapping` and `source_id` as `PROXY_FIXTURE_NOT_EXACT` even when the run is labelled exact |
+| Discovery link | Each screening event references its own discovery event |
+| Multi-candidate cohort | Verified, near-miss, reject and unknown cohorts reference all four screen events in `parent_event_ids` and `screen_event_ids`. No cross-candidate parent |
+| Unchanged authority | Frozen QARP thresholds. `entry_authority` remains NONE |
+| Files named | `strategies/evaluate.py`, `strategies/screen.py`, `schemautil.py`, `docs/schemas/v0.2/catalog.json`, `tests/test_qarp.py`, `docs/work-orders/WO-PAPER-002-correction-lineage.md` |
+
+### PR #3
+Unchanged at `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a`. **POLICY HOLD.**
 
 **Doctrine recommendation, not a parameter approval:** the Architect recommends writing a new equities doctrine without waiting for the missing May text. Legacy profiles stay historical. This record does not invent or approve entry, initial stop, trailing stop, exit or risk values. Stop-dependent M/T stays HOLD.
 
@@ -40,8 +71,11 @@ Earlier sections that say E-Bot PR #2 is OPEN or HOLD are the builder-reported r
 | E-Bot reviewed head, now Architect-merged | `3aa95daffe1497725aba8dbd80d4005d5afde16c` | ARCHITECT-INDEPENDENT | Code accepted. Merge commit below. G0 remains OPEN |
 | E-Bot private main after that merge | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | ARCHITECT-REPORTED | Stated in the public PR #7 comment. Not re-fetched by this session. Not public CGPT-INVESTMENT main |
 | Paper-bots bootstrap / private main if PRs stay unmerged | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | BUILDER-REPORTED | Base of [PR #1](https://github.com/maff0000/paper-bots/pull/1) and [PR #3](https://github.com/maff0000/paper-bots/pull/3) |
-| Paper-bots PR #1 head | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | BUILDER-REPORTED | OPEN / UNMERGED. Six-role mock chain. Not accepted |
-| Paper-bots PR #2 head | `b6b7877884df6edc624691b50bb474b2b518ded8` | BUILDER-REPORTED | OPEN / UNMERGED. Base is the unaccepted PR #1 head. QARP registry work. Not accepted |
+| Paper-bots PR #1 Architect-audited head | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | ARCHITECT-INDEPENDENT | HOLD for non-finite risk. Not the current candidate |
+| Paper-bots PR #1 correction head | `823203059466a30a11fe5a0e677f54c5482dc6fb` | BUILDER-REPORTED | Current candidate. 52 tests on 3.9.25 and 3.12.3. Not re-audited. Not accepted |
+| Paper-bots PR #2 Architect-audited head | `b6b7877884df6edc624691b50bb474b2b518ded8` | ARCHITECT-INDEPENDENT | HOLD for screen match and lineage. Not the current candidate |
+| Paper-bots PR #2 import merge | `6b72d03b886502c3d50eb150a918eb676c3fae3a` | BUILDER-REPORTED | Non-destructive merge of the PR #1 correction onto the PR #2 branch |
+| Paper-bots PR #2 correction head | `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` | BUILDER-REPORTED | Current candidate. Base `82320305…`. 66 tests on 3.9.25 and 3.12.3. Not re-audited. Not accepted |
 | Paper-bots PR #3 head | `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | BUILDER-REPORTED | OPEN / UNMERGED. Docs-only private evidence. Base is the bootstrap. Not accepted |
 | July brief v0.3 and July architecture v2 | private argus `46b4d8c8f17490357c6d1536c5027e45341b7f11` | REPORTED | Full texts recovered read-only. Recovery report says hashes matched the compared copies. Not approved. This session did not re-fetch the commit or recompute the hashes |
 | May Trade doctrine, full source | ACCESS GAP | REPORTED | Full text not recovered. Only the previously cited one-line excerpt, which lacks vol-band parameters. This is not proof that no rule ever existed |
@@ -79,11 +113,11 @@ The earlier builder claim that the HTTP non-object JSON mapping, the provider-le
 | Comparison of `3aa95daf…` with `adb605fd…` or `9b843de…` | Not performed |
 | Code acceptance | Not granted |
 
-The last independent review in this public journal remains the HOLD at `9b843dee03892e73f29da31997e5d07bfed564a7`: 105 offline tests passed on Python 3.12.14, and three malformed-response classifications were reproduced. That result applies to that head only. Exact independent review of `3aa95daffe1497725aba8dbd80d4005d5afde16c` is still pending.
+The last independent review recorded in this public journal before the Architect's code acceptance remains the HOLD at `9b843dee03892e73f29da31997e5d07bfed564a7`: 105 offline tests passed on Python 3.12.14, and three malformed-response classifications were reproduced. That result applies to that head only. The Architect later accepted `3aa95daffe1497725aba8dbd80d4005d5afde16c` as code only.
 
-## Paper-bots builder completion — not independently audited
+## Paper-bots builder completion — pre-correction heads
 
-All three private pull requests are reported **OPEN / UNMERGED**. None is accepted. This section is builder evidence only.
+All three private pull requests are reported **OPEN / UNMERGED**. None is accepted. This section is the builder record of the heads the Architect later audited. The correction heads are in the section above.
 
 ### PR #1 — WO-PAPER-001 mock chain
 https://github.com/maff0000/paper-bots/pull/1  
@@ -129,8 +163,10 @@ Docs only. The builder reports that the full July legacy evidence is hashed and 
 |---|---|---|---|---|---|
 | [Public #7](https://github.com/maff0000/CGPT-INVESTMENT/pull/7) | OPEN | this branch tip | `a64c2f1d96a13f16963d8835713434c2be67c6f6` | Documentation and link check only | This packet is the status record, not a code audit |
 | [ebot #2](https://github.com/maff0000/ebot/pull/2) | OPEN | `3aa95daffe1497725aba8dbd80d4005d5afde16c` | `50c0b66247498672b84e9fcae7e417a538a0e5c1` | 112 collected, 111 passed, 1 pre-existing skip, on each of Python 3.9.25 and 3.12.3. Zero live calls | Pending. Prior independent HOLD applies only to `9b843dee…` |
-| [paper-bots #1](https://github.com/maff0000/paper-bots/pull/1) | OPEN | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | 48 passed on each of Python 3.9.25 and 3.12.3. No hosted CI reported | None |
-| [paper-bots #2](https://github.com/maff0000/paper-bots/pull/2) | OPEN | `b6b7877884df6edc624691b50bb474b2b518ded8` | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | 59 passed on each of Python 3.9.25 and 3.12.3, including the prior 48 | None |
+| [paper-bots #1](https://github.com/maff0000/paper-bots/pull/1) old | OPEN | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | 48 passed on each of Python 3.9.25 and 3.12.3. Architect 3.12.14 audit of this head only | Architect HOLD |
+| [paper-bots #1](https://github.com/maff0000/paper-bots/pull/1) new | OPEN | `823203059466a30a11fe5a0e677f54c5482dc6fb` | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | Builder: 52 passed on each of Python 3.12.3 and 3.9.25 | Not done. Awaiting re-review |
+| [paper-bots #2](https://github.com/maff0000/paper-bots/pull/2) old | OPEN | `b6b7877884df6edc624691b50bb474b2b518ded8` | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | 59 passed on each of Python 3.9.25 and 3.12.3, including the prior 48. Architect 3.12.14 audit of this head only | Architect HOLD |
+| [paper-bots #2](https://github.com/maff0000/paper-bots/pull/2) new | OPEN | `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` | `823203059466a30a11fe5a0e677f54c5482dc6fb` | Builder: 66 passed on each of Python 3.12.3 and 3.9.25 | Not done. Awaiting re-review |
 | [paper-bots #3](https://github.com/maff0000/paper-bots/pull/3) | OPEN | `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | None claimed | None |
 
 ## Other tested evidence
@@ -171,8 +207,10 @@ Docs only. The builder reports that the full July legacy evidence is hashed and 
 | E-Bot code at `3aa95daffe1497725aba8dbd80d4005d5afde16c`, merge `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | **ACCEPT — CODE ONLY** | Architect result. G0 stays OPEN. Automated trading is not authorised. Not this session's re-test |
 | E-Bot PR #2 at `adb605fd676d06cf27830f35bf39c06d92d6a119` | **HOLD** | Superseded reported head. Not an acceptance target |
 | E-Bot PR #2 at `9b843dee03892e73f29da31997e5d07bfed564a7` | **HOLD** | Prior independent review stands for that head |
-| Paper-bots PR #1 at `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | **HOLD** | Architect: non-finite risk can pass or raise. 48 green tests are not acceptance. Correction head pending |
-| Paper-bots PR #2 at `b6b7877884df6edc624691b50bb474b2b518ded8` | **HOLD** | Architect: infinity screen match, proxy labelled exact, incomplete cohort lineage. 59 green tests are not acceptance. Correction head pending |
+| Paper-bots PR #1 audited head `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | **HOLD** | Architect finding for that head. 48 green tests were not acceptance |
+| Paper-bots PR #1 correction `823203059466a30a11fe5a0e677f54c5482dc6fb` | **HOLD** | Builder reports 52 tests passed on 3.12.3 and 3.9.25. Not re-audited. Not accepted |
+| Paper-bots PR #2 audited head `b6b7877884df6edc624691b50bb474b2b518ded8` | **HOLD** | Architect finding for that head. 59 green tests were not acceptance |
+| Paper-bots PR #2 correction `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b` | **HOLD** | Builder reports 66 tests passed on 3.12.3 and 3.9.25. Not re-audited. Not accepted |
 | Paper-bots PR #3 at `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | **POLICY HOLD** | Architect: four hashes match and the privacy scan is clear. Neither legacy profile is approved |
 | Paper-bots bootstrap `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | **HOLD** | Remains the unmerged base. Not a milestone acceptance |
 | FAIR-VALUE-COMPOUNDER-002 | **HOLD** | Still proposed in the strategy registry. No specification to accept |
@@ -208,9 +246,9 @@ Builder-reported, and not independently checked:
 Public PR #7 stays unmerged. Paper-bots PRs #1, #2 and #3 stay unmerged until a later exact-head acceptance. The Architect's E-Bot code merge is already reported on the private repository and is not reverted here. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`.
 
 ## Next work order
-Assigned, not completed. One correction round on the existing paper-bots workstream for the PR #1 and PR #2 findings above, with regression tests and new exact heads. Those heads are pending. This public update does not implement them and does not mark them corrected.
+The one bounded correction round is builder-reported complete. Stop for an exact-head Architect re-review of `823203059466a30a11fe5a0e677f54c5482dc6fb` and `bcaaef3e5c1d8707076b45c29d2e17f93bfebc7b`. This public update does not accept those heads.
 
-Still blocked, and unchanged by a future green re-test alone: full May source unavailable (**NEED OWNER DECISION/ACCESS**); QARP entry, initial stop, trailing stop and exit not approved; FMP entitlement and licence UNVERIFIED; stop-dependent M/T HOLD; no scheduling and no live execution.
+Unchanged gates: full May source unavailable (**NEED OWNER DECISION/ACCESS**); QARP entry, initial stop, trailing stop and exit not approved; FMP entitlement and licence UNVERIFIED; stop-dependent M/T HOLD; no scheduling and no live execution. PR #3 stays policy HOLD.
 
 ## Requested Architect action
-Review this governance revision. It records the Architect's E-Bot code merge and the paper-bots HOLDs. It does not merge PR #7, accept paper-bots #1–#3, or approve doctrine parameters.
+Re-review the two new paper-bots heads. This governance revision records builder evidence only for those heads. It does not merge PR #7, accept the corrections, or approve doctrine parameters.
