@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — Final broad-discovery builder packet, not accepted
+- Private PR #4 final head `ad5e30ae5502d77d8beec3399845f64116ff8702`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, branch `cursor/broad-discovery-003-1e9e`. This session could not read the repository. The earlier recorded head `a6aa7f32acc8531a06e3e36044a4b9003c888323` is superseded.
+- Builder, not Architect: fresh detached run, 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Synthetic 17 rows and 16 instruments across 11 GICS sectors, not the listed US universe. Frozen manifest hash unchanged. The in-process NEO digest append is a material deviation and is not a native NEO write.
+- Disposition: ready for Architect review of the bounded fixture only. Overall integration partial. Operational hold. G0 open. Stop-dependent M/T hold. No policy adoption.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Private broad-discovery head recorded, not accepted
 - Parent GitHub connector read-back: paper-bots PR #4 is open, not merged, branch `cursor/broad-discovery-003-1e9e`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, head `a6aa7f32acc8531a06e3e36044a4b9003c888323`. This session could not read the repository.
 - Builder, not Architect: 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Named scope is an offline adapter, synthetic discovery, a NEO digest, a screening review, a rights matrix and ADR 0010. Universe counts are not published. The full private report is pending and may move the head.

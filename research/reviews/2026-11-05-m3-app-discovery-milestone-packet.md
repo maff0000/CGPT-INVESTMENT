@@ -83,4 +83,55 @@ Public [ADR-APP-001](../../docs/adr/ADR-APP-001-platform-findings.md) records pl
 | Exact-head acceptance of this packet | Architect, after parent details arrive | Not started |
 
 ## Acceptance gate
-The native creation, behaviour and chat evidence is **PARTIAL** against full integration. NEO `APP-A-NEO-002` is already received. No further native peer actions are requested. The 14 sections above now cite private PR #4. They are **begun, not final**: the full private evidence report is still pending and may update the head. Test counts and coverage claims in this file for that head are **BUILDER**, not Architect. No runtime access-control list, authenticated producer binding, protected read-only NEO, or accepted production ledger is claimed.
+The sections above that name head `a6aa7f32acc8531a06e3e36044a4b9003c888323` record the head before the final private report. The final builder head is below. Native probes are finished. NEO `APP-A-NEO-002` is already received. No further native peer actions are requested.
+
+## Final 14-item milestone packet — builder report, not an Architect audit
+**Disposition:** **READY FOR ARCHITECT REVIEW of the bounded fixture only. Overall integration PARTIAL. Operational HOLD. Not accepted.** This session could not read private paper-bots (HTTP 404 on this credential only). The parent separately read accepted E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` on GitHub this turn. That is not a global access block. Builder reports local head, origin branch and pull-request head match, and that private main is unchanged.
+
+### 1. Starting heads
+| Ref | SHA | Class |
+|---|---|---|
+| Public main | `20094068e20c2de0a659e8243657207c8d4cfbaa` | VERIFIED this session. Merge of PR #7 |
+| Public PR #8 before this packet | `3ae374b4458d135c7efcb15042cbf6252a24c738` | VERIFIED this session |
+| Paper-bots accepted main | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` | PARENT-VERIFIED. Not read here |
+| E-Bot accepted main | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | PARENT-VERIFIED this turn. Not read by this credential |
+| Earlier recorded PR #4 head | `a6aa7f32acc8531a06e3e36044a4b9003c888323` | Superseded by the head in item 3. Not deleted from the earlier note |
+
+### 2. Native identities, probe and NEO
+Five created teammates and reused T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` are already recorded. E to S to R to M have acknowledgements and downstream receipts. T received M-Bot's return for `APP-A-001-M-T`, not T's own return. `APP-A-NEO-001` remains historical `INCOMPLETE_EVIDENCE`. `APP-A-NEO-002` is bounded handoff evidence, partial, and production ledger completeness is unverified. No further native actions are requested. Chat is not a ledger bridge.
+
+### 3. Private head and base
+[PR #4](https://github.com/maff0000/paper-bots/pull/4). Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `ad5e30ae5502d77d8beec3399845f64116ff8702`. OPEN. Not merged. Not read here.
+
+### 4. Files
+Private paths at that head: `docs/work-orders/WO-PAPER-003-broad-discovery.md` (native appendix included), `docs/adr/0009-offline-broad-discovery.md`, `docs/adr/0010-native-role-contract.md`, `docs/reviews/2026-11-05-screening-requirements-review.md`, `docs/evidence/SOURCE-RIGHTS-003/matrix.md`, `fixtures/discovery/source_rights_v0.json`, `fixtures/discovery/us_equity_fixture_v0.json`, `fixtures/discovery/us_equity_fixture_zero.json`, `docs/status/2026-11-05-broad-discovery-sanitised.md`. Other changed areas, 20 files in total: README, schema 0.2, access, constants, discovery prepare and run, native contract, schema utility, and `tests/test_discovery.py`. Contents are not published here.
+
+### 5. Implemented synthetic coverage — BUILDER
+17 rows, 16 instruments, all 11 GICS sectors. This is not the actual listed US universe. Counts: 10 ADMITTED, 1 EXCLUDED (OTC), 1 UNKNOWN for missing freshness, 1 INVALID non-finite, 1 UNCHECKED survivor, 1 DATA_MISMATCH, 1 SOURCE_UNAVAILABLE. Dedup of one member preserves both sources. `seven_name_cap` is false. QARP is not applied to discovery. Documented exclusion classes are NON_US_PRIMARY, OTC, WARRANT, PREFERRED, ETN and BLANK_CHECK. Not every class is claimed to have been exercised by the fixture.
+
+### 6. Screening — BUILDER
+11 screen examples: verified, near-miss, non-match and unknown are demonstrated. An unsupported Finviz mapping is UNKNOWN. Frozen manifest hash `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` is unchanged. Source survivors are screened as UNKNOWN. That choice is not an approved rule.
+
+### 7. NEO digest — BUILDER, not an Architect reproduction
+Readable text and machine evidence. The batch has 16 member identifiers and hashes. There are 11 screen identifiers and hashes, plus a cohort. The demo clock is synthetic `2026-11-10T14:30Z`, not an actual market snapshot. Run `acceptance-demo` has 41 events. The chain is reported OK. Tip `f2a8986fa1726cf947797f0ba2108a13b29b3eb39aa71712988d2377a19e73db`. `DISCOVERY_BATCH` `5c1e3588-304b-56bb-8e10-ca6bc10a285c`. `NEO_COHORT` `afdec7f3-6ba8-51b6-bdc4-b1f79b37c022`. Digest `8a609995-05fb-514e-995a-f0ff2e3efeaa`. The in-process Python NEO still appends that digest. It has an in-memory snapshot and no write method on the native role. That is not hard isolation, and it is not a write by the native NEO. **Material deviation, reported as such.**
+
+### 8. Tests — BUILDER
+Fresh detached worktree at exact `ad5e30ae5502d77d8beec3399845f64116ff8702`: 91 passed on Python 3.12.3 and 91 passed on Python 3.9.25, including the accepted 82. This is **not** an Architect Python 3.12.14 audit. Named coverage includes many names, no seven-cap, all sectors, zero, dedup, unknown, source failure, outage atomicity, semantic replay, provenance reject, rights, and the native envelope. Native offline envelopes are `SYN-APA01` and `SYN-APA02`. They are not the `APP-A` fixture identifiers, because the native chat was not re-executed. No bridge is claimed.
+
+### 9. Rights
+No provider entitlement is asserted. The three historical FMP calls remain the record. Further FMP calls are false. Rights stay UNVERIFIED. No new vendor call.
+
+### 10. Owner choices still open — NOT APPROVED
+Lawful actual-universe source. Whether UNCHECKED survivors are screened as UNKNOWN or held out. Whether sector-relative strength, earnings and chart stage become predicates. Seven research labels are not approved as strategies. FAIR-VALUE-COMPOUNDER-002 is not approved. Chart state is CHART_PENDING. Entry is NONE. Existing frozen QARP criteria are reviewed and not edited. New strategies and a scheduler stay blocked pending that review and verified rights.
+
+### 11. Security limit
+The builder's check is a limited import scan and a socket patch around the older scenarios. It is not a policy host audit and not a full network test of the new discovery path. There is no credential host scan and no app access-control proof. The diff reports no broker write, account query, vendor call, scheduler, new risk parameter or new credential.
+
+### 12. ADRs
+Private ADR 0009, offline broad discovery, and ADR 0010, native role contract, are cited by path at this head. They were not read here. Public ADR-APP-001 remains the platform-facts record. No new stop or risk value is adopted.
+
+### 13. Public pull request
+This packet is on PR #8. Base `20094068e20c2de0a659e8243657207c8d4cfbaa`. The head before this commit was `3ae374b4458d135c7efcb15042cbf6252a24c738`. The head after the push is the remote read-back. OPEN. Not merged.
+
+### 14. Readiness and next work
+**READY FOR ARCHITECT REVIEW of the bounded synthetic fixture only.** Overall integration remains **PARTIAL**. Operational state remains **HOLD**: G0 open, FMP rights unverified, May source unrecovered, doctrine unapproved, entry and stop policy unapproved, stop-dependent M/T on hold, no scheduler and no live execution. The next bounded action is that exact-head Architect review. It is not started. App presence for the five created roles remains unverified as a security boundary, and [WO-APP-PRESENCE-001](../../work-orders/WO-APP-PRESENCE-001-grok-bot-teammates.md) is not a completed integration.
