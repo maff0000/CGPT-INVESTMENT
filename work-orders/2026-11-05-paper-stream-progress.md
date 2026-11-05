@@ -27,7 +27,7 @@
 
 ## Stream A — E-Bot PR #2 correction
 **Repository PR:** https://github.com/maff0000/ebot/pull/2
-**State:** OPEN / UNMERGED. Awaiting Architect acceptance. Not accepted.
+**Builder-reported state before the Architect result:** OPEN / UNMERGED. The acceptance below supersedes that state for code only.
 **Base reported:** `50c0b66247498672b84e9fcae7e417a538a0e5c1`
 **Current reported head:** `3aa95daffe1497725aba8dbd80d4005d5afde16c`
 **Superseded reported head:** `adb605fd676d06cf27830f35bf39c06d92d6a119` (grouped-row silent-skip gap was the builder report at that head; not independently reviewed)
@@ -44,7 +44,8 @@
 ### Independent evidence
 This session could not read `maff0000/ebot`. The four named files were not reviewed and the 112 tests were not re-run. No live call was made. Disposition of the code is therefore not an independent acceptance.
 
-**Disposition:** **HOLD**. Needs independent exact-head review.
+**Architect result, not this session's re-test:** code at `3aa95daffe1497725aba8dbd80d4005d5afde16c` accepted and merged as `79b7ac90fe4cf7c6e974e476baca7c63cc24603f`. 112 tests OK on Python 3.12.14. **CODE ONLY.** G0 stays OPEN. Automated trading is not authorised. This session did not re-fetch the private main.
+**Disposition:** **ACCEPT — CODE ONLY.** Earlier HOLD text above is the pre-acceptance builder record.
 
 ## Stream C — stop-rule recovery attempt complete
 **Authority:** [STOP-RULE-RECOVERY-002](../research/decisions/2026-11-05-stop-rule-recovery-choice.md), [issue #5](https://github.com/maff0000/CGPT-INVESTMENT/issues/5) (open).
@@ -64,4 +65,4 @@ This session could not read `maff0000/ebot`. The four named files were not revie
 **Disposition:** **HOLD**.
 
 ## Next
-Not started. Exact-head independent audit and corrections of the reported E-Bot and paper-bots heads, plus source and rights mappings that stay on mocks until rights are established. The May-source dependency above is **NEED OWNER DECISION/ACCESS**. Do not merge the open pull requests. Rollback is non-merge.
+One paper-bots correction round is assigned and not finished. New exact heads and regression results are pending. Do not mark PR #1 or PR #2 corrected until that evidence arrives. E-Bot code acceptance does not close G0, FMP rights, the May access gap, or stop-dependent M/T. No scheduling and no live execution. Rollback of unaccepted pull requests is non-merge.

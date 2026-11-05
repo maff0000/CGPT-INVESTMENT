@@ -1,14 +1,31 @@
 # Six-bot consolidation index — sanitised review packet
 **ID:** REVIEW-PAPER-INDEX-001
 **Date:** 2026-11-05 (Europe/London)
-**Status:** **HOLD**, pending independent Architect acceptance. Implementation runs are builder-reported as finished. This file records that builder evidence and does not claim an independent audit. Do not merge this pull request as software acceptance.
+**Status:** **HOLD** on this governance pull request and on paper-bots PRs #1–#3. E-Bot code acceptance below is the Architect's, not this session's audit. Do not merge this pull request from this update.
 **Public base verified by this session:** `a64c2f1d96a13f16963d8835713434c2be67c6f6` (`origin/main`, merge of [PR #6](https://github.com/maff0000/CGPT-INVESTMENT/pull/6))
 **Documentation branch:** `cursor/paper-governance-progress-6067`
 **Public pull request:** https://github.com/maff0000/CGPT-INVESTMENT/pull/7 (proposed; merging it accepts this status record only)
 **Decision:** [PAPER-PROGRESS-001](../decisions/2026-11-05-paper-progress-sanitised.md)
 **Progress log:** [WO progress](../../work-orders/2026-11-05-paper-stream-progress.md)
 
-This completion update records builder-reported heads, tests and limits. It does not claim an independent audit, a re-run of those tests, or a reading of private source. No private original text is copied here. No vendor or broker call was made for this update.
+Public `origin/main` verified this session remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 is OPEN at the prior documentation head `dfd13b0e361f834f3d83ba4741019c21a58b4c99` before this revision. Private `maff0000/ebot` and `maff0000/paper-bots` were not readable here, so their review threads were not fetched directly. The Architect's consolidated findings were read from the public comment on PR #7.
+
+Earlier sections that say E-Bot PR #2 is OPEN or HOLD are the builder-reported record before this Architect result. They are left in place.
+
+## Architect independent review — 2026-11-05
+**Evidence class:** ARCHITECT-INDEPENDENT. Reconstructed exact source, Python 3.12.14, offline. This public session did not re-run those tests and does not claim them as its own audit.
+**Source read here:** [PR #7 comment](https://github.com/maff0000/CGPT-INVESTMENT/pull/7#issuecomment-6666139699).
+
+| Target | Architect result | Disposition |
+|---|---|---|
+| E-Bot PR #2 head `3aa95daffe1497725aba8dbd80d4005d5afde16c` | 112 unittest cases OK. Source and read-only safeguards inspected. Merge commit `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | **CODE ACCEPTED AND MERGED.** G0 stays OPEN. Automated trading is not authorised. This session could not re-fetch that private main; `79b7ac90…` is not a commit on public CGPT-INVESTMENT `main` |
+| paper-bots PR #1 head `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | 48 tests OK on Python 3.12.14, plus further risk-input tests | **HOLD.** Non-finite numeric risk: NaN can raise in sizing, Infinity can pass, and a non-finite fill can be accepted. Green tests are not acceptance |
+| paper-bots PR #2 head `b6b7877884df6edc624691b50bb474b2b518ded8` | 59 tests OK on Python 3.12.14, plus further screen and ledger tests | **HOLD.** Infinity can become a verified screen match. A proxy can be labelled as an exact Finviz match. Cohort lineage keeps the final screen reference and omits upstream discovery references for a multi-candidate set. NaN market-cap can raise. Stacked on PR #1, which is also HOLD |
+| paper-bots PR #3 head `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | Four private file hashes match the manifest. Preliminary privacy scan clear. Upstream source location not independently verified by the Architect | **POLICY HOLD.** Preservation integrity passed. Neither legacy profile is approved |
+
+**Correction round:** one round is assigned to the existing paper-bots workstream. Finite numeric checks, QARP source labels, and full NEO causal references are in scope, with regression tests. New exact heads are **pending**. Do not describe those heads as corrected or accepted until builder evidence arrives. Frozen QARP predicates stay unchanged. Paper and shadow only.
+
+**Doctrine recommendation, not a parameter approval:** the Architect recommends writing a new equities doctrine without waiting for the missing May text. Legacy profiles stay historical. This record does not invent or approve entry, initial stop, trailing stop, exit or risk values. Stop-dependent M/T stays HOLD.
 
 ## Source SHAs
 
@@ -20,7 +37,8 @@ This completion update records builder-reported heads, tests and limits. It does
 | E-Bot PR #2 base | `50c0b66247498672b84e9fcae7e417a538a0e5c1` | REPORTED | Base of open [PR #2](https://github.com/maff0000/ebot/pull/2). Matches the base in the earlier public review |
 | E-Bot last independent public review | `9b843dee03892e73f29da31997e5d07bfed564a7` | VERIFIED in [that review](2026-11-05-g0-d3-pr2-architect-hold.md) | Historical HOLD for that head only |
 | E-Bot superseded reported head | `adb605fd676d06cf27830f35bf39c06d92d6a119` | REPORTED | Superseded before this packet was committed. Not independently reviewed |
-| E-Bot current reported candidate | `3aa95daffe1497725aba8dbd80d4005d5afde16c` | REPORTED | OPEN / UNMERGED. Supersedes `adb605fd…`. Awaiting Architect acceptance. Not accepted |
+| E-Bot reviewed head, now Architect-merged | `3aa95daffe1497725aba8dbd80d4005d5afde16c` | ARCHITECT-INDEPENDENT | Code accepted. Merge commit below. G0 remains OPEN |
+| E-Bot private main after that merge | `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | ARCHITECT-REPORTED | Stated in the public PR #7 comment. Not re-fetched by this session. Not public CGPT-INVESTMENT main |
 | Paper-bots bootstrap / private main if PRs stay unmerged | `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | BUILDER-REPORTED | Base of [PR #1](https://github.com/maff0000/paper-bots/pull/1) and [PR #3](https://github.com/maff0000/paper-bots/pull/3) |
 | Paper-bots PR #1 head | `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | BUILDER-REPORTED | OPEN / UNMERGED. Six-role mock chain. Not accepted |
 | Paper-bots PR #2 head | `b6b7877884df6edc624691b50bb474b2b518ded8` | BUILDER-REPORTED | OPEN / UNMERGED. Base is the unaccepted PR #1 head. QARP registry work. Not accepted |
@@ -150,12 +168,12 @@ Docs only. The builder reports that the full July legacy evidence is hashed and 
 | QARP-ROTATION-001 v1.0.0 screening specification | **ACCEPT** | Already merged on main by PR #6. Paper screening only. No order authority |
 | Distinct M-Bot role and paper-only six-bot delivery direction | **ACCEPT** | Already merged under PAPER-LAUNCH-001. This row is not a new grant |
 | Continued autonomous paper-only work under that merged direction | **HOLD** | Owner authorised the work to continue. Publishing this file is still proposed. Continuation is not milestone acceptance |
-| E-Bot PR #2 at `3aa95daffe1497725aba8dbd80d4005d5afde16c` | **HOLD** | Current reported candidate. Needs independent exact-head review. Awaiting Architect acceptance. Not accepted |
+| E-Bot code at `3aa95daffe1497725aba8dbd80d4005d5afde16c`, merge `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` | **ACCEPT — CODE ONLY** | Architect result. G0 stays OPEN. Automated trading is not authorised. Not this session's re-test |
 | E-Bot PR #2 at `adb605fd676d06cf27830f35bf39c06d92d6a119` | **HOLD** | Superseded reported head. Not an acceptance target |
 | E-Bot PR #2 at `9b843dee03892e73f29da31997e5d07bfed564a7` | **HOLD** | Prior independent review stands for that head |
-| Paper-bots PR #1 at `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | **HOLD** | Builder-reported mock chain. Not independently audited. Not accepted |
-| Paper-bots PR #2 at `b6b7877884df6edc624691b50bb474b2b518ded8` | **HOLD** | Builder-reported QARP registry. Depends on unaccepted PR #1. `entry_authority` NONE |
-| Paper-bots PR #3 at `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | **HOLD** | Docs-only private evidence. No policy approved. No tests claimed |
+| Paper-bots PR #1 at `cdfcbb27c4e440fd1597217abc4e9cb34251c65f` | **HOLD** | Architect: non-finite risk can pass or raise. 48 green tests are not acceptance. Correction head pending |
+| Paper-bots PR #2 at `b6b7877884df6edc624691b50bb474b2b518ded8` | **HOLD** | Architect: infinity screen match, proxy labelled exact, incomplete cohort lineage. 59 green tests are not acceptance. Correction head pending |
+| Paper-bots PR #3 at `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a` | **POLICY HOLD** | Architect: four hashes match and the privacy scan is clear. Neither legacy profile is approved |
 | Paper-bots bootstrap `3a1144bc544b3bc063808a42c723cbeabffb6ec9` | **HOLD** | Remains the unmerged base. Not a milestone acceptance |
 | FAIR-VALUE-COMPOUNDER-002 | **HOLD** | Still proposed in the strategy registry. No specification to accept |
 | July brief v0.3 and July architecture v2 | **HOLD** | Full texts reported recovered. Neither is an approved doctrine |
@@ -187,10 +205,12 @@ Builder-reported, and not independently checked:
 - The full May doctrine is still an access gap. That is **NEED OWNER DECISION/ACCESS**, not a proof that no historical rule existed.
 
 ## Rollback
-Rollback is non-merge. Public PR #7, ebot PR #2, and paper-bots PRs #1, #2 and #3 stay open and unmerged. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`. No revert of merged work is required, because these heads are not on a canonical main.
+Public PR #7 stays unmerged. Paper-bots PRs #1, #2 and #3 stay unmerged until a later exact-head acceptance. The Architect's E-Bot code merge is already reported on the private repository and is not reverted here. Public main remains `a64c2f1d96a13f16963d8835713434c2be67c6f6`.
 
 ## Next work order
-Not started. The next bounded work order is an exact-head independent audit and any corrections of ebot `3aa95daffe1497725aba8dbd80d4005d5afde16c`, paper-bots `cdfcbb27c4e440fd1597217abc4e9cb34251c65f`, and paper-bots `b6b7877884df6edc624691b50bb474b2b518ded8`, plus verified source and rights mappings that use mocks until rights are established. The May retrieval stays an owner/operator dependency. Do not resume unauthorised access. This packet stops at the status record.
+Assigned, not completed. One correction round on the existing paper-bots workstream for the PR #1 and PR #2 findings above, with regression tests and new exact heads. Those heads are pending. This public update does not implement them and does not mark them corrected.
+
+Still blocked, and unchanged by a future green re-test alone: full May source unavailable (**NEED OWNER DECISION/ACCESS**); QARP entry, initial stop, trailing stop and exit not approved; FMP entitlement and licence UNVERIFIED; stop-dependent M/T HOLD; no scheduling and no live execution.
 
 ## Requested Architect action
-Hold this documentation PR, ebot PR #2, and paper-bots PRs #1, #2 and #3 pending independent exact-head acceptance. Acceptance of this public PR would accept the status record only. It would not accept the private heads, either legacy profile, the unresolved draft, or FMP rights. The May-source item stays **NEED OWNER DECISION/ACCESS**.
+Review this governance revision. It records the Architect's E-Bot code merge and the paper-bots HOLDs. It does not merge PR #7, accept paper-bots #1–#3, or approve doctrine parameters.

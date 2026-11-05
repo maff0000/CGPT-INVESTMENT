@@ -1,6 +1,13 @@
 # Changelog
 Record material research-process changes and link dated decisions. Do not rewrite earlier observations.
 
+## 2026-11-05 — Architect review recorded on the open governance PR
+- Public main re-checked at `a64c2f1d96a13f16963d8835713434c2be67c6f6`. Public PR #7 remains open. Private review threads were not readable from this session. The Architect's consolidated comment on PR #7 was read.
+- E-Bot PR #2 at `3aa95daffe1497725aba8dbd80d4005d5afde16c` is recorded as Architect code acceptance, merge `79b7ac90fe4cf7c6e974e476baca7c63cc24603f`, with 112 tests OK on Python 3.12.14. That SHA was not re-fetched here and is not public main. G0 stays OPEN. Automated trading is not authorised.
+- Paper-bots #1 and #2 stay HOLD for non-finite risk and screen-provenance defects. Paper-bots #3 has a preservation-integrity pass and a policy HOLD. A correction round is assigned. New heads are pending and are not marked accepted.
+- Recorded the recommendation to draft a new equities doctrine without the missing May text. No parameters are approved. Legacy profiles stay historical.
+- [Index](research/reviews/2026-11-05-six-bot-consolidation-index.md).
+
 ## 2026-11-05 — PAPER-PROGRESS-001 completion: builder-reported heads, still HOLD
 - Recorded finished builder evidence on the existing public PR. No independent audit is claimed, and nothing is merged.
 - Paper-bots PR #1 `cdfcbb27c4e440fd1597217abc4e9cb34251c65f`: 48 tests passed on each of Python 3.9.25 and 3.12.3. PR #2 `b6b7877884df6edc624691b50bb474b2b518ded8`: 59 tests passed on each interpreter, including the prior 48, with `entry_authority` NONE. PR #3 `8e05f7f7da9ce232a5e1c38bea760ae231d3e52a`: docs only, no tests claimed. All OPEN. E-Bot head `3aa95daffe1497725aba8dbd80d4005d5afde16c` remains 112 collected, 111 passed, 1 skip, with independent review pending.
