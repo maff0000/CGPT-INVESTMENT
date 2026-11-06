@@ -1,5 +1,7 @@
 # WO-PAPER-006 — synthetic NEO decision review
 
+> **DATED HOLD AND SUCCESSOR POINTER — 6 November 2026. This file is not rewritten.** The Architect HOLDs exact private head `619a607ed1879c93a82e4e652b2edc7531efb530`. That HOLD answers the historical request below. It does not delete the request, and it does not accept a later head. The current proposal is exact head `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. Its parent `4078c6a560901ea67eb217f0486cdc18d045efa2` is the intermediate evidence-relationship correction, whose own parent is the held head. The successor packet is [REVIEW-M6-NEO-002](2026-11-06-wo-paper-006-neo-review-correction-packet.md). It requests Architect ACCEPT or HOLD of `4b3dac4c4137a5cb89a9587862e5fe25c464887b` and does not accept it. Public PR head before the successor write: `1c6c1423d05e62c52a73a6b37e62cb43b4ca2d9c`. Public main remains `0cb49b0b5bb1df0e7e7c9e3d7d8eaf74f8e66e56`. The text below stays the historical request of `619a607`.
+
 **ID:** REVIEW-M6-NEO-001
 **Date:** 2026-11-06 (Europe/London)
 **Record type:** public governance packet for an open private increment.
