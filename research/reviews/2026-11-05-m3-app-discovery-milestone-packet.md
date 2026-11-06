@@ -2,9 +2,72 @@
 
 > **Independent re-audit supersession — 6 November 2026:** Builder correction private PR #4 `cdd70b02a2c53ce25db9b857d03590491f247771` passed **96/96 independent tests** under Python 3.12.14 and corrected the four original synthetic defects. Nevertheless, the new source-classification logic has a reproducible **FAILED-source fallback regression**: PRESENT+PRESENT+FAILED => ADMITTED, and PRESENT+FAILED (bad failure timestamp) => INVALID, where the agreed fallback is UNCHECKED with a provider availability note. **Architect HOLD; both PRs remain OPEN/UNMERGED**. [Current exact-head review](../reviews/2026-11-06-m3-cdd70b-independent-hold.md). Do not interpret older builder-ready or corrected claims below as acceptance. Operational restrictions unchanged.
 
+## AUTHORITATIVE CURRENT FALLBACK PACKET — pending re-audit of `70a673f973bd52155d495f6873eb417374f4948b`
+**ID:** REVIEW-M3-FALLBACK-001
+**Date:** 2026-11-06 (Europe/London)
+**Disposition requested:** Architect **ACCEPT or HOLD** after an independent re-audit of exact private head `70a673f973bd52155d495f6873eb417374f4948b`. **This packet does not accept the correction.** The independent HOLD of `cdd70b02a2c53ce25db9b857d03590491f247771` in [REVIEW-M3-INDEP-002](2026-11-06-m3-cdd70b-independent-hold.md) stays valid for that exact head and is not edited.
+
+This session fast-forwarded public PR #8 to `daedca0836608cef59398c27ce5edbbee5c196d3` and verified public `main` `20094068e20c2de0a659e8243657207c8d4cfbaa`. The private repository still returns HTTP 404 to this credential. Private facts below are parent-verified. No private code is copied.
+
+### 1. Starting heads and bases
+| Ref | Full value | Class |
+|---|---|---|
+| Private start, Architect HOLD | `cdd70b02a2c53ce25db9b857d03590491f247771` | PARENT-VERIFIED. Open at the time of the HOLD. Not the latest implementation |
+| Private base, accepted main | `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d` | PARENT-VERIFIED. Unchanged |
+| Public start | `daedca0836608cef59398c27ce5edbbee5c196d3` | VERIFIED this session. Includes the 6 November HOLD commits after `6e4196484b85f0c42a54e149e632f02c9f158b63` |
+| Public base and `main` | `20094068e20c2de0a659e8243657207c8d4cfbaa` | VERIFIED this session |
+
+Parent direct read-back at the start: both pull requests open and unmerged. Public changed-file count at `daedca0836608cef59398c27ce5edbbee5c196d3` was 12. Private changed-file count versus accepted main was 23.
+
+### 2. New exact head
+Private correction head `70a673f973bd52155d495f6873eb417374f4948b` on [PR #4](https://github.com/maff0000/paper-bots/pull/4), branch `cursor/broad-discovery-003-1e9e`. PARENT-VERIFIED open and unmerged. Builder reports local HEAD, origin branch, and pull-request head match. Private main unchanged. The public head of this note is the remote read-back after this push. It is not written into this commit.
+
+### 3. Changed-file manifests
+**Five private files versus `cdd70b02a2c53ce25db9b857d03590491f247771`:** `README.md`, `docs/adr/0011-fixture-evidence-integrity.md`, `docs/work-orders/WO-PAPER-003-broad-discovery.md`, `src/paperbots/discovery/prepare.py`, `tests/test_discovery_integrity.py`. Contents are not published.
+
+**Whole private pull request versus accepted main:** 23 paths. Parent-verified `changed_files` 23. The earlier 23-name list in the prior correction packet was the manifest at `cdd70b02a2c53ce25db9b857d03590491f247771`. This note does not re-list those names as a new inventory.
+
+**Public files changed from `daedca0836608cef59398c27ce5edbbee5c196d3` by this note:** `research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md`, `README.md`, `CURRENT-STATE.md`, `AGENTS.md`, `CHANGELOG.md`, `work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md`.
+
+### 4. Fix and regression mapping
+Builder Python 3.12.3 at `cdd70b02a2c53ce25db9b857d03590491f247771`, before the change: two aligned `PRESENT` sources plus a distinct `FAILED` source were `ADMITTED`. One aligned `PRESENT` source plus a `FAILED` source with `bad-timestamp` was `INVALID`. That reproduction is builder-reported. The Architect had already reproduced the same two results independently.
+
+Adopted rule, builder-reported and parent-read from the ADR 0011 amendment: a distinct failed provider blocks `ADMITTED`. Surviving aligned evidence stays `UNCHECKED`. The failed provider is named. `automated_path` stays `BLOCKED`. Timestamps are judged only on `PRESENT` observations. A non-canonical time on `FAILED` is not stored as a price time and does not invalidate the survivor. The recorded failed entry stores `as_of_utc` as none. A malformed timestamp on `PRESENT` stays `INVALID`. Same-source contradictions stay `DATA_MISMATCH`. Only-failed stays `SOURCE_UNAVAILABLE`. Two distinct present sources with no failure can still be `ADMITTED`. Frozen QARP-ROTATION-001 v1.0.0 manifest SHA-256 `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` is unchanged. The transcript `sha256sum` printed that digest.
+
+Parent-read mapping in `tests/test_discovery_integrity.py`:
+
+- New method `test_failed_provider_blocks_admission_and_keeps_the_survivor`. Both orders of two `PRESENT` plus `FAILED` return `UNCHECKED`, evidence of A and B is preserved, C is named `FAILED:FIXTURE_SRC_C`, and `automated_path` is `BLOCKED`. One `PRESENT` plus `FAILED` with a bad timestamp returns `UNCHECKED`, not `INVALID`. The survivor is retained. The diagnostic is `FAILED_TIME:FIXTURE_SRC_B`. The failed `as_of` is stored as none. Only `FAILED` returns `SOURCE_UNAVAILABLE`. A bad `PRESENT` timestamp returns `INVALID` / `INVALID_TIMESTAMP`.
+- Existing `test_same_source_conflict_is_order_independent` still covers `DATA_MISMATCH` for the same source id in both orders.
+- Existing `test_complementary_sources_admit_and_one_provider_does_not_corroborate_itself` covers a repeated single provider as `UNCHECKED`. The existing many-row fixture still records `SYN-OUT01` as `UNCHECKED`. The new method does not add a separately named singleton-only case beyond those existing tests.
+
+### 5. ADR 0011 amendment, 2026-11-06
+Private path, not opened by this credential: `docs/adr/0011-fixture-evidence-integrity.md`. The parent read the amendment. The options were to keep admitting when two present sources align, or to treat any failed provider as blocking admission. The second option was chosen. It is not a new risk parameter. Impact is the rule in item 4. A valid pair of distinct present sources with no failure can still be `ADMITTED`. The in-process NEO digest append remains a separate material deviation and is not hard isolation.
+
+### 6. Tests
+Fresh detached worktree `/tmp/pb-fallback` at `70a673f973bd52155d495f6873eb417374f4948b`. Extracted command, exit 0. This session did not run it.
+
+```bash
+cd /tmp/pb-fallback && echo WORKTREE $(git rev-parse HEAD) && sha256sum src/paperbots/strategies/qarp_rotation_001.json && PYTHONPATH=src python3 -m unittest discover -s tests && echo PY312_DONE && PYTHONPATH=src /home/ubuntu/.local/bin/python3.9 -m unittest discover -s tests && echo PY39_DONE && python3 --version && /home/ubuntu/.local/bin/python3.9 --version
+```
+
+Captured stdout, as supplied: worktree SHA matches; manifest digest matches; `PY312_DONE`; `PY39_DONE`; `Python 3.12.3`; `Python 3.9.25`. The captured stdout does not include `Ran 97 tests`. That summary typically goes to stderr. No `testsRun` print is invented. The integer 97 is **builder-reported**: prior 96 plus one new method with subtests, 0 failures on each interpreter. The Architect's 96/96 on Python 3.12.14 remains the HOLD of `cdd70b02a2c53ce25db9b857d03590491f247771` and was not repeated on the new head.
+
+### 7. Security and data rights
+The new integrity tests still patch socket construction. That is not a host or access-control audit. This note makes no vendor, broker, account, or scheduler call. G0 stays OPEN. All provider rights stay UNVERIFIED. FMP remains exactly three historical calls: profile SPY, HTTP 200, one record; historical-price-eod/light SPY, HTTP 200, two records; batch quote SPY and XOM, HTTP 402, non-JSON. It is not a label `call 402`. No fourth call. No licence or quota is inferred.
+
+### 8. Limitations
+The private correction was not re-executed here. The count 97 is not in the captured stdout. This credential cannot read the private source. The synthetic fixture is not a listed US universe. Native integration, a protected NEO, an access-control list, and native-to-Python remain **PARTIAL / UNVERIFIED**. Bounded native chat evidence already recorded remains verified chat evidence and is not erased.
+
+### 9. Restrictions
+No merge. No live orders, account reads, vendor calls, scheduler, licence, new strategy, native integration, or production-universe work. Entry, exit, initial stop, trailing stop, sizing, and risk stay unresolved. Stop-dependent M/T stays HOLD. No new work order is opened.
+
+### 10. Proposed disposition
+**Pending independent re-audit. Not accepted.** Request an Architect ACCEPT or HOLD of exact `70a673f973bd52155d495f6873eb417374f4948b`. Builder 97 tests are not that audit. Overall operational state remains **HOLD**.
+
 > **Architect supersession added 5 November 2026:** This packet was submitted as `READY FOR ARCHITECT REVIEW` at public head `e2306a1f57b670382d31b22e5d002556b7b88858`. The independent review is now **HOLD** for private PR #4 `a40412f0876fd59526a6b663273f69b4df008ec4` despite 91 tests passing, because four synthetic source/listing/freshness/type integrity defects were independently reproduced. Do not mistake the original 'authoritative current milestone' heading below for acceptance. [Superseding independent audit](2026-11-05-m3-a40412f-independent-hold.md). App-native/security/ledger integration remains PARTIAL/UNVERIFIED. No merges or operational permissions.
 
-## AUTHORITATIVE CURRENT CORRECTION PACKET — pending Architect re-audit of `cdd70b02a2c53ce25db9b857d03590491f247771`
+## Prior correction packet — held head `cdd70b02a2c53ce25db9b857d03590491f247771` — formerly titled authoritative current correction packet
+This packet was submitted for re-audit of that exact head. [REVIEW-M3-INDEP-002](2026-11-06-m3-cdd70b-independent-hold.md) holds it. It is not the current implementation.
 **ID:** REVIEW-M3-CORR-001
 **Date:** 2026-11-05 (Europe/London)
 **Disposition requested:** Architect **ACCEPT or HOLD** after an independent re-audit of exact private head `cdd70b02a2c53ce25db9b857d03590491f247771`. **This packet does not accept the correction.** Builder counts are not an Architect acceptance. The independent HOLD of `a40412f0876fd59526a6b663273f69b4df008ec4` stays valid for that exact head and is not edited.

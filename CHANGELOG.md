@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-06 — M3 fallback packet pending re-audit
+- Governance only. Private fallback head `70a673f973bd52155d495f6873eb417374f4948b` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `daedca0836608cef59398c27ce5edbbee5c196d3` was verified and preserved, including the 6 November HOLD. That HOLD file is not edited.
+- Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both exit 0. The count 97 is builder-reported, prior 96 plus one new method with subtests, and is not printed in the captured stdout. It is not acceptance. Frozen manifest hash unchanged. Five correction files are distinct from the 23-path pull-request count.
+- Disposition requested: Architect accept or hold after an independent re-audit of the exact fallback head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — M3 correction packet pending re-audit
 - Governance only. Private correction head `cdd70b02a2c53ce25db9b857d03590491f247771` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `fa80147b3114cc0995cd92d7d093ec5236d61c8b` was verified and preserved, including the Architect HOLD. The HOLD file is not edited.
 - Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both OK. The count 96 is builder-reported, prior 91 plus five new test methods with subtests, and is not acceptance. Frozen manifest hash unchanged. Nine correction files are distinct from the 23-path pull-request manifest.
