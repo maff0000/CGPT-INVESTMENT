@@ -1,6 +1,6 @@
 # ADR-APP-001 — recorded Grok Bot platform findings
 **Date:** 2026-11-05 (Europe/London)
-**Status:** RECORDED FACTS. Not an architecture approval. Not a claim that the six roles are provisioned or that a hard access-control list exists.
+**Status:** RECORDED FACTS. Not an architecture approval. Not a claim that the six roles are provisioned or that a hard access-control list exists. **Follow-on 2026-11-06:** the adapter named below is proposed on private paper-bots PR #5 and is not accepted. The host isolation gap remains open.
 **Evidence:** owner milestone brief. This session did not invoke agent creation, did not send a handoff, and did not inspect the app.
 
 ## Findings
@@ -27,6 +27,9 @@ Created identities and instructional refusals are therefore not a hard capabilit
 
 ## Supported later adapter — not implemented
 The documented minimal path, not a workaround and not started here, is offline validation of typed JSON, frozen strategy and role-transition checks, one central transactional writer, and a separate immutable hash snapshot plus audit result for NEO. A shared operating system makes an interface-level read-only flag not a security boundary. Strong NEO isolation needs a separate security principal, runtime and service with its own protected boundary. That boundary is not implemented. This record does not provision it.
+
+## Follow-on — 2026-11-06, named adapter proposed, isolation gap open
+The adapter named in the paragraph above is now proposed on private [paper-bots PR #5](https://github.com/maff0000/paper-bots/pull/5), head `553ec517455ce6ef797b049e65ec61389daa20da`, as `paperbots.native_ingest` (`native-ledger-1`). `native-probe-1` still does not write. The proposal is open and unmerged. The public handoff is [REVIEW-M4-NATIVE-001](../../research/reviews/2026-11-06-wo-paper-004-native-ledger-packet.md). The separate operating-system principal that alone can open the ledger was proposed and was not built. One user's bots still share the computer, files, logins, and permitted connectors. A JSON producer field does not authenticate the sender. This follow-on does not close the host isolation gap.
 
 ## Consequence
 Five teammates are parent-reported created, and T-Bot is reused. Handoff replies are still pending. The ledger bridge stays unverified. This cloud session does not provision agents or new infrastructure. The parent does the native creation.

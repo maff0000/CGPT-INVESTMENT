@@ -1,5 +1,6 @@
 # WO-DISCOVERY-001 — broad offline US discovery fixtures
-**Status:** FALLBACK HEAD `70a673f973bd52155d495f6873eb417374f4948b` PENDING ARCHITECT RE-AUDIT. Not accepted. The independent HOLD of `cdd70b02a2c53ce25db9b857d03590491f247771` remains valid for that exact head. Builder 97 tests are not an Architect audit.
+**Later status, 2026-11-06:** fallback head `70a673f973bd52155d495f6873eb417374f4948b` was independently accepted and merged. See [REVIEW-M3-ACCEPT-001](../research/reviews/2026-11-06-m3-70a673-independent-acceptance.md). The status line below is the pre-acceptance record. WO-PAPER-004 is a separate open proposal and is not this work order.
+**Status at the time of the fallback packet:** FALLBACK HEAD `70a673f973bd52155d495f6873eb417374f4948b` PENDING ARCHITECT RE-AUDIT. Not accepted. The independent HOLD of `cdd70b02a2c53ce25db9b857d03590491f247771` remains valid for that exact head. Builder 97 tests are not an Architect audit.
 **Date:** 2026-11-05 (Europe/London)
 **Base for this public record:** `20094068e20c2de0a659e8243657207c8d4cfbaa`
 **Private paper-bots main named by the parent:** `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. This session could not read that object.

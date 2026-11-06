@@ -1,13 +1,20 @@
 # Changelog
 
+## 2026-11-06 — WO-PAPER-004 public governance packet, not an acceptance
+- Public `origin/main` was fetched before the write and was `b0c8f55109fcc92d8f55ec7b593c696b9887475d`. This entry does not record the SHA of the commit that adds it.
+- Parent-verified private [paper-bots PR #5](https://github.com/maff0000/paper-bots/pull/5) is OPEN, `merged` false, `merged_at` null. Head `553ec517455ce6ef797b049e65ec61389daa20da`, branch `cursor/wo-paper-004-native-ledger-ce05`, base and unchanged paper-bots main `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Ten named files, +1828/−4, one commit. No private source or fixture body is copied.
+- Builder transcript, not an Architect run, at detached worktree `/tmp/wo004-final`: Python 3.9.25 stderr `Ran 110 tests in 0.785s` OK; Python 3.12.3 builder final report stderr `Ran 110 tests in 0.696s` OK. Stdout empty on both. The integer 110 was observed on stderr.
+- ADR 0012 proposes the adapter named in [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md). The host isolation gap stays open. No merge, no live orders, no vendor calls, no scheduler, and no new stop or risk parameter. Stop-dependent M/T stays HOLD. G0 stays OPEN.
+- Disposition requested: Architect ACCEPT or HOLD after independent re-audit of the exact private head. [Packet](research/reviews/2026-11-06-wo-paper-004-native-ledger-packet.md) · [public note](work-orders/WO-PAPER-004-native-ledger.md). M3 acceptance below remains accepted history. Merged public PR #8 is not reopened.
+
 **2026-11-06 — Architect M3 scoped acceptance:** Private paper-bots PR #4 exact head `70a673f973bd52155d495f6873eb417374f4948b` independently passed 97/97 Python 3.12.14 tests and manual fallback probes; merged by normal commit `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Synthetic broad discovery/ledger/NEO/role-contract code only. [Dated acceptance](research/reviews/2026-11-06-m3-70a673-independent-acceptance.md). Native integration/NEO ACL/provider rights/real market/G0/stops/scheduling/live trading remain unverified or blocked. Earlier HOLDs retained as history.
 
-## 2026-11-06 — M3 fallback packet pending re-audit
+## 2026-11-06 — Historical: M3 fallback packet pending re-audit
 - Governance only. Private fallback head `70a673f973bd52155d495f6873eb417374f4948b` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `daedca0836608cef59398c27ce5edbbee5c196d3` was verified and preserved, including the 6 November HOLD. That HOLD file is not edited.
 - Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both exit 0. The count 97 is builder-reported, prior 96 plus one new method with subtests, and is not printed in the captured stdout. It is not acceptance. Frozen manifest hash unchanged. Five correction files are distinct from the 23-path pull-request count.
 - Disposition requested: Architect accept or hold after an independent re-audit of the exact fallback head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
 
-## 2026-11-05 — M3 correction packet pending re-audit
+## 2026-11-05 — Historical: M3 correction packet pending re-audit
 - Governance only. Private correction head `cdd70b02a2c53ce25db9b857d03590491f247771` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `fa80147b3114cc0995cd92d7d093ec5236d61c8b` was verified and preserved, including the Architect HOLD. The HOLD file is not edited.
 - Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both OK. The count 96 is builder-reported, prior 91 plus five new test methods with subtests, and is not acceptance. Frozen manifest hash unchanged. Nine correction files are distinct from the 23-path pull-request manifest.
 - Disposition requested: Architect accept or hold after an independent re-audit of the exact correction head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
