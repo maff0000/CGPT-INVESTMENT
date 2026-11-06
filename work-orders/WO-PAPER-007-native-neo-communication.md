@@ -71,3 +71,5 @@ Builder-reported Python 3.12.3 `Ran 162 tests`, `OK`, is the unchanged WO-PAPER-
 Private PR #10 is not yet merged. This note does not merge it. It does not send a native message. It does not implement transport. Parent will independently read the public acceptance commit, then merge the private pull request using an ordinary merge commit pinned to `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. This note does not name that future merge SHA.
 
 **Dated closure, 6 November 2026.** The paragraph above is the pre-merge acceptance record. Private PR #10 is merged at `d2c7fe9a4df8590488202e63dc3820480fd82546`. Public PR #14 is not merged. No public merge SHA is recorded. [REVIEW-M7-NEO-002](../research/reviews/2026-11-06-wo-paper-007-native-communication-closure.md).
+
+**Successor:** [WO-PAPER-008](WO-PAPER-008-offline-native-message.md) records Architect ACCEPT of exact private head `705477daf2bced29e6dbaae11c186dd12c3e1206` in [REVIEW-M8-NEO-001](../research/reviews/2026-11-06-wo-paper-008-offline-implementation-acceptance.md). Private paper-bots PR #11 stays open and is not merged. This pointer is not an implementation and not a merge instruction.
