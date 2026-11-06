@@ -1,5 +1,7 @@
 # WO-PAPER-005 — offline native transport (public note)
 
+> **CURRENT ARCHITECT DECISION — 6 November 2026: WO-PAPER-005 Increment C SECURITY-BOUNDARY DESIGN ACCEPTED AND MERGED (NO DEPLOYMENT).** Private [paper-bots PR #8](https://github.com/maff0000/paper-bots/pull/8) exact documentation head `cf2dd5ae752a85a645d510b38e4b2e800f1dc146` was independently accepted, merged to private main `c0b9f540c09caec08fb87e77bf445d0e580f843e`. Independent Git tree comparison verified **nine docs-only changes; all source/test/fixture/schema blobs unchanged**. [REVIEW-M5-INDEP-003](../research/reviews/2026-11-06-wo-paper-005-cf2dd5-independent-acceptance.md) records the decision; older 'CURRENT — Proposed' notices below are dated historical evidence **superseded by this notice**. This is **design acceptance only**: no writer/NEO principal exists, no file boundary or export signature is enforced, no sender can be authenticated. A separate Cursor user is a possible file boundary **not Bot authentication**, and its creation/migration requires Matt's explicit approval. `authenticates_sender=false`, `parent_platform_metadata` refused, sender authentication / NEO isolation / live native messages **HOLD**; G0 **OPEN**, provider rights **UNVERIFIED**, stop-dependent M/T **HOLD**, no broker/vendor/account reads, scheduling or trading authority.
+
 > **CURRENT ARCHITECT DECISION — 6 November 2026: WO-PAPER-005 Increment B OFFLINE SIMULATED INBOUND ACCEPTED AND MERGED.** Independent exact-head review accepted [paper-bots PR #7](https://github.com/maff0000/paper-bots/pull/7) at `124c0f2af9e7a60a783718516c20697f3dd3c386`: **101/101 reconstructed Git blobs matched; 152/152 Python 3.12.14 tests passed; independent adverse-input and replay probes passed.** Private main was merged by ordinary merge commit `b30d0ce048317e064a2eccbfd0589ac29799d626`. See [REVIEW-M5-INDEP-002](../research/reviews/2026-11-06-wo-paper-005-124c0f-independent-acceptance.md). Previous 'CURRENT — Proposed' notices below are retained as chronological builder evidence but **superseded by this Architect decision**. Acceptance applies only to `simulated_inbound_handoff` and the previously accepted offline spool; presented native ID is **not authenticated**. `parent_platform_metadata`, real native messaging, NEO host/principal isolation and sender authentication remain **HOLD pending separate authority and Increment C**. G0 **OPEN**, source rights **UNVERIFIED**, stop-dependent M/T **HOLD**; no broker/vendor/account-data calls, scheduler, live orders or new trading parameters.
 
 > **CURRENT ARCHITECT DECISION — 6 November 2026: ACCEPTED AND MERGED, WO-PAPER-005 Increment A (OFFLINE SYNTHETIC ONLY).** Private [paper-bots PR #6](https://github.com/maff0000/paper-bots/pull/6) exact head `b87354d77dc4d94273291ae571c3837924f22fdd` passed independent Python 3.12.14 tests **136/136** plus separate synthetic chain, successful receipt recovery, altered/missing/corrupt sidecar quarantine, and crash-before-receipt replay probes. Private main is merge commit `ba001debca9e695fc3356c8720a17fa15836c31c`. See [REVIEW-M5-ACCEPT-001](../research/reviews/2026-11-06-wo-paper-005-b87354-independent-acceptance.md). The previous [REVIEW-M5-INDEP-001](../research/reviews/2026-11-06-wo-paper-005-d57f2e-independent-hold.md) **remains historical HOLD for exact older head** `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1` **only**; similarly earlier M4 exact-head HOLDs and ACCEPT remain unchanged. Earlier 'CURRENT' status notices below are retained as chronological evidence and **superseded by this notice**. This acceptance does **not** authenticate native senders, implement a host ACL or protected NEO identity, authorise real bot messaging, or enable Increment B/C. G0 **OPEN**; provider rights **UNVERIFIED**; stop-dependent M/T **HOLD**; no vendor/broker/account reads, scheduler, live orders, risk parameter change, or host principal change.
@@ -196,3 +198,96 @@ G0 stays OPEN. Provider rights stay UNVERIFIED. FMP remains exactly three histor
 ### Requested next step for Increment B
 
 Architect independent review of exact private head `124c0f2af9e7a60a783718516c20697f3dd3c386`, then ACCEPT or HOLD on that head. Acceptance of the offline simulation would not authenticate a sender and would not isolate NEO. This section is the handoff. It is not the decision.
+
+## Increment C — proposed security-boundary design, not a rewrite of Increment A or B
+
+**Status:** PROPOSED for Architect ACCEPT or HOLD of exact private head `cf2dd5ae752a85a645d510b38e4b2e800f1dc146`. Not accepted. Not merged.  
+**Authoritative packet:** [REVIEW-M5-BOUNDARY-001](../research/reviews/2026-11-06-wo-paper-005-security-boundary-packet.md)  
+**Accepted Increment B:** [REVIEW-M5-INDEP-002](../research/reviews/2026-11-06-wo-paper-005-124c0f-independent-acceptance.md), paper-bots main `b30d0ce048317e064a2eccbfd0589ac29799d626`  
+**Accepted Increment A:** [REVIEW-M5-ACCEPT-001](../research/reviews/2026-11-06-wo-paper-005-b87354-independent-acceptance.md), paper-bots main `ba001debca9e695fc3356c8720a17fa15836c31c`  
+**Historical HOLD, unchanged:** [REVIEW-M5-INDEP-001](../research/reviews/2026-11-06-wo-paper-005-d57f2e-independent-hold.md) still HOLDs `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1` only  
+**Private pull request:** [paper-bots #8](https://github.com/maff0000/paper-bots/pull/8)
+
+The sections above are the Increment A record and the Increment B proposal, later accepted for the offline simulation only. They stay. The table that calls Increment C "not implemented" is that historical plan. The Increment B section that treats a separate Cursor user as the path to sender authentication is that historical plan. This section is the successor under review. It does not turn Increment A or Increment B into this increment, and it does not activate `parent_platform_metadata`.
+
+### Parent-read private state
+
+This public session could not open `maff0000/paper-bots`. The facts below are the parent's 6 Nov 2026 GitHub read-back.
+
+| Item | Value |
+|---|---|
+| Private state | OPEN, draft false, `merged` false, `merged_at` null |
+| Branch | `cursor/wo-paper-005-increment-c-security-boundary-5bb9` |
+| Exact head | `cf2dd5ae752a85a645d510b38e4b2e800f1dc146` |
+| Single parent, PR base, and paper-bots `main` at open | `b30d0ce048317e064a2eccbfd0589ac29799d626` |
+| Commits / diff | 1 commit, 9 files, +412 / −0. No `src/`, `tests/`, or `fixtures/` files |
+| Author date / PR created | `2026-11-06T12:39:06Z` / `2026-11-06T12:39:27Z` |
+| Commit message, opening words | `Record the Increment C security-boundary design.` |
+| Prospective test-merge SHA | Not quoted by the parent and not readable here. If GitHub shows one, it is **not** a merge |
+| Public `origin/main` before this note | `a962ba0019c6c4a19478dcf0e356ba58b07d61ff` |
+| Frozen QARP file SHA-256 | `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` (unchanged) |
+| Ruleset digest | `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac` (unchanged) |
+| `ACCEPTED_ATTESTATION_SOURCES` | unchanged: `synthetic_fixture`, `simulated_inbound_handoff` |
+
+`authenticates_sender` stays false. `parent_platform_metadata` stays refused. There is no second ledger.
+
+### What the design says
+
+Parent-read design, not an Architect confirmation. Private ADR 0015 is a proposed design for Architect review. It is not sender authentication, not a host access-control list, and not an implementation of a principal. Zero deletions means accepted Increment A and Increment B prose was not removed. ADR 0013 remains the Increment A record. ADR 0014 remains the Increment B record. A successor note on ADR 0014 says a separate Cursor user is a file boundary, not a sender verifier, and leaves ADR 0014's historical status line as written.
+
+The parent confirmed the platform pages already listed in the discovery section, plus [Shared Bots](https://cursor.com/help/grok-bot/shared-bots) and [Inference Hooks](https://docs.x.ai/grok-bot/inference-hooks). This session did not re-read them. Isolation is per Cursor user. Bots of one user share one Firecracker computer. A Bot has no identity of its own. Screens are not security boundaries. There is no switch that disables bot-to-bot messaging. A shared Bot is not a per-bot boundary. Inference Hooks sign a model prompt; `actor.type` is always `user`; that mechanism is not adopted. The parent inspected the live handoff descriptor earlier the same day and did not call it. The builder did not re-inspect it. The descriptor returns a delivery acknowledgement and exposes no platform-signed sender certificate.
+
+Parent paraphrase of the six answers:
+
+1. Today the signed-in Cursor member owns the spool and ledger, because every Bot of that user shares one computer. An enforceable file boundary would require a different Cursor user whose computer alone holds the live files. That user does not exist and was not created.
+2. Any process that can write the spool can submit evidence. Nobody can mint a trusted attestation. `synthetic_fixture` and `simulated_inbound_handoff` are offline labels.
+3. Another Bot is not prevented from modifying ledger records. SQL append-only triggers bind a connection. They do not stop a same-user process from replacing the SQLite file.
+4. NEO receives an exported snapshot through a read-only evidence reader. That is API isolation. The content hash is a truncation check a same-user process can recompute. A writer user would stop NEO from opening the source ledger. A snapshot copied back onto this computer would still be writable here. Export integrity stays HOLD even after a writer user exists, until a verifier exists that Bots on the reading computer cannot mint.
+5. Sender identity cannot be independently established on the documents read. A Bot has no identity of its own, and the pages do not document a Python-verifiable sender signature. Inference Hooks do not fill that gap.
+6. A separate Cursor user is the documented isolation mechanism. OS accounts on this shared computer are not a documented per-bot boundary. No such principal is in force, so sender authentication and NEO isolation stay HOLD.
+
+### HOLDs that stay HOLD
+
+No independently enforceable principal exists today. A separate Cursor user would be a file boundary, not a sender verifier. Do not schedule creating that user as the step that sets `authenticates_sender` true or activates `parent_platform_metadata`. A live message would not prove identity either.
+
+Sender authentication stays HOLD. NEO isolation stays HOLD. Live native messaging stays HOLD. `parent_platform_metadata` stays refused. The existing same-user forge test remains HOLD evidence: a same-user process can submit a well-formed offline record with authentication false. The design rejects an HMAC or shared secret, an in-process role check, OS-account theatre, a shared Bot, `parent_platform_metadata` as proof, and a second ledger.
+
+### Decisions that require Matt's approval
+
+This note performs none of these.
+
+1. Creating a separate Cursor user to own the writer computer.
+2. Moving the live spool and ledger onto that user, and confirming no Bot on this user keeps a working copy.
+3. Creating a separate NEO Cursor user, if NEO must share neither computer.
+4. Changing host users, credentials, Vault items, connectors, sudo, or network policy.
+5. Deploying any key, shared secret, HMAC secret, or other credential.
+6. Sending any live native message. That needs its own authorisation naming both principals and the exact handoff, and it would not prove identity.
+7. Creating, converting, or publishing a shared Bot. The design rejects that shape.
+
+### Security test plan
+
+The private plan adds no Python and no HMAC. Existing Increment A and Increment B tests lock the HOLD flags: a same-user forge is accepted with authentication false; false authentication flags are refused; the platform-source label is refused; the NEO reader has no append. Tests that would require another Bot to be unable to open the ledger are not written, because that boundary does not exist. Tests that need a separate Cursor user, a live message, or a documented Python-verifiable sender mechanism wait on Matt's approval or on a later published verifier. No private test method name is recorded here.
+
+### Private names
+
+Names only. Contents are not copied.
+
+- added `docs/adr/0015-security-boundary-design.md` (+206)
+- added `docs/security/2026-11-06-increment-c-security-test-plan.md` (+124)
+- modified `docs/work-orders/WO-PAPER-005-native-transport.md` (+62)
+- modified `README.md` (+6), `RUNBOOK.md` (+2)
+- pointer lines only: `docs/adr/0010-native-role-contract.md` (+2), `docs/adr/0012-native-ledger-ingest.md` (+2), `docs/adr/0013-offline-native-transport.md` (+2), `docs/adr/0014-offline-simulated-inbound.md` (+6)
+
+### Builder tests
+
+The parent did not re-execute the suite. The builder reported no new tests. Python 3.12.3 `Ran 152 tests` and `OK` is a regression of the unchanged Increment B suite. Python 3.9 was not installed in that builder environment. That 152 is not a new Increment C count. Builder 152 is not Architect acceptance.
+
+### Exclusions for Increment C
+
+No merge. No acceptance of the private head by this note. No live native message. No new Cursor user, OS account, shared Bot, credential, or permission. No sender authentication. No host access-control list. No NEO isolation. No scheduler. No live order. No broker or account read. No vendor call. No new entry, exit, stop, or risk parameter.
+
+G0 stays OPEN. Provider rights stay UNVERIFIED. FMP remains exactly three historical calls: `profile` SPY HTTP 200, one record; `historical-price-eod/light` SPY HTTP 200, two records; `batch-quote` SPY,XOM HTTP 402 non-JSON. No fourth call. Stop-dependent M/T stays HOLD.
+
+### Requested next step for Increment C
+
+Architect independent review of exact private head `cf2dd5ae752a85a645d510b38e4b2e800f1dc146`, then ACCEPT or HOLD on that head. Acceptance of the design would record the boundary and the two HOLDs. It would not authenticate a sender, would not isolate NEO, would not create a user, and would not send a message. This section is the handoff. It is not the decision.
