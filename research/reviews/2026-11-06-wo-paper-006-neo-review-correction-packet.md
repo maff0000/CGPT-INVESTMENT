@@ -1,5 +1,7 @@
 # WO-PAPER-006 — correction after Architect HOLD
 
+> **DATED ACCEPT POINTER — 6 November 2026. This file is not rewritten.** The Architect ACCEPTED exact head `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. That decision is [REVIEW-M6-NEO-003](2026-11-06-wo-paper-006-neo-review-acceptance.md). It applies only to that SHA. The request below remains the historical request of that head. Private PR #9 and public PR #13 are not merged. No merge SHA is recorded here.
+
 **ID:** REVIEW-M6-NEO-002
 **Date:** 2026-11-06 (Europe/London)
 **Record type:** public governance packet for the current head of the open private pull request.

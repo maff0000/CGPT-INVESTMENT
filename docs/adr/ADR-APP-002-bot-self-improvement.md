@@ -4,6 +4,8 @@
 **Packet:** [REVIEW-M6-NEO-001](../../research/reviews/2026-11-06-wo-paper-006-neo-review-packet.md), pinned to the head of `cursor/wo-paper-006-neo-review-packet-5d19`. That packet does not contain the SHA of the public commit that adds it.
 **Public note:** [WO-PAPER-006](../../work-orders/WO-PAPER-006-neo-decision-review.md)
 
+**Architect ACCEPT pointer, 6 November 2026.** [REVIEW-M6-NEO-003](../../research/reviews/2026-11-06-wo-paper-006-neo-review-acceptance.md) records ACCEPT of exact private head `4b3dac4c4137a5cb89a9587862e5fe25c464887b` only. That acceptance does not apply to any later commit. Private PR #9 and public PR #13 are not merged. No merge SHA is recorded. The requirement text below is unchanged. The successor pointer that follows remains the historical proposal of that head.
+
 **Successor pointer, 6 November 2026. Proposed. Not accepted.** The Architect HOLDs exact private head `619a607ed1879c93a82e4e652b2edc7531efb530`. The current head under review is `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. Its parent `4078c6a560901ea67eb217f0486cdc18d045efa2` is the intermediate evidence-relationship correction. [REVIEW-M6-NEO-002](../../research/reviews/2026-11-06-wo-paper-006-neo-review-correction-packet.md) requests ACCEPT or HOLD of `4b3dac4c4137a5cb89a9587862e5fe25c464887b` and does not accept it. The requirement text below stays the recorded requirement. It is not rewritten by the HOLD.
 
 **Synthetic boundary.** v0.3 stays explicitly synthetic. The report `producer` is `OFFLINE_DEMONSTRATOR` and `native_review_provenance` is `NOT_APPROVED`. A genuine native review needs a separately approved provenance representation and must not reuse this demonstrator schema. The offline demonstrator is not that native review.
@@ -57,3 +59,5 @@ The financial performance ledger and the decision-evidence ledger stay distinct.
 G0 remains OPEN. Provider rights remain UNVERIFIED. FMP remains exactly three historical calls. Stop-dependent M/T remain HOLD. No scheduler, broker or account read, vendor call, order, or fill is granted by recording this requirement.
 
 The head under review does not change this requirement's stop at unevaluated proposals. QARP-ROTATION-001 v1.0.0 stays unreplaced. The HOLD of `619a607` preserved that safeguard. Acceptance of `4b3dac4c4137a5cb89a9587862e5fe25c464887b` is not claimed here.
+
+That sentence is the pre-acceptance proposal. [REVIEW-M6-NEO-003](../../research/reviews/2026-11-06-wo-paper-006-neo-review-acceptance.md) later records ACCEPT of that exact SHA only. The pull requests are not merged.
