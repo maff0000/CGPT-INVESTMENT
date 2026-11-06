@@ -1,5 +1,7 @@
 # Changelog
 
+**2026-11-06 — Architect M3 scoped acceptance:** Private paper-bots PR #4 exact head `70a673f973bd52155d495f6873eb417374f4948b` independently passed 97/97 Python 3.12.14 tests and manual fallback probes; merged by normal commit `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Synthetic broad discovery/ledger/NEO/role-contract code only. [Dated acceptance](research/reviews/2026-11-06-m3-70a673-independent-acceptance.md). Native integration/NEO ACL/provider rights/real market/G0/stops/scheduling/live trading remain unverified or blocked. Earlier HOLDs retained as history.
+
 ## 2026-11-06 — M3 fallback packet pending re-audit
 - Governance only. Private fallback head `70a673f973bd52155d495f6873eb417374f4948b` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `daedca0836608cef59398c27ce5edbbee5c196d3` was verified and preserved, including the 6 November HOLD. That HOLD file is not edited.
 - Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both exit 0. The count 97 is builder-reported, prior 96 plus one new method with subtests, and is not printed in the captured stdout. It is not acceptance. Frozen manifest hash unchanged. Five correction files are distinct from the 23-path pull-request count.
