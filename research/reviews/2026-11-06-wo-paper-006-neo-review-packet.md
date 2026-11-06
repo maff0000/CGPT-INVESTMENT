@@ -4,6 +4,8 @@
 
 > **ACCEPT POINTER — 6 November 2026.** [REVIEW-M6-NEO-003](2026-11-06-wo-paper-006-neo-review-acceptance.md) records Architect ACCEPT of exact `4b3dac4c4137a5cb89a9587862e5fe25c464887b` only. The HOLD pointer above and the historical request below stay. Neither pull request is merged.
 
+> **CLOSURE POINTER — 6 November 2026.** [REVIEW-M6-NEO-004](2026-11-06-wo-paper-006-neo-review-closure.md) records the ordinary private merge at `28fe536e03ab8df1704d119b045158cc0a766f4f`. The HOLD and ACCEPT pointers above stay. Public PR #13 is not merged.
+
 **ID:** REVIEW-M6-NEO-001
 **Date:** 2026-11-06 (Europe/London)
 **Record type:** public governance packet for an open private increment.

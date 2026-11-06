@@ -1,5 +1,7 @@
 # REVIEW-M6-NEO-003 — WO-PAPER-006 Architect acceptance
 
+> **DATED CLOSURE POINTER — 6 November 2026. This file is not rewritten.** Private [paper-bots PR #9](https://github.com/maff0000/paper-bots/pull/9) was later merged by an ordinary merge commit. The verified private merge SHA and private main are `28fe536e03ab8df1704d119b045158cc0a766f4f`. The accepted implementation remains `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. [REVIEW-M6-NEO-004](2026-11-06-wo-paper-006-neo-review-closure.md) records that merge. The ACCEPT text below stays. Public PR #13 is not merged. No public merge SHA is recorded here.
+
 **ID:** REVIEW-M6-NEO-003
 **Date:** 6 November 2026 (Europe/London)
 **Architect decision:** **ACCEPT** exact private head `4b3dac4c4137a5cb89a9587862e5fe25c464887b`.

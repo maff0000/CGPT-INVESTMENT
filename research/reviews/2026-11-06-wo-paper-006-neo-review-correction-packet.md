@@ -2,6 +2,8 @@
 
 > **DATED ACCEPT POINTER — 6 November 2026. This file is not rewritten.** The Architect ACCEPTED exact head `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. That decision is [REVIEW-M6-NEO-003](2026-11-06-wo-paper-006-neo-review-acceptance.md). It applies only to that SHA. The request below remains the historical request of that head. Private PR #9 and public PR #13 are not merged. No merge SHA is recorded here.
 
+> **CLOSURE POINTER — 6 November 2026.** [REVIEW-M6-NEO-004](2026-11-06-wo-paper-006-neo-review-closure.md) records the later ordinary private merge at `28fe536e03ab8df1704d119b045158cc0a766f4f`. The ACCEPT pointer above and the request below stay. Public PR #13 is not merged.
+
 **ID:** REVIEW-M6-NEO-002
 **Date:** 2026-11-06 (Europe/London)
 **Record type:** public governance packet for the current head of the open private pull request.
