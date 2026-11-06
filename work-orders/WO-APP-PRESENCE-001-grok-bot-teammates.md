@@ -1,5 +1,5 @@
 # WO-APP-PRESENCE-001 — Grok Bot app teammates
-**Status:** RECORDED OWNER REQUIREMENT. Not started. Not part of the current ledger-correction round. No architecture approval is requested by this file.
+**Status:** FIVE TEAMMATES PARENT-REPORTED CREATED. T-BOT REUSED. HANDOFF VERIFICATION PENDING. LEDGER BRIDGE UNVERIFIED. No architecture approval is requested by this file.
 **Date:** 2026-11-05 (Europe/London)
 **Parent:** [ROADMAP-PAPER-001](../docs/equity-paper-delivery-roadmap.md) · [consolidation index](../research/reviews/2026-11-05-six-bot-consolidation-index.md)
 
@@ -14,3 +14,6 @@ This work order is separate from the open semantic-replay ledger correction. It 
 
 ## Acceptance, later
 Each of the six names is visible in the app, can be addressed separately, and cannot reach another role's authority. Paper-only safeguards remain in force. Evidence is an exact app identity plus a sanitised public status. No such evidence exists now.
+
+## Addendum — platform facts, 2026-11-05
+See [ADR-APP-001](../docs/adr/ADR-APP-001-platform-findings.md). Creating an agent creates an individual messageable agent. A handoff is asynchronous. The description shapes instructions and is not a proven hard access-control list. The same box shares a filesystem. No Python attachment and no production ledger write bridge are verified. The recorded T-Bot identifier `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and is not modified. Other identifiers have not arrived. The parent provisions. This session does not. NEO stays logically read-only, and that limit is not enforced by wording alone. Official docs, read 2026-11-05, put every bot of one user on one shared computer with that user's files, logins and permitted connectors. Isolation is per user, not per role. There is no switch that disables bot-to-bot messages. A shared operating system does not make an interface-level read-only flag a security boundary. Strong NEO isolation would need a separate principal, runtime and service. That is not implemented, and this work order does not provision it. The parent has the creation tool. This executor did not use it.

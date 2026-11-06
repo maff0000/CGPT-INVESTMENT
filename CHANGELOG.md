@@ -1,5 +1,75 @@
 # Changelog
 
+**2026-11-06 — Architect M3 scoped acceptance:** Private paper-bots PR #4 exact head `70a673f973bd52155d495f6873eb417374f4948b` independently passed 97/97 Python 3.12.14 tests and manual fallback probes; merged by normal commit `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Synthetic broad discovery/ledger/NEO/role-contract code only. [Dated acceptance](research/reviews/2026-11-06-m3-70a673-independent-acceptance.md). Native integration/NEO ACL/provider rights/real market/G0/stops/scheduling/live trading remain unverified or blocked. Earlier HOLDs retained as history.
+
+## 2026-11-06 — M3 fallback packet pending re-audit
+- Governance only. Private fallback head `70a673f973bd52155d495f6873eb417374f4948b` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `daedca0836608cef59398c27ce5edbbee5c196d3` was verified and preserved, including the 6 November HOLD. That HOLD file is not edited.
+- Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both exit 0. The count 97 is builder-reported, prior 96 plus one new method with subtests, and is not printed in the captured stdout. It is not acceptance. Frozen manifest hash unchanged. Five correction files are distinct from the 23-path pull-request count.
+- Disposition requested: Architect accept or hold after an independent re-audit of the exact fallback head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — M3 correction packet pending re-audit
+- Governance only. Private correction head `cdd70b02a2c53ce25db9b857d03590491f247771` is parent-verified open and unmerged on base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Public start `fa80147b3114cc0995cd92d7d093ec5236d61c8b` was verified and preserved, including the Architect HOLD. The HOLD file is not edited.
+- Builder transcript: fresh detached worktree, Python 3.12.3 and `/home/ubuntu/.local/bin/python3.9` 3.9.25, both OK. The count 96 is builder-reported, prior 91 plus five new test methods with subtests, and is not acceptance. Frozen manifest hash unchanged. Nine correction files are distinct from the 23-path pull-request manifest.
+- Disposition requested: Architect accept or hold after an independent re-audit of the exact correction head. Bounded native chat evidence remains. Full integration remains partial. No merge. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — Packet order: locked milestone first
+- The locked 14-item record is now the first section of [REVIEW-M3-001](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md) and is the authoritative current milestone. Earlier builder drafts, including the "nothing implemented" and "full report pending" claims, are in a historical appendix. Their facts are unchanged. No code, tests, or scope were added.
+- Parent-read public head of the previous packet: `1c5227a8afec0891079dbee49548940ebe12c925`. Private locked head remains `a40412f0876fd59526a6b663273f69b4df008ec4`.
+
+## 2026-11-05 — Private discovery head locked; public packet pinned
+- Parent direct GitHub read-back: paper-bots PR #4 is open and not merged. Branch `cursor/broad-discovery-003-1e9e`. Base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. Head `a40412f0876fd59526a6b663273f69b4df008ec4`. 21 files changed. This session received HTTP 404 and did not copy the paths or any private code. The manifest link is the private diff.
+- Historical heads kept and labeled: `ad5e30ae5502d77d8beec3399845f64116ff8702`, `a6aa7f32acc8531a06e3e36044a4b9003c888323`, and parent-named prefix `36904a1`. They are not the locked head.
+- Builder, not Architect: fresh detached run at the locked head, 91 passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Prior synthetic coverage, NEO digest and security limits are carried forward. Manifest hash unchanged. Ruleset digest `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac`. The FMP record is exactly three historical calls. No fourth call and no licence or quota inference.
+- Disposition: ready for Architect review of the bounded offline fixture and chat milestone. Overall integration partial. Operational hold. No independent acceptance. Next work orders are named and not started. No scheduler and no activation.
+- Public baseline before this note: `86bdf3190476a0b414dff8e4b211caf5a97f2731`. Public base: `20094068e20c2de0a659e8243657207c8d4cfbaa`. [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — Public frozen QARP predicates shown; private doc head still pending
+- The public screening review now copies the frozen A/B/C values, operators and units from the already public registry and Finviz filter note. It is not a new strategy approval. The accepted private manifest hash remains the builder-reported `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62`, with no change.
+- A documentation-only private correction is requested to transcribe those predicates from the manifest and to separate implemented, deferred and owner choices. That private head has not moved. The 91 core tests are unchanged. One acceptance gate follows the documentation.
+- The parent's fourth direct read of accepted E-Bot `79b7ac90fe4cf7c6e974e476baca7c63cc24603f` is recorded as an interface: read-only Massive grouped and daily OHLCV, and IBKR contract details and regular-hours trades, for XOM, LIN, EQIX and SPY only. Fundamentals, Finviz mapping, SMA and chart stage are unimplemented. Rights are unverified. This session did not re-read that file. The earlier 404 is this credential only.
+- [Review](docs/qarp-screening-requirements-review.md).
+
+## 2026-11-05 — Final broad-discovery builder packet, not accepted
+- Private PR #4 final head `ad5e30ae5502d77d8beec3399845f64116ff8702`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, branch `cursor/broad-discovery-003-1e9e`. This session could not read the repository. The earlier recorded head `a6aa7f32acc8531a06e3e36044a4b9003c888323` is superseded.
+- Builder, not Architect: fresh detached run, 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Synthetic 17 rows and 16 instruments across 11 GICS sectors, not the listed US universe. Frozen manifest hash unchanged. The in-process NEO digest append is a material deviation and is not a native NEO write.
+- Disposition: ready for Architect review of the bounded fixture only. Overall integration partial. Operational hold. G0 open. Stop-dependent M/T hold. No policy adoption.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — Private broad-discovery head recorded, not accepted
+- Parent GitHub connector read-back: paper-bots PR #4 is open, not merged, branch `cursor/broad-discovery-003-1e9e`, base `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`, head `a6aa7f32acc8531a06e3e36044a4b9003c888323`. This session could not read the repository.
+- Builder, not Architect: 91 tests passed on each of Python 3.12.3 and 3.9.25, including the accepted 82. Named scope is an offline adapter, synthetic discovery, a NEO digest, a screening review, a rights matrix and ADR 0010. Universe counts are not published. The full private report is pending and may move the head.
+- Native probes stay closed. NEO `APP-A-NEO-002` is already recorded. No further peer actions. The 14-item packet is begun and not final.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — NEO second audit received; native milestone partial
+- `APP-A-NEO-002` verdict: bounded native handoff evidence, partial; production ledger completeness unverified. `APP-A-NEO-001` remains the historical `INCOMPLETE_EVIDENCE` record. The gate `NOT_INVOKED_NO_PROPOSAL` was never a pass.
+- Both fixture candidates stay UNCHECKED, qualification UNKNOWN, research HOLD, and entry NONE. No file, ledger, external, gate, proposal, order or fill action is reported. JSON call identifiers are not service receipts. Ledger parents, full payloads, schema conformance, an enforced access-control list, a protected NEO runtime, and Python ledger wiring stay unverified.
+- Chronology anomalies stay as recorded and are not a freshness claim. No further native actions are requested. The 14-item packet still waits for the private broad-discovery head. G0 stays OPEN. Stop-dependent M/T stays HOLD.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — Native chat handoffs observed; not a ledger pass
+- Parent-observed peer transcripts record five identity and refusal replies and E to S to R to M attributed receipts. T received M-Bot's research-HOLD return for `APP-A-001-M-T`. The route is M to T. It is not T's own return. No proposal, gate, ledger write, fill or order occurred. This is the chat pipeline only.
+- NEO `APP-A-NEO-001` returned `INCOMPLETE_EVIDENCE`. `APP-A-NEO-002` is sent and its final audit is pending. Fixture time `20:30:00 GMT` was 52 seconds ahead of E's actual `20:29:08 GMT`. The times are recorded and not repaired.
+- Tool-call identifiers stay in the parent's private transcript. They are not service receipt identifiers and are not republished. The 14-item milestone packet remains incomplete because the broad-discovery head is still absent.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — Platform docs: bot isolation is per user, not per role
+- Read the public Grok Bot pages for teams, messaging, bots and security. No probes were run. One user's bots share one computer, its files, logins and permitted connectors. Bot-to-bot messaging has no off switch. Distinct names, conversations and memory do not create a role security boundary.
+- Created identities and instructional refusals are not a hard access-control list or a read-only NEO. Authenticated bot-to-Python identity and installed ledger execution are unverified. A JSON producer identifier is a claim only. The parent has the creation tool. This executor did not use it.
+- A later adapter, not started, is offline typed JSON, frozen strategy and role-transition checks, one transactional writer, and a separate NEO hash snapshot. Strong NEO isolation needs its own principal, runtime and service. G0 stays OPEN. No orders, scheduler, or stop-management authority is added.
+- Sources: [teams](https://docs.x.ai/grok-bot/teams-and-enterprises), [messaging](https://docs.x.ai/grok-bot/chat-and-collaboration), [bots](https://docs.x.ai/grok-bot/bots), [security](https://cursor.com/docs/grok-bot/security). [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md).
+
+## 2026-11-05 — Five app teammates created; handoff not yet verified
+- Recorded parent-reported identifiers for E-Bot, S-Bot, R-Bot, M-Bot and NEO. T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and unchanged. This session did not create them or inspect the app.
+- Five acceptance probes have delivery acknowledgement only. Peer replies are pending, so no handoff pass is claimed. The ledger bridge is unverified. `native-probe-1` is not a production ledger contract.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
+## 2026-11-05 — M3 milestone opened for app teammates and broad discovery
+- Verified public main `20094068e20c2de0a659e8243657207c8d4cfbaa`, the merge of PR #7. This change is a new pull request and does not rewrite that acceptance.
+- Recorded platform facts in [ADR-APP-001](docs/adr/ADR-APP-001-platform-findings.md). T-Bot `81d8cf38-188e-4592-b08d-b59d6e461e83` is reused and not modified. No other app identifier is claimed. A creation description is not a proven access-control list. No Python ledger bridge is verified. The parent provisions the app.
+- Authorised [WO-DISCOVERY-001](work-orders/WO-DISCOVERY-001-broad-offline-fixtures.md) for offline US fixtures. No private head is supplied. [Screening checklist](docs/qarp-screening-requirements-review.md) approves no new strategy. FMP rights stay UNVERIFIED.
+- [Packet](research/reviews/2026-11-05-m3-app-discovery-milestone-packet.md).
+
 ## 2026-11-05 — Architect accepts and merges private QARP/NEO evidence component
 - Independent exact-head review of paper-bots PR #2 at `810b6fd48b266031c1b299c39370bf3ececb449b`: 82 Python 3.12.14 tests passed offline, plus source/quality/reason replay mutation probes and no-broker inspection.
 - **ACCEPTED AND MERGED** by normal guarded merge, private main `76dd4f9805c8b7d0ed6194cdb118c5096ab6d79d`. [Architect report](research/reviews/2026-11-05-m2-810b6fd-independent-acceptance.md).
