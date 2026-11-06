@@ -1,5 +1,56 @@
 # CURRENT STATE — CGPT-INVESTMENT
 
+> **CURRENT — WO-PAPER-006 synthetic NEO decision review, 6 November 2026. Proposed. Not an acceptance and not a merge.** Private [paper-bots PR #9](https://github.com/maff0000/paper-bots/pull/9) exact head `619a607ed1879c93a82e4e652b2edc7531efb530` is parent-supplied OPEN, not draft, not merged, on `cursor/wo-paper-006-neo-review-877f`. This public session could not open `maff0000/paper-bots`. Parent, PR base, and paper-bots main at open: `c0b9f540c09caec08fb87e77bf445d0e580f843e`. One commit, 25 files, +4437/−1. Public `origin/main` before this write: `0cb49b0b5bb1df0e7e7c9e3d7d8eaf74f8e66e56`, message `Merge PR #12 — WO-PAPER-005 Increment C security-design acceptance`. [REVIEW-M6-NEO-001](research/reviews/2026-11-06-wo-paper-006-neo-review-packet.md) is pinned to the head of `cursor/wo-paper-006-neo-review-packet-5d19` and does not contain that public commit's SHA. [WO-PAPER-006](work-orders/WO-PAPER-006-neo-decision-review.md). [ADR-APP-002](docs/adr/ADR-APP-002-bot-self-improvement.md). The increment is a synthetic six-Bot session and an offline NEO review. The demonstrator is not the native NEO Bot. No native message was sent. The T-Bot to NEO handoff is `PREPARED_NOT_SENT`. `authenticates_sender` stays false. `parent_platform_metadata` stays refused. `live_message_sent` stays false. QARP-ROTATION-001 v1.0.0 is not replaced. Schema v0.3 contract `decision-evidence-1` is on the existing append-only ledger. There is no second ledger. Builder-reported `Ran 161 tests` on Python 3.12.3 is not Architect acceptance. The 161 includes the previous 152. Increment C isolation deployment remains deferred. Accepted Increment A/B/C banners below stay. G0 OPEN. Rights UNVERIFIED. FMP remains exactly three historical calls. Stop-dependent M/T HOLD. Disposition requested: Architect ACCEPT or HOLD of `619a607ed1879c93a82e4e652b2edc7531efb530`. This packet does not accept that head.
+
+## Proposed — WO-PAPER-006 planted findings and self-improvement (6 November 2026, not accepted)
+
+Session `WO006-SYN-SESSION-001`. Correlation `00600006-0006-4000-8000-000000000001`. Market session `FIXTURE-2026-11-06`. Playbook `NEO-REVIEW-PLAYBOOK-v0.1`. Risk gate `NOT_INVOKED_NO_AUTHORITY`. Predictive performance `NOT_ASSESSED`. Quality labels: E SOUND, S POOR, R SOUND, M POOR, T SOUND, NEO NOT_A_DECISION. A later synthetic mark moves SYN-WO006A from 100.00 SYN to 112.00 SYN. M-Bot quality stays POOR. The mark is not a fill.
+
+| ID | Class |
+|---|---|
+| `F-REASON-S-EARNINGS` | `REASONING_DOES_NOT_FOLLOW` |
+| `F-REASON-S-MARGIN` | `REASONING_DOES_NOT_FOLLOW` |
+| `F-MISSING-S-CONFIRMATION` | `MISSING_EVIDENCE` |
+| `F-BROKEN-M-CAUSAL` | `BROKEN_CAUSAL_REFERENCE` |
+| `F-INCONSISTENT-M-RBOT` | `CROSS_BOT_INCONSISTENCY` |
+| `F-MISSING-M-SKEPTIC` | `MISSING_EVIDENCE` |
+| `F-MISSED-S-WO006B` | `MISSED_OPPORTUNITY` |
+| `F-OUTCOME-M-MARK` | `FAVOURABLE_OUTCOME_POOR_DECISION` |
+
+Full sentences are in the packet. The requirement below is recorded verbatim. Canonical public ADR: [ADR-APP-002](docs/adr/ADR-APP-002-bot-self-improvement.md).
+
+AGENT SELF-IMPROVEMENT — MANDATORY CAPABILITY
+
+Every Bot must be capable of proposing improvements to its own prompts, analytical methods and strategies, informed by its experience, NEO's findings and collaboration with other Bots.
+
+Improvements must be versioned and recorded in GitHub, with the original hypothesis, evidence, proposed change, evaluation results and rollback path.
+
+Bots may autonomously develop and test experimental versions in offline or shadow mode. Their accepted versions remain unchanged until independently reviewed.
+
+NEO must track performance by Bot, strategy and version, evaluate whether proposed improvements genuinely outperform their baselines, and recommend promotion or rejection.
+
+NEO itself must be subject to evaluation and improvement.
+
+No Bot may alter historical evidence, silently replace approved trading rules, increase authorised risk or activate live execution.
+
+The common objective is sustainable, risk-controlled growth of the trading ledger through continuous, measurable improvement.
+
+Sequence: NEO finding → proposed change → GitHub decision → bounded implementation → independent review → acceptance. A Bot may also start at the proposed change from its own experience, without waiting for NEO.
+
+| Activity | Authority |
+|---|---|
+| Challenge another Bot's decision | Autonomous |
+| Identify and explain mistakes | Autonomous |
+| Research alternative methods | Autonomous |
+| Propose strategy improvements | Autonomous |
+| Create experimental Bot versions | Autonomous |
+| Run offline/shadow comparisons | Autonomous |
+| Recommend promotion of a better version | Autonomous |
+| Replace an approved production strategy | Independent review required |
+| Change risk limits or activate live trading | Explicit approval required |
+
+This milestone records the table and stops at unevaluated proposals (`evaluation_status` `NOT_RUN`, `promotion` `NOT_RECOMMENDED`, `approved_strategy_replaced` false). It does not create an experimental Bot runtime or run a shadow comparison. Competing versions (for example S-Bot v1.0 vs v1.1) are a later roadmap item, not implemented here. S-Bot's earnings-quality proposal is labelled `1.1-shadow-not-run`. The original `STRATEGY_MATCH` stays. Applying a proposal raises and does not write the frozen manifest. Frozen file SHA-256 remains `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62`. Ruleset digest remains `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac`.
+
 > **CURRENT ARCHITECT DECISION — 6 November 2026: WO-PAPER-005 Increment C SECURITY-BOUNDARY DESIGN ACCEPTED AND MERGED (NO DEPLOYMENT).** Private [paper-bots PR #8](https://github.com/maff0000/paper-bots/pull/8) exact documentation head `cf2dd5ae752a85a645d510b38e4b2e800f1dc146` was independently accepted, merged to private main `c0b9f540c09caec08fb87e77bf445d0e580f843e`. Independent Git tree comparison verified **nine docs-only changes; all source/test/fixture/schema blobs unchanged**. [REVIEW-M5-INDEP-003](research/reviews/2026-11-06-wo-paper-005-cf2dd5-independent-acceptance.md) records the decision; older 'CURRENT — Proposed' notices below are dated historical evidence **superseded by this notice**. This is **design acceptance only**: no writer/NEO principal exists, no file boundary or export signature is enforced, no sender can be authenticated. A separate Cursor user is a possible file boundary **not Bot authentication**, and its creation/migration requires Matt's explicit approval. `authenticates_sender=false`, `parent_platform_metadata` refused, sender authentication / NEO isolation / live native messages **HOLD**; G0 **OPEN**, provider rights **UNVERIFIED**, stop-dependent M/T **HOLD**, no broker/vendor/account reads, scheduling or trading authority.
 
 > **CURRENT ARCHITECT DECISION — 6 November 2026: WO-PAPER-005 Increment B OFFLINE SIMULATED INBOUND ACCEPTED AND MERGED.** Independent exact-head review accepted [paper-bots PR #7](https://github.com/maff0000/paper-bots/pull/7) at `124c0f2af9e7a60a783718516c20697f3dd3c386`: **101/101 reconstructed Git blobs matched; 152/152 Python 3.12.14 tests passed; independent adverse-input and replay probes passed.** Private main was merged by ordinary merge commit `b30d0ce048317e064a2eccbfd0589ac29799d626`. See [REVIEW-M5-INDEP-002](research/reviews/2026-11-06-wo-paper-005-124c0f-independent-acceptance.md). Previous 'CURRENT — Proposed' notices below are retained as chronological builder evidence but **superseded by this Architect decision**. Acceptance applies only to `simulated_inbound_handoff` and the previously accepted offline spool; presented native ID is **not authenticated**. `parent_platform_metadata`, real native messaging, NEO host/principal isolation and sender authentication remain **HOLD pending separate authority and Increment C**. G0 **OPEN**, source rights **UNVERIFIED**, stop-dependent M/T **HOLD**; no broker/vendor/account-data calls, scheduler, live orders or new trading parameters.

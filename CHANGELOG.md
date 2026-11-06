@@ -1,5 +1,47 @@
 # Changelog
 
+## 2026-11-06 — WO-PAPER-006 synthetic NEO review, not an acceptance
+- Public `origin/main` was fetched before the write and was `0cb49b0b5bb1df0e7e7c9e3d7d8eaf74f8e66e56`, message `Merge PR #12 — WO-PAPER-005 Increment C security-design acceptance`, parents `a962ba0019c6c4a19478dcf0e356ba58b07d61ff` and `d6fc7957613792478d3ea436bed616d409738113`. That main SHA is the parent of the commit that adds this entry. This entry does not record the SHA of that commit. [REVIEW-M6-NEO-001](research/reviews/2026-11-06-wo-paper-006-neo-review-packet.md) is pinned to the head of `cursor/wo-paper-006-neo-review-packet-5d19`. Merged public PRs #10, #11, and #12 are not reused.
+- This public session could not open `maff0000/paper-bots` (`Could not resolve to a Repository`). Parent-supplied private [paper-bots PR #9](https://github.com/maff0000/paper-bots/pull/9) is OPEN, not draft, not merged. Exact head `619a607ed1879c93a82e4e652b2edc7531efb530`. Parent, PR base, and paper-bots main at open `c0b9f540c09caec08fb87e77bf445d0e580f843e`. Branch `cursor/wo-paper-006-neo-review-877f`. One commit, author Cursor Agent, author date `2026-11-06T13:49:35Z`, PR created `2026-11-06T13:49:53Z`. Diff versus that main: 25 files, +4437/−1. A prospective GitHub `merge_commit_sha`, if shown, is not a merge and is not recorded here. Private paths are named in the packet. No private Python, test, fixture JSON, or schema catalog JSON is copied. ADR 0015 was not edited.
+- The increment is a synthetic six-Bot decision session and an offline NEO review under `decision-evidence-1` (schema v0.3) on the existing append-only ledger. `native-ledger-1` stays accepted. There is no second ledger. The demonstrator is SYNTHETIC / OFFLINE and is not the native NEO Bot. Eight planted findings: `F-REASON-S-EARNINGS`, `F-REASON-S-MARGIN`, `F-MISSING-S-CONFIRMATION`, `F-BROKEN-M-CAUSAL`, `F-INCONSISTENT-M-RBOT`, `F-MISSING-M-SKEPTIC`, `F-MISSED-S-WO006B`, `F-OUTCOME-M-MARK`. Quality: E SOUND, S POOR, R SOUND, M POOR, T SOUND, NEO NOT_A_DECISION. A mark from 100.00 SYN to 112.00 SYN on SYN-WO006A does not upgrade M-Bot. The mark is not a fill. The T-Bot (`81d8cf38-188e-4592-b08d-b59d6e461e83`) to NEO (`e1e372c8-20e9-45a6-856f-4eabdf018308`) handoff is `PREPARED_NOT_SENT`. `authenticates_sender` stays false. `parent_platform_metadata` stays refused. `live_message_sent` stays false.
+- QARP-ROTATION-001 v1.0.0 is not replaced. Frozen file SHA-256 `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` and ruleset digest `d3ad50fbdb152ddb62ddfdf6e115a2825edff591163eaa309f6f5b141e5a2fac` stay. S-Bot's earnings-quality proposal is `1.1-shadow-not-run`. Applying a proposal raises and does not write the frozen manifest. Competing versions are not implemented. Increment C isolation deployment remains deferred. [REVIEW-M5-INDEP-003](research/reviews/2026-11-06-wo-paper-005-cf2dd5-independent-acceptance.md) is not edited.
+- Builder report, not an Architect run and not re-executed by the parent or by this session: Python 3.12.3 `PYTHONPATH=src python3 -m unittest discover -s tests -q` reported `Ran 161 tests`, `OK`, exit 0. The 161 includes the previous 152. Python 3.9 was not installed in that builder environment. Builder 161 is not Architect acceptance.
+- The self-improvement requirement is recorded verbatim below and in [ADR-APP-002](docs/adr/ADR-APP-002-bot-self-improvement.md). This entry does not accept the private head.
+
+AGENT SELF-IMPROVEMENT — MANDATORY CAPABILITY
+
+Every Bot must be capable of proposing improvements to its own prompts, analytical methods and strategies, informed by its experience, NEO's findings and collaboration with other Bots.
+
+Improvements must be versioned and recorded in GitHub, with the original hypothesis, evidence, proposed change, evaluation results and rollback path.
+
+Bots may autonomously develop and test experimental versions in offline or shadow mode. Their accepted versions remain unchanged until independently reviewed.
+
+NEO must track performance by Bot, strategy and version, evaluate whether proposed improvements genuinely outperform their baselines, and recommend promotion or rejection.
+
+NEO itself must be subject to evaluation and improvement.
+
+No Bot may alter historical evidence, silently replace approved trading rules, increase authorised risk or activate live execution.
+
+The common objective is sustainable, risk-controlled growth of the trading ledger through continuous, measurable improvement.
+
+Sequence: NEO finding → proposed change → GitHub decision → bounded implementation → independent review → acceptance. A Bot may also start at the proposed change from its own experience, without waiting for NEO.
+
+| Activity | Authority |
+|---|---|
+| Challenge another Bot's decision | Autonomous |
+| Identify and explain mistakes | Autonomous |
+| Research alternative methods | Autonomous |
+| Propose strategy improvements | Autonomous |
+| Create experimental Bot versions | Autonomous |
+| Run offline/shadow comparisons | Autonomous |
+| Recommend promotion of a better version | Autonomous |
+| Replace an approved production strategy | Independent review required |
+| Change risk limits or activate live trading | Explicit approval required |
+
+This milestone records the table and stops at unevaluated proposals (`evaluation_status` `NOT_RUN`, `promotion` `NOT_RECOMMENDED`, `approved_strategy_replaced` false). It does not create an experimental Bot runtime or run a shadow comparison. Competing versions (for example S-Bot v1.0 vs v1.1) are a later roadmap item, not implemented here.
+
+- G0 stays OPEN. FMP remains exactly three historical calls: `profile` SPY HTTP 200, one record; `historical-price-eod/light` SPY HTTP 200, two records; `batch-quote` SPY,XOM HTTP 402 non-JSON. No fourth call. No merge. Disposition requested: Architect ACCEPT or HOLD of `619a607ed1879c93a82e4e652b2edc7531efb530`.
+
 ## 2026-11-06 — Architect ACCEPT / merge: Increment C security-boundary design only
 - Private exact-head `cf2dd5ae752a85a645d510b38e4b2e800f1dc146` accepted for documents and security test plan only; normal private merge `c0b9f540c09caec08fb87e77bf445d0e580f843e`.
 - Independent Git tree inspection: nine docs-only changes; all `src/`, `tests/`, `fixtures/`, `examples/` and schema objects unchanged. No new Architect test run for this documentation-only increment.
