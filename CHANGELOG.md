@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-06 — WO-PAPER-004 replay-integrity correction packet, not an acceptance
+- Public PR #9 head was fetched before the write and was `0cf2d0cb77501343df4ab9755940794b93ec14c4`. Public `origin/main` was `b0c8f55109fcc92d8f55ec7b593c696b9887475d`. This entry does not record the SHA of the commit that adds it.
+- Parent-verified private [paper-bots PR #5](https://github.com/maff0000/paper-bots/pull/5) remains OPEN, `merged` false, `merged_at` null. Starting HOLD head `553ec517455ce6ef797b049e65ec61389daa20da`. Current head `f4371c599fb1c45e28c403549090e92fd825ce67`. Base and paper-bots main unchanged at `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Two commits. Diff versus accepted main: 10 files, +2028/−4. Correction names only: `src/paperbots/native_ingest.py`, `tests/test_native_ingest.py`, `docs/adr/0012-native-ledger-ingest.md`, `docs/work-orders/WO-PAPER-004-native-ledger.md`, `README.md`, `RUNBOOK.md`.
+- Builder transcript, not an Architect run, at `/tmp/wo004-replay`: Python 3.9.25 stderr `Ran 115 tests in 0.765s` OK; Python 3.12.3 stderr `Ran 115 tests in 0.922s` OK. Stdout empty. The integer 115 was observed on stderr. The HOLD head had 110 tests.
+- [REVIEW-M4-INDEP-001](research/reviews/2026-11-06-wo-paper-004-553ec5-independent-hold.md) remains the HOLD of `553ec517` and is not edited. Disposition requested: Architect ACCEPT or HOLD after independent re-audit of `f4371c599fb1c45e28c403549090e92fd825ce67`. [Packet](research/reviews/2026-11-06-wo-paper-004-replay-correction-packet.md). No merge, no live orders, no vendor calls, no scheduler, and no new stop or risk parameter. G0 stays OPEN. Live native execution stays UNVERIFIED. No host ACL.
+
 ## 2026-11-06 — WO-PAPER-004 public governance packet, not an acceptance
 - Public `origin/main` was fetched before the write and was `b0c8f55109fcc92d8f55ec7b593c696b9887475d`. This entry does not record the SHA of the commit that adds it.
 - Parent-verified private [paper-bots PR #5](https://github.com/maff0000/paper-bots/pull/5) is OPEN, `merged` false, `merged_at` null. Head `553ec517455ce6ef797b049e65ec61389daa20da`, branch `cursor/wo-paper-004-native-ledger-ce05`, base and unchanged paper-bots main `b2cb75867d2408a0018333213a0dd2cfb91ac670`. Ten named files, +1828/−4, one commit. No private source or fixture body is copied.

@@ -31,5 +31,8 @@ The documented minimal path, not a workaround and not started here, is offline v
 ## Follow-on — 2026-11-06, named adapter proposed, isolation gap open
 The adapter named in the paragraph above is now proposed on private [paper-bots PR #5](https://github.com/maff0000/paper-bots/pull/5), head `553ec517455ce6ef797b049e65ec61389daa20da`, as `paperbots.native_ingest` (`native-ledger-1`). `native-probe-1` still does not write. The proposal is open and unmerged. The public handoff is [REVIEW-M4-NATIVE-001](../../research/reviews/2026-11-06-wo-paper-004-native-ledger-packet.md). The separate operating-system principal that alone can open the ledger was proposed and was not built. One user's bots still share the computer, files, logins, and permitted connectors. A JSON producer field does not authenticate the sender. This follow-on does not close the host isolation gap.
 
+## Follow-on — 2026-11-06, replay correction proposed, HOLD of the prior head stands
+The same private PR #5 now proposes head `f4371c599fb1c45e28c403549090e92fd825ce67` after a bounded replay-integrity correction. The public handoff is [REVIEW-M4-REPLAY-001](../../research/reviews/2026-11-06-wo-paper-004-replay-correction-packet.md). [REVIEW-M4-INDEP-001](../../research/reviews/2026-11-06-wo-paper-004-553ec5-independent-hold.md) remains the HOLD of `553ec517455ce6ef797b049e65ec61389daa20da`. The correction is open and unmerged. It does not add a host ACL or authenticate a native sender.
+
 ## Consequence
 Five teammates are parent-reported created, and T-Bot is reused. Handoff replies are still pending. The ledger bridge stays unverified. This cloud session does not provision agents or new infrastructure. The parent does the native creation.

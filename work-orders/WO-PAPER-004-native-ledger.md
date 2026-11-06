@@ -1,18 +1,47 @@
 # WO-PAPER-004 — attested native envelope ingest (public note)
 
-**Status:** PROPOSED. Open on private paper-bots PR #5. Not accepted. Not merged.  
-**Date:** 2026-11-06 (Europe/London)  
+**Current status, 2026-11-06:** replay-integrity correction PROPOSED on the same private PR. Not accepted. Not merged. The HOLD of `553ec517455ce6ef797b049e65ec61389daa20da` stands.  
+**Authoritative current packet:** [REVIEW-M4-REPLAY-001](../research/reviews/2026-11-06-wo-paper-004-replay-correction-packet.md)  
+**Standing HOLD, not withdrawn:** [REVIEW-M4-INDEP-001](../research/reviews/2026-11-06-wo-paper-004-553ec5-independent-hold.md)  
 **Parent PID:** [PID-EQUITY-PAPER-001](../docs/pid-equity-paper-system.md)  
-**Authoritative packet:** [REVIEW-M4-NATIVE-001](../research/reviews/2026-11-06-wo-paper-004-native-ledger-packet.md)  
 **Private pull request:** [paper-bots #5](https://github.com/maff0000/paper-bots/pull/5)  
 **Private work order path, not copied here:** `docs/work-orders/WO-PAPER-004-native-ledger.md`
 
-## Heads
+## Current private head
+
+| Item | Value |
+|---|---|
+| Public PR #9 start, fetched before this update | `0cf2d0cb77501343df4ab9755940794b93ec14c4` |
+| Public main / base | `b0c8f55109fcc92d8f55ec7b593c696b9887475d` |
+| Starting HOLD head | `553ec517455ce6ef797b049e65ec61389daa20da` |
+| Current head under review | `f4371c599fb1c45e28c403549090e92fd825ce67` |
+| Private branch | `cursor/wo-paper-004-native-ledger-ce05` |
+| Private base and unchanged paper-bots main | `b2cb75867d2408a0018333213a0dd2cfb91ac670` |
+| State | OPEN, `merged` false, `merged_at` null, draft false |
+| Diff versus accepted main | 10 files, +2028 / −4, 2 commits |
+
+Parent-read design: one causal-parent check covers a new write and a replay. S, R, M, and T must name `parent_event_id`. A supplied `parent_event_hash` must match the stored parent. The writer does not fill either value from history. E remains `UNCHECKED` only. S, R, M, and T may claim `UNCHECKED` or `NOT_APPLICABLE`, and that claim is the stored `quality_state`. Changing it either way is an idempotency conflict and does not append. NEO's review stays `NOT_APPLICABLE`. `note` is non-semantic and cannot grant a role, parent, quality, or trading permission. Frozen manifest SHA-256 `e45f604c8c2da68d5cb06ce1dee5659a4b77e132f2e01303ecebf66877d19e62` is unchanged.
+
+Correction names only: `src/paperbots/native_ingest.py`, `tests/test_native_ingest.py`, `docs/adr/0012-native-ledger-ingest.md`, `docs/work-orders/WO-PAPER-004-native-ledger.md`, `README.md`, `RUNBOOK.md`.
+
+Builder transcript, not an Architect run, at `/tmp/wo004-replay`: Python 3.9.25 stderr `Ran 115 tests in 0.765s` OK; Python 3.12.3 stderr `Ran 115 tests in 0.922s` OK. Stdout empty. The 115 include the 110 from the HOLD head plus missing-parent replay, contradictory parent hash, both quality directions, a changed identity claim, and the unchanged no-order / NEO checks.
+
+Live native execution remains UNVERIFIED. No host ACL. The ingest check is not a host principal. NEO may still append `NEO_REVIEW`, `NEO_COHORT`, and `NEO_DISCOVERY_DIGEST`. `order_created` and `is_fill` stay false. G0 stays OPEN. Rights stay UNVERIFIED. FMP remains exactly three historical calls: `profile` SPY HTTP 200, one record; `historical-price-eod/light` SPY HTTP 200, two records; `batch-quote` SPY,XOM HTTP 402, non-JSON. No fourth call. No merge, live orders, vendor calls, scheduler, or new entry/exit/stop/risk parameters. Stop-dependent M/T stays HOLD.
+
+Requested next step: Architect independent re-audit of `f4371c599fb1c45e28c403549090e92fd825ce67`, then ACCEPT or HOLD on that exact head. This note is the handoff. It is not the decision.
+
+## Original proposal record — head `553ec517`, later held
+
+**Status at that time:** PROPOSED. Open on private paper-bots PR #5. Not accepted. Not merged.  
+**Date:** 2026-11-06 (Europe/London)  
+**Packet for that head:** [REVIEW-M4-NATIVE-001](../research/reviews/2026-11-06-wo-paper-004-native-ledger-packet.md)
+
+## Heads recorded for the original proposal
 
 | Item | Value |
 |---|---|
 | Public base, fetched before this note | `b0c8f55109fcc92d8f55ec7b593c696b9887475d` |
-| Private head under review | `553ec517455ce6ef797b049e65ec61389daa20da` |
+| Private head of that proposal, later held | `553ec517455ce6ef797b049e65ec61389daa20da` |
 | Private branch | `cursor/wo-paper-004-native-ledger-ce05` |
 | Private base and unchanged paper-bots main | `b2cb75867d2408a0018333213a0dd2cfb91ac670` |
 | State | OPEN, `merged` false, `merged_at` null |
@@ -53,6 +82,6 @@ In-process ingest refuses NEO writing decision or execution events. The pre-exis
 
 No merge. No live orders. No vendor calls. No scheduler. No new entry, exit, stop, or risk parameters. Stop-dependent M/T stays HOLD. G0 stays OPEN. Rights stay UNVERIFIED. FMP remains exactly three historical calls: `profile` SPY HTTP 200, one record; `historical-price-eod/light` SPY HTTP 200, two records; `batch-quote` SPY,XOM HTTP 402, non-JSON. No fourth call.
 
-## Requested next step
+## Requested next step at the time of the original proposal
 
-Architect independent re-audit of `553ec517455ce6ef797b049e65ec61389daa20da`, then ACCEPT or HOLD on that exact head. This public note is the handoff. It is not the decision.
+Architect independent re-audit of `553ec517455ce6ef797b049e65ec61389daa20da`, then ACCEPT or HOLD on that exact head. That review is now [REVIEW-M4-INDEP-001](../research/reviews/2026-11-06-wo-paper-004-553ec5-independent-hold.md). The current requested review is the head in the section above.
