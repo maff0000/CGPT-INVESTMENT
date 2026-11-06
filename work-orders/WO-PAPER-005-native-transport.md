@@ -1,17 +1,34 @@
 # WO-PAPER-005 — offline native transport (public note)
 
+> **CURRENT — recovery-integrity correction, 6 Nov 2026. Proposed. Not accepted. Not merged.** Private [paper-bots PR #6](https://github.com/maff0000/paper-bots/pull/6) head under review is `b87354d77dc4d94273291ae571c3837924f22fdd`. Parent of that commit is the held head `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1`. [REVIEW-M5-INDEP-001](../research/reviews/2026-11-06-wo-paper-005-d57f2e-independent-hold.md) HOLDs that older exact head only. [REVIEW-M5-TRANSPORT-002](../research/reviews/2026-11-06-wo-paper-005-recovery-integrity-packet.md) is pinned to the head of `cursor/wo-paper-005-transport-packet-f3e8` and does not contain this commit's SHA. Builder 136/136 is not Architect acceptance. A terminal successful receipt no longer authorises archive by itself. This note does not accept the new private head and does not merge. [REVIEW-M4-ACCEPT-001](../research/reviews/2026-11-06-wo-paper-004-541f3f-independent-acceptance.md) remains accepted history for the offline in-process adapter only. HOLDs of `553ec517455ce6ef797b049e65ec61389daa20da` and `f4371c599fb1c45e28c403549090e92fd825ce67` remain valid only for those older exact heads. This correction does not authenticate native senders and does not implement a host access-control list.
+
 > **CURRENT ARCHITECT DECISION — WO-PAPER-005 INCREMENT A HOLD (6 Nov 2026).** The independent review **HOLDs** private paper-bots PR #6 exact head `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1` after 132/132 independently run Python 3.12.14 tests and a separate crash/recovery probe that found a corrupted processing envelope silently archived as `accepted` when a terminal receipt exists. Read [REVIEW-M5-INDEP-001](https://github.com/maff0000/CGPT-INVESTMENT/blob/330c006522effd37ca435f754659f075564d6f72/research/reviews/2026-11-06-wo-paper-005-d57f2e-independent-hold.md) and [private PR #6 corrective instructions](https://github.com/maff0000/paper-bots/pull/6#issuecomment-6683142810). **The earlier 'CURRENT/PROPOSED' builder notices below are historical pre-audit snapshots; do not accept or merge PRs #6/#10.** M4 remains ACCEPTED. G0 OPEN, provider rights UNVERIFIED, FMP three historical calls only, stop-dependent M/T HOLD; native messaging/host ACL remain UNVERIFIED; no live/vendor/broker calls, scheduling or orders.
 
 > **CURRENT — Increment A, 6 Nov 2026. Proposed. Not accepted. Not merged.** Private [paper-bots PR #6](https://github.com/maff0000/paper-bots/pull/6) head `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1` is parent-verified OPEN, draft false, `merged` false, `merged_at` null, mergeable clean. Parent of that commit, and unchanged paper-bots main, is `ff13c49ce2535992c7216f5742946b33bd805e53`. [REVIEW-M5-TRANSPORT-001](../research/reviews/2026-11-06-wo-paper-005-offline-transport-packet.md) is pinned to the head of `cursor/wo-paper-005-transport-packet-f3e8` and does not contain that public commit's SHA. Builder 132/132 is not Architect acceptance. This increment does not authenticate native senders and does not implement a host access-control list. [REVIEW-M4-ACCEPT-001](../research/reviews/2026-11-06-wo-paper-004-541f3f-independent-acceptance.md) remains accepted history for the offline in-process adapter only. Earlier HOLDs of `553ec517455ce6ef797b049e65ec61389daa20da` and `f4371c599fb1c45e28c403549090e92fd825ce67` remain valid only for those older exact heads.
 
-**Status:** PROPOSED for Architect review. Not accepted. Not merged.  
-**Authoritative packet:** [REVIEW-M5-TRANSPORT-001](../research/reviews/2026-11-06-wo-paper-005-offline-transport-packet.md)  
+**Status:** Recovery-integrity correction PROPOSED for Architect ACCEPT or HOLD of `b87354d77dc4d94273291ae571c3837924f22fdd`. Not accepted. Not merged. REVIEW-M5-INDEP-001 still HOLDs `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1` only.  
+**Authoritative packet:** [REVIEW-M5-TRANSPORT-002](../research/reviews/2026-11-06-wo-paper-005-recovery-integrity-packet.md)  
+**Historical packet for the held head:** [REVIEW-M5-TRANSPORT-001](../research/reviews/2026-11-06-wo-paper-005-offline-transport-packet.md)  
 **Parent PID:** [PID-EQUITY-PAPER-001](../docs/pid-equity-paper-system.md)  
 **Private pull request:** [paper-bots #6](https://github.com/maff0000/paper-bots/pull/6)  
 **Private work order path, not copied here:** `docs/work-orders/WO-PAPER-005-native-transport.md`  
 **Accepted predecessor:** [WO-PAPER-004](WO-PAPER-004-native-ledger.md), paper-bots main `ff13c49ce2535992c7216f5742946b33bd805e53`
 
+## Recovery-integrity correction under review
+
+Parent-read behaviour, not an Architect confirmation. A terminal successful receipt (`accepted` or `duplicate`) no longer authorises archive by itself. Recovery rechecks the staged envelope and attestation against the durable receipt: envelope SHA-256, submission id, attested native identity, source, and transport contract. A match archives and returns the stored receipt. A mismatch, a missing sidecar, or a corrupt sidecar leaves the original receipt untouched, retains the mismatching evidence in quarantine, and writes a separate recovery record with `kind` `RECOVERY_INTEGRITY`. The ledger is not appended to, and row count and hash tip stay unchanged. Matching recovery, crash-before-receipt duplicate behaviour with no second append, and retryable ledger-outage behaviour remain intact.
+
+The private correction is `b87354d77dc4d94273291ae571c3837924f22fdd`, parent `d57f2e3211cb0ecd171278f26ee4b6f4aca8a9c1`, message `Revalidate successful spool recovery before archive.` Private PR #6 stays OPEN: 2 commits, 23 files, +2043/−3 versus accepted main. The correction itself is 6 files, +312/−12, covering documentation plus the offline transport implementation and its tests. Those implementation and test paths are not named here.
+
+Builder transcript, not an Architect run, detached worktree at the new private head: Python 3.9.25 exit 0, stdout 0 bytes, wall 1.954s, stderr `Ran 136 tests in 1.615s` / OK; Python 3.12.3 exit 0, stdout 0 bytes, wall 1.266s, stderr `Ran 136 tests in 1.108s` / OK. The held head had 132. Builder 136/136 is not Architect acceptance.
+
+Quarantine is retention, not a host access-control list. This correction does not authenticate native senders. Increments B and C stay gated. G0 stays OPEN. Provider rights stay UNVERIFIED. FMP remains exactly three historical calls: `profile` SPY HTTP 200, one record; `historical-price-eod/light` SPY HTTP 200, two records; `batch-quote` SPY,XOM HTTP 402 non-JSON. No fourth call. Stop-dependent M/T stays HOLD. No merge.
+
+Requested next step: Architect ACCEPT or HOLD of exact private head `b87354d77dc4d94273291ae571c3837924f22fdd`. This note is not that decision.
+
 ## Parent-verified heads
+
+The table below is the Increment A proposal later held by REVIEW-M5-INDEP-001. It is not the head now under review.
 
 | Item | Value |
 |---|---|
