@@ -1,5 +1,7 @@
 # REVIEW-M7-NEO-001 — WO-PAPER-007 Architect acceptance
 
+> **DATED CLOSURE POINTER — 6 November 2026. This file is not rewritten.** Private [paper-bots PR #10](https://github.com/maff0000/paper-bots/pull/10) was later merged by an ordinary merge commit. The verified private merge SHA and private main are `d2c7fe9a4df8590488202e63dc3820480fd82546`. The accepted design remains `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. [REVIEW-M7-NEO-002](2026-11-06-wo-paper-007-native-communication-closure.md) records that merge. The ACCEPT text below stays. Public PR #14 is not merged. No public merge SHA is recorded here.
+
 **ID:** REVIEW-M7-NEO-001
 **Date:** 6 November 2026 (Europe/London)
 **Architect decision:** **ACCEPT** exact private head `8b27454eb2485f8fc3897e60d316b4bb11e4a885`.

@@ -1,5 +1,7 @@
 # WO-PAPER-007 — native NEO communication (public note)
 
+> **CURRENT — 6 November 2026: private paper-bots PR #10 merged at `d2c7fe9a4df8590488202e63dc3820480fd82546`. Public PR #14 is not merged.** Verified private main is that same SHA. The accepted design remains `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. Ordinary merge, parents `28fe536e03ab8df1704d119b045158cc0a766f4f` and `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. Merge-commit tree `75e4e07a049cb109f03ee3e5a11f133a71c5ebd5` matches the accepted-head tree. [REVIEW-M7-NEO-002](../research/reviews/2026-11-06-wo-paper-007-native-communication-closure.md). No public merge SHA is recorded. No native message was sent. The status line below that says private PR #10 is not yet merged is the pre-merge acceptance record.
+
 **Status:** Architect **ACCEPT** of exact private head `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. Design only. That acceptance does not apply to any later commit. Private [paper-bots PR #10](https://github.com/maff0000/paper-bots/pull/10) is not yet merged. No native message is authorised.
 **Acceptance record:** [REVIEW-M7-NEO-001](../research/reviews/2026-11-06-wo-paper-007-native-communication-acceptance.md)
 **Predecessor:** [WO-PAPER-006](WO-PAPER-006-neo-decision-review.md). That file's historical ACCEPT and closure text is not rewritten. WO-PAPER-006 acceptance and closure remain [REVIEW-M6-NEO-003](../research/reviews/2026-11-06-wo-paper-006-neo-review-acceptance.md) and [REVIEW-M6-NEO-004](../research/reviews/2026-11-06-wo-paper-006-neo-review-closure.md).
@@ -67,3 +69,5 @@ Builder-reported Python 3.12.3 `Ran 162 tests`, `OK`, is the unchanged WO-PAPER-
 ## What this note does not do
 
 Private PR #10 is not yet merged. This note does not merge it. It does not send a native message. It does not implement transport. Parent will independently read the public acceptance commit, then merge the private pull request using an ordinary merge commit pinned to `8b27454eb2485f8fc3897e60d316b4bb11e4a885`. This note does not name that future merge SHA.
+
+**Dated closure, 6 November 2026.** The paragraph above is the pre-merge acceptance record. Private PR #10 is merged at `d2c7fe9a4df8590488202e63dc3820480fd82546`. Public PR #14 is not merged. No public merge SHA is recorded. [REVIEW-M7-NEO-002](../research/reviews/2026-11-06-wo-paper-007-native-communication-closure.md).
