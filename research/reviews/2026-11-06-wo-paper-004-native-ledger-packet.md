@@ -1,5 +1,7 @@
 # WO-PAPER-004 — attested native envelope ingest
 
+> **ARCHITECT SUPERSESSION — 6 Nov 2026:** Builder handoff at private `553ec517455ce6ef797b049e65ec61389daa20da` is now independently **HOLD**, despite 110/110 Python 3.12.14 tests. Replay can silently replace an omitted required parent with stored evidence, ignore a wrong explicitly supplied parent hash, and ignore a changed allowed R quality claim. [Dated independent review](2026-11-06-wo-paper-004-553ec5-independent-hold.md). Both PRs remain OPEN/UNMERGED. No live Grok bridge or NEO OS ACL was proven; safety gates unchanged. Earlier builder-ready status below is historical.
+
 **ID:** REVIEW-M4-NATIVE-001  
 **Date:** 2026-11-06 (Europe/London)  
 **Record type:** public governance packet for an open private increment.  
