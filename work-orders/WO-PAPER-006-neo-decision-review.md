@@ -193,3 +193,5 @@ Builder report on this head, not re-executed: Python 3.12.3 `Ran 162 tests`, `OK
 Requested next step: Architect ACCEPT or HOLD of exact head `4b3dac4c4137a5cb89a9587862e5fe25c464887b`. The HOLD of `619a607ed1879c93a82e4e652b2edc7531efb530` stays the decision for that older head. This section does not accept `4b3dac4c4137a5cb89a9587862e5fe25c464887b` and does not request a disposition of the intermediate parent.
 
 That requested step was later answered by Architect ACCEPT of that exact SHA in [REVIEW-M6-NEO-003](../research/reviews/2026-11-06-wo-paper-006-neo-review-acceptance.md). Private PR #9 and public PR #13 are not merged. No merge SHA is recorded. The sentences above stay the historical request.
+
+**Successor:** [WO-PAPER-007](WO-PAPER-007-native-neo-communication.md) records Architect ACCEPT of exact private head `8b27454eb2485f8fc3897e60d316b4bb11e4a885` in [REVIEW-M7-NEO-001](../research/reviews/2026-11-06-wo-paper-007-native-communication-acceptance.md). Private paper-bots PR #10 is not yet merged. No native message is authorised.
