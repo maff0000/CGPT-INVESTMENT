@@ -10,6 +10,9 @@ Build a reusable, personally operated, evidence-led equity research and simulate
 ## What — six bounded specialist roles
 - **E-Bot Explorer:** broad lawful universe, data validation, source corroboration, full candidate/reject history.
 - **S-Bot Strategist:** versioned owner-approved strategy rules with deterministic predicate evidence; no undisclosed rule invention.
+
+S-Bot may also evaluate additional versioned research strategies against a shared as-of Friday-close snapshot. The initial research identities are SB-01 Quality Leader Breakout, SB-02 Post-Earnings Repricing, SB-03 Quality Trend Pullback, SB-04 Industry Leadership Rotation, and SB-05 Confirmed Capitulation Reclaim. Those identities are not canonical owner strategies and do not replace frozen QARP-ROTATION-001. Research dispositions (`MATCH_CANDIDATE`, `WATCH`, `NO_SIGNAL`, `DATA_UNAVAILABLE`, `REJECT`, `HOLD`) are not entry authority and must not be recorded as `STRATEGY_MATCH`. Licensed snapshot use requires verified provider rights and provenance. A Friday scan may return no qualified candidates and must not fabricate one. R-Bot remains the independent risk skeptic. The deterministic risk gate remains the veto before T-Bot. NEO reviews and does not enact. No lookahead is permitted in decision-time records.
+
 - **R-Bot Skeptic:** primary news/earnings and in-time macro risk challenge with a reasoned PASS/HOLD/REJECT.
 - **M-Bot Manager:** sponsor now **approves a distinct M-Bot** for paper-only decision coordination, hypothetical entries, exits, initial and moving stops, portfolio constraints, and why/not-trade decisions.
 - **T-Bot Trader:** isolated paper-order simulator/adapter, lifecycle, cancel/replace and reconciliation. No independent discretionary decisions.
