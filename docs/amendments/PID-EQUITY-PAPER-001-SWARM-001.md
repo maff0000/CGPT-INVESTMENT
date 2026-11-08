@@ -52,6 +52,6 @@ Increment B should be deliberately small: one coordinated task, one independent 
 
 ## 5. Existing work-order isolation
 
-`WO-PAPER-010` Increment 1 (private PR #18) continues as dispatched. It is a deterministic **baseline**, not the final AI swarm. No rewrite, merge, scope expansion or acceptance of PR #18 is granted by this amendment. Existing `WO-PAPER-009`, WO-010, R-Bot issue #13 and data-provider dependencies keep their own statuses.
+`WO-PAPER-010` Increment 1 (private PR #18) is already merged under separate prior approval. It is a deterministic **baseline**, not the final AI swarm. SWARM-001 does not itself authorise implementation, rewrite, or scope expansion. Existing `WO-PAPER-009`, WO-010, R-Bot issue #13 and data-provider dependencies keep their own statuses.
 
 The next action is to obtain exact-head review of this documentation and then prepare a **work-order-only** SWARM-B proposal with precise base SHA, scope, exclusions, tests and acceptance criteria. Implementation remains blocked until that work order is independently accepted and separately dispatched.

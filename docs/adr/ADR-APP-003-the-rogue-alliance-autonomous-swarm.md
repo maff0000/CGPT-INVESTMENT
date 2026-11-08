@@ -65,7 +65,7 @@ Success is not raw profit alone or an artificial quota of trades. Observe net re
 
 ## Relationship to existing work
 
-- `WO-PAPER-010` Increment 1 / private paper-bots PR #18 remains an independently reviewed, unmerged synthetic implementation. **Do not pause, rewrite or silently expand that WO** because of this proposal; finish its correction/audit/acceptance/merge path separately.
+- `WO-PAPER-010` Increment 1 / private paper-bots PR #18 is the verified ordinary merge on private main at `a5e0a2d965b11b5371aec6286e575259d4ffb11c`, accepted corrected head `a7ef2f7fdad963c0cf29c626dff493ba4f0355e8`; historical HOLD `827a96d36569e3abaae5817ea405e6e0155359a6` remains historical. **Do not pause, rewrite or silently expand that WO** because of this proposal; this record does not retrospectively authorise more.
 - QARP-ROTATION-001 v1.0.0, v0.1/v0.2/v0.3 catalogs, G0 OPEN, provider rights UNVERIFIED, risk/stop HOLDs, native-persona requirements and existing paper-only restrictions are **not** superseded.
 - The public PID's current S-Bot deterministic-strategy language becomes the **approved execution baseline**, not a ban on isolated AI research. Its current M-Bot paper coordinator role remains the implemented baseline until a separately accepted native-management WO succeeds.
 - No source code, fixture, schema, secrets, accounts or private ledger rows are part of this public architectural proposal. Public documentation records direction; private `paper-bots` holds implementation and operational evidence.
