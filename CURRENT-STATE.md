@@ -1,3 +1,5 @@
+> **ALL-SECTOR WEEKLY — 16 Nov 2026:** Eight new-to-week watch candidates (MSFT, META, BRK.B, HD, CVX, FCX, DLR, SO), one each across the eight eligible sectors; **0 BUY STARTER, 8 WAIT**. Friday 13 Nov 16:00 EST prices; company/SEC releases checked. HD inside 7-session pre-earnings blackout for estimated Nov 17, PANW excluded ahead of Nov 18. Next earnings dates otherwise unconfirmed; **no future earnings gate clearance assumed**. [Review](research/reviews/2026-11-16-all-sector-weekly.md) · [Watchlist](research/watchlists/2026-11-16-all-sector-08.md). No G0 closure, no orders.
+
 > **ALL-SECTOR WEEKLY — 9 Nov 2026:** Seven newly re-evidenced candidates across seven eligible sectors; all WAIT, zero starter buys. Nov 6 16:00 EST prices, company financial disclosures, event gates and triggers. [Review](research/reviews/2026-11-09-all-sector-weekly.md) · [Watchlist](research/watchlists/2026-11-09-all-sector-07.md). G0 remains OPEN; no brokerage authority.
 
 # CURRENT STATE — CGPT-INVESTMENT
